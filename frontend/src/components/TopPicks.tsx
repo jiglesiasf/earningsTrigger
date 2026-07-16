@@ -1,5 +1,6 @@
 'use client'
 import { StockPick } from '@/lib/types'
+import { useTranslation } from '@/lib/i18n'
 
 function DecisionBadge({ decision }: { decision: string }) {
   const style: React.CSSProperties = {
@@ -32,10 +33,11 @@ function ScoreBar({ label, score }: { label: string; score: number }) {
 }
 
 export default function TopPicks({ picks }: { picks: StockPick[] }) {
+  const { t } = useTranslation()
   return (
     <div style={{ marginBottom: '32px' }}>
       <h2 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-        Top {picks.length} Earnings Opportunities
+        Top {picks.length} {t('dashboard.upcoming_earnings', { count: '' }).split('(')[0].trim()}
       </h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
         {picks.map((pick) => (
@@ -61,7 +63,7 @@ export default function TopPicks({ picks }: { picks: StockPick[] }) {
                 </div>
                 <div style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>{pick.company}</div>
                 <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
-                  {pick.sector} &middot; Earnings {pick.earnings_date} ({pick.days_until_earnings}d)
+                  {pick.sector} &middot; {t('stock.earnings_label', { date: pick.earnings_date })} ({pick.days_until_earnings}d)
                 </div>
               </div>
               <div style={{ textAlign: 'right' }}>
@@ -73,33 +75,33 @@ export default function TopPicks({ picks }: { picks: StockPick[] }) {
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '12px', marginBottom: '16px' }}>
-              <ScoreBar label="Overall" score={pick.scores.overall} />
-              <ScoreBar label="Technical" score={pick.scores.technical} />
-              <ScoreBar label="Fundamental" score={pick.scores.fundamental} />
-              <ScoreBar label="Options" score={pick.scores.options} />
-              <ScoreBar label="Historical" score={pick.scores.historical} />
-              <ScoreBar label="Sentiment" score={pick.scores.sentiment} />
+              <ScoreBar label={t('score.overall')} score={pick.scores.overall} />
+              <ScoreBar label={t('score.technical')} score={pick.scores.technical} />
+              <ScoreBar label={t('score.fundamental')} score={pick.scores.fundamental} />
+              <ScoreBar label={t('score.options')} score={pick.scores.options} />
+              <ScoreBar label={t('score.historical')} score={pick.scores.historical} />
+              <ScoreBar label={t('score.sentiment')} score={pick.scores.sentiment} />
             </div>
 
             <div style={{ display: 'flex', gap: '24px', paddingTop: '12px', borderTop: '1px solid var(--border)', fontSize: '13px' }}>
               <div>
-                <span style={{ color: 'var(--text-muted)' }}>Buy above </span>
+                <span style={{ color: 'var(--text-muted)' }}>{t('stock.params.buy_above')} </span>
                 <span style={{ fontWeight: '600' }}>${pick.trade_parameters.buy_above}</span>
               </div>
               <div>
-                <span style={{ color: 'var(--text-muted)' }}>Stop </span>
+                <span style={{ color: 'var(--text-muted)' }}>{t('stock.params.stop_loss')} </span>
                 <span style={{ fontWeight: '600', color: '#ef4444' }}>${pick.trade_parameters.stop_loss}</span>
               </div>
               <div>
-                <span style={{ color: 'var(--text-muted)' }}>Target </span>
+                <span style={{ color: 'var(--text-muted)' }}>{t('stock.params.take_profit')} </span>
                 <span style={{ fontWeight: '600', color: '#22c55e' }}>${pick.trade_parameters.take_profit}</span>
               </div>
               <div>
-                <span style={{ color: 'var(--text-muted)' }}>R:R </span>
+                <span style={{ color: 'var(--text-muted)' }}>{t('stock.params.risk_reward')} </span>
                 <span style={{ fontWeight: '600' }}>{pick.trade_parameters.risk_reward}:1</span>
               </div>
               <div>
-                <span style={{ color: 'var(--text-muted)' }}>Expected move </span>
+                <span style={{ color: 'var(--text-muted)' }}>{t('stock.params.expected_move')} </span>
                 <span style={{ fontWeight: '600' }}>{pick.trade_parameters.expected_move}</span>
               </div>
             </div>

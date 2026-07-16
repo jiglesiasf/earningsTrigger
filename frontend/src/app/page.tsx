@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react'
 import { getLatestAnalysis } from '@/lib/api'
 import { AnalysisOutput } from '@/lib/types'
+import { useTranslation } from '@/lib/i18n'
 import MarketSummary from '@/components/MarketSummary'
 import TopPicks from '@/components/TopPicks'
 
 export default function Dashboard() {
+  const { t } = useTranslation()
   const [data, setData] = useState<AnalysisOutput | null>(null)
   const [loading, setLoading] = useState(true)
 
@@ -29,7 +31,7 @@ export default function Dashboard() {
           animation: 'spin 1s linear infinite',
         }} />
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>Loading analysis data...</p>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>{t('dashboard.loading')}</p>
       </div>
     )
   }
@@ -38,9 +40,9 @@ export default function Dashboard() {
     return (
       <div style={{ textAlign: 'center', padding: '120px 24px' }}>
         <div style={{ fontSize: '48px', marginBottom: '16px' }}>📊</div>
-        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '8px' }}>Earnings Trigger</h1>
-        <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>No analysis data available.</p>
-        <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Run the analysis backend to generate data.</p>
+        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '8px' }}>{t('dashboard.empty_title')}</h1>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>{t('dashboard.empty_message')}</p>
+        <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>{t('dashboard.empty_instruction')}</p>
       </div>
     )
   }
@@ -48,9 +50,9 @@ export default function Dashboard() {
   return (
     <div>
       <div style={{ marginBottom: '32px' }}>
-        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '4px' }}>Dashboard</h1>
+        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '4px' }}>{t('dashboard.title')}</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
-          Last updated: {data.run_date} at {data.run_time}
+          {t('dashboard.last_updated', { date: data.run_date, time: data.run_time })}
         </p>
       </div>
 
@@ -69,10 +71,10 @@ export default function Dashboard() {
         }}>
           <div style={{ fontSize: '40px', marginBottom: '16px' }}>🛡️</div>
           <h2 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '8px', color: 'var(--accent-yellow)' }}>
-            No trades today
+            {t('dashboard.no_trades_title')}
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '15px', maxWidth: '400px', margin: '0 auto' }}>
-            Capital preservation is the best trade. No stock met the conviction threshold for a recommendation.
+            {t('dashboard.no_trades_desc')}
           </p>
         </div>
       )}
@@ -86,13 +88,13 @@ export default function Dashboard() {
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
             <h2 style={{ fontSize: '16px', fontWeight: '600' }}>
-              Upcoming Earnings ({data.earnings_universe.length} stocks)
+              {t('dashboard.upcoming_earnings', { count: data.earnings_universe.length })}
             </h2>
             <a href="/earningsTrigger/earnings/" style={{
               color: 'var(--accent-blue)',
               fontSize: '13px',
               textDecoration: 'none',
-            }}>View all →</a>
+            }}>{t('dashboard.view_all')}</a>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '8px' }}>
             {data.earnings_universe.slice(0, 8).map((stock: any) => (
@@ -113,7 +115,7 @@ export default function Dashboard() {
               >
                 <div>
                   <span style={{ fontWeight: '600', marginRight: '8px' }}>{stock.ticker}</span>
-                  <span style={{ color: 'var(--text-muted)', fontSize: '12px' }}>{stock.days_until_earnings}d</span>
+                  <span style={{ color: 'var(--text-muted)', fontSize: '12px' }}>{stock.days_until_earnings}{t('dashboard.days_suffix')}</span>
                 </div>
                 <span style={{
                   fontSize: '12px',

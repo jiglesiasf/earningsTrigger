@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { getStockData, getHistoricalData } from '@/lib/api'
+import { useTranslation } from '@/lib/i18n'
 import { TechnicalBreakdown, FundamentalBreakdown, OptionsBreakdown, SentimentBreakdown, HistoricalBreakdown, MacroBreakdown, OverallBreakdown } from '@/components/ScoreBreakdown'
 import HistoricalAnalysis from '@/components/HistoricalAnalysis'
 
@@ -17,6 +18,7 @@ function ScoreBox({ label, score, color }: { label: string; score: number; color
 }
 
 function StockDetailContent() {
+  const { t } = useTranslation()
   const searchParams = useSearchParams()
   const ticker = searchParams.get('ticker')
   const [data, setData] = useState<any>(null)
@@ -40,20 +42,20 @@ function StockDetailContent() {
   if (!ticker) {
     return (
       <div style={{ textAlign: 'center', padding: '120px 24px' }}>
-        <p style={{ color: 'var(--text-secondary)' }}>No ticker specified. <a href="/earningsTrigger/earnings/" style={{ color: 'var(--accent-blue)', textDecoration: 'none' }}>Browse the calendar →</a></p>
+        <p style={{ color: 'var(--text-secondary)' }}>{t('stock.no_ticker')} <a href="/earningsTrigger/earnings/" style={{ color: 'var(--accent-blue)', textDecoration: 'none' }}>{t('stock.browse_calendar')}</a></p>
       </div>
     )
   }
 
   if (loading) {
-    return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '60vh' }}><p style={{ color: 'var(--text-secondary)' }}>Loading {ticker}...</p></div>
+    return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '60vh' }}><p style={{ color: 'var(--text-secondary)' }}>{t('stock.loading', { ticker })}</p></div>
   }
 
   if (!data) {
     return (
       <div style={{ textAlign: 'center', padding: '120px 24px' }}>
         <h1 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '8px' }}>{ticker}</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>No data available for this stock.</p>
+        <p style={{ color: 'var(--text-secondary)' }}>{t('stock.no_data')}</p>
       </div>
     )
   }
@@ -62,13 +64,13 @@ function StockDetailContent() {
 
   return (
     <div>
-      <a href="/earningsTrigger/earnings/" style={{ color: 'var(--accent-blue)', fontSize: '13px', textDecoration: 'none', display: 'inline-block', marginBottom: '20px' }}>← Back to Calendar</a>
+      <a href="/earningsTrigger/earnings/" style={{ color: 'var(--accent-blue)', fontSize: '13px', textDecoration: 'none', display: 'inline-block', marginBottom: '20px' }}>{t('stock.back')}</a>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px' }}>
         <div>
           <h1 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '4px' }}>{data.ticker}</h1>
           <p style={{ fontSize: '16px', color: 'var(--text-secondary)', marginBottom: '4px' }}>{data.company}</p>
-          <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{data.sector} &middot; Earnings {data.earnings_date}</p>
+          <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{data.sector} &middot; {t('stock.earnings_label', { date: data.earnings_date })}</p>
         </div>
         <div style={{ textAlign: 'right' }}>
           <div style={{
@@ -85,12 +87,12 @@ function StockDetailContent() {
       <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '24px', fontStyle: 'italic' }}>{data.decision_rationale}</p>
 
       <div style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
-        <ScoreBox label="Overall" score={data.scores.overall} color="#e8e8f0" />
-        <ScoreBox label="Technical" score={data.scores.technical} color="#3b82f6" />
-        <ScoreBox label="Fundamental" score={data.scores.fundamental} color="#a855f7" />
-        <ScoreBox label="Options" score={data.scores.options} color="#f59e0b" />
-        <ScoreBox label="Historical" score={data.scores.historical} color="#ec4899" />
-        <ScoreBox label="Sentiment" score={data.scores.sentiment} color="#06b6d4" />
+        <ScoreBox label={t('score.overall')} score={data.scores.overall} color="#e8e8f0" />
+        <ScoreBox label={t('score.technical')} score={data.scores.technical} color="#3b82f6" />
+        <ScoreBox label={t('score.fundamental')} score={data.scores.fundamental} color="#a855f7" />
+        <ScoreBox label={t('score.options')} score={data.scores.options} color="#f59e0b" />
+        <ScoreBox label={t('score.historical')} score={data.scores.historical} color="#ec4899" />
+        <ScoreBox label={t('score.sentiment')} score={data.scores.sentiment} color="#06b6d4" />
       </div>
 
       {/* Tab Selector */}
@@ -104,7 +106,7 @@ function StockDetailContent() {
             boxShadow: activeTab === 'overview' ? '0 1px 3px rgba(0,0,0,0.3)' : 'none',
           }}
         >
-          Trade Overview
+          {t('stock.tabs.overview')}
         </button>
         <button
           onClick={() => setActiveTab('breakdown')}
@@ -115,7 +117,7 @@ function StockDetailContent() {
             boxShadow: activeTab === 'breakdown' ? '0 1px 3px rgba(0,0,0,0.3)' : 'none',
           }}
         >
-          Score Breakdown
+          {t('stock.tabs.breakdown')}
         </button>
         {historical && (
           <button
@@ -127,7 +129,7 @@ function StockDetailContent() {
               boxShadow: activeTab === 'history' ? '0 1px 3px rgba(0,0,0,0.3)' : 'none',
             }}
           >
-            Historical Analysis
+            {t('stock.tabs.history')}
           </button>
         )}
       </div>
@@ -136,17 +138,17 @@ function StockDetailContent() {
         <>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
             <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-              <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Trade Parameters</h3>
+              <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{t('stock.params.title')}</h3>
               {[
-                ['Buy Above', `$${data.trade_parameters.buy_above}`, undefined],
-                ['Stop Loss', `$${data.trade_parameters.stop_loss}`, '#ef4444'],
-                ['Take Profit', `$${data.trade_parameters.take_profit}`, '#22c55e'],
-                ['Risk/Reward', `${data.trade_parameters.risk_reward}:1`, undefined],
-                ['Expected Move', data.trade_parameters.expected_move, undefined],
-                ['Expected Return', `+${data.trade_parameters.expected_return_pct}%`, '#22c55e'],
-                ['Max Drawdown', `${data.trade_parameters.max_drawdown_pct}%`, '#ef4444'],
+                [t('stock.params.buy_above'), `$${data.trade_parameters.buy_above}`, undefined],
+                [t('stock.params.stop_loss'), `$${data.trade_parameters.stop_loss}`, '#ef4444'],
+                [t('stock.params.take_profit'), `$${data.trade_parameters.take_profit}`, '#22c55e'],
+                [t('stock.params.risk_reward'), `${data.trade_parameters.risk_reward}:1`, undefined],
+                [t('stock.params.expected_move'), data.trade_parameters.expected_move, undefined],
+                [t('stock.params.expected_return'), `+${data.trade_parameters.expected_return_pct}%`, '#22c55e'],
+                [t('stock.params.max_drawdown'), `${data.trade_parameters.max_drawdown_pct}%`, '#ef4444'],
               ].map(([label, value, color]) => (
-                <div key={label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
+                <div key={String(label)} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
                   <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{label}</span>
                   <span style={{ fontSize: '13px', fontWeight: '600', color: color || 'var(--text-primary)' }}>{value}</span>
                 </div>
@@ -154,18 +156,18 @@ function StockDetailContent() {
             </div>
 
             <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-              <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Key Levels</h3>
-              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', marginBottom: '8px' }}>Support</div>
+              <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{t('stock.levels.title')}</h3>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', marginBottom: '8px' }}>{t('stock.levels.support')}</div>
               {data.trade_parameters.support_levels?.map((s: number, i: number) => (
                 <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
-                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Support {i + 1}</span>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{t('stock.levels.support_n', { n: i + 1 })}</span>
                   <span style={{ fontSize: '13px', fontWeight: '600' }}>${s}</span>
                 </div>
               ))}
-              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', marginTop: '12px', marginBottom: '8px' }}>Resistance</div>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', marginTop: '12px', marginBottom: '8px' }}>{t('stock.levels.resistance')}</div>
               {data.trade_parameters.resistance_levels?.map((r: number, i: number) => (
                 <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
-                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Resistance {i + 1}</span>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{t('stock.levels.resistance_n', { n: i + 1 })}</span>
                   <span style={{ fontSize: '13px', fontWeight: '600' }}>${r}</span>
                 </div>
               ))}

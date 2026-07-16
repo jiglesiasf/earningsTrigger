@@ -1,5 +1,7 @@
 'use client'
 
+import { useTranslation } from '@/lib/i18n'
+
 function Bar({ value, max = 100, color }: { value: number; max?: number; color: string }) {
   const pct = Math.min(100, Math.max(0, (value / max) * 100))
   return (
@@ -10,8 +12,9 @@ function Bar({ value, max = 100, color }: { value: number; max?: number; color: 
 }
 
 function CalcRow({ label, value, note, impact, impactColor }: { label: string; value: string | number; note?: string; impact: 'positive' | 'negative' | 'neutral'; impactColor?: string }) {
+  const { t } = useTranslation()
   const dotColor = impact === 'positive' ? '#22c55e' : impact === 'negative' ? '#ef4444' : '#555'
-  const impactText = impact === 'positive' ? '+' : impact === 'negative' ? '-' : '~'
+  const impactText = impact === 'positive' ? t('score.positive') : impact === 'negative' ? t('score.negative') : t('score.neutral')
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr auto auto', gap: '12px', alignItems: 'center', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
       <div>
@@ -27,13 +30,14 @@ function CalcRow({ label, value, note, impact, impactColor }: { label: string; v
 }
 
 function SectionHeader({ title, score, weight, color }: { title: string; score: number; weight: number; color: string }) {
+  const { t } = useTranslation()
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         <div style={{ width: '4px', height: '20px', borderRadius: '2px', background: color }} />
         <span style={{ fontSize: '15px', fontWeight: '600' }}>{title}</span>
         <span style={{ fontSize: '11px', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '2px 8px', borderRadius: '4px' }}>
-          Weight: {Math.round(weight * 100)}%
+          {t('score.weight', { n: Math.round(weight * 100) })}
         </span>
       </div>
       <div style={{
@@ -47,6 +51,7 @@ function SectionHeader({ title, score, weight, color }: { title: string; score: 
 }
 
 export function TechnicalBreakdown({ data, score }: { data: any; score: number }) {
+  const { t } = useTranslation()
   if (!data) return null
   const trend = data.trend || {}
   const momentum = data.momentum || {}
@@ -55,33 +60,34 @@ export function TechnicalBreakdown({ data, score }: { data: any; score: number }
 
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <SectionHeader title="Technical Score" score={score} weight={0.30} color="#3b82f6" />
-      
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Trend</div>
-      <CalcRow label="Price above 20 EMA" value={trend.price_above_20_ema ? 'Yes' : 'No'} impact={trend.price_above_20_ema ? 'positive' : 'negative'} note="Bullish when price > EMA" />
-      <CalcRow label="Price above 50 SMA" value={trend.price_above_50_sma ? 'Yes' : 'No'} impact={trend.price_above_50_sma ? 'positive' : 'negative'} note="Medium-term uptrend" />
-      <CalcRow label="Price above 200 SMA" value={trend.price_above_200_sma ? 'Yes' : 'No'} impact={trend.price_above_200_sma ? 'positive' : 'negative'} note="Long-term uptrend" />
-      <CalcRow label="Golden Cross" value={trend.golden_cross ? 'Yes' : 'No'} impact={trend.golden_cross ? 'positive' : 'neutral'} note="EMA20 crossed above SMA200" impactColor={trend.golden_cross ? '#22c55e' : undefined} />
-      <CalcRow label="Death Cross" value={trend.death_cross ? 'Yes' : 'No'} impact={trend.death_cross ? 'negative' : 'neutral'} note="Bearish signal" impactColor={trend.death_cross ? '#ef4444' : undefined} />
+      <SectionHeader title={t('technical.title')} score={score} weight={0.30} color="#3b82f6" />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Momentum</div>
-      <CalcRow label="RSI (14)" value={momentum.rsi_14} note={momentum.rsi_14 > 70 ? 'Overbought' : momentum.rsi_14 < 30 ? 'Oversold' : momentum.rsi_14 >= 50 ? 'Bullish zone (50-70)' : 'Weak'} impact={momentum.rsi_14 >= 50 && momentum.rsi_14 <= 68 ? 'positive' : 'negative'} impactColor={momentum.rsi_14 >= 50 && momentum.rsi_14 <= 68 ? '#22c55e' : '#ef4444'} />
-      <CalcRow label="MACD Histogram" value={momentum.macd_histogram?.toFixed(4)} note={momentum.macd_histogram > 0 ? 'Bullish momentum' : 'Bearish momentum'} impact={momentum.macd_histogram > 0 ? 'positive' : 'negative'} />
-      <CalcRow label="ADX" value={momentum.adx} note={momentum.adx > 25 ? 'Strong trend' : 'Weak trend'} impact={momentum.adx > 25 ? 'positive' : 'neutral'} />
-      <CalcRow label="Momentum Assessment" value={momentum.momentum_score} impact={momentum.momentum_score === 'strong' ? 'positive' : momentum.momentum_score === 'weak' ? 'negative' : 'neutral'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('technical.trend')}</div>
+      <CalcRow label={t('technical.price_above_20ema')} value={trend.price_above_20_ema ? t('score.yes') : t('score.no')} impact={trend.price_above_20_ema ? 'positive' : 'negative'} note={t('technical.price_above_20ema_note')} />
+      <CalcRow label={t('technical.price_above_50sma')} value={trend.price_above_50_sma ? t('score.yes') : t('score.no')} impact={trend.price_above_50_sma ? 'positive' : 'negative'} note={t('technical.price_above_50sma_note')} />
+      <CalcRow label={t('technical.price_above_200sma')} value={trend.price_above_200_sma ? t('score.yes') : t('score.no')} impact={trend.price_above_200_sma ? 'positive' : 'negative'} note={t('technical.price_above_200sma_note')} />
+      <CalcRow label={t('technical.golden_cross')} value={trend.golden_cross ? t('score.yes') : t('score.no')} impact={trend.golden_cross ? 'positive' : 'neutral'} note={t('technical.golden_cross_note')} impactColor={trend.golden_cross ? '#22c55e' : undefined} />
+      <CalcRow label={t('technical.death_cross')} value={trend.death_cross ? t('score.yes') : t('score.no')} impact={trend.death_cross ? 'negative' : 'neutral'} note={t('technical.death_cross_note')} impactColor={trend.death_cross ? '#ef4444' : undefined} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Volume</div>
-      <CalcRow label="OBV Trend" value={volume.obv_trend} impact={volume.obv_trend === 'up' ? 'positive' : 'negative'} note="On-Balance Volume direction" />
-      <CalcRow label="Volume vs 20d Avg" value={volume.volume_trend} impact={volume.volume_trend === 'above_avg' ? 'positive' : 'negative'} note="Higher volume confirms moves" />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('technical.momentum')}</div>
+      <CalcRow label={t('technical.rsi')} value={momentum.rsi_14} note={momentum.rsi_14 > 70 ? t('technical.rsi_overbought') : momentum.rsi_14 < 30 ? t('technical.rsi_oversold') : momentum.rsi_14 >= 50 ? t('technical.rsi_bullish') : t('technical.rsi_weak')} impact={momentum.rsi_14 >= 50 && momentum.rsi_14 <= 68 ? 'positive' : 'negative'} impactColor={momentum.rsi_14 >= 50 && momentum.rsi_14 <= 68 ? '#22c55e' : '#ef4444'} />
+      <CalcRow label={t('technical.macd')} value={momentum.macd_histogram?.toFixed(4)} note={momentum.macd_histogram > 0 ? t('technical.macd_bullish') : t('technical.macd_bearish')} impact={momentum.macd_histogram > 0 ? 'positive' : 'negative'} />
+      <CalcRow label={t('technical.adx')} value={momentum.adx} note={momentum.adx > 25 ? t('technical.adx_strong') : t('technical.adx_weak')} impact={momentum.adx > 25 ? 'positive' : 'neutral'} />
+      <CalcRow label={t('technical.momentum_assessment')} value={momentum.momentum_score} impact={momentum.momentum_score === 'strong' ? 'positive' : momentum.momentum_score === 'weak' ? 'negative' : 'neutral'} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Price Structure</div>
-      <CalcRow label="Distance to Resistance" value={`${structure.distance_to_resistance_pct}%`} impact={structure.distance_to_resistance_pct > 3 ? 'positive' : 'negative'} note={structure.distance_to_resistance_pct > 3 ? 'Room to run' : 'Close to resistance'} />
-      <CalcRow label="Distance to Support" value={`${structure.distance_to_support_pct}%`} impact={structure.distance_to_support_pct > 3 ? 'positive' : 'neutral'} note="Downside buffer" />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('technical.volume')}</div>
+      <CalcRow label={t('technical.obv_trend')} value={volume.obv_trend} impact={volume.obv_trend === 'up' ? 'positive' : 'negative'} note={t('technical.obv_note')} />
+      <CalcRow label={t('technical.volume_vs_avg')} value={volume.volume_trend} impact={volume.volume_trend === 'above_avg' ? 'positive' : 'negative'} note={t('technical.volume_note')} />
+
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('technical.price_structure')}</div>
+      <CalcRow label={t('technical.dist_resistance')} value={`${structure.distance_to_resistance_pct}%`} impact={structure.distance_to_resistance_pct > 3 ? 'positive' : 'negative'} note={structure.distance_to_resistance_pct > 3 ? t('technical.dist_resistance_note_room') : t('technical.dist_resistance_note_close')} />
+      <CalcRow label={t('technical.dist_support')} value={`${structure.distance_to_support_pct}%`} impact={structure.distance_to_support_pct > 3 ? 'positive' : 'neutral'} note={t('technical.dist_support_note')} />
     </div>
   )
 }
 
 export function FundamentalBreakdown({ data, score }: { data: any; score: number }) {
+  const { t } = useTranslation()
   if (!data) return null
 
   const growthScore = (data.revenue_growth_yoy > 20) ? 'strong' : (data.revenue_growth_yoy > 10) ? 'good' : (data.revenue_growth_yoy > 0) ? 'moderate' : 'weak'
@@ -90,74 +96,77 @@ export function FundamentalBreakdown({ data, score }: { data: any; score: number
 
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <SectionHeader title="Fundamental Score" score={score} weight={0.20} color="#a855f7" />
+      <SectionHeader title={t('fundamental.title')} score={score} weight={0.20} color="#a855f7" />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Growth</div>
-      <CalcRow label="Revenue Growth YoY" value={`${data.revenue_growth_yoy}%`} note={growthScore === 'strong' ? 'Excellent growth (>20%)' : growthScore === 'good' ? 'Good growth (>10%)' : growthScore === 'moderate' ? 'Moderate' : 'Negative growth'} impact={data.revenue_growth_yoy > 10 ? 'positive' : data.revenue_growth_yoy > 0 ? 'neutral' : 'negative'} />
-      <CalcRow label="EPS Growth YoY" value={`${data.eps_growth_yoy}%`} note={data.eps_growth_yoy > 20 ? 'Strong earnings growth' : data.eps_growth_yoy > 0 ? 'Growing' : 'Declining'} impact={data.eps_growth_yoy > 10 ? 'positive' : data.eps_growth_yoy > 0 ? 'neutral' : 'negative'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('fundamental.growth')}</div>
+      <CalcRow label={t('fundamental.revenue_growth')} value={`${data.revenue_growth_yoy}%`} note={growthScore === 'strong' ? t('fundamental.revenue_growth_strong') : growthScore === 'good' ? t('fundamental.revenue_growth_good') : growthScore === 'moderate' ? t('fundamental.revenue_growth_moderate') : t('fundamental.revenue_growth_negative')} impact={data.revenue_growth_yoy > 10 ? 'positive' : data.revenue_growth_yoy > 0 ? 'neutral' : 'negative'} />
+      <CalcRow label={t('fundamental.eps_growth')} value={`${data.eps_growth_yoy}%`} note={data.eps_growth_yoy > 20 ? t('fundamental.eps_growth_strong') : data.eps_growth_yoy > 0 ? t('fundamental.eps_growth_growing') : t('fundamental.eps_growth_declining')} impact={data.eps_growth_yoy > 10 ? 'positive' : data.eps_growth_yoy > 0 ? 'neutral' : 'negative'} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Profitability</div>
-      <CalcRow label="Gross Margin" value={`${data.gross_margin}%`} note={marginScore === 'high' ? 'High margin business' : marginScore === 'decent' ? 'Healthy margins' : 'Low margins'} impact={data.gross_margin > 40 ? 'positive' : data.gross_margin > 25 ? 'neutral' : 'negative'} />
-      <CalcRow label="Operating Margin" value={`${data.operating_margin}%`} note={data.operating_margin > 25 ? 'Excellent operational efficiency' : data.operating_margin > 15 ? 'Good' : 'Low'} impact={data.operating_margin > 20 ? 'positive' : data.operating_margin > 10 ? 'neutral' : 'negative'} />
-      <CalcRow label="Net Margin" value={`${data.net_margin}%`} impact={data.net_margin > 15 ? 'positive' : data.net_margin > 5 ? 'neutral' : 'negative'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('fundamental.profitability')}</div>
+      <CalcRow label={t('fundamental.gross_margin')} value={`${data.gross_margin}%`} note={marginScore === 'high' ? t('fundamental.gross_margin_high') : marginScore === 'decent' ? t('fundamental.gross_margin_healthy') : t('fundamental.gross_margin_low')} impact={data.gross_margin > 40 ? 'positive' : data.gross_margin > 25 ? 'neutral' : 'negative'} />
+      <CalcRow label={t('fundamental.operating_margin')} value={`${data.operating_margin}%`} note={data.operating_margin > 25 ? t('fundamental.operating_margin_excellent') : data.operating_margin > 15 ? t('fundamental.operating_margin_good') : t('fundamental.operating_margin_low')} impact={data.operating_margin > 20 ? 'positive' : data.operating_margin > 10 ? 'neutral' : 'negative'} />
+      <CalcRow label={t('fundamental.net_margin')} value={`${data.net_margin}%`} impact={data.net_margin > 15 ? 'positive' : data.net_margin > 5 ? 'neutral' : 'negative'} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Valuation</div>
-      <CalcRow label="PEG Ratio" value={data.peg_ratio} note={pegScore === 'undervalued' ? 'Undervalued (PEG < 1)' : pegScore === 'fair' ? 'Fairly valued' : 'Expensive (PEG > 3)'} impact={data.peg_ratio > 0 && data.peg_ratio < 1.5 ? 'positive' : data.peg_ratio < 3 ? 'neutral' : 'negative'} />
-      <CalcRow label="Forward P/E" value={data.forward_pe} note={data.forward_pe < 20 ? 'Reasonable' : data.forward_pe < 35 ? 'Growth priced in' : 'Expensive'} impact={data.forward_pe < 25 ? 'positive' : data.forward_pe < 40 ? 'neutral' : 'negative'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('fundamental.valuation')}</div>
+      <CalcRow label={t('fundamental.peg_ratio')} value={data.peg_ratio} note={pegScore === 'undervalued' ? t('fundamental.peg_undervalued') : pegScore === 'fair' ? t('fundamental.peg_fair') : t('fundamental.peg_expensive')} impact={data.peg_ratio > 0 && data.peg_ratio < 1.5 ? 'positive' : data.peg_ratio < 3 ? 'neutral' : 'negative'} />
+      <CalcRow label={t('fundamental.forward_pe')} value={data.forward_pe} note={data.forward_pe < 20 ? t('fundamental.forward_pe_reasonable') : data.forward_pe < 35 ? t('fundamental.forward_pe_growth') : t('fundamental.forward_pe_expensive')} impact={data.forward_pe < 25 ? 'positive' : data.forward_pe < 40 ? 'neutral' : 'negative'} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Balance Sheet</div>
-      <CalcRow label="Debt/Equity" value={data.debt_to_equity} note={data.debt_to_equity < 0.5 ? 'Conservative leverage' : data.debt_to_equity < 1 ? 'Moderate' : 'High leverage'} impact={data.debt_to_equity < 0.8 ? 'positive' : data.debt_to_equity < 1.5 ? 'neutral' : 'negative'} />
-      <CalcRow label="Current Ratio" value={data.current_ratio} note={data.current_ratio > 1.5 ? 'Strong liquidity' : data.current_ratio > 1 ? 'Adequate' : 'Weak'} impact={data.current_ratio > 1.2 ? 'positive' : data.current_ratio > 0.8 ? 'neutral' : 'negative'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('fundamental.balance_sheet')}</div>
+      <CalcRow label={t('fundamental.debt_equity')} value={data.debt_to_equity} note={data.debt_to_equity < 0.5 ? t('fundamental.debt_equity_conservative') : data.debt_to_equity < 1 ? t('fundamental.debt_equity_moderate') : t('fundamental.debt_equity_high')} impact={data.debt_to_equity < 0.8 ? 'positive' : data.debt_to_equity < 1.5 ? 'neutral' : 'negative'} />
+      <CalcRow label={t('fundamental.current_ratio')} value={data.current_ratio} note={data.current_ratio > 1.5 ? t('fundamental.current_ratio_strong') : data.current_ratio > 1 ? t('fundamental.current_ratio_adequate') : t('fundamental.current_ratio_weak')} impact={data.current_ratio > 1.2 ? 'positive' : data.current_ratio > 0.8 ? 'neutral' : 'negative'} />
     </div>
   )
 }
 
 export function OptionsBreakdown({ data, score }: { data: any; score: number }) {
+  const { t } = useTranslation()
   if (!data) return null
 
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <SectionHeader title="Options Score" score={score} weight={0.20} color="#f59e0b" />
+      <SectionHeader title={t('options.title')} score={score} weight={0.20} color="#f59e0b" />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Sentiment</div>
-      <CalcRow label="Put/Call Ratio" value={data.put_call_ratio} note={data.put_call_ratio < 0.7 ? 'Very bullish (heavy call buying)' : data.put_call_ratio < 0.9 ? 'Bullish bias' : data.put_call_ratio > 1.3 ? 'Very bearish (heavy put buying)' : data.put_call_ratio > 1.1 ? 'Bearish bias' : 'Neutral'} impact={data.put_call_ratio < 0.8 ? 'positive' : data.put_call_ratio > 1.2 ? 'negative' : 'neutral'} />
-      <CalcRow label="Unusual Activity" value={data.unusual_activity ? 'Detected' : 'None'} impact={data.unusual_activity ? 'positive' : 'neutral'} note="Abnormal options volume detected" impactColor={data.unusual_activity ? '#22c55e' : undefined} />
-      <CalcRow label="Skew" value={data.skew} note={data.skew === 'mild_call_skew' ? 'More call buying than puts' : 'More put buying than calls'} impact={data.skew === 'mild_call_skew' ? 'positive' : 'negative'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('options.sentiment')}</div>
+      <CalcRow label={t('options.put_call')} value={data.put_call_ratio} note={data.put_call_ratio < 0.7 ? t('options.put_call_very_bullish') : data.put_call_ratio < 0.9 ? t('options.put_call_bullish') : data.put_call_ratio > 1.3 ? t('options.put_call_very_bearish') : data.put_call_ratio > 1.1 ? t('options.put_call_bearish') : t('options.put_call_neutral')} impact={data.put_call_ratio < 0.8 ? 'positive' : data.put_call_ratio > 1.2 ? 'negative' : 'neutral'} />
+      <CalcRow label={t('options.unusual_activity')} value={data.unusual_activity ? t('score.detected') : t('score.none')} impact={data.unusual_activity ? 'positive' : 'neutral'} note={t('options.unusual_note')} impactColor={data.unusual_activity ? '#22c55e' : undefined} />
+      <CalcRow label={t('options.skew')} value={data.skew} note={data.skew === 'mild_call_skew' ? t('options.skew_call') : t('options.skew_put')} impact={data.skew === 'mild_call_skew' ? 'positive' : 'negative'} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Volatility</div>
-      <CalcRow label="Implied Volatility" value={`${(data.implied_volatility * 100).toFixed(1)}%`} note={data.implied_volatility < 0.3 ? 'Low IV - cheap options' : data.implied_volatility < 0.6 ? 'Normal IV range' : data.implied_volatility < 0.8 ? 'Elevated IV' : 'Very high IV - expensive options'} impact={data.implied_volatility >= 0.3 && data.implied_volatility <= 0.6 ? 'positive' : data.implied_volatility > 0.8 ? 'negative' : 'neutral'} />
-      <CalcRow label="Expected Move" value={`±${data.expected_move_pct}%`} note={data.expected_move_pct >= 5 && data.expected_move_pct <= 10 ? 'Good expected move for earnings' : data.expected_move_pct > 15 ? 'Very large expected move' : 'Small expected move'} impact={data.expected_move_pct >= 5 && data.expected_move_pct <= 10 ? 'positive' : data.expected_move_pct > 15 ? 'negative' : 'neutral'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('options.volatility')}</div>
+      <CalcRow label={t('options.iv')} value={`${(data.implied_volatility * 100).toFixed(1)}%`} note={data.implied_volatility < 0.3 ? t('options.iv_low') : data.implied_volatility < 0.6 ? t('options.iv_normal') : data.implied_volatility < 0.8 ? t('options.iv_elevated') : t('options.iv_very_high')} impact={data.implied_volatility >= 0.3 && data.implied_volatility <= 0.6 ? 'positive' : data.implied_volatility > 0.8 ? 'negative' : 'neutral'} />
+      <CalcRow label={t('options.expected_move')} value={`±${data.expected_move_pct}%`} note={data.expected_move_pct >= 5 && data.expected_move_pct <= 10 ? t('options.expected_move_good') : data.expected_move_pct > 15 ? t('options.expected_move_large') : t('options.expected_move_small')} impact={data.expected_move_pct >= 5 && data.expected_move_pct <= 10 ? 'positive' : data.expected_move_pct > 15 ? 'negative' : 'neutral'} />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Volume</div>
-      <CalcRow label="Call Volume" value={data.call_volume?.toLocaleString()} impact="neutral" />
-      <CalcRow label="Put Volume" value={data.put_volume?.toLocaleString()} impact="neutral" />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('options.volume_section')}</div>
+      <CalcRow label={t('options.call_volume')} value={data.call_volume?.toLocaleString()} impact="neutral" />
+      <CalcRow label={t('options.put_volume')} value={data.put_volume?.toLocaleString()} impact="neutral" />
     </div>
   )
 }
 
 export function SentimentBreakdown({ analyst, news, score }: { analyst: any; news: any; score: number }) {
+  const { t } = useTranslation()
+
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <SectionHeader title="Sentiment Score" score={score} weight={0.10} color="#06b6d4" />
+      <SectionHeader title={t('sentiment.title')} score={score} weight={0.10} color="#06b6d4" />
 
       {analyst && (
         <>
-          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Analyst Ratings</div>
-          <CalcRow label="Buy / Hold / Sell" value={`${analyst.buy_ratings} / ${analyst.hold_ratings} / ${analyst.sell_ratings}`} impact={analyst.buy_ratings > analyst.sell_ratings * 3 ? 'positive' : 'neutral'} note={`${analyst.number_of_analysts} analysts covering`} />
-          <CalcRow label="Avg Price Target" value={`$${analyst.avg_price_target}`} impact="positive" note="Consensus target from analysts" impactColor="#22c55e" />
-          <CalcRow label="Consensus" value={analyst.consensus_trend} impact={analyst.consensus_trend === 'buy' || analyst.consensus_trend === 'strong-buy' ? 'positive' : 'neutral'} />
-          {analyst.recent_upgrades?.length > 0 && <CalcRow label="Recent Upgrades" value={analyst.recent_upgrades.join(', ')} impact="positive" note={`${analyst.recent_upgrades.length} upgrade(s)`} />}
-          {analyst.recent_downgrades?.length > 0 && <CalcRow label="Recent Downgrades" value={analyst.recent_downgrades.join(', ')} impact="negative" note={`${analyst.recent_downgrades.length} downgrade(s)`} />}
+          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('sentiment.analyst_ratings')}</div>
+          <CalcRow label={t('sentiment.buy_hold_sell')} value={`${analyst.buy_ratings} / ${analyst.hold_ratings} / ${analyst.sell_ratings}`} impact={analyst.buy_ratings > analyst.sell_ratings * 3 ? 'positive' : 'neutral'} note={t('sentiment.analysts_covering', { n: analyst.number_of_analysts })} />
+          <CalcRow label={t('sentiment.avg_price_target')} value={`$${analyst.avg_price_target}`} impact="positive" note={t('sentiment.target_note')} impactColor="#22c55e" />
+          <CalcRow label={t('sentiment.consensus')} value={analyst.consensus_trend} impact={analyst.consensus_trend === 'buy' || analyst.consensus_trend === 'strong-buy' ? 'positive' : 'neutral'} />
+          {analyst.recent_upgrades?.length > 0 && <CalcRow label={t('sentiment.recent_upgrades')} value={analyst.recent_upgrades.join(', ')} impact="positive" note={t('sentiment.n_upgrades', { n: analyst.recent_upgrades.length })} />}
+          {analyst.recent_downgrades?.length > 0 && <CalcRow label={t('sentiment.recent_downgrades')} value={analyst.recent_downgrades.join(', ')} impact="negative" note={t('sentiment.n_downgrades', { n: analyst.recent_downgrades.length })} />}
         </>
       )}
 
       {news && (
         <>
-          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>News Sentiment</div>
-          <CalcRow label="Sentiment Score" value={`${news.sentiment_score}`} note={news.sentiment_score > 0.6 ? 'Positive news flow' : news.sentiment_score < 0.4 ? 'Negative news flow' : 'Neutral'} impact={news.sentiment_score > 0.6 ? 'positive' : news.sentiment_score < 0.4 ? 'negative' : 'neutral'} />
-          <CalcRow label="Headlines Analyzed" value={news.headline_count} impact="neutral" />
-          {news.bullish_signals > 0 && <CalcRow label="Bullish Signals" value={news.bullish_signals} impact="positive" />}
-          {news.bearish_signals > 0 && <CalcRow label="Bearish Signals" value={news.bearish_signals} impact="negative" />}
+          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('sentiment.news')}</div>
+          <CalcRow label={t('sentiment.sentiment_score')} value={`${news.sentiment_score}`} note={news.sentiment_score > 0.6 ? t('sentiment.positive_news') : news.sentiment_score < 0.4 ? t('sentiment.negative_news') : t('options.put_call_neutral')} impact={news.sentiment_score > 0.6 ? 'positive' : news.sentiment_score < 0.4 ? 'negative' : 'neutral'} />
+          <CalcRow label={t('sentiment.headlines')} value={news.headline_count} impact="neutral" />
+          {news.bullish_signals > 0 && <CalcRow label={t('sentiment.bullish_signals')} value={news.bullish_signals} impact="positive" />}
+          {news.bearish_signals > 0 && <CalcRow label={t('sentiment.bearish_signals')} value={news.bearish_signals} impact="negative" />}
         </>
       )}
     </div>
@@ -165,26 +174,27 @@ export function SentimentBreakdown({ analyst, news, score }: { analyst: any; new
 }
 
 export function HistoricalBreakdown({ data, score }: { data: any; score: number }) {
+  const { t } = useTranslation()
   if (!data) return null
 
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <SectionHeader title="Historical Earnings Score" score={score} weight={0.15} color="#ec4899" />
+      <SectionHeader title={t('historical.title')} score={score} weight={0.15} color="#ec4899" />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Move Statistics</div>
-      <CalcRow label="Avg Move After Earnings" value={`±${data.avg_move_pct}%`} note={data.avg_move_pct > 8 ? 'Large historical moves' : data.avg_move_pct > 5 ? 'Moderate moves' : 'Small moves'} impact={data.avg_move_pct > 5 ? 'positive' : 'neutral'} />
-      <CalcRow label="Median Move" value={`±${data.median_move_pct}%`} impact="neutral" note="Less sensitive to outliers" />
-      <CalcRow label="Largest Upside" value={`+${data.largest_upside_pct}%`} impact="positive" impactColor="#22c55e" />
-      <CalcRow label="Largest Downside" value={`${data.largest_downside_pct}%`} impact="negative" impactColor="#ef4444" />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.move_stats')}</div>
+      <CalcRow label={t('historical.avg_move')} value={`±${data.avg_move_pct}%`} note={data.avg_move_pct > 8 ? t('historical.avg_move_large') : data.avg_move_pct > 5 ? t('historical.avg_move_moderate') : t('historical.avg_move_small')} impact={data.avg_move_pct > 5 ? 'positive' : 'neutral'} />
+      <CalcRow label={t('historical.median_move')} value={`±${data.median_move_pct}%`} impact="neutral" note={t('historical.median_note')} />
+      <CalcRow label={t('historical.largest_upside')} value={`+${data.largest_upside_pct}%`} impact="positive" impactColor="#22c55e" />
+      <CalcRow label={t('historical.largest_downside')} value={`${data.largest_downside_pct}%`} impact="negative" impactColor="#ef4444" />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Directional Bias</div>
-      <CalcRow label="Avg 1-Day Return" value={`${data.avg_1d_return}%`} note={data.avg_1d_return > 2 ? 'Strong positive bias' : data.avg_1d_return > 0 ? 'Slight positive bias' : 'Negative bias'} impact={data.avg_1d_return > 0 ? 'positive' : 'negative'} impactColor={data.avg_1d_return > 0 ? '#22c55e' : '#ef4444'} />
-      <CalcRow label="Gap Up Rate" value={`${data.gap_up_pct}%`} note={data.gap_up_pct > 60 ? 'Usually gaps up' : 'Mixed gaps'} impact={data.gap_up_pct > 60 ? 'positive' : 'neutral'} />
-      <CalcRow label="Gap Down Rate" value={`${data.gap_down_pct}%`} impact={data.gap_down_pct > 60 ? 'negative' : 'neutral'} />
+      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.directional_bias')}</div>
+      <CalcRow label={t('historical.avg_1d')} value={`${data.avg_1d_return}%`} note={data.avg_1d_return > 2 ? t('historical.avg_1d_strong') : data.avg_1d_return > 0 ? t('historical.avg_1d_slight') : t('historical.avg_1d_negative')} impact={data.avg_1d_return > 0 ? 'positive' : 'negative'} impactColor={data.avg_1d_return > 0 ? '#22c55e' : '#ef4444'} />
+      <CalcRow label={t('historical.gap_up_rate')} value={`${data.gap_up_pct}%`} note={data.gap_up_pct > 60 ? t('historical.gap_up_note') : t('historical.gap_mixed')} impact={data.gap_up_pct > 60 ? 'positive' : 'neutral'} />
+      <CalcRow label={t('historical.gap_down_rate')} value={`${data.gap_down_pct}%`} impact={data.gap_down_pct > 60 ? 'negative' : 'neutral'} />
 
       {data.recent_moves?.length > 0 && (
         <>
-          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>Recent Moves</div>
+          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.recent_moves')}</div>
           <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
             {data.recent_moves.map((m: any, i: number) => (
               <span key={i} style={{
@@ -203,22 +213,24 @@ export function HistoricalBreakdown({ data, score }: { data: any; score: number 
 }
 
 export function MacroBreakdown({ data, score }: { data: any; score: number }) {
+  const { t } = useTranslation()
   if (!data) return null
 
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <SectionHeader title="Macro Score" score={score} weight={0.05} color="#64748b" />
+      <SectionHeader title={t('macro.title')} score={score} weight={0.05} color="#64748b" />
 
-      <CalcRow label="S&P 500 Trend" value={data.sp500_trend} impact={data.sp500_trend === 'bullish' ? 'positive' : data.sp500_trend === 'bearish' ? 'negative' : 'neutral'} note="Overall market direction" />
-      <CalcRow label="Nasdaq Trend" value={data.nasdaq_trend} impact={data.nasdaq_trend === 'bullish' ? 'positive' : data.nasdaq_trend === 'bearish' ? 'negative' : 'neutral'} note="Tech sector direction" />
-      <CalcRow label="Market Regime" value={data.market_regime?.replace('_', ' ')} impact={data.market_regime === 'risk_on' ? 'positive' : data.market_regime === 'risk_off' ? 'negative' : 'neutral'} note={data.market_regime === 'risk_on' ? 'Favorable for earnings trades' : data.market_regime === 'risk_off' ? 'Caution warranted' : 'Mixed signals'} />
-      <CalcRow label="VIX" value={data.vix} impact={data.vix < 15 ? 'positive' : data.vix > 30 ? 'negative' : 'neutral'} note={data.vix < 15 ? 'Low fear - favorable' : data.vix < 20 ? 'Normal' : data.vix > 30 ? 'High fear - caution' : 'Elevated'} />
-      <CalcRow label="Market Breadth" value={data.breadth} impact={data.breadth === 'healthy' ? 'positive' : 'negative'} note={data.breadth === 'healthy' ? 'Broad participation' : 'Narrow market'} />
+      <CalcRow label={t('macro.sp500_trend')} value={data.sp500_trend} impact={data.sp500_trend === 'bullish' ? 'positive' : data.sp500_trend === 'bearish' ? 'negative' : 'neutral'} note={t('macro.sp500_note')} />
+      <CalcRow label={t('macro.nasdaq_trend')} value={data.nasdaq_trend} impact={data.nasdaq_trend === 'bullish' ? 'positive' : data.nasdaq_trend === 'bearish' ? 'negative' : 'neutral'} note={t('macro.nasdaq_note')} />
+      <CalcRow label={t('macro.regime')} value={data.market_regime?.replace('_', ' ')} impact={data.market_regime === 'risk_on' ? 'positive' : data.market_regime === 'risk_off' ? 'negative' : 'neutral'} note={data.market_regime === 'risk_on' ? t('macro.regime_favorable') : data.market_regime === 'risk_off' ? t('macro.regime_caution') : t('macro.regime_mixed')} />
+      <CalcRow label={t('macro.vix')} value={data.vix} impact={data.vix < 15 ? 'positive' : data.vix > 30 ? 'negative' : 'neutral'} note={data.vix < 15 ? t('macro.vix_low') : data.vix < 20 ? t('macro.vix_normal') : data.vix > 30 ? t('macro.vix_high') : t('macro.vix_elevated')} />
+      <CalcRow label={t('macro.breadth')} value={data.breadth} impact={data.breadth === 'healthy' ? 'positive' : 'negative'} note={data.breadth === 'healthy' ? t('macro.breadth_healthy') : t('macro.breadth_narrow')} />
     </div>
   )
 }
 
 export function OverallBreakdown({ scores }: { scores: any }) {
+  const { t } = useTranslation()
   const weights: Record<string, number> = {
     technical: 0.30, fundamental: 0.20, options: 0.20,
     historical: 0.15, sentiment: 0.10, macro: 0.05,
@@ -233,14 +245,14 @@ export function OverallBreakdown({ scores }: { scores: any }) {
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h3 style={{ fontSize: '15px', fontWeight: '600' }}>Overall Score Calculation</h3>
+        <h3 style={{ fontSize: '15px', fontWeight: '600' }}>{t('overall.title')}</h3>
         <div style={{ fontSize: '28px', fontWeight: '700', color: overall >= 80 ? '#22c55e' : overall >= 60 ? '#eab308' : '#ef4444' }}>
           {overall.toFixed(1)}
         </div>
       </div>
 
       <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '16px' }}>
-        Weighted average: Σ (category_score × weight)
+        {t('overall.formula_desc')}
       </div>
 
       {Object.entries(weights).map(([category, weight]) => (
@@ -248,7 +260,7 @@ export function OverallBreakdown({ scores }: { scores: any }) {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <div style={{ width: '8px', height: '8px', borderRadius: '2px', background: colors[category] }} />
-              <span style={{ fontSize: '13px', textTransform: 'capitalize' }}>{category}</span>
+              <span style={{ fontSize: '13px', textTransform: 'capitalize' }}>{t(`overall.category.${category}`)}</span>
               <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>× {Math.round(weight * 100)}%</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -261,7 +273,7 @@ export function OverallBreakdown({ scores }: { scores: any }) {
       ))}
 
       <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between' }}>
-        <span style={{ fontSize: '13px', fontWeight: '600' }}>Final Score</span>
+        <span style={{ fontSize: '13px', fontWeight: '600' }}>{t('overall.final_score')}</span>
         <span style={{ fontSize: '13px', fontWeight: '600' }}>
           {Object.entries(weights).map(([k, w]) => `${(scores[k] || 0)}×${Math.round(w * 100)}%`).join(' + ')} = <strong>{overall.toFixed(1)}</strong>
         </span>

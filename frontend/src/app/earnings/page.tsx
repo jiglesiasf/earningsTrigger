@@ -3,8 +3,10 @@
 import { useEffect, useState } from 'react'
 import { getLatestAnalysis } from '@/lib/api'
 import { AnalysisOutput } from '@/lib/types'
+import { useTranslation } from '@/lib/i18n'
 
 export default function EarningsCalendar() {
+  const { t } = useTranslation()
   const [data, setData] = useState<AnalysisOutput | null>(null)
   const [loading, setLoading] = useState(true)
   const [sortBy, setSortBy] = useState<'days' | 'score'>('days')
@@ -19,7 +21,7 @@ export default function EarningsCalendar() {
   if (loading) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '60vh' }}>
-        <p style={{ color: 'var(--text-secondary)' }}>Loading...</p>
+        <p style={{ color: 'var(--text-secondary)' }}>{t('earnings.loading')}</p>
       </div>
     )
   }
@@ -27,8 +29,8 @@ export default function EarningsCalendar() {
   if (!data || data.earnings_universe.length === 0) {
     return (
       <div style={{ textAlign: 'center', padding: '120px 24px' }}>
-        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '8px' }}>Earnings Calendar</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>No upcoming earnings data available.</p>
+        <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '8px' }}>{t('earnings.empty_title')}</h1>
+        <p style={{ color: 'var(--text-secondary)' }}>{t('earnings.empty_message')}</p>
       </div>
     )
   }
@@ -38,13 +40,24 @@ export default function EarningsCalendar() {
     return (b.scores?.overall || 0) - (a.scores?.overall || 0)
   })
 
+  const headers = [
+    t('earnings.col_ticker'),
+    t('earnings.col_company'),
+    t('earnings.col_sector'),
+    t('earnings.col_date'),
+    t('earnings.col_days'),
+    t('earnings.col_price'),
+    t('earnings.col_score'),
+    t('earnings.col_decision'),
+  ]
+
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
         <div>
-          <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '4px' }}>Earnings Calendar</h1>
+          <h1 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '4px' }}>{t('earnings.title')}</h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
-            {data.earnings_universe.length} stocks reporting in the next 14 days
+            {t('earnings.subtitle', { count: data.earnings_universe.length })}
           </p>
         </div>
         <div style={{ display: 'flex', gap: '4px', background: 'var(--bg-secondary)', borderRadius: '8px', padding: '4px' }}>
@@ -61,7 +74,7 @@ export default function EarningsCalendar() {
               color: sortBy === 'days' ? 'white' : 'var(--text-secondary)',
             }}
           >
-            By Date
+            {t('earnings.sort_date')}
           </button>
           <button
             onClick={() => setSortBy('score')}
@@ -76,7 +89,7 @@ export default function EarningsCalendar() {
               color: sortBy === 'score' ? 'white' : 'var(--text-secondary)',
             }}
           >
-            By Score
+            {t('earnings.sort_score')}
           </button>
         </div>
       </div>
@@ -90,7 +103,7 @@ export default function EarningsCalendar() {
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr style={{ background: 'var(--bg-secondary)' }}>
-              {['Ticker', 'Company', 'Sector', 'Date', 'Days', 'Price', 'Score', 'Decision'].map(h => (
+              {headers.map(h => (
                 <th key={h} style={{
                   padding: '12px 16px',
                   textAlign: 'left',
@@ -120,7 +133,7 @@ export default function EarningsCalendar() {
                 <td style={{ padding: '12px 16px', color: 'var(--text-secondary)', fontSize: '13px' }}>{stock.company}</td>
                 <td style={{ padding: '12px 16px', color: 'var(--text-muted)', fontSize: '13px' }}>{stock.sector}</td>
                 <td style={{ padding: '12px 16px', color: 'var(--text-secondary)', fontSize: '13px' }}>{stock.earnings_date}</td>
-                <td style={{ padding: '12px 16px', fontWeight: '600', fontSize: '14px', textAlign: 'center' }}>{stock.days_until_earnings}d</td>
+                <td style={{ padding: '12px 16px', fontWeight: '600', fontSize: '14px', textAlign: 'center' }}>{stock.days_until_earnings}{t('earnings.days_suffix')}</td>
                 <td style={{ padding: '12px 16px', fontWeight: '600', fontSize: '14px' }}>${stock.price}</td>
                 <td style={{ padding: '12px 16px' }}>
                   <span style={{
