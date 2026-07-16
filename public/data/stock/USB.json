@@ -1,0 +1,174 @@
+{
+  "ticker": "USB",
+  "company": "U.S. Bancorp",
+  "sector": "Financial Services",
+  "price": {
+    "current": 63.01,
+    "open": 62.15,
+    "high": 63.16,
+    "low": 62.12,
+    "previous_close": 62.14,
+    "change_pct": 1.4,
+    "market_cap": 98152669184
+  },
+  "trade_parameters": {
+    "buy_above": 63.01,
+    "stop_loss": 60.6,
+    "take_profit": 64.17,
+    "expected_move": "\u00b11.84%",
+    "expected_move_dollars": "\u00b1$1.16",
+    "risk_reward": 0.48,
+    "support_levels": [
+      60.6,
+      56.92,
+      55.02
+    ],
+    "resistance_levels": [
+      55.02,
+      56.38,
+      56.57
+    ],
+    "expected_return_pct": 1.84,
+    "max_drawdown_pct": -3.82
+  },
+  "scores": {
+    "technical": 89,
+    "fundamental": 67,
+    "options": 44,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 59.7
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 60.72,
+      "sma_50": 57.04,
+      "sma_100": 55.23,
+      "sma_200": 52.8,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 67.94,
+      "macd": 1.6465,
+      "macd_signal": 1.6659,
+      "macd_histogram": -0.0195,
+      "stochastic_rsi": 29.38,
+      "adx": 60.48,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 21.98,
+      "historical_volatility_60": 23.22
+    },
+    "price_structure": {
+      "resistance": [
+        55.02,
+        56.38,
+        56.57
+      ],
+      "support": [
+        60.6,
+        56.92,
+        55.02
+      ],
+      "high_20d": 63.39,
+      "high_30d": 63.39,
+      "high_52w": 63.39,
+      "distance_to_resistance_pct": 0.6,
+      "distance_to_support_pct": 3.82,
+      "nearest_resistance": 63.39,
+      "nearest_support": 60.6
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 4.41,
+    "eps_growth_yoy": 21.9,
+    "gross_margin": null,
+    "operating_margin": 37.84,
+    "net_margin": 29.29,
+    "roe": 12.35,
+    "debt_to_equity": null,
+    "current_ratio": null,
+    "cash": 52665999360,
+    "total_debt": 82372001792,
+    "net_cash": -29706002432,
+    "forward_pe": 11.1,
+    "peg_ratio": 2.27,
+    "ev_ebitda": null,
+    "price_to_sales": 3.68
+  },
+  "options": {
+    "implied_volatility": 0.0642,
+    "put_call_ratio": 2.5,
+    "call_volume": 2626,
+    "put_volume": 6561,
+    "call_open_interest": 0,
+    "put_open_interest": 25,
+    "expected_move": 1.16,
+    "expected_move_pct": 1.84,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 21,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 67.43,
+    "target_high": 75.0,
+    "target_low": 61.0,
+    "target_median": 67.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 21
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-07-16",
+  "days_until_earnings": 0,
+  "earnings_time": "unknown"
+}

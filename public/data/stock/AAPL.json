@@ -1,0 +1,174 @@
+{
+  "ticker": "AAPL",
+  "company": "Apple Inc.",
+  "sector": "Technology",
+  "price": {
+    "current": 327.5,
+    "open": 317.62,
+    "high": 328.73,
+    "low": 317.32,
+    "previous_close": 314.86,
+    "change_pct": 4.01,
+    "market_cap": 4810109091840
+  },
+  "trade_parameters": {
+    "buy_above": 337.32,
+    "stop_loss": 305.02,
+    "take_profit": 338.14,
+    "expected_move": "\u00b13.25%",
+    "expected_move_dollars": "\u00b1$10.64",
+    "risk_reward": 0.03,
+    "support_levels": [
+      305.02,
+      294.91,
+      287.38
+    ],
+    "resistance_levels": [
+      275.52,
+      286.96,
+      302.42
+    ],
+    "expected_return_pct": 0.24,
+    "max_drawdown_pct": -9.58
+  },
+  "scores": {
+    "technical": 85,
+    "fundamental": 70,
+    "options": 82,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 64.4
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 306.78,
+      "sma_50": 300.5,
+      "sma_100": 280.74,
+      "sma_200": 273.09,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 70.23,
+      "macd": 6.6111,
+      "macd_signal": 3.848,
+      "macd_histogram": 2.7631,
+      "stochastic_rsi": 100.0,
+      "adx": 26.97,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 36.53,
+      "historical_volatility_60": 28.55
+    },
+    "price_structure": {
+      "resistance": [
+        275.52,
+        286.96,
+        302.42
+      ],
+      "support": [
+        305.02,
+        294.91,
+        287.38
+      ],
+      "high_20d": 328.73,
+      "high_30d": 328.73,
+      "high_52w": 328.73,
+      "distance_to_resistance_pct": 0.38,
+      "distance_to_support_pct": 6.86,
+      "nearest_resistance": 328.73,
+      "nearest_support": 305.02
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 6.43,
+    "eps_growth_yoy": 22.7,
+    "gross_margin": 47.86,
+    "operating_margin": 32.27,
+    "net_margin": 27.15,
+    "roe": 141.47,
+    "debt_to_equity": 79.55,
+    "current_ratio": 1.07,
+    "cash": 68507000832,
+    "total_debt": 84710998016,
+    "net_cash": -16203997184,
+    "forward_pe": 34.04,
+    "peg_ratio": 2.54,
+    "ev_ebitda": 30.17,
+    "price_to_sales": 10.65
+  },
+  "options": {
+    "implied_volatility": 0.1133,
+    "put_call_ratio": 0.68,
+    "call_volume": 296361,
+    "put_volume": 202480,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 10.64,
+    "expected_move_pct": 3.25,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 43,
+    "sell_ratings": 0,
+    "avg_price_target": 315.79,
+    "target_high": 400.0,
+    "target_low": 215.0,
+    "target_median": 315.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 43
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-07-30",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}

@@ -1,0 +1,174 @@
+{
+  "ticker": "SHW",
+  "company": "Sherwin-Williams Company (The)",
+  "sector": "Basic Materials",
+  "price": {
+    "current": 332.29,
+    "open": 329.99,
+    "high": 335.51,
+    "low": 328.6,
+    "previous_close": 328.5,
+    "change_pct": 1.15,
+    "market_cap": 81954553856
+  },
+  "trade_parameters": {
+    "buy_above": 332.29,
+    "stop_loss": 330.65,
+    "take_profit": 339.37,
+    "expected_move": "\u00b12.13%",
+    "expected_move_dollars": "\u00b1$7.08",
+    "risk_reward": 4.32,
+    "support_levels": [
+      330.65,
+      327.86,
+      312.59
+    ],
+    "resistance_levels": [
+      315.56,
+      324.07,
+      327.33
+    ],
+    "expected_return_pct": 2.13,
+    "max_drawdown_pct": -0.49
+  },
+  "scores": {
+    "technical": 92,
+    "fundamental": 47,
+    "options": 54,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 56.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 331.47,
+      "sma_50": 318.13,
+      "sma_100": 324.25,
+      "sma_200": 331.85,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 49.22,
+      "macd": 4.2081,
+      "macd_signal": 6.1746,
+      "macd_histogram": -1.9665,
+      "stochastic_rsi": 0.0,
+      "adx": 46.57,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 27.39,
+      "historical_volatility_60": 28.47
+    },
+    "price_structure": {
+      "resistance": [
+        315.56,
+        324.07,
+        327.33
+      ],
+      "support": [
+        330.65,
+        327.86,
+        312.59
+      ],
+      "high_20d": 353.67,
+      "high_30d": 353.67,
+      "high_52w": 376.95,
+      "distance_to_resistance_pct": 13.44,
+      "distance_to_support_pct": 0.49,
+      "nearest_resistance": 376.95,
+      "nearest_support": 330.65
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 2.06,
+    "eps_growth_yoy": -2.75,
+    "gross_margin": 49.04,
+    "operating_margin": 14.16,
+    "net_margin": 10.86,
+    "roe": 60.72,
+    "debt_to_equity": 329.52,
+    "current_ratio": 0.86,
+    "cash": 216900000,
+    "total_debt": 14601400320,
+    "net_cash": -14384500320,
+    "forward_pe": 25.05,
+    "peg_ratio": 2.54,
+    "ev_ebitda": 21.04,
+    "price_to_sales": 3.42
+  },
+  "options": {
+    "implied_volatility": 0.0742,
+    "put_call_ratio": 0.96,
+    "call_volume": 147,
+    "put_volume": 141,
+    "call_open_interest": 0,
+    "put_open_interest": 2,
+    "expected_move": 7.07,
+    "expected_move_pct": 2.13,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 20,
+    "sell_ratings": 0,
+    "avg_price_target": 378.9,
+    "target_high": 420.0,
+    "target_low": 330.0,
+    "target_median": 379.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 20
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 4.32:1",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

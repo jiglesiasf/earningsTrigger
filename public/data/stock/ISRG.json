@@ -1,0 +1,174 @@
+{
+  "ticker": "ISRG",
+  "company": "Intuitive Surgical, Inc.",
+  "sector": "Healthcare",
+  "price": {
+    "current": 388.97,
+    "open": 378.55,
+    "high": 393.96,
+    "low": 378.5,
+    "previous_close": 379.5,
+    "change_pct": 2.5,
+    "market_cap": 137758720000
+  },
+  "trade_parameters": {
+    "buy_above": 388.97,
+    "stop_loss": 378.5,
+    "take_profit": 439.77,
+    "expected_move": "\u00b113.06%",
+    "expected_move_dollars": "\u00b1$50.8",
+    "risk_reward": 4.85,
+    "support_levels": [
+      449.59,
+      441.98,
+      420.56
+    ],
+    "resistance_levels": [
+      412.54,
+      415.99,
+      422.46
+    ],
+    "expected_return_pct": 13.06,
+    "max_drawdown_pct": -2.69
+  },
+  "scores": {
+    "technical": 60,
+    "fundamental": 94,
+    "options": 88,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 65.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 407.89,
+      "sma_50": 420.09,
+      "sma_100": 447.53,
+      "sma_200": 487.22,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 44.43,
+      "macd": -6.1164,
+      "macd_signal": -4.472,
+      "macd_histogram": -1.6444,
+      "stochastic_rsi": 47.15,
+      "adx": 22.94,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 40.2,
+      "historical_volatility_60": 38.28
+    },
+    "price_structure": {
+      "resistance": [
+        412.54,
+        415.99,
+        422.46
+      ],
+      "support": [
+        449.59,
+        441.98,
+        420.56
+      ],
+      "high_20d": 443.84,
+      "high_30d": 443.84,
+      "high_52w": 603.88,
+      "distance_to_resistance_pct": 6.06,
+      "distance_to_support_pct": 2.69,
+      "nearest_resistance": 412.54,
+      "nearest_support": 378.5
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 20.51,
+    "eps_growth_yoy": 22.59,
+    "gross_margin": 66.29,
+    "operating_margin": 30.87,
+    "net_margin": 28.15,
+    "roe": 17.23,
+    "debt_to_equity": null,
+    "current_ratio": 4.61,
+    "cash": 4517300224,
+    "total_debt": 0,
+    "net_cash": null,
+    "forward_pe": 33.02,
+    "peg_ratio": 1.99,
+    "ev_ebitda": 34.32,
+    "price_to_sales": 13.02
+  },
+  "options": {
+    "implied_volatility": 0.4554,
+    "put_call_ratio": 0.66,
+    "call_volume": 3721,
+    "put_volume": 2439,
+    "call_open_interest": 84,
+    "put_open_interest": 212,
+    "expected_move": 50.79,
+    "expected_move_pct": 13.06,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 29,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 552.08,
+    "target_high": 750.0,
+    "target_low": 366.0,
+    "target_median": 550.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 29
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, positive options flow, favorable risk/reward ratio of 4.85:1",
+  "earnings_date": "2026-07-16",
+  "days_until_earnings": 0,
+  "earnings_time": "unknown"
+}

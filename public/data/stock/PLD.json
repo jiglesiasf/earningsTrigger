@@ -1,0 +1,174 @@
+{
+  "ticker": "PLD",
+  "company": "Prologis, Inc.",
+  "sector": "Real Estate",
+  "price": {
+    "current": 143.42,
+    "open": 143.01,
+    "high": 144.34,
+    "low": 141.62,
+    "previous_close": 142.49,
+    "change_pct": 0.65,
+    "market_cap": 136836448256
+  },
+  "trade_parameters": {
+    "buy_above": 143.86,
+    "stop_loss": 139.63,
+    "take_profit": 158.91,
+    "expected_move": "\u00b110.8%",
+    "expected_move_dollars": "\u00b1$15.49",
+    "risk_reward": 3.56,
+    "support_levels": [
+      139.63,
+      139.43,
+      139.16
+    ],
+    "resistance_levels": [
+      141.75,
+      143.24,
+      143.86
+    ],
+    "expected_return_pct": 10.46,
+    "max_drawdown_pct": -2.94
+  },
+  "scores": {
+    "technical": 99,
+    "fundamental": 40,
+    "options": 88,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 66.1
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 141.61,
+      "sma_50": 142.13,
+      "sma_100": 138.84,
+      "sma_200": 131.65,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 56.52,
+      "macd": -0.0223,
+      "macd_signal": -0.3507,
+      "macd_histogram": 0.3284,
+      "stochastic_rsi": 100.0,
+      "adx": 24.17,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 26.07,
+      "historical_volatility_60": 22.74
+    },
+    "price_structure": {
+      "resistance": [
+        141.75,
+        143.24,
+        143.86
+      ],
+      "support": [
+        139.63,
+        139.43,
+        139.16
+      ],
+      "high_20d": 148.46,
+      "high_30d": 149.1,
+      "high_52w": 149.1,
+      "distance_to_resistance_pct": 0.31,
+      "distance_to_support_pct": 2.64,
+      "nearest_resistance": 143.86,
+      "nearest_support": 139.63
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 7.18,
+    "eps_growth_yoy": -11.22,
+    "gross_margin": 75.6,
+    "operating_margin": 38.49,
+    "net_margin": 39.65,
+    "roe": 6.84,
+    "debt_to_equity": 60.93,
+    "current_ratio": 0.53,
+    "cash": 871209984,
+    "total_debt": 35310190592,
+    "net_cash": -34438980608,
+    "forward_pe": 42.31,
+    "peg_ratio": 110.84,
+    "ev_ebitda": 26.32,
+    "price_to_sales": 14.59
+  },
+  "options": {
+    "implied_volatility": 0.3765,
+    "put_call_ratio": 0.38,
+    "call_volume": 3388,
+    "put_volume": 1271,
+    "call_open_interest": 16,
+    "put_open_interest": 1,
+    "expected_move": 15.48,
+    "expected_move_pct": 10.8,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 14,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 153.43,
+    "target_high": 170.0,
+    "target_low": 138.0,
+    "target_median": 152.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 14
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow, favorable risk/reward ratio of 3.56:1",
+  "earnings_date": "2026-07-16",
+  "days_until_earnings": 0,
+  "earnings_time": "unknown"
+}

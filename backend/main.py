@@ -153,7 +153,7 @@ def run_analysis():
 
     print("\n[7/7] Generating output...")
     output = create_output(top_picks, market_regime, watchlist, analyzed)
-    save_output(output)
+    save_output(output, analyzed)
 
     print("\n" + "=" * 60)
     print("RESULTS")
@@ -209,7 +209,7 @@ def create_output(top_picks, market_regime, watchlist, all_analyzed):
     }
 
 
-def save_output(output):
+def save_output(output, all_analyzed):
     ensure_dir(DATA_OUTPUT_DIR)
 
     latest_path = os.path.join(DATA_OUTPUT_DIR, "latest.json")
@@ -218,7 +218,7 @@ def save_output(output):
     date_path = os.path.join(DATA_OUTPUT_DIR, "history", f"{output['run_date']}.json")
     save_json(output, date_path)
 
-    for stock in output.get("all_analyzed", []):
+    for stock in all_analyzed:
         ticker = stock["ticker"]
         ticker_path = os.path.join(DATA_OUTPUT_DIR, "stock", f"{ticker}.json")
         save_json(stock, ticker_path)

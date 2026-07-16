@@ -1,0 +1,174 @@
+{
+  "ticker": "ABT",
+  "company": "Abbott Laboratories",
+  "sector": "Healthcare",
+  "price": {
+    "current": 89.27,
+    "open": 87.99,
+    "high": 89.88,
+    "low": 87.64,
+    "previous_close": 88.33,
+    "change_pct": 1.06,
+    "market_cap": 155491647488
+  },
+  "trade_parameters": {
+    "buy_above": 89.27,
+    "stop_loss": 86.59,
+    "take_profit": 93.97,
+    "expected_move": "\u00b15.26%",
+    "expected_move_dollars": "\u00b1$4.7",
+    "risk_reward": 1.75,
+    "support_levels": [
+      90.08,
+      89.97,
+      86.59
+    ],
+    "resistance_levels": [
+      87.67,
+      88.21,
+      88.71
+    ],
+    "expected_return_pct": 5.26,
+    "max_drawdown_pct": -3.0
+  },
+  "scores": {
+    "technical": 73,
+    "fundamental": 50,
+    "options": 72,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 57.0
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 91.24,
+      "sma_50": 88.54,
+      "sma_100": 95.69,
+      "sma_200": 108.61,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 48.54,
+      "macd": 0.5417,
+      "macd_signal": 1.0019,
+      "macd_histogram": -0.4602,
+      "stochastic_rsi": 11.64,
+      "adx": 27.0,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 30.41,
+      "historical_volatility_60": 28.12
+    },
+    "price_structure": {
+      "resistance": [
+        87.67,
+        88.21,
+        88.71
+      ],
+      "support": [
+        90.08,
+        89.97,
+        86.59
+      ],
+      "high_20d": 97.44,
+      "high_30d": 97.44,
+      "high_52w": 134.38,
+      "distance_to_resistance_pct": 50.54,
+      "distance_to_support_pct": 3.0,
+      "nearest_resistance": 134.38,
+      "nearest_support": 86.59
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 5.67,
+    "eps_growth_yoy": -51.31,
+    "gross_margin": 56.5,
+    "operating_margin": 13.47,
+    "net_margin": 13.9,
+    "roe": 12.33,
+    "debt_to_equity": 64.77,
+    "current_ratio": 1.39,
+    "cash": 7295000064,
+    "total_debt": 34136000512,
+    "net_cash": -26841000448,
+    "forward_pe": 14.74,
+    "peg_ratio": 1.32,
+    "ev_ebitda": 15.58,
+    "price_to_sales": 3.45
+  },
+  "options": {
+    "implied_volatility": 0.1836,
+    "put_call_ratio": 0.89,
+    "call_volume": 7577,
+    "put_volume": 6720,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 4.7,
+    "expected_move_pct": 5.26,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 24,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 116.54,
+    "target_high": 135.0,
+    "target_low": 92.0,
+    "target_median": 115.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 24
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "mixed signals across analysis categories",
+  "earnings_date": "2026-07-16",
+  "days_until_earnings": 0,
+  "earnings_time": "unknown"
+}

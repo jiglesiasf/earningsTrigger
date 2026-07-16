@@ -1,0 +1,174 @@
+{
+  "ticker": "SLB",
+  "company": "SLB Limited",
+  "sector": "Energy",
+  "price": {
+    "current": 47.55,
+    "open": 47.7,
+    "high": 48.03,
+    "low": 46.83,
+    "previous_close": 47.54,
+    "change_pct": 0.02,
+    "market_cap": 71089987584
+  },
+  "trade_parameters": {
+    "buy_above": 48.73,
+    "stop_loss": 44.59,
+    "take_profit": 50.5,
+    "expected_move": "\u00b16.2%",
+    "expected_move_dollars": "\u00b1$2.95",
+    "risk_reward": 0.43,
+    "support_levels": [
+      54.82,
+      54.81,
+      54.45
+    ],
+    "resistance_levels": [
+      48.73,
+      55.97,
+      56.6
+    ],
+    "expected_return_pct": 3.63,
+    "max_drawdown_pct": -8.5
+  },
+  "scores": {
+    "technical": 97,
+    "fundamental": 27,
+    "options": 90,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 63.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 48.3,
+      "sma_50": 52.34,
+      "sma_100": 51.45,
+      "sma_200": 45.5,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 56.71,
+      "macd": -1.507,
+      "macd_signal": -1.8728,
+      "macd_histogram": 0.3658,
+      "stochastic_rsi": 100.0,
+      "adx": 57.6,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 31.1,
+      "historical_volatility_60": 32.28
+    },
+    "price_structure": {
+      "resistance": [
+        48.73,
+        55.97,
+        56.6
+      ],
+      "support": [
+        54.82,
+        54.81,
+        54.45
+      ],
+      "high_20d": 54.37,
+      "high_30d": 58.12,
+      "high_52w": 58.51,
+      "distance_to_resistance_pct": 2.48,
+      "distance_to_support_pct": 6.23,
+      "nearest_resistance": 48.73,
+      "nearest_support": 44.59
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": -1.6,
+    "eps_growth_yoy": -24.44,
+    "gross_margin": 17.8,
+    "operating_margin": 12.27,
+    "net_margin": 9.26,
+    "roe": 14.07,
+    "debt_to_equity": 42.52,
+    "current_ratio": 1.34,
+    "cash": 3452000000,
+    "total_debt": 11628999680,
+    "net_cash": -8176999680,
+    "forward_pe": 14.42,
+    "peg_ratio": 1.64,
+    "ev_ebitda": 10.71,
+    "price_to_sales": 1.98
+  },
+  "options": {
+    "implied_volatility": 0.2164,
+    "put_call_ratio": 0.65,
+    "call_volume": 1559,
+    "put_volume": 1013,
+    "call_open_interest": 0,
+    "put_open_interest": 206,
+    "expected_move": 2.95,
+    "expected_move_pct": 6.2,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 29,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 61.28,
+    "target_high": 71.0,
+    "target_low": 40.0,
+    "target_median": 62.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 29
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-07-24",
+  "days_until_earnings": 8,
+  "earnings_time": "unknown"
+}

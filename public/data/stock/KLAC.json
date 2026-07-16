@@ -1,0 +1,174 @@
+{
+  "ticker": "KLAC",
+  "company": "KLA Corporation",
+  "sector": "Technology",
+  "price": {
+    "current": 224.5,
+    "open": 235.96,
+    "high": 236.55,
+    "low": 216.47,
+    "previous_close": 230.37,
+    "change_pct": -2.55,
+    "market_cap": 293258788864
+  },
+  "trade_parameters": {
+    "buy_above": 224.5,
+    "stop_loss": 210.86,
+    "take_profit": 270.9,
+    "expected_move": "\u00b120.67%",
+    "expected_move_dollars": "\u00b1$46.4",
+    "risk_reward": 3.4,
+    "support_levels": [
+      235.0,
+      210.86,
+      192.77
+    ],
+    "resistance_levels": [
+      189.51,
+      190.87,
+      193.69
+    ],
+    "expected_return_pct": 20.67,
+    "max_drawdown_pct": -6.08
+  },
+  "scores": {
+    "technical": 74,
+    "fundamental": 85,
+    "options": 75,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 65.0
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 234.45,
+      "sma_50": 215.81,
+      "sma_100": 187.33,
+      "sma_200": 156.6,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 46.1,
+      "macd": 1.4061,
+      "macd_signal": 6.7098,
+      "macd_histogram": -5.3037,
+      "stochastic_rsi": 21.08,
+      "adx": 18.97,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 108.95,
+      "historical_volatility_60": 82.47
+    },
+    "price_structure": {
+      "resistance": [
+        189.51,
+        190.87,
+        193.69
+      ],
+      "support": [
+        235.0,
+        210.86,
+        192.77
+      ],
+      "high_20d": 307.37,
+      "high_30d": 307.37,
+      "high_52w": 307.37,
+      "distance_to_resistance_pct": 36.91,
+      "distance_to_support_pct": 6.08,
+      "nearest_resistance": 307.37,
+      "nearest_support": 210.86
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 23.89,
+    "eps_growth_yoy": 49.75,
+    "gross_margin": 61.45,
+    "operating_margin": 41.22,
+    "net_margin": 35.66,
+    "roe": 94.98,
+    "debt_to_equity": 105.4,
+    "current_ratio": 3.03,
+    "cash": 4957938176,
+    "total_debt": 6145359872,
+    "net_cash": -1187421696,
+    "forward_pe": 43.85,
+    "peg_ratio": 2.38,
+    "ev_ebitda": 50.33,
+    "price_to_sales": 22.39
+  },
+  "options": {
+    "implied_volatility": 0.7212,
+    "put_call_ratio": 0.55,
+    "call_volume": 7176,
+    "put_volume": 3937,
+    "call_open_interest": 2309,
+    "put_open_interest": 2477,
+    "expected_move": 46.42,
+    "expected_move_pct": 20.67,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 28,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 232.43,
+    "target_high": 325.0,
+    "target_low": 150.0,
+    "target_median": 222.5,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 28
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, favorable risk/reward ratio of 3.4:1",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

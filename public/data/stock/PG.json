@@ -1,0 +1,174 @@
+{
+  "ticker": "PG",
+  "company": "Procter & Gamble Company (The)",
+  "sector": "Consumer Defensive",
+  "price": {
+    "current": 148.05,
+    "open": 145.28,
+    "high": 148.59,
+    "low": 144.66,
+    "previous_close": 146.08,
+    "change_pct": 1.35,
+    "market_cap": 344749080576
+  },
+  "trade_parameters": {
+    "buy_above": 148.54,
+    "stop_loss": 147.57,
+    "take_profit": 157.42,
+    "expected_move": "\u00b16.33%",
+    "expected_move_dollars": "\u00b1$9.37",
+    "risk_reward": 9.16,
+    "support_levels": [
+      147.57,
+      145.89,
+      145.6
+    ],
+    "resistance_levels": [
+      144.43,
+      148.54,
+      148.95
+    ],
+    "expected_return_pct": 5.98,
+    "max_drawdown_pct": -0.65
+  },
+  "scores": {
+    "technical": 63,
+    "fundamental": 45,
+    "options": 83,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 53.0
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 148.19,
+      "sma_50": 146.37,
+      "sma_100": 147.46,
+      "sma_200": 146.95,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 42.98,
+      "macd": 0.2167,
+      "macd_signal": 0.6457,
+      "macd_histogram": -0.429,
+      "stochastic_rsi": 7.38,
+      "adx": 18.28,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 25.24,
+      "historical_volatility_60": 24.07
+    },
+    "price_structure": {
+      "resistance": [
+        144.43,
+        148.54,
+        148.95
+      ],
+      "support": [
+        147.57,
+        145.89,
+        145.6
+      ],
+      "high_20d": 153.49,
+      "high_30d": 153.49,
+      "high_52w": 166.0,
+      "distance_to_resistance_pct": 0.33,
+      "distance_to_support_pct": 0.32,
+      "nearest_resistance": 148.54,
+      "nearest_support": 147.57
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 0.29,
+    "eps_growth_yoy": 8.14,
+    "gross_margin": 50.98,
+    "operating_margin": 23.05,
+    "net_margin": 19.16,
+    "roe": 31.11,
+    "debt_to_equity": 67.65,
+    "current_ratio": 0.73,
+    "cash": 12305999872,
+    "total_debt": 37026000896,
+    "net_cash": -24720001024,
+    "forward_pe": 20.98,
+    "peg_ratio": 4.1,
+    "ev_ebitda": 14.79,
+    "price_to_sales": 3.98
+  },
+  "options": {
+    "implied_volatility": 0.2208,
+    "put_call_ratio": 0.74,
+    "call_volume": 2092,
+    "put_volume": 1556,
+    "call_open_interest": 9,
+    "put_open_interest": 34,
+    "expected_move": 9.37,
+    "expected_move_pct": 6.33,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 23,
+    "sell_ratings": 0,
+    "avg_price_target": 163.43,
+    "target_high": 186.0,
+    "target_low": 145.0,
+    "target_median": 164.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 23
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "positive options flow, favorable risk/reward ratio of 9.16:1",
+  "earnings_date": "2026-07-29",
+  "days_until_earnings": 13,
+  "earnings_time": "unknown"
+}

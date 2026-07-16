@@ -1,0 +1,174 @@
+{
+  "ticker": "GLW",
+  "company": "Corning Incorporated",
+  "sector": "Technology",
+  "price": {
+    "current": 174.41,
+    "open": 186.6,
+    "high": 187.07,
+    "low": 167.09,
+    "previous_close": 187.64,
+    "change_pct": -7.05,
+    "market_cap": 150103851008
+  },
+  "trade_parameters": {
+    "buy_above": 178.81,
+    "stop_loss": 172.75,
+    "take_profit": 188.15,
+    "expected_move": "\u00b17.88%",
+    "expected_move_dollars": "\u00b1$13.74",
+    "risk_reward": 1.54,
+    "support_levels": [
+      178.4,
+      172.75,
+      172.43
+    ],
+    "resistance_levels": [
+      164.75,
+      178.81,
+      190.0
+    ],
+    "expected_return_pct": 5.23,
+    "max_drawdown_pct": -3.39
+  },
+  "scores": {
+    "technical": 58,
+    "fundamental": 78,
+    "options": 75,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 58.8
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 194.94,
+      "sma_50": 192.13,
+      "sma_100": 170.39,
+      "sma_200": 131.2,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 40.8,
+      "macd": -2.0418,
+      "macd_signal": 2.6617,
+      "macd_histogram": -4.7035,
+      "stochastic_rsi": 0.0,
+      "adx": 21.67,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 120.76,
+      "historical_volatility_60": 97.54
+    },
+    "price_structure": {
+      "resistance": [
+        164.75,
+        178.81,
+        190.0
+      ],
+      "support": [
+        178.4,
+        172.75,
+        172.43
+      ],
+      "high_20d": 271.78,
+      "high_30d": 271.78,
+      "high_52w": 271.78,
+      "distance_to_resistance_pct": 2.52,
+      "distance_to_support_pct": 0.95,
+      "nearest_resistance": 178.81,
+      "nearest_support": 172.75
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 19.14,
+    "eps_growth_yoy": 215.52,
+    "gross_margin": 36.38,
+    "operating_margin": 15.66,
+    "net_margin": 11.09,
+    "roe": 16.74,
+    "debt_to_equity": 80.36,
+    "current_ratio": 1.61,
+    "cash": 1755000064,
+    "total_debt": 9923999744,
+    "net_cash": -8168999680,
+    "forward_pe": 40.66,
+    "peg_ratio": 1.79,
+    "ev_ebitda": 40.65,
+    "price_to_sales": 9.2
+  },
+  "options": {
+    "implied_volatility": 0.2747,
+    "put_call_ratio": 0.86,
+    "call_volume": 16469,
+    "put_volume": 14168,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 13.74,
+    "expected_move_pct": 7.88,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 15,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 213.07,
+    "target_high": 270.0,
+    "target_low": 155.0,
+    "target_median": 220.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 15
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

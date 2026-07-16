@@ -1,0 +1,174 @@
+{
+  "ticker": "TXN",
+  "company": "Texas Instruments Incorporated",
+  "sector": "Technology",
+  "price": {
+    "current": 301.19,
+    "open": 312.01,
+    "high": 312.01,
+    "low": 295.51,
+    "previous_close": 305.55,
+    "change_pct": -1.43,
+    "market_cap": 274110857216
+  },
+  "trade_parameters": {
+    "buy_above": 301.19,
+    "stop_loss": 299.24,
+    "take_profit": 338.06,
+    "expected_move": "\u00b112.24%",
+    "expected_move_dollars": "\u00b1$36.87",
+    "risk_reward": 18.91,
+    "support_levels": [
+      299.24,
+      291.95,
+      289.93
+    ],
+    "resistance_levels": [
+      286.37,
+      292.64,
+      310.29
+    ],
+    "expected_return_pct": 12.24,
+    "max_drawdown_pct": -0.65
+  },
+  "scores": {
+    "technical": 71,
+    "fundamental": 75,
+    "options": 73,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 59.4
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 301.67,
+      "sma_50": 301.04,
+      "sma_100": 257.3,
+      "sma_200": 218.97,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 49.18,
+      "macd": 1.571,
+      "macd_signal": 1.8371,
+      "macd_histogram": -0.2661,
+      "stochastic_rsi": 65.15,
+      "adx": 12.72,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 63.07,
+      "historical_volatility_60": 63.68
+    },
+    "price_structure": {
+      "resistance": [
+        286.37,
+        292.64,
+        310.29
+      ],
+      "support": [
+        299.24,
+        291.95,
+        289.93
+      ],
+      "high_20d": 334.03,
+      "high_30d": 334.03,
+      "high_52w": 334.03,
+      "distance_to_resistance_pct": 3.02,
+      "distance_to_support_pct": 0.65,
+      "nearest_resistance": 310.29,
+      "nearest_support": 299.24
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 13.05,
+    "eps_growth_yoy": 4.81,
+    "gross_margin": 57.32,
+    "operating_margin": 37.82,
+    "net_margin": 29.11,
+    "roe": 32.35,
+    "debt_to_equity": 83.74,
+    "current_ratio": 4.46,
+    "cash": 5103000064,
+    "total_debt": 14049999872,
+    "net_cash": -8946999808,
+    "forward_pe": 31.46,
+    "peg_ratio": 1.46,
+    "ev_ebitda": 32.67,
+    "price_to_sales": 14.87
+  },
+  "options": {
+    "implied_volatility": 0.4268,
+    "put_call_ratio": 0.82,
+    "call_volume": 1690,
+    "put_volume": 1379,
+    "call_open_interest": 14,
+    "put_open_interest": 0,
+    "expected_move": 36.85,
+    "expected_move_pct": 12.24,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 32,
+    "sell_ratings": 0,
+    "avg_price_target": 303.31,
+    "target_high": 400.0,
+    "target_low": 200.0,
+    "target_median": 301.5,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 32
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 18.91:1",
+  "earnings_date": "2026-07-22",
+  "days_until_earnings": 6,
+  "earnings_time": "unknown"
+}

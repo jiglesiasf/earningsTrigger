@@ -1,0 +1,174 @@
+{
+  "ticker": "STX",
+  "company": "Seagate Technology Holdings PLC",
+  "sector": "Technology",
+  "price": {
+    "current": 828.3,
+    "open": 889.02,
+    "high": 893.0,
+    "low": 788.97,
+    "previous_close": 878.31,
+    "change_pct": -5.69,
+    "market_cap": 185728876544
+  },
+  "trade_parameters": {
+    "buy_above": 838.0,
+    "stop_loss": 801.32,
+    "take_profit": 951.97,
+    "expected_move": "\u00b114.93%",
+    "expected_move_dollars": "\u00b1$123.67",
+    "risk_reward": 3.11,
+    "support_levels": [
+      880.01,
+      801.32,
+      786.01
+    ],
+    "resistance_levels": [
+      607.46,
+      791.45,
+      838.0
+    ],
+    "expected_return_pct": 13.6,
+    "max_drawdown_pct": -4.38
+  },
+  "scores": {
+    "technical": 61,
+    "fundamental": 76,
+    "options": 73,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 58.9
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 896.76,
+      "sma_50": 878.78,
+      "sma_100": 669.16,
+      "sma_200": 481.76,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 37.57,
+      "macd": -8.9406,
+      "macd_signal": 7.3148,
+      "macd_histogram": -16.2553,
+      "stochastic_rsi": 16.42,
+      "adx": 26.65,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 85.78,
+      "historical_volatility_60": 75.54
+    },
+    "price_structure": {
+      "resistance": [
+        607.46,
+        791.45,
+        838.0
+      ],
+      "support": [
+        880.01,
+        801.32,
+        786.01
+      ],
+      "high_20d": 1144.18,
+      "high_30d": 1144.18,
+      "high_52w": 1144.18,
+      "distance_to_resistance_pct": 1.17,
+      "distance_to_support_pct": 3.26,
+      "nearest_resistance": 838.0,
+      "nearest_support": 801.32
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 38.86,
+    "eps_growth_yoy": NaN,
+    "gross_margin": 41.57,
+    "operating_margin": 35.67,
+    "net_margin": 21.6,
+    "roe": 1787.97,
+    "debt_to_equity": 381.55,
+    "current_ratio": 1.33,
+    "cash": 1146000000,
+    "total_debt": 4177999872,
+    "net_cash": -3031999872,
+    "forward_pe": 29.08,
+    "peg_ratio": 0.61,
+    "ev_ebitda": 53.72,
+    "price_to_sales": 16.87
+  },
+  "options": {
+    "implied_volatility": 0.5208,
+    "put_call_ratio": 0.82,
+    "call_volume": 8295,
+    "put_volume": 6764,
+    "call_open_interest": 11,
+    "put_open_interest": 0,
+    "expected_move": 123.66,
+    "expected_move_pct": 14.93,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 23,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 1001.0,
+    "target_high": 1600.0,
+    "target_low": 680.0,
+    "target_median": 1000.0,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 23
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, favorable risk/reward ratio of 3.11:1",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

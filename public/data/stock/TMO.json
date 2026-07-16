@@ -1,0 +1,174 @@
+{
+  "ticker": "TMO",
+  "company": "Thermo Fisher Scientific Inc",
+  "sector": "Healthcare",
+  "price": {
+    "current": 535.29,
+    "open": 537.24,
+    "high": 540.37,
+    "low": 533.83,
+    "previous_close": 534.07,
+    "change_pct": 0.23,
+    "market_cap": 198925254656
+  },
+  "trade_parameters": {
+    "buy_above": 535.29,
+    "stop_loss": 506.98,
+    "take_profit": 555.36,
+    "expected_move": "\u00b13.75%",
+    "expected_move_dollars": "\u00b1$20.07",
+    "risk_reward": 0.71,
+    "support_levels": [
+      506.98,
+      495.1,
+      468.64
+    ],
+    "resistance_levels": [
+      454.54,
+      479.82,
+      481.35
+    ],
+    "expected_return_pct": 3.75,
+    "max_drawdown_pct": -5.29
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 59,
+    "options": 82,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 69.0
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 509.81,
+      "sma_50": 480.95,
+      "sma_100": 487.87,
+      "sma_200": 527.6,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 73.15,
+      "macd": 14.7517,
+      "macd_signal": 12.3182,
+      "macd_histogram": 2.4335,
+      "stochastic_rsi": 79.37,
+      "adx": 49.52,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 27.58,
+      "historical_volatility_60": 36.14
+    },
+    "price_structure": {
+      "resistance": [
+        454.54,
+        479.82,
+        481.35
+      ],
+      "support": [
+        506.98,
+        495.1,
+        468.64
+      ],
+      "high_20d": 540.37,
+      "high_30d": 540.37,
+      "high_52w": 642.71,
+      "distance_to_resistance_pct": 20.07,
+      "distance_to_support_pct": 5.29,
+      "nearest_resistance": 642.71,
+      "nearest_support": 506.98
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 3.91,
+    "eps_growth_yoy": 7.32,
+    "gross_margin": 40.93,
+    "operating_margin": 17.89,
+    "net_margin": 15.15,
+    "roe": 13.52,
+    "debt_to_equity": 82.9,
+    "current_ratio": 1.53,
+    "cash": 3256000000,
+    "total_debt": 43161001984,
+    "net_cash": -39905001984,
+    "forward_pe": 19.64,
+    "peg_ratio": 1.76,
+    "ev_ebitda": 21.15,
+    "price_to_sales": 4.4
+  },
+  "options": {
+    "implied_volatility": 0.1308,
+    "put_call_ratio": 0.48,
+    "call_volume": 328,
+    "put_volume": 156,
+    "call_open_interest": 3,
+    "put_open_interest": 1,
+    "expected_move": 20.07,
+    "expected_move_pct": 3.75,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 26,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 591.27,
+    "target_high": 750.0,
+    "target_low": 490.0,
+    "target_median": 600.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 26
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-07-23",
+  "days_until_earnings": 7,
+  "earnings_time": "unknown"
+}

@@ -1,0 +1,174 @@
+{
+  "ticker": "IBM",
+  "company": "International Business Machines",
+  "sector": "Technology",
+  "price": {
+    "current": 211.2,
+    "open": 220.97,
+    "high": 223.81,
+    "low": 211.03,
+    "previous_close": 217.07,
+    "change_pct": -2.7,
+    "market_cap": 198503776256
+  },
+  "trade_parameters": {
+    "buy_above": 211.2,
+    "stop_loss": 211.03,
+    "take_profit": 232.34,
+    "expected_move": "\u00b110.01%",
+    "expected_move_dollars": "\u00b1$21.14",
+    "risk_reward": 124.36,
+    "support_levels": [
+      284.44,
+      243.68,
+      223.26
+    ],
+    "resistance_levels": [
+      230.71,
+      231.85,
+      234.23
+    ],
+    "expected_return_pct": 10.01,
+    "max_drawdown_pct": -0.08
+  },
+  "scores": {
+    "technical": 63,
+    "fundamental": 67,
+    "options": 81,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 59.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 270.29,
+      "sma_50": 262.06,
+      "sma_100": 251.73,
+      "sma_200": 272.03,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 33.07,
+      "macd": -3.2856,
+      "macd_signal": 4.4863,
+      "macd_histogram": -7.7719,
+      "stochastic_rsi": 18.66,
+      "adx": 32.73,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 100.38,
+      "historical_volatility_60": 77.08
+    },
+    "price_structure": {
+      "resistance": [
+        230.71,
+        231.85,
+        234.23
+      ],
+      "support": [
+        284.44,
+        243.68,
+        223.26
+      ],
+      "high_20d": 311.8,
+      "high_30d": 332.46,
+      "high_52w": 332.46,
+      "distance_to_resistance_pct": 9.24,
+      "distance_to_support_pct": 0.08,
+      "nearest_resistance": 230.71,
+      "nearest_support": 211.03
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 7.62,
+    "eps_growth_yoy": 73.72,
+    "gross_margin": 58.36,
+    "operating_margin": 13.81,
+    "net_margin": 15.61,
+    "roe": 35.77,
+    "debt_to_equity": 211.17,
+    "current_ratio": 0.8,
+    "cash": 11783000064,
+    "total_debt": 69802000384,
+    "net_cash": -58019000320,
+    "forward_pe": 15.87,
+    "peg_ratio": 2.71,
+    "ev_ebitda": 15.45,
+    "price_to_sales": 2.88
+  },
+  "options": {
+    "implied_volatility": 0.3493,
+    "put_call_ratio": 0.7,
+    "call_volume": 77311,
+    "put_volume": 53836,
+    "call_open_interest": 0,
+    "put_open_interest": 164,
+    "expected_move": 21.15,
+    "expected_move_pct": 10.01,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 23,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 296.07,
+    "target_high": 390.0,
+    "target_low": 195.0,
+    "target_median": 294.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 23
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "positive options flow, favorable risk/reward ratio of 124.36:1",
+  "earnings_date": "2026-07-22",
+  "days_until_earnings": 6,
+  "earnings_time": "unknown"
+}

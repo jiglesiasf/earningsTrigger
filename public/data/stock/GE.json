@@ -1,0 +1,174 @@
+{
+  "ticker": "GE",
+  "company": "GE Aerospace",
+  "sector": "Industrials",
+  "price": {
+    "current": 360.35,
+    "open": 355.6,
+    "high": 360.63,
+    "low": 353.35,
+    "previous_close": 353.73,
+    "change_pct": 1.87,
+    "market_cap": 376504352768
+  },
+  "trade_parameters": {
+    "buy_above": 371.16,
+    "stop_loss": 352.03,
+    "take_profit": 373.32,
+    "expected_move": "\u00b13.6%",
+    "expected_move_dollars": "\u00b1$12.97",
+    "risk_reward": 0.11,
+    "support_levels": [
+      352.03,
+      347.34,
+      317.85
+    ],
+    "resistance_levels": [
+      291.4,
+      309.61,
+      325.99
+    ],
+    "expected_return_pct": 0.58,
+    "max_drawdown_pct": -5.15
+  },
+  "scores": {
+    "technical": 97,
+    "fundamental": 67,
+    "options": 49,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 63.0
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 356.84,
+      "sma_50": 330.8,
+      "sma_100": 318.02,
+      "sma_200": 311.19,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 45.52,
+      "macd": 7.389,
+      "macd_signal": 10.9969,
+      "macd_histogram": -3.6079,
+      "stochastic_rsi": 0.0,
+      "adx": 36.98,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 24.81,
+      "historical_volatility_60": 35.61
+    },
+    "price_structure": {
+      "resistance": [
+        291.4,
+        309.61,
+        325.99
+      ],
+      "support": [
+        352.03,
+        347.34,
+        317.85
+      ],
+      "high_20d": 382.49,
+      "high_30d": 382.49,
+      "high_52w": 382.49,
+      "distance_to_resistance_pct": 6.14,
+      "distance_to_support_pct": 2.31,
+      "nearest_resistance": 382.49,
+      "nearest_support": 352.03
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 18.48,
+    "eps_growth_yoy": 35.89,
+    "gross_margin": 31.15,
+    "operating_margin": 20.21,
+    "net_margin": 17.86,
+    "roe": 45.43,
+    "debt_to_equity": 116.53,
+    "current_ratio": 1.01,
+    "cash": 10581000192,
+    "total_debt": 21321000960,
+    "net_cash": -10740000768,
+    "forward_pe": 41.26,
+    "peg_ratio": 8.51,
+    "ev_ebitda": 35.06,
+    "price_to_sales": 7.79
+  },
+  "options": {
+    "implied_volatility": 0.1257,
+    "put_call_ratio": 1.36,
+    "call_volume": 9995,
+    "put_volume": 13579,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 12.99,
+    "expected_move_pct": 3.6,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 21,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 375.9,
+    "target_high": 455.0,
+    "target_low": 270.0,
+    "target_median": 380.0,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 21
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-07-16",
+  "days_until_earnings": 0,
+  "earnings_time": "unknown"
+}

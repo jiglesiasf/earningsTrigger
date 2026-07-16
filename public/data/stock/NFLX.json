@@ -1,0 +1,174 @@
+{
+  "ticker": "NFLX",
+  "company": "Netflix, Inc.",
+  "sector": "Communication Services",
+  "price": {
+    "current": 73.68,
+    "open": 73.79,
+    "high": 75.06,
+    "low": 73.13,
+    "previous_close": 73.53,
+    "change_pct": 0.2,
+    "market_cap": 310251651072
+  },
+  "trade_parameters": {
+    "buy_above": 73.68,
+    "stop_loss": 70.86,
+    "take_profit": 82.93,
+    "expected_move": "\u00b112.55%",
+    "expected_move_dollars": "\u00b1$9.25",
+    "risk_reward": 3.28,
+    "support_levels": [
+      90.02,
+      86.72,
+      86.33
+    ],
+    "resistance_levels": [
+      76.07,
+      78.44,
+      87.23
+    ],
+    "expected_return_pct": 12.55,
+    "max_drawdown_pct": -3.83
+  },
+  "scores": {
+    "technical": 89,
+    "fundamental": 79,
+    "options": 88,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 70.8
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 75.7,
+      "sma_50": 81.27,
+      "sma_100": 87.98,
+      "sma_200": 94.23,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 55.11,
+      "macd": -2.1048,
+      "macd_signal": -2.4973,
+      "macd_histogram": 0.3925,
+      "stochastic_rsi": 100.0,
+      "adx": 33.52,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 41.32,
+      "historical_volatility_60": 29.74
+    },
+    "price_structure": {
+      "resistance": [
+        76.07,
+        78.44,
+        87.23
+      ],
+      "support": [
+        90.02,
+        86.72,
+        86.33
+      ],
+      "high_20d": 81.93,
+      "high_30d": 85.98,
+      "high_52w": 127.75,
+      "distance_to_resistance_pct": 3.24,
+      "distance_to_support_pct": 3.83,
+      "nearest_resistance": 76.07,
+      "nearest_support": 70.86
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 15.85,
+    "eps_growth_yoy": 27.58,
+    "gross_margin": 49.03,
+    "operating_margin": 32.3,
+    "net_margin": 28.52,
+    "roe": 48.49,
+    "debt_to_equity": 53.79,
+    "current_ratio": 1.41,
+    "cash": 12288449536,
+    "total_debt": 16742200320,
+    "net_cash": -4453750784,
+    "forward_pe": 19.22,
+    "peg_ratio": 1.44,
+    "ev_ebitda": 22.04,
+    "price_to_sales": 6.62
+  },
+  "options": {
+    "implied_volatility": 0.4377,
+    "put_call_ratio": 0.41,
+    "call_volume": 108694,
+    "put_volume": 44430,
+    "call_open_interest": 1486,
+    "put_open_interest": 0,
+    "expected_move": 9.25,
+    "expected_move_pct": 12.55,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 44,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 111.03,
+    "target_high": 151.4,
+    "target_low": 80.0,
+    "target_median": 110.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 44
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, positive options flow, favorable risk/reward ratio of 3.28:1",
+  "earnings_date": "2026-07-16",
+  "days_until_earnings": 0,
+  "earnings_time": "unknown"
+}

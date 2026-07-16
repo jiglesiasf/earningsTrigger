@@ -1,0 +1,174 @@
+{
+  "ticker": "UPS",
+  "company": "United Parcel Service, Inc.",
+  "sector": "Industrials",
+  "price": {
+    "current": 112.94,
+    "open": 114.13,
+    "high": 115.43,
+    "low": 112.62,
+    "previous_close": 113.67,
+    "change_pct": -0.64,
+    "market_cap": 95999713280
+  },
+  "trade_parameters": {
+    "buy_above": 116.33,
+    "stop_loss": 108.51,
+    "take_profit": 117.21,
+    "expected_move": "\u00b13.78%",
+    "expected_move_dollars": "\u00b1$4.27",
+    "risk_reward": 0.11,
+    "support_levels": [
+      108.51,
+      106.04,
+      104.82
+    ],
+    "resistance_levels": [
+      99.43,
+      106.72,
+      108.02
+    ],
+    "expected_return_pct": 0.76,
+    "max_drawdown_pct": -6.72
+  },
+  "scores": {
+    "technical": 98,
+    "fundamental": 40,
+    "options": 82,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 62.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 109.95,
+      "sma_50": 105.2,
+      "sma_100": 103.57,
+      "sma_200": 99.46,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 69.77,
+      "macd": 1.9666,
+      "macd_signal": 1.6985,
+      "macd_histogram": 0.2681,
+      "stochastic_rsi": 85.63,
+      "adx": 19.84,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 26.47,
+      "historical_volatility_60": 35.46
+    },
+    "price_structure": {
+      "resistance": [
+        99.43,
+        106.72,
+        108.02
+      ],
+      "support": [
+        108.51,
+        106.04,
+        104.82
+      ],
+      "high_20d": 115.43,
+      "high_30d": 115.43,
+      "high_52w": 118.73,
+      "distance_to_resistance_pct": 5.12,
+      "distance_to_support_pct": 3.92,
+      "nearest_resistance": 118.73,
+      "nearest_support": 108.51
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": -2.65,
+    "eps_growth_yoy": -2.81,
+    "gross_margin": 22.45,
+    "operating_margin": 6.33,
+    "net_margin": 5.94,
+    "roe": 33.35,
+    "debt_to_equity": 181.51,
+    "current_ratio": 1.21,
+    "cash": 5801999872,
+    "total_debt": 28661999616,
+    "net_cash": -22859999744,
+    "forward_pe": 14.1,
+    "peg_ratio": 1.79,
+    "ev_ebitda": 10.05,
+    "price_to_sales": 1.09
+  },
+  "options": {
+    "implied_volatility": 0.132,
+    "put_call_ratio": 0.28,
+    "call_volume": 5022,
+    "put_volume": 1430,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 4.27,
+    "expected_move_pct": 3.78,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 26,
+    "sell_ratings": 0,
+    "avg_price_target": 114.65,
+    "target_high": 135.0,
+    "target_low": 76.0,
+    "target_median": 116.5,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 26
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

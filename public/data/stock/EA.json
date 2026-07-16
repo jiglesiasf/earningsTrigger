@@ -1,0 +1,174 @@
+{
+  "ticker": "EA",
+  "company": "Electronic Arts Inc.",
+  "sector": "Communication Services",
+  "price": {
+    "current": 207.27,
+    "open": 206.55,
+    "high": 207.77,
+    "low": 205.96,
+    "previous_close": 206.65,
+    "change_pct": 0.3,
+    "market_cap": 51973263360
+  },
+  "trade_parameters": {
+    "buy_above": 213.49,
+    "stop_loss": 204.83,
+    "take_profit": 217.09,
+    "expected_move": "\u00b14.74%",
+    "expected_move_dollars": "\u00b1$9.82",
+    "risk_reward": 0.42,
+    "support_levels": [
+      204.83,
+      202.5,
+      202.27
+    ],
+    "resistance_levels": [
+      200.73,
+      201.76,
+      203.45
+    ],
+    "expected_return_pct": 1.69,
+    "max_drawdown_pct": -4.06
+  },
+  "scores": {
+    "technical": 90,
+    "fundamental": 47,
+    "options": 49,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 54.7
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 205.17,
+      "sma_50": 202.93,
+      "sma_100": 202.27,
+      "sma_200": 201.93,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 76.6,
+      "macd": 1.0675,
+      "macd_signal": 0.9253,
+      "macd_histogram": 0.1423,
+      "stochastic_rsi": 72.79,
+      "adx": 54.44,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 4.41,
+      "historical_volatility_60": 3.78
+    },
+    "price_structure": {
+      "resistance": [
+        200.73,
+        201.76,
+        203.45
+      ],
+      "support": [
+        204.83,
+        202.5,
+        202.27
+      ],
+      "high_20d": 207.77,
+      "high_30d": 207.77,
+      "high_52w": 207.77,
+      "distance_to_resistance_pct": 0.24,
+      "distance_to_support_pct": 1.18,
+      "nearest_resistance": 207.77,
+      "nearest_support": 204.83
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 0.91,
+    "eps_growth_yoy": -17.41,
+    "gross_margin": 78.97,
+    "operating_margin": 24.01,
+    "net_margin": 11.78,
+    "roe": 13.49,
+    "debt_to_equity": 27.41,
+    "current_ratio": 1.05,
+    "cash": 2980000000,
+    "total_debt": 1854000000,
+    "net_cash": 1126000000,
+    "forward_pe": 21.68,
+    "peg_ratio": 1.28,
+    "ev_ebitda": 34.24,
+    "price_to_sales": 6.9
+  },
+  "options": {
+    "implied_volatility": 0.1655,
+    "put_call_ratio": 1.34,
+    "call_volume": 293,
+    "put_volume": 394,
+    "call_open_interest": 42,
+    "put_open_interest": 6,
+    "expected_move": 9.83,
+    "expected_move_pct": 4.74,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 14,
+    "sell_ratings": 0,
+    "avg_price_target": 205.79,
+    "target_high": 210.0,
+    "target_low": 168.0,
+    "target_median": 210.0,
+    "consensus_trend": "hold",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 14
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

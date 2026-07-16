@@ -1,0 +1,174 @@
+{
+  "ticker": "GOOGL",
+  "company": "Alphabet Inc.",
+  "sector": "Communication Services",
+  "price": {
+    "current": 370.92,
+    "open": 357.97,
+    "high": 373.65,
+    "low": 357.76,
+    "previous_close": 359.51,
+    "change_pct": 3.17,
+    "market_cap": 4526178304000
+  },
+  "trade_parameters": {
+    "buy_above": 372.08,
+    "stop_loss": 357.87,
+    "take_profit": 395.4,
+    "expected_move": "\u00b16.6%",
+    "expected_move_dollars": "\u00b1$24.48",
+    "risk_reward": 1.64,
+    "support_levels": [
+      382.54,
+      381.54,
+      357.87
+    ],
+    "resistance_levels": [
+      372.08,
+      373.16,
+      376.0
+    ],
+    "expected_return_pct": 6.27,
+    "max_drawdown_pct": -3.82
+  },
+  "scores": {
+    "technical": 89,
+    "fundamental": 84,
+    "options": 90,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 72.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 360.49,
+      "sma_50": 371.89,
+      "sma_100": 343.58,
+      "sma_200": 320.28,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 67.54,
+      "macd": -0.7547,
+      "macd_signal": -2.2224,
+      "macd_histogram": 1.4677,
+      "stochastic_rsi": 100.0,
+      "adx": 16.24,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 33.76,
+      "historical_volatility_60": 35.43
+    },
+    "price_structure": {
+      "resistance": [
+        372.08,
+        373.16,
+        376.0
+      ],
+      "support": [
+        382.54,
+        381.54,
+        357.87
+      ],
+      "high_20d": 376.0,
+      "high_30d": 376.0,
+      "high_52w": 408.37,
+      "distance_to_resistance_pct": 0.31,
+      "distance_to_support_pct": 3.52,
+      "nearest_resistance": 372.08,
+      "nearest_support": 357.87
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 15.09,
+    "eps_growth_yoy": 34.45,
+    "gross_margin": 60.37,
+    "operating_margin": 36.12,
+    "net_margin": 37.92,
+    "roe": 38.88,
+    "debt_to_equity": 20.03,
+    "current_ratio": 1.92,
+    "cash": 126839996416,
+    "total_debt": 95875997696,
+    "net_cash": 30963998720,
+    "forward_pe": 25.42,
+    "peg_ratio": 1.42,
+    "ev_ebitda": 27.67,
+    "price_to_sales": 10.71
+  },
+  "options": {
+    "implied_volatility": 0.2301,
+    "put_call_ratio": 0.48,
+    "call_volume": 101374,
+    "put_volume": 48558,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 24.46,
+    "expected_move_pct": 6.6,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 53,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 431.72,
+    "target_high": 515.0,
+    "target_low": 340.0,
+    "target_median": 430.0,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 53
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, positive options flow",
+  "earnings_date": "2026-07-22",
+  "days_until_earnings": 6,
+  "earnings_time": "unknown"
+}

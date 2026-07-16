@@ -1,0 +1,174 @@
+{
+  "ticker": "WM",
+  "company": "Waste Management, Inc.",
+  "sector": "Industrials",
+  "price": {
+    "current": 232.8,
+    "open": 233.5,
+    "high": 236.92,
+    "low": 232.25,
+    "previous_close": 234.27,
+    "change_pct": -0.63,
+    "market_cap": 93486833664
+  },
+  "trade_parameters": {
+    "buy_above": 232.8,
+    "stop_loss": 230.05,
+    "take_profit": 268.51,
+    "expected_move": "\u00b115.34%",
+    "expected_move_dollars": "\u00b1$35.71",
+    "risk_reward": 12.99,
+    "support_levels": [
+      230.05,
+      222.21,
+      221.0
+    ],
+    "resistance_levels": [
+      217.45,
+      222.42,
+      225.81
+    ],
+    "expected_return_pct": 15.34,
+    "max_drawdown_pct": -1.18
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 59,
+    "options": 83,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 69.2
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 228.12,
+      "sma_50": 221.07,
+      "sma_100": 225.99,
+      "sma_200": 220.62,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 62.91,
+      "macd": 4.1229,
+      "macd_signal": 3.3418,
+      "macd_histogram": 0.7811,
+      "stochastic_rsi": 48.03,
+      "adx": 38.49,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 23.5,
+      "historical_volatility_60": 22.95
+    },
+    "price_structure": {
+      "resistance": [
+        217.45,
+        222.42,
+        225.81
+      ],
+      "support": [
+        230.05,
+        222.21,
+        221.0
+      ],
+      "high_20d": 238.2,
+      "high_30d": 238.2,
+      "high_52w": 246.08,
+      "distance_to_resistance_pct": 5.7,
+      "distance_to_support_pct": 1.18,
+      "nearest_resistance": 246.08,
+      "nearest_support": 230.05
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 14.24,
+    "eps_growth_yoy": -1.62,
+    "gross_margin": 40.61,
+    "operating_margin": 17.52,
+    "net_margin": 10.99,
+    "roe": 29.94,
+    "debt_to_equity": 228.41,
+    "current_ratio": 0.93,
+    "cash": 158000000,
+    "total_debt": 22890999808,
+    "net_cash": -22732999808,
+    "forward_pe": 25.29,
+    "peg_ratio": 2.38,
+    "ev_ebitda": 15.17,
+    "price_to_sales": 3.68
+  },
+  "options": {
+    "implied_volatility": 0.535,
+    "put_call_ratio": 0.5,
+    "call_volume": 169,
+    "put_volume": 85,
+    "call_open_interest": 5,
+    "put_open_interest": 2,
+    "expected_move": 35.71,
+    "expected_move_pct": 15.34,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 25,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 256.24,
+    "target_high": 285.0,
+    "target_low": 210.0,
+    "target_median": 263.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 25
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow, favorable risk/reward ratio of 12.99:1",
+  "earnings_date": "2026-07-28",
+  "days_until_earnings": 12,
+  "earnings_time": "unknown"
+}

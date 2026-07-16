@@ -1,0 +1,174 @@
+{
+  "ticker": "DHR",
+  "company": "Danaher Corporation",
+  "sector": "Healthcare",
+  "price": {
+    "current": 200.79,
+    "open": 200.0,
+    "high": 202.36,
+    "low": 199.34,
+    "previous_close": 199.05,
+    "change_pct": 0.87,
+    "market_cap": 142113259520
+  },
+  "trade_parameters": {
+    "buy_above": 206.81,
+    "stop_loss": 190.0,
+    "take_profit": 212.68,
+    "expected_move": "\u00b15.92%",
+    "expected_move_dollars": "\u00b1$11.89",
+    "risk_reward": 0.35,
+    "support_levels": [
+      190.0,
+      189.78,
+      188.99
+    ],
+    "resistance_levels": [
+      168.94,
+      182.62,
+      183.17
+    ],
+    "expected_return_pct": 2.83,
+    "max_drawdown_pct": -8.13
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 59,
+    "options": 90,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 70.5
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 192.37,
+      "sma_50": 181.23,
+      "sma_100": 186.8,
+      "sma_200": 203.48,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 64.86,
+      "macd": 4.987,
+      "macd_signal": 4.3647,
+      "macd_histogram": 0.6224,
+      "stochastic_rsi": 59.9,
+      "adx": 37.32,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 30.22,
+      "historical_volatility_60": 30.88
+    },
+    "price_structure": {
+      "resistance": [
+        168.94,
+        182.62,
+        183.17
+      ],
+      "support": [
+        190.0,
+        189.78,
+        188.99
+      ],
+      "high_20d": 202.36,
+      "high_30d": 202.36,
+      "high_52w": 241.78,
+      "distance_to_resistance_pct": 20.42,
+      "distance_to_support_pct": 5.37,
+      "nearest_resistance": 241.78,
+      "nearest_support": 190.0
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 2.9,
+    "eps_growth_yoy": -4.54,
+    "gross_margin": 58.99,
+    "operating_margin": 22.94,
+    "net_margin": 14.89,
+    "roe": 7.08,
+    "debt_to_equity": 37.17,
+    "current_ratio": 1.87,
+    "cash": 5701000192,
+    "total_debt": 19683999744,
+    "net_cash": -13982999552,
+    "forward_pe": 21.73,
+    "peg_ratio": 1.27,
+    "ev_ebitda": 19.67,
+    "price_to_sales": 5.74
+  },
+  "options": {
+    "implied_volatility": 0.2064,
+    "put_call_ratio": 0.29,
+    "call_volume": 676,
+    "put_volume": 196,
+    "call_open_interest": 63,
+    "put_open_interest": 0,
+    "expected_move": 11.88,
+    "expected_move_pct": 5.92,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 23,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 242.52,
+    "target_high": 310.0,
+    "target_low": 200.0,
+    "target_median": 245.0,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 23
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-07-21",
+  "days_until_earnings": 5,
+  "earnings_time": "unknown"
+}

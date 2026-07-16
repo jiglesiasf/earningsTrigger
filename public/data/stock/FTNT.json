@@ -1,0 +1,174 @@
+{
+  "ticker": "FTNT",
+  "company": "Fortinet, Inc.",
+  "sector": "Technology",
+  "price": {
+    "current": 164.51,
+    "open": 169.39,
+    "high": 170.35,
+    "low": 163.03,
+    "previous_close": 166.83,
+    "change_pct": -1.39,
+    "market_cap": 120527978496
+  },
+  "trade_parameters": {
+    "buy_above": 164.51,
+    "stop_loss": 152.25,
+    "take_profit": 168.16,
+    "expected_move": "\u00b12.22%",
+    "expected_move_dollars": "\u00b1$3.65",
+    "risk_reward": 0.3,
+    "support_levels": [
+      152.25,
+      139.79,
+      133.05
+    ],
+    "resistance_levels": [
+      87.44,
+      87.64,
+      134.91
+    ],
+    "expected_return_pct": 2.22,
+    "max_drawdown_pct": -7.45
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 64,
+    "options": 44,
+    "sentiment": 47,
+    "historical": 0,
+    "macro": 75,
+    "overall": 60.0
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 155.14,
+      "sma_50": 138.98,
+      "sma_100": 110.44,
+      "sma_200": 96.29,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 66.97,
+      "macd": 7.2905,
+      "macd_signal": 7.4282,
+      "macd_histogram": -0.1378,
+      "stochastic_rsi": 66.84,
+      "adx": 54.4,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 39.96,
+      "historical_volatility_60": 56.76
+    },
+    "price_structure": {
+      "resistance": [
+        87.44,
+        87.64,
+        134.91
+      ],
+      "support": [
+        152.25,
+        139.79,
+        133.05
+      ],
+      "high_20d": 170.35,
+      "high_30d": 170.35,
+      "high_52w": 170.35,
+      "distance_to_resistance_pct": 3.55,
+      "distance_to_support_pct": 7.45,
+      "nearest_resistance": 170.35,
+      "nearest_support": 152.25
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 14.17,
+    "eps_growth_yoy": 7.08,
+    "gross_margin": 80.3,
+    "operating_margin": 31.28,
+    "net_margin": 27.49,
+    "roe": 132.39,
+    "debt_to_equity": 57.31,
+    "current_ratio": 1.15,
+    "cash": 3294899968,
+    "total_debt": 567200000,
+    "net_cash": 2727699968,
+    "forward_pe": 48.02,
+    "peg_ratio": 3.76,
+    "ev_ebitda": 49.89,
+    "price_to_sales": 16.95
+  },
+  "options": {
+    "implied_volatility": 0.0776,
+    "put_call_ratio": 3.0,
+    "call_volume": 1288,
+    "put_volume": 3863,
+    "call_open_interest": 20,
+    "put_open_interest": 784,
+    "expected_move": 3.66,
+    "expected_move_pct": 2.22,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 37,
+    "sell_ratings": 0,
+    "avg_price_target": 119.24,
+    "target_high": 215.0,
+    "target_low": 70.0,
+    "target_median": 115.0,
+    "consensus_trend": "hold",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 37
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-07-29",
+  "days_until_earnings": 13,
+  "earnings_time": "unknown"
+}

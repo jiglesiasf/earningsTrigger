@@ -1,0 +1,174 @@
+{
+  "ticker": "HON",
+  "company": "Honeywell International Inc.",
+  "sector": "Industrials",
+  "price": {
+    "current": 222.84,
+    "open": 222.5,
+    "high": 225.91,
+    "low": 220.54,
+    "previous_close": 222.68,
+    "change_pct": 0.07,
+    "market_cap": 70601629696
+  },
+  "trade_parameters": {
+    "buy_above": 224.19,
+    "stop_loss": 221.92,
+    "take_profit": 289.76,
+    "expected_move": "\u00b130.03%",
+    "expected_move_dollars": "\u00b1$66.92",
+    "risk_reward": 28.88,
+    "support_levels": [
+      239.44,
+      231.4,
+      221.92
+    ],
+    "resistance_levels": [
+      224.19,
+      224.84,
+      228.78
+    ],
+    "expected_return_pct": 29.25,
+    "max_drawdown_pct": -1.01
+  },
+  "scores": {
+    "technical": 42,
+    "fundamental": 50,
+    "options": 70,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 47.4
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 227.92,
+      "sma_50": 230.85,
+      "sma_100": 235.37,
+      "sma_200": 223.76,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 36.46,
+      "macd": -2.9467,
+      "macd_signal": -2.0469,
+      "macd_histogram": -0.8998,
+      "stochastic_rsi": 9.83,
+      "adx": 11.88,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 34.84,
+      "historical_volatility_60": 34.85
+    },
+    "price_structure": {
+      "resistance": [
+        224.19,
+        224.84,
+        228.78
+      ],
+      "support": [
+        239.44,
+        231.4,
+        221.92
+      ],
+      "high_20d": 252.0,
+      "high_30d": 252.0,
+      "high_52w": 258.86,
+      "distance_to_resistance_pct": 0.61,
+      "distance_to_support_pct": 0.41,
+      "nearest_resistance": 224.19,
+      "nearest_support": 221.92
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 7.85,
+    "eps_growth_yoy": -8.27,
+    "gross_margin": 36.93,
+    "operating_margin": 21.0,
+    "net_margin": 10.89,
+    "roe": 24.26,
+    "debt_to_equity": 257.39,
+    "current_ratio": 1.39,
+    "cash": 12389999616,
+    "total_debt": 37751001088,
+    "net_cash": -25361001472,
+    "forward_pe": 22.56,
+    "peg_ratio": 8.3,
+    "ev_ebitda": 11.38,
+    "price_to_sales": 1.87
+  },
+  "options": {
+    "implied_volatility": 1.0474,
+    "put_call_ratio": 0.54,
+    "call_volume": 523,
+    "put_volume": 284,
+    "call_open_interest": 2779,
+    "put_open_interest": 327,
+    "expected_move": 66.92,
+    "expected_move_pct": 30.03,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 16,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 246.25,
+    "target_high": 275.0,
+    "target_low": 164.0,
+    "target_median": 254.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 16
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 28.88:1",
+  "earnings_date": "2026-07-23",
+  "days_until_earnings": 7,
+  "earnings_time": "unknown"
+}

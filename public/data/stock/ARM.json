@@ -1,0 +1,174 @@
+{
+  "ticker": "ARM",
+  "company": "Arm Holdings plc",
+  "sector": "Technology",
+  "price": {
+    "current": 277.01,
+    "open": 281.09,
+    "high": 288.5,
+    "low": 265.2,
+    "previous_close": 281.17,
+    "change_pct": -1.48,
+    "market_cap": 295868530688
+  },
+  "trade_parameters": {
+    "buy_above": 285.32,
+    "stop_loss": 265.2,
+    "take_profit": 307.98,
+    "expected_move": "\u00b111.18%",
+    "expected_move_dollars": "\u00b1$30.97",
+    "risk_reward": 1.13,
+    "support_levels": [
+      303.67,
+      298.38,
+      290.45
+    ],
+    "resistance_levels": [
+      216.35,
+      228.68,
+      237.68
+    ],
+    "expected_return_pct": 7.94,
+    "max_drawdown_pct": -7.05
+  },
+  "scores": {
+    "technical": 59,
+    "fundamental": 85,
+    "options": 88,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 63.1
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 323.12,
+      "sma_50": 313.88,
+      "sma_100": 231.86,
+      "sma_200": 183.49,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 28.61,
+      "macd": -10.9468,
+      "macd_signal": -0.6332,
+      "macd_histogram": -10.3135,
+      "stochastic_rsi": 14.08,
+      "adx": 32.12,
+      "momentum_score": "oversold"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 81.76,
+      "historical_volatility_60": 113.99
+    },
+    "price_structure": {
+      "resistance": [
+        216.35,
+        228.68,
+        237.68
+      ],
+      "support": [
+        303.67,
+        298.38,
+        290.45
+      ],
+      "high_20d": 452.7,
+      "high_30d": 452.7,
+      "high_52w": 452.7,
+      "distance_to_resistance_pct": 63.42,
+      "distance_to_support_pct": 4.26,
+      "nearest_resistance": 452.7,
+      "nearest_support": 265.2
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 22.79,
+    "eps_growth_yoy": 39.34,
+    "gross_margin": 97.54,
+    "operating_margin": 29.53,
+    "net_margin": 18.37,
+    "roe": 11.95,
+    "debt_to_equity": 5.93,
+    "current_ratio": 6.0,
+    "cash": 3600999936,
+    "total_debt": 491000000,
+    "net_cash": 3109999936,
+    "forward_pe": 89.86,
+    "peg_ratio": 2.32,
+    "ev_ebitda": 274.97,
+    "price_to_sales": 60.14
+  },
+  "options": {
+    "implied_volatility": 0.3901,
+    "put_call_ratio": 0.65,
+    "call_volume": 15549,
+    "put_volume": 10114,
+    "call_open_interest": 32,
+    "put_open_interest": 0,
+    "expected_move": 30.98,
+    "expected_move_pct": 11.18,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 37,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 303.97,
+    "target_high": 500.0,
+    "target_low": 125.0,
+    "target_median": 260.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 37
+  },
+  "historical_earnings": {},
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 754.81,
+    "sp500_change_pct": 0.4,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.74,
+    "nasdaq_change_pct": -0.27,
+    "vix": 15.83,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.83,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, positive options flow",
+  "earnings_date": "2026-07-29",
+  "days_until_earnings": 13,
+  "earnings_time": "unknown"
+}
