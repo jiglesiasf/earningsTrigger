@@ -3,32 +3,14 @@
 import { Suspense, useEffect, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { getStockData } from '@/lib/api'
+import { TechnicalBreakdown, FundamentalBreakdown, OptionsBreakdown, SentimentBreakdown, HistoricalBreakdown, MacroBreakdown, OverallBreakdown } from '@/components/ScoreBreakdown'
 
-function ScoreBox({ label, score }: { label: string; score: number }) {
-  const color = score >= 80 ? '#22c55e' : score >= 60 ? '#eab308' : '#ef4444'
-  const bg = score >= 80 ? 'rgba(34,197,94,0.08)' : score >= 60 ? 'rgba(234,179,8,0.08)' : 'rgba(239,68,68,0.08)'
+function ScoreBox({ label, score, color }: { label: string; score: number; color: string }) {
+  const bg = `${color}12`
   return (
-    <div style={{ width: '100px', height: '100px', background: bg, borderRadius: '12px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '2px' }}>
+    <div style={{ flex: '1 1 0', background: bg, borderRadius: '12px', padding: '16px', textAlign: 'center', border: `1px solid ${color}20` }}>
       <div style={{ fontSize: '28px', fontWeight: '700', color }}>{Math.round(score)}</div>
-      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: '500' }}>{label}</div>
-    </div>
-  )
-}
-
-function Panel({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
-      <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{title}</h3>
-      {children}
-    </div>
-  )
-}
-
-function Row({ label, value, color }: { label: string; value: any; color?: string }) {
-  return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
-      <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{label}</span>
-      <span style={{ fontSize: '13px', fontWeight: '600', color: color || 'var(--text-primary)' }}>{value}</span>
+      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: '500', marginTop: '2px' }}>{label}</div>
     </div>
   )
 }
@@ -38,6 +20,7 @@ function StockDetailContent() {
   const ticker = searchParams.get('ticker')
   const [data, setData] = useState<any>(null)
   const [loading, setLoading] = useState(true)
+  const [activeTab, setActiveTab] = useState<'overview' | 'breakdown'>('overview')
 
   useEffect(() => {
     if (ticker) {
@@ -80,14 +63,8 @@ function StockDetailContent() {
         </div>
         <div style={{ textAlign: 'right' }}>
           <div style={{
-            display: 'inline-block',
-            padding: '6px 16px',
-            borderRadius: '8px',
-            fontSize: '14px',
-            fontWeight: '700',
-            background: `${decisionColor}15`,
-            color: decisionColor,
-            marginBottom: '8px',
+            display: 'inline-block', padding: '6px 16px', borderRadius: '8px', fontSize: '14px', fontWeight: '700',
+            background: `${decisionColor}15`, color: decisionColor, marginBottom: '8px',
           }}>{data.decision}</div>
           <div style={{ fontSize: '36px', fontWeight: '700' }}>${data.price.current}</div>
           <div style={{ fontSize: '16px', color: data.price.change_pct >= 0 ? '#22c55e' : '#ef4444', fontWeight: '500' }}>
@@ -99,102 +76,97 @@ function StockDetailContent() {
       <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '24px', fontStyle: 'italic' }}>{data.decision_rationale}</p>
 
       <div style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
-        <ScoreBox label="Overall" score={data.scores.overall} />
-        <ScoreBox label="Technical" score={data.scores.technical} />
-        <ScoreBox label="Fundamental" score={data.scores.fundamental} />
-        <ScoreBox label="Options" score={data.scores.options} />
-        <ScoreBox label="Historical" score={data.scores.historical} />
-        <ScoreBox label="Sentiment" score={data.scores.sentiment} />
+        <ScoreBox label="Overall" score={data.scores.overall} color="#e8e8f0" />
+        <ScoreBox label="Technical" score={data.scores.technical} color="#3b82f6" />
+        <ScoreBox label="Fundamental" score={data.scores.fundamental} color="#a855f7" />
+        <ScoreBox label="Options" score={data.scores.options} color="#f59e0b" />
+        <ScoreBox label="Historical" score={data.scores.historical} color="#ec4899" />
+        <ScoreBox label="Sentiment" score={data.scores.sentiment} color="#06b6d4" />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
-        <Panel title="Trade Parameters">
-          <Row label="Buy Above" value={`$${data.trade_parameters.buy_above}`} />
-          <Row label="Stop Loss" value={`$${data.trade_parameters.stop_loss}`} color="#ef4444" />
-          <Row label="Take Profit" value={`$${data.trade_parameters.take_profit}`} color="#22c55e" />
-          <Row label="Risk/Reward" value={`${data.trade_parameters.risk_reward}:1`} />
-          <Row label="Expected Move" value={data.trade_parameters.expected_move} />
-          <Row label="Expected Return" value={`+${data.trade_parameters.expected_return_pct}%`} color="#22c55e" />
-          <Row label="Max Drawdown" value={`${data.trade_parameters.max_drawdown_pct}%`} color="#ef4444" />
-        </Panel>
-
-        <Panel title="Technical Analysis">
-          {data.technical?.trend && (
-            <>
-              <Row label="Price > 20 EMA" value={data.technical.trend.price_above_20_ema ? 'Yes' : 'No'} color={data.technical.trend.price_above_20_ema ? '#22c55e' : '#ef4444'} />
-              <Row label="Price > 50 SMA" value={data.technical.trend.price_above_50_sma ? 'Yes' : 'No'} color={data.technical.trend.price_above_50_sma ? '#22c55e' : '#ef4444'} />
-              <Row label="Price > 200 SMA" value={data.technical.trend.price_above_200_sma ? 'Yes' : 'No'} color={data.technical.trend.price_above_200_sma ? '#22c55e' : '#ef4444'} />
-              <Row label="Golden Cross" value={data.technical.trend.golden_cross ? 'Yes' : 'No'} color={data.technical.trend.golden_cross ? '#22c55e' : 'var(--text-muted)'} />
-              <Row label="RSI (14)" value={data.technical.momentum?.rsi_14} color={data.technical.momentum?.rsi_14 > 70 ? '#ef4444' : data.technical.momentum?.rsi_14 < 30 ? '#22c55e' : undefined} />
-              <Row label="MACD Histogram" value={data.technical.momentum?.macd_histogram?.toFixed(4)} color={data.technical.momentum?.macd_histogram > 0 ? '#22c55e' : '#ef4444'} />
-              <Row label="ADX" value={data.technical.momentum?.adx} />
-              <Row label="OBV Trend" value={data.technical.volume?.obv_trend} color={data.technical.volume?.obv_trend === 'up' ? '#22c55e' : '#ef4444'} />
-            </>
-          )}
-        </Panel>
+      {/* Tab Selector */}
+      <div style={{ display: 'flex', gap: '4px', background: 'var(--bg-secondary)', borderRadius: '10px', padding: '4px', marginBottom: '24px' }}>
+        <button
+          onClick={() => setActiveTab('overview')}
+          style={{
+            flex: 1, padding: '10px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '14px', fontWeight: '600',
+            background: activeTab === 'overview' ? 'var(--bg-card)' : 'transparent',
+            color: activeTab === 'overview' ? 'var(--text-primary)' : 'var(--text-muted)',
+            boxShadow: activeTab === 'overview' ? '0 1px 3px rgba(0,0,0,0.3)' : 'none',
+          }}
+        >
+          Trade Overview
+        </button>
+        <button
+          onClick={() => setActiveTab('breakdown')}
+          style={{
+            flex: 1, padding: '10px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '14px', fontWeight: '600',
+            background: activeTab === 'breakdown' ? 'var(--bg-card)' : 'transparent',
+            color: activeTab === 'breakdown' ? 'var(--text-primary)' : 'var(--text-muted)',
+            boxShadow: activeTab === 'breakdown' ? '0 1px 3px rgba(0,0,0,0.3)' : 'none',
+          }}
+        >
+          Score Breakdown
+        </button>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
-        <Panel title="Fundamentals">
-          {data.fundamentals && (
-            <>
-              <Row label="Revenue Growth YoY" value={`${data.fundamentals.revenue_growth_yoy}%`} color={data.fundamentals.revenue_growth_yoy > 0 ? '#22c55e' : '#ef4444'} />
-              <Row label="EPS Growth YoY" value={`${data.fundamentals.eps_growth_yoy}%`} color={data.fundamentals.eps_growth_yoy > 0 ? '#22c55e' : '#ef4444'} />
-              <Row label="Gross Margin" value={`${data.fundamentals.gross_margin}%`} />
-              <Row label="Operating Margin" value={`${data.fundamentals.operating_margin}%`} />
-              <Row label="Net Margin" value={`${data.fundamentals.net_margin}%`} />
-              <Row label="PEG Ratio" value={data.fundamentals.peg_ratio} />
-              <Row label="Debt/Equity" value={data.fundamentals.debt_to_equity} />
-              <Row label="Current Ratio" value={data.fundamentals.current_ratio} />
-              <Row label="Forward P/E" value={data.fundamentals.forward_pe} />
-            </>
-          )}
-        </Panel>
+      {activeTab === 'overview' ? (
+        <>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
+            <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
+              <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Trade Parameters</h3>
+              {[
+                ['Buy Above', `$${data.trade_parameters.buy_above}`, undefined],
+                ['Stop Loss', `$${data.trade_parameters.stop_loss}`, '#ef4444'],
+                ['Take Profit', `$${data.trade_parameters.take_profit}`, '#22c55e'],
+                ['Risk/Reward', `${data.trade_parameters.risk_reward}:1`, undefined],
+                ['Expected Move', data.trade_parameters.expected_move, undefined],
+                ['Expected Return', `+${data.trade_parameters.expected_return_pct}%`, '#22c55e'],
+                ['Max Drawdown', `${data.trade_parameters.max_drawdown_pct}%`, '#ef4444'],
+              ].map(([label, value, color]) => (
+                <div key={label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{label}</span>
+                  <span style={{ fontSize: '13px', fontWeight: '600', color: color || 'var(--text-primary)' }}>{value}</span>
+                </div>
+              ))}
+            </div>
 
-        <Panel title="Options Analysis">
-          {data.options && (
-            <>
-              <Row label="Implied Volatility" value={`${(data.options.implied_volatility * 100).toFixed(1)}%`} />
-              <Row label="Put/Call Ratio" value={data.options.put_call_ratio} color={data.options.put_call_ratio < 0.8 ? '#22c55e' : data.options.put_call_ratio > 1.2 ? '#ef4444' : undefined} />
-              <Row label="Expected Move" value={`±${data.options.expected_move_pct}%`} />
-              <Row label="Call Volume" value={data.options.call_volume?.toLocaleString()} />
-              <Row label="Put Volume" value={data.options.put_volume?.toLocaleString()} />
-              <Row label="Skew" value={data.options.skew} />
-              <Row label="Unusual Activity" value={data.options.unusual_activity ? 'Yes' : 'No'} color={data.options.unusual_activity ? '#22c55e' : 'var(--text-muted)'} />
-            </>
-          )}
-        </Panel>
-      </div>
-
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-        <Panel title="Analyst Sentiment">
-          {data.analyst && (
-            <>
-              <Row label="Buy Ratings" value={data.analyst.buy_ratings} color="#22c55e" />
-              <Row label="Hold Ratings" value={data.analyst.hold_ratings} />
-              <Row label="Sell Ratings" value={data.analyst.sell_ratings} color="#ef4444" />
-              <Row label="Avg Price Target" value={`$${data.analyst.avg_price_target}`} />
-              <Row label="Consensus" value={data.analyst.consensus_trend} />
-              {data.analyst.recent_upgrades?.length > 0 && (
-                <Row label="Recent Upgrades" value={data.analyst.recent_upgrades.join(', ')} color="#22c55e" />
-              )}
-            </>
-          )}
-        </Panel>
-
-        <Panel title="Historical Earnings Moves">
-          {data.historical_earnings && (
-            <>
-              <Row label="Avg Move" value={`±${data.historical_earnings.avg_move_pct}%`} />
-              <Row label="Avg 1-Day Return" value={`${data.historical_earnings.avg_1d_return}%`} color={data.historical_earnings.avg_1d_return > 0 ? '#22c55e' : '#ef4444'} />
-              <Row label="Largest Upside" value={`+${data.historical_earnings.largest_upside_pct}%`} color="#22c55e" />
-              <Row label="Largest Downside" value={`${data.historical_earnings.largest_downside_pct}%`} color="#ef4444" />
-              <Row label="Gap Up %" value={`${data.historical_earnings.gap_up_pct}%`} />
-              <Row label="Gap Down %" value={`${data.historical_earnings.gap_down_pct}%`} />
-            </>
-          )}
-        </Panel>
-      </div>
+            <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
+              <h3 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Key Levels</h3>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', marginBottom: '8px' }}>Support</div>
+              {data.trade_parameters.support_levels?.map((s: number, i: number) => (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Support {i + 1}</span>
+                  <span style={{ fontSize: '13px', fontWeight: '600' }}>${s}</span>
+                </div>
+              ))}
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', marginTop: '12px', marginBottom: '8px' }}>Resistance</div>
+              {data.trade_parameters.resistance_levels?.map((r: number, i: number) => (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
+                  <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Resistance {i + 1}</span>
+                  <span style={{ fontSize: '13px', fontWeight: '600' }}>${r}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <OverallBreakdown scores={data.scores} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <TechnicalBreakdown data={data.technical} score={data.scores.technical} />
+            <FundamentalBreakdown data={data.fundamentals} score={data.scores.fundamental} />
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <OptionsBreakdown data={data.options} score={data.scores.options} />
+            <HistoricalBreakdown data={data.historical_earnings} score={data.scores.historical} />
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <SentimentBreakdown analyst={data.analyst} news={data.news} score={data.scores.sentiment} />
+            <MacroBreakdown data={data.market_regime} score={data.scores.macro} />
+          </div>
+        </div>
+      )}
     </div>
   )
 }

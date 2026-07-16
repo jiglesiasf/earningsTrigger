@@ -87,6 +87,7 @@ def analyze_stock(ticker, market_regime_data):
         "analyst": analyst,
         "historical_earnings": historical,
         "news": news,
+        "market_regime": market_regime_data,
         "decision": decision,
         "decision_rationale": rationale,
     }
