@@ -72,7 +72,7 @@ export default function EarningsCalendar() {
             {sorted.map((stock) => (
               <tr key={stock.ticker} className="hover:bg-gray-50">
                 <td className="px-4 py-3">
-                  <a href={`/stock/${stock.ticker}`} className="text-blue-600 hover:underline font-semibold">
+                  <a href={`/stock?ticker=${stock.ticker}`} className="text-blue-600 hover:underline font-semibold">
                     {stock.ticker}
                   </a>
                 </td>

@@ -1,13 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { useParams } from 'next/navigation'
+import { Suspense, useEffect, useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { getStockData } from '@/lib/api'
 import ScoreCard from '@/components/ScoreCard'
 
-export default function StockDetail() {
-  const params = useParams()
-  const ticker = params.ticker as string
+function StockDetailContent() {
+  const searchParams = useSearchParams()
+  const ticker = searchParams.get('ticker')
   const [data, setData] = useState<any>(null)
   const [loading, setLoading] = useState(true)
 
@@ -20,6 +20,15 @@ export default function StockDetail() {
     }
   }, [ticker])
 
+  if (!ticker) {
+    return (
+      <div className="text-center py-12">
+        <h1 className="text-3xl font-bold mb-4">Stock Detail</h1>
+        <p className="text-gray-500">No ticker specified. Go to the <a href="/earnings" className="text-blue-600 hover:underline">earnings calendar</a> to select a stock.</p>
+      </div>
+    )
+  }
+
   if (loading) {
     return <div className="flex justify-center items-center h-64 text-xl text-gray-500">Loading {ticker}...</div>
   }
@@ -29,7 +38,7 @@ export default function StockDetail() {
       <div className="text-center py-12">
         <h1 className="text-3xl font-bold mb-4">{ticker}</h1>
         <p className="text-gray-500">No data available for this stock.</p>
-        <a href="/earnings" className="text-blue-600 hover:underline mt-4 inline-block">Back to Calendar</a>
+        <a href="/earnings" className="text-blue-600 hover:underline mt-4 inline-block">&larr; Back to Calendar</a>
       </div>
     )
   }
@@ -366,5 +375,13 @@ export default function StockDetail() {
         </div>
       )}
     </div>
+  )
+}
+
+export default function StockDetail() {
+  return (
+    <Suspense fallback={<div className="flex justify-center items-center h-64 text-xl text-gray-500">Loading...</div>}>
+      <StockDetailContent />
+    </Suspense>
   )
 }

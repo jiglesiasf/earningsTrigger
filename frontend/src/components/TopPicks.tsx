@@ -23,7 +23,7 @@ export default function TopPicks({ picks }: { picks: StockPick[] }) {
         {picks.map((pick) => (
           <a
             key={pick.ticker}
-            href={`/stock/${pick.ticker}`}
+            href={`/stock?ticker=${pick.ticker}`}
             className="block bg-white border rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
           >
             <div className="flex justify-between items-start mb-4">
