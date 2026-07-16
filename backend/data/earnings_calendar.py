@@ -1,6 +1,5 @@
 import yfinance as yf
-import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 
 def get_earnings_calendar(tickers, days_ahead=14):
@@ -35,12 +34,16 @@ def get_earnings_calendar(tickers, days_ahead=14):
                 continue
 
             if isinstance(earnings_date, str):
-                earnings_date = datetime.strptime(earnings_date, "%Y-%m-%d")
-            elif isinstance(earnings_date, pd.Timestamp):
-                earnings_date = earnings_date.to_pydatetime()
+                earnings_date = datetime.strptime(earnings_date, "%Y-%m-%d").date()
+            elif isinstance(earnings_date, datetime):
+                earnings_date = earnings_date.date()
+            elif isinstance(earnings_date, date):
+                pass
+            else:
+                continue
 
-            if today.date() <= earnings_date.date() <= end_date.date():
-                days_until = (earnings_date.date() - today.date()).days
+            if today.date() <= earnings_date <= end_date.date():
+                days_until = (earnings_date - today.date()).days
                 upcoming.append({
                     "ticker": ticker,
                     "earnings_date": earnings_date.strftime("%Y-%m-%d"),

@@ -1,24 +1,22 @@
 export default function ScoreCard({ label, score, size = 'md' }: { label: string; score: number; size?: 'sm' | 'md' }) {
-  const getColor = (s: number) => {
-    if (s >= 80) return 'text-green-600'
-    if (s >= 60) return 'text-yellow-600'
-    return 'text-red-600'
-  }
-
-  const getBgColor = (s: number) => {
-    if (s >= 80) return 'bg-green-50'
-    if (s >= 60) return 'bg-yellow-50'
-    return 'bg-red-50'
-  }
-
-  const sizeClasses = size === 'sm' ? 'p-2' : 'p-4'
+  const color = score >= 80 ? '#22c55e' : score >= 60 ? '#eab308' : '#ef4444'
+  const bgColor = score >= 80 ? 'rgba(34,197,94,0.08)' : score >= 60 ? 'rgba(234,179,8,0.08)' : 'rgba(239,68,68,0.08)'
+  const dim = size === 'sm' ? '72px' : '100px'
 
   return (
-    <div className={`${getBgColor(score)} ${sizeClasses} rounded-lg text-center`}>
-      <div className={`text-${size === 'sm' ? 'lg' : '2xl'} font-bold ${getColor(score)}`}>
-        {Math.round(score)}
-      </div>
-      <div className={`text-${size === 'sm' ? 'xs' : 'sm'} text-gray-600`}>{label}</div>
+    <div style={{
+      width: dim,
+      height: dim,
+      background: bgColor,
+      borderRadius: '12px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '2px',
+    }}>
+      <div style={{ fontSize: size === 'sm' ? '20px' : '28px', fontWeight: '700', color }}>{Math.round(score)}</div>
+      <div style={{ fontSize: size === 'sm' ? '10px' : '11px', color: 'var(--text-muted)', fontWeight: '500' }}>{label}</div>
     </div>
   )
 }

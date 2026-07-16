@@ -1,6 +1,6 @@
 import { AnalysisOutput } from './types'
 
-const DATA_BASE = '/data'
+const DATA_BASE = '/earningsTrigger/data'
 
 export async function getLatestAnalysis(): Promise<AnalysisOutput | null> {
   try {

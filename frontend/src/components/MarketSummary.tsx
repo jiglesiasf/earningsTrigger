@@ -1,69 +1,58 @@
+'use client'
 import { MarketSummary as MarketSummaryType } from '@/lib/types'
 
-function TrendBadge({ trend }: { trend: string }) {
-  const colors = {
-    bullish: 'bg-green-100 text-green-800',
-    bearish: 'bg-red-100 text-red-800',
-    neutral: 'bg-gray-100 text-gray-800',
+function TrendPill({ trend }: { trend: string }) {
+  const style: React.CSSProperties = {
+    display: 'inline-block',
+    padding: '2px 8px',
+    borderRadius: '4px',
+    fontSize: '11px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
   }
+  if (trend === 'bullish') return <span style={{ ...style, background: 'rgba(34,197,94,0.15)', color: '#22c55e' }}>Bullish</span>
+  if (trend === 'bearish') return <span style={{ ...style, background: 'rgba(239,68,68,0.15)', color: '#ef4444' }}>Bearish</span>
+  return <span style={{ ...style, background: 'rgba(255,255,255,0.05)', color: '#888' }}>Neutral</span>
+}
+
+function Stat({ label, value, change, children }: { label: string; value: string | number; change?: number; children?: React.ReactNode }) {
   return (
-    <span className={`px-2 py-1 rounded-full text-sm font-medium ${colors[trend as keyof typeof colors] || colors.neutral}`}>
-      {trend}
-    </span>
+    <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '10px', border: '1px solid var(--border)' }}>
+      <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '6px', fontWeight: '500' }}>{label}</div>
+      <div style={{ fontSize: '24px', fontWeight: '700', marginBottom: '4px' }}>{value}</div>
+      {change !== undefined && (
+        <div style={{ fontSize: '13px', color: change >= 0 ? '#22c55e' : '#ef4444', marginBottom: '6px' }}>
+          {change >= 0 ? '+' : ''}{change}%
+        </div>
+      )}
+      {children}
+    </div>
   )
 }
 
 export default function MarketSummary({ summary }: { summary: MarketSummaryType }) {
+  const vixColor = summary.vix < 15 ? '#22c55e' : summary.vix < 25 ? '#eab308' : '#ef4444'
+
   return (
-    <div className="bg-white border rounded-lg shadow-sm p-6 mb-8">
-      <h2 className="text-xl font-semibold mb-4">Market Summary</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div>
-          <div className="text-sm text-gray-500">S&P 500</div>
-          <div className="text-lg font-semibold">{summary.sp500_price}</div>
-          <div className={`text-sm ${summary.sp500_change_pct >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-            {summary.sp500_change_pct >= 0 ? '+' : ''}{summary.sp500_change_pct}%
-          </div>
-          <TrendBadge trend={summary.sp500_trend} />
-        </div>
-        <div>
-          <div className="text-sm text-gray-500">Nasdaq</div>
-          <div className="text-lg font-semibold">{summary.nasdaq_price}</div>
-          <div className={`text-sm ${summary.nasdaq_change_pct >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-            {summary.nasdaq_change_pct >= 0 ? '+' : ''}{summary.nasdaq_change_pct}%
-          </div>
-          <TrendBadge trend={summary.nasdaq_trend} />
-        </div>
-        <div>
-          <div className="text-sm text-gray-500">VIX</div>
-          <div className="text-lg font-semibold">{summary.vix}</div>
-          <div className="text-sm text-gray-600">{summary.vix_trend}</div>
-          <span className={`px-2 py-1 rounded-full text-sm font-medium ${
-            summary.risk_level === 'low' ? 'bg-green-100 text-green-800' :
-            summary.risk_level === 'moderate' ? 'bg-yellow-100 text-yellow-800' :
-            'bg-red-100 text-red-800'
-          }`}>
+    <div style={{ marginBottom: '32px' }}>
+      <h2 style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Market Overview</h2>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px' }}>
+        <Stat label="S&P 500" value={summary.sp500_price?.toLocaleString() || '-'} change={summary.sp500_change_pct}>
+          <TrendPill trend={summary.sp500_trend} />
+        </Stat>
+        <Stat label="Nasdaq" value={summary.nasdaq_price?.toLocaleString() || '-'} change={summary.nasdaq_change_pct}>
+          <TrendPill trend={summary.nasdaq_trend} />
+        </Stat>
+        <Stat label="VIX" value={summary.vix || '-'}>
+          <span style={{ fontSize: '12px', color: vixColor, fontWeight: '600' }}>{summary.vix_trend}</span>
+        </Stat>
+        <Stat label="Market Regime" value={summary.market_regime?.replace('_', ' ') || '-'}>
+          <span style={{ fontSize: '12px', color: summary.risk_level === 'low' ? '#22c55e' : summary.risk_level === 'moderate' ? '#eab308' : '#ef4444', fontWeight: '600' }}>
             {summary.risk_level} risk
           </span>
-        </div>
-        <div>
-          <div className="text-sm text-gray-500">Regime</div>
-          <div className="text-lg font-semibold capitalize">{summary.market_regime.replace('_', ' ')}</div>
-          <div className="text-sm text-gray-600">Breadth: {summary.breadth}</div>
-        </div>
+        </Stat>
       </div>
-      {summary.macro_events.length > 0 && (
-        <div className="mt-4 pt-4 border-t">
-          <div className="text-sm text-gray-500 mb-2">Key Events</div>
-          <div className="flex flex-wrap gap-2">
-            {summary.macro_events.map((event, i) => (
-              <span key={i} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm">
-                {event}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
     </div>
   )
 }
