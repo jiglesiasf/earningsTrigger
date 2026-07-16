@@ -218,10 +218,10 @@ def save_output(output):
     date_path = os.path.join(DATA_OUTPUT_DIR, "history", f"{output['run_date']}.json")
     save_json(output, date_path)
 
-    for pick in output.get("top_picks", []):
-        ticker = pick["ticker"]
+    for stock in output.get("all_analyzed", []):
+        ticker = stock["ticker"]
         ticker_path = os.path.join(DATA_OUTPUT_DIR, "stock", f"{ticker}.json")
-        save_json(pick, ticker_path)
+        save_json(stock, ticker_path)
 
     print(f"\n  Output saved to {DATA_OUTPUT_DIR}")
 
