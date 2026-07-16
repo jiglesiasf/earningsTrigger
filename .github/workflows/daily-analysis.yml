@@ -1,0 +1,43 @@
+name: Daily Earnings Analysis
+
+on:
+  schedule:
+    - cron: '30 9 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r backend/requirements.txt
+
+      - name: Run earnings analysis
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+        run: python backend/main.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "Earnings Trigger Bot"
+          git config user.email "bot@earnings-trigger"
+          git add public/data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily analysis $(date +'%Y-%m-%d')"
+            git push
+          fi
