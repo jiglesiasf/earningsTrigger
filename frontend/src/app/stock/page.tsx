@@ -2,8 +2,9 @@
 
 import { Suspense, useEffect, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
-import { getStockData } from '@/lib/api'
+import { getStockData, getHistoricalData } from '@/lib/api'
 import { TechnicalBreakdown, FundamentalBreakdown, OptionsBreakdown, SentimentBreakdown, HistoricalBreakdown, MacroBreakdown, OverallBreakdown } from '@/components/ScoreBreakdown'
+import HistoricalAnalysis from '@/components/HistoricalAnalysis'
 
 function ScoreBox({ label, score, color }: { label: string; score: number; color: string }) {
   const bg = `${color}12`
@@ -19,12 +20,20 @@ function StockDetailContent() {
   const searchParams = useSearchParams()
   const ticker = searchParams.get('ticker')
   const [data, setData] = useState<any>(null)
+  const [historical, setHistorical] = useState<any>(null)
   const [loading, setLoading] = useState(true)
-  const [activeTab, setActiveTab] = useState<'overview' | 'breakdown'>('overview')
+  const [activeTab, setActiveTab] = useState<'overview' | 'breakdown' | 'history'>('overview')
 
   useEffect(() => {
     if (ticker) {
-      getStockData(ticker).then((result) => { setData(result); setLoading(false) })
+      Promise.all([
+        getStockData(ticker),
+        getHistoricalData(ticker),
+      ]).then(([stockResult, histResult]) => {
+        setData(stockResult)
+        setHistorical(histResult)
+        setLoading(false)
+      })
     }
   }, [ticker])
 
@@ -108,6 +117,19 @@ function StockDetailContent() {
         >
           Score Breakdown
         </button>
+        {historical && (
+          <button
+            onClick={() => setActiveTab('history')}
+            style={{
+              flex: 1, padding: '10px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '14px', fontWeight: '600',
+              background: activeTab === 'history' ? 'var(--bg-card)' : 'transparent',
+              color: activeTab === 'history' ? 'var(--text-primary)' : 'var(--text-muted)',
+              boxShadow: activeTab === 'history' ? '0 1px 3px rgba(0,0,0,0.3)' : 'none',
+            }}
+          >
+            Historical Analysis
+          </button>
+        )}
       </div>
 
       {activeTab === 'overview' ? (
@@ -150,7 +172,7 @@ function StockDetailContent() {
             </div>
           </div>
         </>
-      ) : (
+      ) : activeTab === 'breakdown' ? (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <OverallBreakdown scores={data.scores} />
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
@@ -166,6 +188,8 @@ function StockDetailContent() {
             <MacroBreakdown data={data.market_regime} score={data.scores.macro} />
           </div>
         </div>
+      ) : (
+        <HistoricalAnalysis historical={historical} stockData={data} />
       )}
     </div>
   )

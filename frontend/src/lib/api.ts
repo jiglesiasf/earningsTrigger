@@ -21,3 +21,13 @@ export async function getStockData(ticker: string): Promise<any | null> {
     return null
   }
 }
+
+export async function getHistoricalData(ticker: string): Promise<any | null> {
+  try {
+    const res = await fetch(`${DATA_BASE}/historical_${ticker}.json`)
+    if (!res.ok) return null
+    return res.json()
+  } catch {
+    return null
+  }
+}
