@@ -19,7 +19,8 @@ from scoring.technical_score import calculate_technical_score
 from scoring.fundamental_score import calculate_fundamental_score
 from scoring.options_score import calculate_options_score
 from scoring.sentiment_score import calculate_sentiment_score
-from scoring.historical_score import calculate_historical_score
+from scoring.historical_score import calculate_historical_score, calculate_deep_historical_score, merge_historical_scores
+from historical_analysis import analyze_earnings
 from scoring.macro_score import calculate_macro_score
 from scoring.overall_score import calculate_overall_score
 from analysis.trade_parameters import calculate_trade_parameters
@@ -44,12 +45,24 @@ def analyze_stock(ticker, market_regime_data):
     historical = get_historical_earnings(ticker)
     news = get_news_sentiment(ticker)
 
+    deep_historical = None
+    try:
+        deep_historical = analyze_earnings(ticker, num_quarters=16)
+        print(f"    Deep historical: {deep_historical.get('total_quarters', 0)} quarters, beat rate {deep_historical.get('overall', {}).get('beat_rate_pct', 0)}%")
+    except Exception as e:
+        print(f"    Deep historical failed for {ticker}: {e}")
+
+    simple_hist_score = calculate_historical_score(historical)
+    deep_hist_score = calculate_deep_historical_score(deep_historical)
+    has_deep = deep_historical is not None and deep_historical.get("total_quarters", 0) >= 4
+    final_hist_score = merge_historical_scores(simple_hist_score, deep_hist_score, has_deep)
+
     scores = {
         "technical": calculate_technical_score(technicals),
         "fundamental": calculate_fundamental_score(fundamentals),
         "options": calculate_options_score(options),
         "sentiment": calculate_sentiment_score(analyst, news),
-        "historical": calculate_historical_score(historical),
+        "historical": final_hist_score,
         "macro": calculate_macro_score(market_regime_data),
     }
 
@@ -81,11 +94,18 @@ def analyze_stock(ticker, market_regime_data):
         },
         "trade_parameters": trade_params,
         "scores": scores,
+        "historical_score_breakdown": {
+            "simple": simple_hist_score,
+            "deep": deep_hist_score,
+            "merged": final_hist_score,
+            "has_deep": has_deep,
+        },
         "technical": technicals,
         "fundamentals": fundamentals,
         "options": options,
         "analyst": analyst,
         "historical_earnings": historical,
+        "historical_analysis": deep_historical,
         "news": news,
         "market_regime": market_regime_data,
         "decision": decision,

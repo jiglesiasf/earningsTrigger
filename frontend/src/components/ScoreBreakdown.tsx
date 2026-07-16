@@ -173,39 +173,95 @@ export function SentimentBreakdown({ analyst, news, score }: { analyst: any; new
   )
 }
 
-export function HistoricalBreakdown({ data, score }: { data: any; score: number }) {
+export function HistoricalBreakdown({ data, score, deepAnalysis, scoreBreakdown }: { data: any; score: number; deepAnalysis?: any; scoreBreakdown?: any }) {
   const { t } = useTranslation()
   if (!data) return null
+
+  const deep = deepAnalysis?.overall
+  const beat = deepAnalysis?.beat_analysis
+  const drift5 = deepAnalysis?.drift_5d
 
   return (
     <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
       <SectionHeader title={t('historical.title')} score={score} weight={0.15} color="#ec4899" />
 
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.move_stats')}</div>
-      <CalcRow label={t('historical.avg_move')} value={`±${data.avg_move_pct}%`} note={data.avg_move_pct > 8 ? t('historical.avg_move_large') : data.avg_move_pct > 5 ? t('historical.avg_move_moderate') : t('historical.avg_move_small')} impact={data.avg_move_pct > 5 ? 'positive' : 'neutral'} />
-      <CalcRow label={t('historical.median_move')} value={`±${data.median_move_pct}%`} impact="neutral" note={t('historical.median_note')} />
-      <CalcRow label={t('historical.largest_upside')} value={`+${data.largest_upside_pct}%`} impact="positive" impactColor="#22c55e" />
-      <CalcRow label={t('historical.largest_downside')} value={`${data.largest_downside_pct}%`} impact="negative" impactColor="#ef4444" />
-
-      <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.directional_bias')}</div>
-      <CalcRow label={t('historical.avg_1d')} value={`${data.avg_1d_return}%`} note={data.avg_1d_return > 2 ? t('historical.avg_1d_strong') : data.avg_1d_return > 0 ? t('historical.avg_1d_slight') : t('historical.avg_1d_negative')} impact={data.avg_1d_return > 0 ? 'positive' : 'negative'} impactColor={data.avg_1d_return > 0 ? '#22c55e' : '#ef4444'} />
-      <CalcRow label={t('historical.gap_up_rate')} value={`${data.gap_up_pct}%`} note={data.gap_up_pct > 60 ? t('historical.gap_up_note') : t('historical.gap_mixed')} impact={data.gap_up_pct > 60 ? 'positive' : 'neutral'} />
-      <CalcRow label={t('historical.gap_down_rate')} value={`${data.gap_down_pct}%`} impact={data.gap_down_pct > 60 ? 'negative' : 'neutral'} />
-
-      {data.recent_moves?.length > 0 && (
-        <>
-          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.recent_moves')}</div>
-          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-            {data.recent_moves.map((m: any, i: number) => (
-              <span key={i} style={{
-                padding: '4px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: '600',
-                background: m.day_return_pct > 0 ? 'rgba(34,197,94,0.1)' : 'rgba(239,68,68,0.1)',
-                color: m.day_return_pct > 0 ? '#22c55e' : '#ef4444',
-              }}>
-                {m.day_return_pct > 0 ? '+' : ''}{m.day_return_pct}%
-              </span>
-            ))}
+      {scoreBreakdown?.has_deep && (
+        <div style={{ marginBottom: '16px', padding: '10px 14px', borderRadius: '8px', background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.15)' }}>
+          <div style={{ fontSize: '12px', fontWeight: '600', color: '#ec4899', marginBottom: '4px' }}>{t('historical.deep_analysis')}</div>
+          <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+            {t('historical.score_breakdown_simple', { score: scoreBreakdown.simple })} · {t('historical.score_breakdown_deep', { score: scoreBreakdown.deep })} → {t('historical.score_breakdown_merged', { score: scoreBreakdown.merged })}
           </div>
+        </div>
+      )}
+
+      {deep && (
+        <>
+          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.deep_overall')}</div>
+          <CalcRow label={t('historical.beat_rate')} value={`${deep.beat_rate_pct}%`} note={t('historical.quarters_analyzed', { n: deep.total_quarters })} impact={deep.beat_rate_pct >= 70 ? 'positive' : deep.beat_rate_pct >= 50 ? 'neutral' : 'negative'} impactColor={deep.beat_rate_pct >= 70 ? '#22c55e' : '#ef4444'} />
+          <CalcRow label={t('historical.avg_surprise')} value={`${deep.avg_surprise_pct > 0 ? '+' : ''}${deep.avg_surprise_pct}%`} impact={deep.avg_surprise_pct > 5 ? 'positive' : deep.avg_surprise_pct > 0 ? 'neutral' : 'negative'} impactColor={deep.avg_surprise_pct > 0 ? '#22c55e' : '#ef4444'} />
+          <CalcRow label={t('historical.avg_day_return')} value={`${deep.avg_day_return_pct > 0 ? '+' : ''}${deep.avg_day_return_pct}%`} impact={deep.avg_day_return_pct > 0 ? 'positive' : 'negative'} impactColor={deep.avg_day_return_pct > 0 ? '#22c55e' : '#ef4444'} />
+          <CalcRow label={t('historical.positive_rate')} value={`${deep.positive_day_rate_pct}%`} impact={deep.positive_day_rate_pct >= 55 ? 'positive' : 'neutral'} />
+
+          {beat && (
+            <>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.beat_vs_miss')}</div>
+              <CalcRow label={t('historical.beat_count')} value={`${beat.beat_count} / ${beat.miss_count}`} impact={beat.beat_count > beat.miss_count * 2 ? 'positive' : 'neutral'} />
+              {beat.avg_day_return_when_beat !== null && <CalcRow label={t('historical.return_when_beat')} value={`+${beat.avg_day_return_when_beat}%`} impact="positive" impactColor="#22c55e" />}
+              {beat.avg_day_return_when_miss !== null && <CalcRow label={t('historical.return_when_miss')} value={`${beat.avg_day_return_when_miss}%`} impact="negative" impactColor="#ef4444" />}
+              {beat.beat_positive_rate !== null && <CalcRow label={t('historical.positive_rate_on_beat')} value={`${beat.beat_positive_rate}%`} impact={beat.beat_positive_rate >= 60 ? 'positive' : 'neutral'} />}
+            </>
+          )}
+
+          {drift5 && (
+            <>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.drift_5d')}</div>
+              <CalcRow label={t('historical.drift_all')} value={`${drift5.avg_return_all > 0 ? '+' : ''}${drift5.avg_return_all}%`} impact={drift5.avg_return_all > 1 ? 'positive' : drift5.avg_return_all < -1 ? 'negative' : 'neutral'} impactColor={drift5.avg_return_all > 0 ? '#22c55e' : '#ef4444'} />
+              {drift5.avg_return_beat !== null && <CalcRow label={t('historical.drift_on_beat')} value={`+${drift5.avg_return_beat}%`} impact="positive" impactColor="#22c55e" />}
+              {drift5.avg_return_miss !== null && <CalcRow label={t('historical.drift_on_miss')} value={`${drift5.avg_return_miss}%`} impact="negative" impactColor="#ef4444" />}
+              <CalcRow label={t('historical.drift_positive_rate')} value={`${drift5.positive_rate_all}%`} impact={drift5.positive_rate_all >= 55 ? 'positive' : 'neutral'} />
+            </>
+          )}
+
+          {deepAnalysis?.key_insights && deepAnalysis.key_insights.length > 0 && (
+            <>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.insights')}</div>
+              {deepAnalysis.key_insights.map((insight: string, i: number) => (
+                <div key={i} style={{ fontSize: '12px', color: 'var(--text-secondary)', padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.03)', lineHeight: '1.5' }}>→ {insight}</div>
+              ))}
+            </>
+          )}
+        </>
+      )}
+
+      {!deep && (
+        <>
+          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.move_stats')}</div>
+          <CalcRow label={t('historical.avg_move')} value={`±${data.avg_move_pct}%`} note={data.avg_move_pct > 8 ? t('historical.avg_move_large') : data.avg_move_pct > 5 ? t('historical.avg_move_moderate') : t('historical.avg_move_small')} impact={data.avg_move_pct > 5 ? 'positive' : 'neutral'} />
+          <CalcRow label={t('historical.median_move')} value={`±${data.median_move_pct}%`} impact="neutral" note={t('historical.median_note')} />
+          <CalcRow label={t('historical.largest_upside')} value={`+${data.largest_upside_pct}%`} impact="positive" impactColor="#22c55e" />
+          <CalcRow label={t('historical.largest_downside')} value={`${data.largest_downside_pct}%`} impact="negative" impactColor="#ef4444" />
+
+          <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.directional_bias')}</div>
+          <CalcRow label={t('historical.avg_1d')} value={`${data.avg_1d_return}%`} note={data.avg_1d_return > 2 ? t('historical.avg_1d_strong') : data.avg_1d_return > 0 ? t('historical.avg_1d_slight') : t('historical.avg_1d_negative')} impact={data.avg_1d_return > 0 ? 'positive' : 'negative'} impactColor={data.avg_1d_return > 0 ? '#22c55e' : '#ef4444'} />
+          <CalcRow label={t('historical.gap_up_rate')} value={`${data.gap_up_pct}%`} note={data.gap_up_pct > 60 ? t('historical.gap_up_note') : t('historical.gap_mixed')} impact={data.gap_up_pct > 60 ? 'positive' : 'neutral'} />
+          <CalcRow label={t('historical.gap_down_rate')} value={`${data.gap_down_pct}%`} impact={data.gap_down_pct > 60 ? 'negative' : 'neutral'} />
+
+          {data.recent_moves?.length > 0 && (
+            <>
+              <div style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px', marginTop: '16px' }}>{t('historical.recent_moves')}</div>
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {data.recent_moves.map((m: any, i: number) => (
+                  <span key={i} style={{
+                    padding: '4px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: '600',
+                    background: m.day_return_pct > 0 ? 'rgba(34,197,94,0.1)' : 'rgba(239,68,68,0.1)',
+                    color: m.day_return_pct > 0 ? '#22c55e' : '#ef4444',
+                  }}>
+                    {m.day_return_pct > 0 ? '+' : ''}{m.day_return_pct}%
+                  </span>
+                ))}
+              </div>
+            </>
+          )}
         </>
       )}
     </div>

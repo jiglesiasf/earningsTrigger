@@ -183,7 +183,7 @@ function StockDetailContent() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
             <OptionsBreakdown data={data.options} score={data.scores.options} />
-            <HistoricalBreakdown data={data.historical_earnings} score={data.scores.historical} />
+            <HistoricalBreakdown data={data.historical_earnings} score={data.scores.historical} deepAnalysis={data.historical_analysis} scoreBreakdown={data.historical_score_breakdown} />
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
             <SentimentBreakdown analyst={data.analyst} news={data.news} score={data.scores.sentiment} />
