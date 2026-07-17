@@ -3,21 +3,21 @@
   "company": "Boston Scientific Corporation",
   "sector": "Healthcare",
   "price": {
-    "current": 43.04,
-    "open": 42.65,
-    "high": 43.61,
-    "low": 42.2,
-    "previous_close": 42.63,
-    "change_pct": 0.96,
-    "market_cap": 63972728832
+    "current": 44.62,
+    "open": 44.18,
+    "high": 45.45,
+    "low": 43.76,
+    "previous_close": 43.04,
+    "change_pct": 3.67,
+    "market_cap": 66321166336
   },
   "trade_parameters": {
-    "buy_above": 43.04,
+    "buy_above": 45.51,
     "stop_loss": 42.2,
-    "take_profit": 48.46,
-    "expected_move": "\u00b112.59%",
-    "expected_move_dollars": "\u00b1$5.42",
-    "risk_reward": 6.45,
+    "take_profit": 50.93,
+    "expected_move": "\u00b114.14%",
+    "expected_move_dollars": "\u00b1$6.31",
+    "risk_reward": 1.64,
     "support_levels": [
       56.05,
       52.52,
@@ -28,24 +28,30 @@
       45.83,
       46.37
     ],
-    "expected_return_pct": 12.59,
-    "max_drawdown_pct": -1.95
+    "expected_return_pct": 11.91,
+    "max_drawdown_pct": -7.27
   },
   "scores": {
-    "technical": 79,
+    "technical": 89,
     "fundamental": 85,
     "options": 55,
     "sentiment": 70,
     "historical": 0,
     "macro": 75,
-    "overall": 62.5
+    "overall": 65.5
+  },
+  "historical_score_breakdown": {
+    "simple": 0,
+    "deep": 50,
+    "merged": 0,
+    "has_deep": false
   },
   "technical": {
     "trend": {
-      "ema_20": 45.03,
-      "sma_50": 49.05,
-      "sma_100": 58.0,
-      "sma_200": 76.28,
+      "ema_20": 44.99,
+      "sma_50": 48.81,
+      "sma_100": 57.7,
+      "sma_200": 76.02,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -53,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 42.09,
-      "macd": -1.5395,
-      "macd_signal": -1.7931,
-      "macd_histogram": 0.2536,
-      "stochastic_rsi": 71.13,
-      "adx": 33.41,
-      "momentum_score": "weak"
+      "rsi_14": 52.04,
+      "macd": -1.3964,
+      "macd_signal": -1.7138,
+      "macd_histogram": 0.3173,
+      "stochastic_rsi": 100.0,
+      "adx": 30.53,
+      "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "down",
+      "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 34.91,
-      "historical_volatility_60": 46.28
+      "historical_volatility_20": 37.72,
+      "historical_volatility_60": 46.17
     },
     "price_structure": {
       "resistance": [
@@ -80,11 +86,11 @@
         52.52,
         47.17
       ],
-      "high_20d": 47.25,
+      "high_20d": 46.7,
       "high_30d": 50.14,
       "high_52w": 109.5,
-      "distance_to_resistance_pct": 5.74,
-      "distance_to_support_pct": 1.95,
+      "distance_to_resistance_pct": 1.99,
+      "distance_to_support_pct": 5.42,
       "nearest_resistance": 45.51,
       "nearest_support": 42.2
     }
@@ -101,20 +107,20 @@
     "cash": 1452999936,
     "total_debt": 11029000192,
     "net_cash": -9576000256,
-    "forward_pe": 11.6,
+    "forward_pe": 12.03,
     "peg_ratio": 0.53,
-    "ev_ebitda": 13.42,
-    "price_to_sales": 3.1
+    "ev_ebitda": 13.84,
+    "price_to_sales": 3.22
   },
   "options": {
-    "implied_volatility": 0.439,
-    "put_call_ratio": 2.44,
-    "call_volume": 789,
-    "put_volume": 1928,
-    "call_open_interest": 22833,
-    "put_open_interest": 16620,
-    "expected_move": 5.42,
-    "expected_move_pct": 12.59,
+    "implied_volatility": 0.4931,
+    "put_call_ratio": 1.64,
+    "call_volume": 8947,
+    "put_volume": 14641,
+    "call_open_interest": 45347,
+    "put_open_interest": 27440,
+    "expected_move": 6.31,
+    "expected_move_pct": 14.14,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -134,6 +140,7 @@
     "number_of_analysts": 28
   },
   "historical_earnings": {},
+  "historical_analysis": null,
   "news": {
     "sentiment_score": 0.5,
     "headline_count": 10,
@@ -144,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 754.81,
-    "sp500_change_pct": 0.4,
+    "sp500_price": 750.72,
+    "sp500_change_pct": -0.54,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 717.74,
-    "nasdaq_change_pct": -0.27,
-    "vix": 16.08,
+    "nasdaq_price": 705.94,
+    "nasdaq_change_pct": -1.64,
+    "vix": 18.08,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -162,13 +169,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 16.08,
+      "vix": 18.08,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable risk/reward ratio of 6.45:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals",
   "earnings_date": "2026-07-29",
-  "days_until_earnings": 13,
+  "days_until_earnings": 12,
   "earnings_time": "unknown"
 }

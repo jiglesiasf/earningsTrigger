@@ -1,0 +1,181 @@
+{
+  "ticker": "COIN",
+  "company": "Coinbase Global, Inc.",
+  "sector": "Financial Services",
+  "price": {
+    "current": 160.49,
+    "open": 165.37,
+    "high": 166.57,
+    "low": 159.51,
+    "previous_close": 167.21,
+    "change_pct": -4.02,
+    "market_cap": 42282819584
+  },
+  "trade_parameters": {
+    "buy_above": 164.98,
+    "stop_loss": 139.18,
+    "take_profit": 172.45,
+    "expected_move": "\u00b17.45%",
+    "expected_move_dollars": "\u00b1$11.96",
+    "risk_reward": 0.29,
+    "support_levels": [
+      193.91,
+      184.15,
+      182.8
+    ],
+    "resistance_levels": [
+      164.98,
+      167.98,
+      173.09
+    ],
+    "expected_return_pct": 4.53,
+    "max_drawdown_pct": -15.64
+  },
+  "scores": {
+    "technical": 81,
+    "fundamental": 44,
+    "options": 75,
+    "sentiment": 70,
+    "historical": 0,
+    "macro": 75,
+    "overall": 58.9
+  },
+  "historical_score_breakdown": {
+    "simple": 0,
+    "deep": 50,
+    "merged": 0,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 161.31,
+      "sma_50": 172.79,
+      "sma_100": 180.48,
+      "sma_200": 223.61,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 63.49,
+      "macd": -2.0126,
+      "macd_signal": -3.6047,
+      "macd_histogram": 1.5921,
+      "stochastic_rsi": 100.0,
+      "adx": 13.36,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 59.36,
+      "historical_volatility_60": 64.91
+    },
+    "price_structure": {
+      "resistance": [
+        164.98,
+        167.98,
+        173.09
+      ],
+      "support": [
+        193.91,
+        184.15,
+        182.8
+      ],
+      "high_20d": 176.48,
+      "high_30d": 176.48,
+      "high_52w": 444.65,
+      "distance_to_resistance_pct": 2.8,
+      "distance_to_support_pct": 13.28,
+      "nearest_resistance": 164.98,
+      "nearest_support": 139.18
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 9.4,
+    "eps_growth_yoy": -53.06,
+    "gross_margin": 85.47,
+    "operating_margin": -7.1,
+    "net_margin": 12.74,
+    "roe": 6.69,
+    "debt_to_equity": 59.08,
+    "current_ratio": 2.14,
+    "cash": 10438001664,
+    "total_debt": 7964423168,
+    "net_cash": 2473578496,
+    "forward_pe": 33.82,
+    "peg_ratio": 1.6,
+    "ev_ebitda": 39.71,
+    "price_to_sales": 6.73
+  },
+  "options": {
+    "implied_volatility": 0.26,
+    "put_call_ratio": 0.89,
+    "call_volume": 20125,
+    "put_volume": 17927,
+    "call_open_interest": 44190,
+    "put_open_interest": 32064,
+    "expected_move": 11.96,
+    "expected_move_pct": 7.45,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 30,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 222.54,
+    "target_high": 400.0,
+    "target_low": 99.0,
+    "target_median": 211.5,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 30
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 750.72,
+    "sp500_change_pct": -0.54,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 705.94,
+    "nasdaq_change_pct": -1.64,
+    "vix": 18.08,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 18.08,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-07-30",
+  "days_until_earnings": 13,
+  "earnings_time": "unknown"
+}
