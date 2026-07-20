@@ -92,7 +92,7 @@ function StockDetailContent() {
         <ScoreBox label={t('score.technical')} score={data.scores.technical} color="#3b82f6" />
         <ScoreBox label={t('score.fundamental')} score={data.scores.fundamental} color="#a855f7" />
         <ScoreBox label={t('score.options')} score={data.scores.options} color="#f59e0b" />
-        <ScoreBox label={t('score.historical')} score={data.scores.historical} color="#ec4899" noData={!data.historical_earnings || Object.keys(data.historical_earnings).length === 0} noDataLabel={t('stock.no_data')} />
+        <ScoreBox label={t('score.historical')} score={data.scores.historical} color="#ec4899" noData={(!data.historical_earnings || Object.keys(data.historical_earnings).length === 0) && !data.historical_analysis} noDataLabel={t('stock.no_data')} />
         <ScoreBox label={t('score.sentiment')} score={data.scores.sentiment} color="#06b6d4" />
       </div>
 
