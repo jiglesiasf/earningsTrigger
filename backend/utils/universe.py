@@ -21,9 +21,13 @@ NASDAQ100_EXTRA = [
     "ARM", "SMCI", "ANET", "DELL", "GEHC", "TDG", "HWM", "CEG", "VST", "APP",
 ]
 
+CUSTOM_WATCHLIST = [
+    "WBX",
+]
+
 
 def get_large_cap_universe():
-    combined = list(set(SP500_CORE + NASDAQ100_EXTRA))
+    combined = list(set(SP500_CORE + NASDAQ100_EXTRA + CUSTOM_WATCHLIST))
     return sorted(combined)
 
 
