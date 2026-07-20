@@ -1,23 +1,23 @@
 {
   "ticker": "PG",
-  "company": "PG",
+  "company": "Procter & Gamble Company (The)",
   "sector": "Consumer Defensive",
   "price": {
-    "current": 151.5,
-    "open": 149.49,
-    "high": 151.52,
-    "low": 148.18,
-    "previous_close": 148.05,
-    "change_pct": 2.33,
-    "market_cap": 352782745600
+    "current": 149.98,
+    "open": 152.86,
+    "high": 154.32,
+    "low": 149.31,
+    "previous_close": 151.5,
+    "change_pct": -1.0,
+    "market_cap": 349243277312
   },
   "trade_parameters": {
-    "buy_above": 151.5,
+    "buy_above": 149.98,
     "stop_loss": 147.57,
-    "take_profit": 159.08,
-    "expected_move": "\u00b15%",
-    "expected_move_dollars": "\u00b1$7.58",
-    "risk_reward": 1.93,
+    "take_profit": 153.62,
+    "expected_move": "\u00b12.43%",
+    "expected_move_dollars": "\u00b1$3.64",
+    "risk_reward": 1.51,
     "support_levels": [
       147.57,
       145.89,
@@ -28,17 +28,17 @@
       148.54,
       148.95
     ],
-    "expected_return_pct": 5.0,
-    "max_drawdown_pct": -2.59
+    "expected_return_pct": 2.43,
+    "max_drawdown_pct": -1.61
   },
   "scores": {
-    "technical": 91,
+    "technical": 86,
     "fundamental": 45,
-    "options": 0,
+    "options": 77,
     "sentiment": 47,
     "historical": 0,
-    "macro": 75,
-    "overall": 44.8
+    "macro": 60,
+    "overall": 57.9
   },
   "historical_score_breakdown": {
     "simple": 0,
@@ -48,9 +48,9 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 148.51,
-      "sma_50": 146.53,
-      "sma_100": 147.38,
+      "ema_20": 148.65,
+      "sma_50": 146.63,
+      "sma_100": 147.24,
       "sma_200": 146.96,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 55.29,
-      "macd": 0.4628,
-      "macd_signal": 0.6091,
-      "macd_histogram": -0.1463,
-      "stochastic_rsi": 86.82,
-      "adx": 15.97,
+      "rsi_14": 51.64,
+      "macd": 0.529,
+      "macd_signal": 0.5931,
+      "macd_histogram": -0.0641,
+      "stochastic_rsi": 64.05,
+      "adx": 15.4,
       "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "up",
+      "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 26.19,
-      "historical_volatility_60": 24.26
+      "historical_volatility_20": 26.05,
+      "historical_volatility_60": 24.14
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         145.89,
         145.6
       ],
-      "high_20d": 153.49,
-      "high_30d": 153.49,
+      "high_20d": 154.32,
+      "high_30d": 154.32,
       "high_52w": 166.0,
-      "distance_to_resistance_pct": 9.57,
-      "distance_to_support_pct": 2.59,
+      "distance_to_resistance_pct": 10.68,
+      "distance_to_support_pct": 1.61,
       "nearest_resistance": 166.0,
       "nearest_support": 147.57
     }
@@ -107,20 +107,33 @@
     "cash": 12305999872,
     "total_debt": 37026000896,
     "net_cash": -24720001024,
-    "forward_pe": 21.47,
-    "peg_ratio": 4.1,
-    "ev_ebitda": 15.11,
-    "price_to_sales": 4.07
+    "forward_pe": 21.27,
+    "peg_ratio": 4.21,
+    "ev_ebitda": 14.97,
+    "price_to_sales": 4.03
   },
-  "options": {},
+  "options": {
+    "implied_volatility": 0.0848,
+    "put_call_ratio": 0.69,
+    "call_volume": 2368,
+    "put_volume": 1634,
+    "call_open_interest": 18172,
+    "put_open_interest": 8444,
+    "expected_move": 3.65,
+    "expected_move_pct": 2.43,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
   "analyst": {
     "buy_ratings": 0,
     "hold_ratings": 23,
     "sell_ratings": 0,
-    "avg_price_target": 163.43,
+    "avg_price_target": 163.35,
     "target_high": 186.0,
     "target_low": 145.0,
-    "target_median": 164.0,
+    "target_median": 163.0,
     "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
@@ -137,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 750.72,
-    "sp500_change_pct": -0.54,
+    "sp500_trend": "neutral",
+    "sp500_price": 743.29,
+    "sp500_change_pct": -0.99,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 705.94,
-    "nasdaq_change_pct": -1.64,
-    "vix": 18.08,
+    "nasdaq_price": 695.33,
+    "nasdaq_change_pct": -1.5,
+    "vix": 17.87,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 75,
+    "macro_score": 60,
     "regime_assessment": {
-      "regime": "neutral",
-      "confidence": 50.0,
-      "sp500_trend": "bullish",
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "neutral",
-      "vix": 18.08,
+      "vix": 17.87,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-07-29",
-  "days_until_earnings": 12,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }

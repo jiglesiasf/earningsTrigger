@@ -3,42 +3,42 @@
   "company": "Coinbase Global, Inc.",
   "sector": "Financial Services",
   "price": {
-    "current": 160.49,
-    "open": 165.37,
-    "high": 166.57,
-    "low": 159.51,
-    "previous_close": 167.21,
-    "change_pct": -4.02,
-    "market_cap": 42282819584
+    "current": 157.12,
+    "open": 153.36,
+    "high": 160.8,
+    "low": 152.58,
+    "previous_close": 160.49,
+    "change_pct": -2.1,
+    "market_cap": 41394954240
   },
   "trade_parameters": {
-    "buy_above": 164.98,
+    "buy_above": 157.12,
     "stop_loss": 139.18,
-    "take_profit": 172.45,
-    "expected_move": "\u00b17.45%",
-    "expected_move_dollars": "\u00b1$11.96",
-    "risk_reward": 0.29,
+    "take_profit": 173.02,
+    "expected_move": "\u00b110.12%",
+    "expected_move_dollars": "\u00b1$15.9",
+    "risk_reward": 0.89,
     "support_levels": [
-      193.91,
       184.15,
-      182.8
+      182.8,
+      177.62
     ],
     "resistance_levels": [
       164.98,
       167.98,
-      173.09
+      168.5
     ],
-    "expected_return_pct": 4.53,
-    "max_drawdown_pct": -15.64
+    "expected_return_pct": 10.12,
+    "max_drawdown_pct": -11.42
   },
   "scores": {
-    "technical": 81,
+    "technical": 86,
     "fundamental": 44,
-    "options": 75,
+    "options": 88,
     "sentiment": 70,
     "historical": 0,
-    "macro": 75,
-    "overall": 58.9
+    "macro": 60,
+    "overall": 62.2
   },
   "historical_score_breakdown": {
     "simple": 0,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 161.31,
-      "sma_50": 172.79,
-      "sma_100": 180.48,
-      "sma_200": 223.61,
+      "ema_20": 160.91,
+      "sma_50": 171.98,
+      "sma_100": 180.45,
+      "sma_200": 222.73,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 63.49,
-      "macd": -2.0126,
-      "macd_signal": -3.6047,
-      "macd_histogram": 1.5921,
-      "stochastic_rsi": 100.0,
-      "adx": 13.36,
+      "rsi_14": 56.35,
+      "macd": -2.1448,
+      "macd_signal": -3.3127,
+      "macd_histogram": 1.1679,
+      "stochastic_rsi": 66.96,
+      "adx": 13.65,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,25 +72,25 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 59.36,
-      "historical_volatility_60": 64.91
+      "historical_volatility_20": 59.13,
+      "historical_volatility_60": 63.35
     },
     "price_structure": {
       "resistance": [
         164.98,
         167.98,
-        173.09
+        168.5
       ],
       "support": [
-        193.91,
         184.15,
-        182.8
+        182.8,
+        177.62
       ],
       "high_20d": 176.48,
       "high_30d": 176.48,
       "high_52w": 444.65,
-      "distance_to_resistance_pct": 2.8,
-      "distance_to_support_pct": 13.28,
+      "distance_to_resistance_pct": 5.0,
+      "distance_to_support_pct": 11.42,
       "nearest_resistance": 164.98,
       "nearest_support": 139.18
     }
@@ -107,30 +107,30 @@
     "cash": 10438001664,
     "total_debt": 7964423168,
     "net_cash": 2473578496,
-    "forward_pe": 33.82,
-    "peg_ratio": 1.6,
-    "ev_ebitda": 39.71,
-    "price_to_sales": 6.73
+    "forward_pe": 33.11,
+    "peg_ratio": 1.51,
+    "ev_ebitda": 38.83,
+    "price_to_sales": 6.59
   },
   "options": {
-    "implied_volatility": 0.26,
-    "put_call_ratio": 0.89,
-    "call_volume": 20125,
-    "put_volume": 17927,
-    "call_open_interest": 44190,
-    "put_open_interest": 32064,
-    "expected_move": 11.96,
-    "expected_move_pct": 7.45,
+    "implied_volatility": 0.3529,
+    "put_call_ratio": 0.36,
+    "call_volume": 54673,
+    "put_volume": 19550,
+    "call_open_interest": 63816,
+    "put_open_interest": 40537,
+    "expected_move": 15.9,
+    "expected_move_pct": 10.12,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
     "buy_ratings": 30,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 222.54,
+    "avg_price_target": 222.04,
     "target_high": 400.0,
     "target_low": 99.0,
     "target_median": 211.5,
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 750.72,
-    "sp500_change_pct": -0.54,
+    "sp500_trend": "neutral",
+    "sp500_price": 743.29,
+    "sp500_change_pct": -0.99,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 705.94,
-    "nasdaq_change_pct": -1.64,
-    "vix": 18.08,
+    "nasdaq_price": 695.33,
+    "nasdaq_change_pct": -1.5,
+    "vix": 17.87,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 75,
+    "macro_score": 60,
     "regime_assessment": {
-      "regime": "neutral",
-      "confidence": 50.0,
-      "sp500_trend": "bullish",
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "neutral",
-      "vix": 18.08,
+      "vix": 17.87,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-07-30",
-  "days_until_earnings": 13,
+  "days_until_earnings": 10,
   "earnings_time": "unknown"
 }

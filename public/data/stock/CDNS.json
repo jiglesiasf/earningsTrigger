@@ -3,21 +3,21 @@
   "company": "Cadence Design Systems, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 364.65,
-    "open": 366.01,
-    "high": 369.13,
-    "low": 358.74,
-    "previous_close": 371.5,
-    "change_pct": -1.84,
-    "market_cap": 100576305152
+    "current": 330.11,
+    "open": 334.56,
+    "high": 342.29,
+    "low": 320.07,
+    "previous_close": 364.65,
+    "change_pct": -9.47,
+    "market_cap": 91049615360
   },
   "trade_parameters": {
-    "buy_above": 365.01,
-    "stop_loss": 358.74,
-    "take_profit": 428.1,
-    "expected_move": "\u00b117.4%",
-    "expected_move_dollars": "\u00b1$63.45",
-    "risk_reward": 10.06,
+    "buy_above": 338.55,
+    "stop_loss": 320.07,
+    "take_profit": 351.3,
+    "expected_move": "\u00b16.42%",
+    "expected_move_dollars": "\u00b1$21.19",
+    "risk_reward": 0.69,
     "support_levels": [
       375.94,
       373.54,
@@ -28,17 +28,17 @@
       365.01,
       383.8
     ],
-    "expected_return_pct": 17.28,
-    "max_drawdown_pct": -1.72
+    "expected_return_pct": 3.77,
+    "max_drawdown_pct": -5.46
   },
   "scores": {
-    "technical": 50,
+    "technical": 51,
     "fundamental": 64,
-    "options": 42,
+    "options": 57,
     "sentiment": 70,
     "historical": 0,
-    "macro": 75,
-    "overall": 47.0
+    "macro": 60,
+    "overall": 49.5
   },
   "historical_score_breakdown": {
     "simple": 0,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 376.52,
-      "sma_50": 375.36,
-      "sma_100": 337.07,
-      "sma_200": 328.2,
+      "ema_20": 372.1,
+      "sma_50": 374.89,
+      "sma_100": 337.57,
+      "sma_200": 328.11,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 47.32,
-      "macd": -0.7175,
-      "macd_signal": 0.9519,
-      "macd_histogram": -1.6694,
-      "stochastic_rsi": 82.47,
-      "adx": 22.48,
-      "momentum_score": "weak"
+      "rsi_14": 24.43,
+      "macd": -4.2738,
+      "macd_signal": -0.0932,
+      "macd_histogram": -4.1806,
+      "stochastic_rsi": 0.0,
+      "adx": 23.8,
+      "momentum_score": "oversold"
     },
     "volume": {
       "obv_trend": "down",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 23.28,
-      "historical_volatility_60": 42.75
+      "historical_volatility_20": 39.82,
+      "historical_volatility_60": 46.95
     },
     "price_structure": {
       "resistance": [
@@ -86,13 +86,13 @@
         373.54,
         366.99
       ],
-      "high_20d": 403.38,
+      "high_20d": 401.18,
       "high_30d": 415.83,
       "high_52w": 416.69,
-      "distance_to_resistance_pct": 0.1,
-      "distance_to_support_pct": 1.62,
-      "nearest_resistance": 365.01,
-      "nearest_support": 358.74
+      "distance_to_resistance_pct": 2.56,
+      "distance_to_support_pct": 3.04,
+      "nearest_resistance": 338.55,
+      "nearest_support": 320.07
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 1546153984,
     "total_debt": 3083354112,
     "net_cash": -1537200128,
-    "forward_pe": 38.82,
-    "peg_ratio": 3.57,
-    "ev_ebitda": 50.7,
-    "price_to_sales": 18.19
+    "forward_pe": 35.12,
+    "peg_ratio": 3.13,
+    "ev_ebitda": 45.97,
+    "price_to_sales": 16.47
   },
   "options": {
-    "implied_volatility": 0.6071,
-    "put_call_ratio": 1.77,
-    "call_volume": 780,
-    "put_volume": 1380,
-    "call_open_interest": 1491,
-    "put_open_interest": 2125,
-    "expected_move": 63.47,
-    "expected_move_pct": 17.4,
+    "implied_volatility": 0.2241,
+    "put_call_ratio": 1.49,
+    "call_volume": 1385,
+    "put_volume": 2062,
+    "call_open_interest": 1912,
+    "put_open_interest": 2415,
+    "expected_move": 21.21,
+    "expected_move_pct": 6.42,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -130,7 +130,7 @@
     "buy_ratings": 26,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 394.79,
+    "avg_price_target": 395.94,
     "target_high": 470.0,
     "target_low": 275.0,
     "target_median": 400.0,
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 750.72,
-    "sp500_change_pct": -0.54,
+    "sp500_trend": "neutral",
+    "sp500_price": 743.29,
+    "sp500_change_pct": -0.99,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 705.94,
-    "nasdaq_change_pct": -1.64,
-    "vix": 18.08,
+    "nasdaq_price": 695.33,
+    "nasdaq_change_pct": -1.5,
+    "vix": 17.87,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 75,
+    "macro_score": 60,
     "regime_assessment": {
-      "regime": "neutral",
-      "confidence": 50.0,
-      "sp500_trend": "bullish",
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "neutral",
-      "vix": 18.08,
+      "vix": 17.87,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 10.06:1",
+  "decision_rationale": "mixed signals across analysis categories",
   "earnings_date": "2026-07-27",
-  "days_until_earnings": 10,
+  "days_until_earnings": 7,
   "earnings_time": "unknown"
 }
