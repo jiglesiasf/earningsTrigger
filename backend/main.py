@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 sys.path.insert(0, os.path.dirname(__file__))
 
 from datetime import datetime
@@ -46,11 +47,21 @@ def analyze_stock(ticker, market_regime_data):
     news = get_news_sentiment(ticker)
 
     deep_historical = None
-    try:
-        deep_historical = analyze_earnings(ticker, num_quarters=16)
-        print(f"    Deep historical: {deep_historical.get('total_quarters', 0)} quarters, beat rate {deep_historical.get('overall', {}).get('beat_rate_pct', 0)}%")
-    except Exception as e:
-        print(f"    Deep historical failed for {ticker}: {e}")
+    precomputed_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "public", "data", f"historical_{ticker}.json")
+    if os.path.exists(precomputed_path):
+        try:
+            with open(precomputed_path) as f:
+                deep_historical = json.load(f)
+            print(f"    Deep historical: loaded pre-computed ({deep_historical.get('total_quarters', 0)} quarters, beat rate {deep_historical.get('overall', {}).get('beat_rate_pct', 0)}%)")
+        except Exception as e:
+            print(f"    Failed to load pre-computed historical for {ticker}: {e}")
+
+    if not deep_historical:
+        try:
+            deep_historical = analyze_earnings(ticker, num_quarters=16)
+            print(f"    Deep historical: computed live ({deep_historical.get('total_quarters', 0)} quarters, beat rate {deep_historical.get('overall', {}).get('beat_rate_pct', 0)}%)")
+        except Exception as e:
+            print(f"    Deep historical failed for {ticker}: {e}")
 
     simple_hist_score = calculate_historical_score(historical)
     deep_hist_score = calculate_deep_historical_score(deep_historical)

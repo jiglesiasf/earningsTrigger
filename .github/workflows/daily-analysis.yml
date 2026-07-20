@@ -30,6 +30,16 @@ jobs:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
         run: python backend/main.py
 
+      - name: Generate historical analysis for analyzed stocks
+        run: |
+          for f in public/data/stock/*.json; do
+            ticker=$(python3 -c "import json; print(json.load(open('$f'))['ticker'])")
+            if [ ! -f "public/data/historical_${ticker}.json" ]; then
+              echo "Generating historical analysis for ${ticker}..."
+              python backend/historical_analysis.py "$ticker" 16 || true
+            fi
+          done
+
       - name: Commit and push results
         run: |
           git config user.name "Earnings Trigger Bot"

@@ -175,7 +175,19 @@ export function SentimentBreakdown({ analyst, news, score }: { analyst: any; new
 
 export function HistoricalBreakdown({ data, score, deepAnalysis, scoreBreakdown }: { data: any; score: number; deepAnalysis?: any; scoreBreakdown?: any }) {
   const { t } = useTranslation()
-  if (!data) return null
+  const hasSimpleData = data && Object.keys(data).length > 0
+  const hasDeepData = deepAnalysis && deepAnalysis.overall
+
+  if (!hasSimpleData && !hasDeepData) {
+    return (
+      <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '20px' }}>
+        <SectionHeader title={t('historical.title')} score={score} weight={0.15} color="#ec4899" />
+        <div style={{ textAlign: 'center', padding: '24px 0', color: 'var(--text-muted)', fontSize: '13px' }}>
+          {t('stock.no_data')}
+        </div>
+      </div>
+    )
+  }
 
   const deep = deepAnalysis?.overall
   const beat = deepAnalysis?.beat_analysis

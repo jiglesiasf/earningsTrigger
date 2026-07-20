@@ -7,12 +7,13 @@ import { useTranslation } from '@/lib/i18n'
 import { TechnicalBreakdown, FundamentalBreakdown, OptionsBreakdown, SentimentBreakdown, HistoricalBreakdown, MacroBreakdown, OverallBreakdown } from '@/components/ScoreBreakdown'
 import HistoricalAnalysis from '@/components/HistoricalAnalysis'
 
-function ScoreBox({ label, score, color }: { label: string; score: number; color: string }) {
+function ScoreBox({ label, score, color, noData, noDataLabel }: { label: string; score: number; color: string; noData?: boolean; noDataLabel?: string }) {
   const bg = `${color}12`
   return (
     <div style={{ flex: '1 1 0', background: bg, borderRadius: '12px', padding: '16px', textAlign: 'center', border: `1px solid ${color}20` }}>
-      <div style={{ fontSize: '28px', fontWeight: '700', color }}>{Math.round(score)}</div>
+      <div style={{ fontSize: noData ? '16px' : '28px', fontWeight: '700', color: noData ? 'var(--text-muted)' : color }}>{noData ? '—' : Math.round(score)}</div>
       <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: '500', marginTop: '2px' }}>{label}</div>
+      {noData && noDataLabel && <div style={{ fontSize: '10px', color: 'var(--text-muted)', marginTop: '2px', opacity: 0.7 }}>{noDataLabel}</div>}
     </div>
   )
 }
@@ -91,7 +92,7 @@ function StockDetailContent() {
         <ScoreBox label={t('score.technical')} score={data.scores.technical} color="#3b82f6" />
         <ScoreBox label={t('score.fundamental')} score={data.scores.fundamental} color="#a855f7" />
         <ScoreBox label={t('score.options')} score={data.scores.options} color="#f59e0b" />
-        <ScoreBox label={t('score.historical')} score={data.scores.historical} color="#ec4899" />
+        <ScoreBox label={t('score.historical')} score={data.scores.historical} color="#ec4899" noData={!data.historical_earnings || Object.keys(data.historical_earnings).length === 0} noDataLabel={t('stock.no_data')} />
         <ScoreBox label={t('score.sentiment')} score={data.scores.sentiment} color="#06b6d4" />
       </div>
 
