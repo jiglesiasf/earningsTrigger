@@ -55,7 +55,13 @@ def analyze_stock(ticker, market_regime_data):
     simple_hist_score = calculate_historical_score(historical)
     deep_hist_score = calculate_deep_historical_score(deep_historical)
     has_deep = deep_historical is not None and deep_historical.get("total_quarters", 0) >= 4
-    final_hist_score = merge_historical_scores(simple_hist_score, deep_hist_score, has_deep)
+
+    if has_deep:
+        final_hist_score = merge_historical_scores(simple_hist_score, deep_hist_score, True)
+    elif simple_hist_score != 50:
+        final_hist_score = simple_hist_score
+    else:
+        final_hist_score = 50
 
     scores = {
         "technical": calculate_technical_score(technicals),

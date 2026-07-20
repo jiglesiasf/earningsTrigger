@@ -6,7 +6,7 @@ from utils.helpers import clamp
 
 def calculate_historical_score(historical_data):
     if not historical_data:
-        return 0
+        return 50
 
     score = 50
 
