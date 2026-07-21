@@ -4,7 +4,7 @@
   "sector": "Financial Services",
   "price": {
     "current": 160.43,
-    "open": 158.14,
+    "open": 158.19,
     "high": 164.7,
     "low": 155.15,
     "previous_close": 157.12,
@@ -14,10 +14,10 @@
   "trade_parameters": {
     "buy_above": 164.98,
     "stop_loss": 139.18,
-    "take_profit": 234.63,
-    "expected_move": "\u00b146.25%",
-    "expected_move_dollars": "\u00b1$74.2",
-    "risk_reward": 2.7,
+    "take_profit": 176.3,
+    "expected_move": "\u00b19.89%",
+    "expected_move_dollars": "\u00b1$15.87",
+    "risk_reward": 0.44,
     "support_levels": [
       184.15,
       182.8,
@@ -28,17 +28,17 @@
       167.98,
       168.5
     ],
-    "expected_return_pct": 42.22,
+    "expected_return_pct": 6.86,
     "max_drawdown_pct": -15.64
   },
   "scores": {
-    "technical": 76,
+    "technical": 81,
     "fundamental": 44,
-    "options": 70,
+    "options": 98,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 62.6
+    "overall": 69.7
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -68,7 +68,7 @@
       "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "down",
+      "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
@@ -109,18 +109,18 @@
     "net_cash": 2473578496,
     "forward_pe": 33.81,
     "peg_ratio": 1.51,
-    "ev_ebitda": 38.83,
+    "ev_ebitda": 39.7,
     "price_to_sales": 6.72
   },
   "options": {
-    "implied_volatility": 1.6134,
+    "implied_volatility": 0.3449,
     "put_call_ratio": 0.47,
     "call_volume": 26792,
     "put_volume": 12501,
-    "call_open_interest": 63816,
-    "put_open_interest": 40537,
-    "expected_move": 74.21,
-    "expected_move_pct": 46.25,
+    "call_open_interest": 71413,
+    "put_open_interest": 44204,
+    "expected_move": 15.86,
+    "expected_move_pct": 9.89,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -156,7 +156,7 @@
     "nasdaq_trend": "bearish",
     "nasdaq_price": 696.06,
     "nasdaq_change_pct": 0.1,
-    "vix": 18.65,
+    "vix": 17.74,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.65,
+      "vix": 17.74,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 2.7:1",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-07-30",
-  "days_until_earnings": 10,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }

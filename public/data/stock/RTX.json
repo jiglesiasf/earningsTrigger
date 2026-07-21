@@ -5,7 +5,7 @@
   "price": {
     "current": 194.44,
     "open": 194.63,
-    "high": 197.52,
+    "high": 197.54,
     "low": 194.1,
     "previous_close": 193.51,
     "change_pct": 0.48,
@@ -14,10 +14,10 @@
   "trade_parameters": {
     "buy_above": 194.44,
     "stop_loss": 192.85,
-    "take_profit": 236.4,
-    "expected_move": "\u00b121.58%",
-    "expected_move_dollars": "\u00b1$41.96",
-    "risk_reward": 26.39,
+    "take_profit": 203.75,
+    "expected_move": "\u00b14.79%",
+    "expected_move_dollars": "\u00b1$9.31",
+    "risk_reward": 5.86,
     "support_levels": [
       192.85,
       192.59,
@@ -28,17 +28,17 @@
       177.35,
       179.18
     ],
-    "expected_return_pct": 21.58,
+    "expected_return_pct": 4.79,
     "max_drawdown_pct": -0.82
   },
   "scores": {
-    "technical": 94,
+    "technical": 100,
     "fundamental": 63,
-    "options": 52,
+    "options": 59,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 68.2
+    "overall": 71.4
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -68,8 +68,8 @@
       "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "down",
-      "volume_trend": "below_avg"
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
     },
     "volatility": {
       "historical_volatility_20": 24.24,
@@ -109,18 +109,18 @@
     "net_cash": -32116999168,
     "forward_pe": 25.63,
     "peg_ratio": 2.65,
-    "ev_ebitda": 19.29,
+    "ev_ebitda": 19.38,
     "price_to_sales": 2.9
   },
   "options": {
-    "implied_volatility": 0.7527,
+    "implied_volatility": 0.1672,
     "put_call_ratio": 0.95,
     "call_volume": 1583,
     "put_volume": 1510,
-    "call_open_interest": 4694,
-    "put_open_interest": 4638,
-    "expected_move": 41.96,
-    "expected_move_pct": 21.58,
+    "call_open_interest": 5378,
+    "put_open_interest": 5200,
+    "expected_move": 9.32,
+    "expected_move_pct": 4.79,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -156,7 +156,7 @@
     "nasdaq_trend": "bearish",
     "nasdaq_price": 696.06,
     "nasdaq_change_pct": 0.1,
-    "vix": 18.65,
+    "vix": 17.74,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.65,
+      "vix": 17.74,
       "market_regime": "neutral"
     }
   },
-  "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 26.39:1",
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 5.86:1",
   "earnings_date": "2026-07-23",
-  "days_until_earnings": 3,
+  "days_until_earnings": 2,
   "earnings_time": "unknown"
 }

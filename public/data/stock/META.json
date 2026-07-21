@@ -14,10 +14,10 @@
   "trade_parameters": {
     "buy_above": 665.23,
     "stop_loss": 599.44,
-    "take_profit": 851.1,
-    "expected_move": "\u00b131.78%",
-    "expected_move_dollars": "\u00b1$205.25",
-    "risk_reward": 2.83,
+    "take_profit": 670.26,
+    "expected_move": "\u00b13.78%",
+    "expected_move_dollars": "\u00b1$24.41",
+    "risk_reward": 0.08,
     "support_levels": [
       649.05,
       599.44,
@@ -28,17 +28,17 @@
       623.15,
       624.4
     ],
-    "expected_return_pct": 27.94,
+    "expected_return_pct": 0.76,
     "max_drawdown_pct": -9.89
   },
   "scores": {
     "technical": 100,
     "fundamental": 81,
-    "options": 70,
+    "options": 82,
     "sentiment": 70,
     "historical": 77.3,
     "macro": 50,
-    "overall": 81.3
+    "overall": 83.7
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -113,14 +113,14 @@
     "price_to_sales": 7.63
   },
   "options": {
-    "implied_volatility": 1.1087,
-    "put_call_ratio": 0.49,
-    "call_volume": 183953,
-    "put_volume": 90001,
-    "call_open_interest": 30120,
-    "put_open_interest": 15729,
-    "expected_move": 205.28,
-    "expected_move_pct": 31.78,
+    "implied_volatility": 0.132,
+    "put_call_ratio": 0.55,
+    "call_volume": 27046,
+    "put_volume": 14816,
+    "call_open_interest": 20375,
+    "put_open_interest": 12732,
+    "expected_move": 24.44,
+    "expected_move_pct": 3.78,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -1251,7 +1251,7 @@
     "nasdaq_trend": "bearish",
     "nasdaq_price": 696.06,
     "nasdaq_change_pct": 0.1,
-    "vix": 18.65,
+    "vix": 17.74,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1264,13 +1264,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.65,
+      "vix": 17.74,
       "market_regime": "neutral"
     }
   },
   "decision": "BUY",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 2.83:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, positive options flow, favorable historical earnings pattern",
   "earnings_date": "2026-07-29",
-  "days_until_earnings": 9,
+  "days_until_earnings": 8,
   "earnings_time": "unknown"
 }
