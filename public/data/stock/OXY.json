@@ -1,0 +1,181 @@
+{
+  "ticker": "OXY",
+  "company": "Occidental Petroleum Corporatio",
+  "sector": "Energy",
+  "price": {
+    "current": 56.5,
+    "open": 55.54,
+    "high": 56.5,
+    "low": 55.36,
+    "previous_close": 55.19,
+    "change_pct": 2.37,
+    "market_cap": 56196857856
+  },
+  "trade_parameters": {
+    "buy_above": 56.5,
+    "stop_loss": 55.44,
+    "take_profit": 59.94,
+    "expected_move": "\u00b16.08%",
+    "expected_move_dollars": "\u00b1$3.44",
+    "risk_reward": 3.24,
+    "support_levels": [
+      57.63,
+      55.44,
+      55.35
+    ],
+    "resistance_levels": [
+      52.58,
+      54.89,
+      55.49
+    ],
+    "expected_return_pct": 6.08,
+    "max_drawdown_pct": -1.88
+  },
+  "scores": {
+    "technical": 98,
+    "fundamental": 37,
+    "options": 90,
+    "sentiment": 47,
+    "historical": 50,
+    "macro": 65,
+    "overall": 70.2
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 53.53,
+      "sma_50": 54.79,
+      "sma_100": 56.3,
+      "sma_200": 49.39,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 77.75,
+      "macd": 0.3079,
+      "macd_signal": -0.4229,
+      "macd_histogram": 0.7308,
+      "stochastic_rsi": 100.0,
+      "adx": 42.67,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 36.23,
+      "historical_volatility_60": 37.8
+    },
+    "price_structure": {
+      "resistance": [
+        52.58,
+        54.89,
+        55.49
+      ],
+      "support": [
+        57.63,
+        55.44,
+        55.35
+      ],
+      "high_20d": 56.5,
+      "high_30d": 58.46,
+      "high_52w": 67.14,
+      "distance_to_resistance_pct": 18.83,
+      "distance_to_support_pct": 1.88,
+      "nearest_resistance": 67.14,
+      "nearest_support": 55.44
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": -1.93,
+    "eps_growth_yoy": -34.02,
+    "gross_margin": 69.76,
+    "operating_margin": 17.72,
+    "net_margin": 22.42,
+    "roe": 4.05,
+    "debt_to_equity": 41.99,
+    "current_ratio": 1.21,
+    "cash": 3811000064,
+    "total_debt": 16611000320,
+    "net_cash": -12800000256,
+    "forward_pe": 14.35,
+    "peg_ratio": 1.16,
+    "ev_ebitda": 7.2,
+    "price_to_sales": 2.66
+  },
+  "options": {
+    "implied_volatility": 0.212,
+    "put_call_ratio": 0.09,
+    "call_volume": 12895,
+    "put_volume": 1164,
+    "call_open_interest": 35895,
+    "put_open_interest": 7139,
+    "expected_move": 3.43,
+    "expected_move_pct": 6.08,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 23,
+    "sell_ratings": 0,
+    "avg_price_target": 64.26,
+    "target_high": 75.0,
+    "target_low": 55.0,
+    "target_median": 65.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 23
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 748.28,
+    "sp500_change_pct": 0.83,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 708.97,
+    "nasdaq_change_pct": 1.85,
+    "vix": 17.38,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 65,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "bearish",
+      "vix": 17.38,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, positive options flow, favorable risk/reward ratio of 3.24:1",
+  "earnings_date": "2026-08-05",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}

@@ -3,21 +3,21 @@
   "company": "Linde plc",
   "sector": "Basic Materials",
   "price": {
-    "current": 512.05,
-    "open": 513.58,
-    "high": 516.5,
-    "low": 510.94,
-    "previous_close": 513.22,
-    "change_pct": -0.23,
-    "market_cap": 236744933376
+    "current": 505.03,
+    "open": 511.9,
+    "high": 512.83,
+    "low": 502.86,
+    "previous_close": 512.05,
+    "change_pct": -1.37,
+    "market_cap": 233499246592
   },
   "trade_parameters": {
     "buy_above": 514.0,
-    "stop_loss": 510.67,
-    "take_profit": 520.55,
-    "expected_move": "\u00b11.66%",
-    "expected_move_dollars": "\u00b1$8.5",
-    "risk_reward": 1.97,
+    "stop_loss": 502.86,
+    "take_profit": 514.17,
+    "expected_move": "\u00b11.81%",
+    "expected_move_dollars": "\u00b1$9.14",
+    "risk_reward": 0.02,
     "support_levels": [
       519.01,
       510.67,
@@ -28,17 +28,17 @@
       515.38,
       517.62
     ],
-    "expected_return_pct": 1.27,
-    "max_drawdown_pct": -0.65
+    "expected_return_pct": 0.03,
+    "max_drawdown_pct": -2.17
   },
   "scores": {
-    "technical": 57,
+    "technical": 58,
     "fundamental": 55,
-    "options": 77,
+    "options": 49,
     "sentiment": 70,
     "historical": 50,
-    "macro": 50,
-    "overall": 60.5
+    "macro": 65,
+    "overall": 56.0
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 520.76,
-      "sma_50": 513.78,
+      "ema_20": 519.26,
+      "sma_50": 514.04,
       "sma_100": 504.43,
-      "sma_200": 469.84,
+      "sma_200": 470.06,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 50.54,
-      "macd": 0.8713,
-      "macd_signal": 3.5153,
-      "macd_histogram": -2.644,
-      "stochastic_rsi": 17.51,
-      "adx": 16.26,
-      "momentum_score": "strong"
+      "rsi_14": 42.35,
+      "macd": -0.4422,
+      "macd_signal": 2.7238,
+      "macd_histogram": -3.166,
+      "stochastic_rsi": 0.0,
+      "adx": 15.63,
+      "momentum_score": "weak"
     },
     "volume": {
       "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 22.03,
-      "historical_volatility_60": 20.67
+      "historical_volatility_20": 22.29,
+      "historical_volatility_60": 20.13
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 548.2,
       "high_30d": 548.2,
       "high_52w": 548.2,
-      "distance_to_resistance_pct": 0.38,
-      "distance_to_support_pct": 0.27,
+      "distance_to_resistance_pct": 1.78,
+      "distance_to_support_pct": 0.43,
       "nearest_resistance": 514.0,
-      "nearest_support": 510.67
+      "nearest_support": 502.86
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 3959000064,
     "total_debt": 26317000704,
     "net_cash": -22358000640,
-    "forward_pe": 26.1,
+    "forward_pe": 25.75,
     "peg_ratio": 2.17,
-    "ev_ebitda": 19.19,
-    "price_to_sales": 6.83
+    "ev_ebitda": 18.95,
+    "price_to_sales": 6.74
   },
   "options": {
-    "implied_volatility": 0.0578,
-    "put_call_ratio": 0.4,
-    "call_volume": 490,
-    "put_volume": 195,
-    "call_open_interest": 2408,
-    "put_open_interest": 1204,
-    "expected_move": 8.49,
-    "expected_move_pct": 1.66,
+    "implied_volatility": 0.0631,
+    "put_call_ratio": 1.13,
+    "call_volume": 393,
+    "put_volume": 444,
+    "call_open_interest": 2505,
+    "put_open_interest": 1503,
+    "expected_move": 9.14,
+    "expected_move_pct": 1.81,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 742.09,
-    "sp500_change_pct": -0.16,
+    "sp500_trend": "bullish",
+    "sp500_price": 748.28,
+    "sp500_change_pct": 0.83,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 696.06,
-    "nasdaq_change_pct": 0.1,
-    "vix": 17.74,
+    "nasdaq_price": 708.97,
+    "nasdaq_change_pct": 1.85,
+    "vix": 17.38,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 50,
+    "macro_score": 65,
     "regime_assessment": {
-      "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
       "nasdaq_trend": "bearish",
-      "vix": 17.74,
+      "vix": 17.38,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "positive options flow",
+  "decision_rationale": "mixed signals across analysis categories",
   "earnings_date": "2026-07-31",
-  "days_until_earnings": 10,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }

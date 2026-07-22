@@ -3,21 +3,21 @@
   "company": "Chevron Corporation",
   "sector": "Energy",
   "price": {
-    "current": 189.71,
-    "open": 186.29,
-    "high": 190.35,
-    "low": 185.93,
-    "previous_close": 187.38,
-    "change_pct": 1.24,
-    "market_cap": 377826017280
+    "current": 191.07,
+    "open": 190.5,
+    "high": 191.26,
+    "low": 189.32,
+    "previous_close": 189.71,
+    "change_pct": 0.72,
+    "market_cap": 380534587392
   },
   "trade_parameters": {
     "buy_above": 191.48,
     "stop_loss": 185.47,
-    "take_profit": 194.05,
-    "expected_move": "\u00b12.29%",
-    "expected_move_dollars": "\u00b1$4.34",
-    "risk_reward": 0.43,
+    "take_profit": 195.77,
+    "expected_move": "\u00b12.46%",
+    "expected_move_dollars": "\u00b1$4.7",
+    "risk_reward": 0.71,
     "support_levels": [
       185.47,
       180.4,
@@ -28,7 +28,7 @@
       178.58,
       191.48
     ],
-    "expected_return_pct": 1.34,
+    "expected_return_pct": 2.24,
     "max_drawdown_pct": -3.14
   },
   "scores": {
@@ -37,8 +37,8 @@
     "options": 77,
     "sentiment": 70,
     "historical": 50,
-    "macro": 50,
-    "overall": 65.1
+    "macro": 65,
+    "overall": 65.8
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 179.48,
-      "sma_50": 181.68,
-      "sma_100": 186.59,
-      "sma_200": 171.37,
+      "ema_20": 180.58,
+      "sma_50": 181.88,
+      "sma_100": 186.68,
+      "sma_200": 171.58,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 81.2,
-      "macd": 1.4284,
-      "macd_signal": -0.9565,
-      "macd_histogram": 2.3849,
+      "rsi_14": 88.71,
+      "macd": 2.1347,
+      "macd_signal": -0.3382,
+      "macd_histogram": 2.4729,
       "stochastic_rsi": 100.0,
-      "adx": 44.33,
+      "adx": 44.61,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,7 +72,7 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 25.28,
+      "historical_volatility_20": 25.26,
       "historical_volatility_60": 26.24
     },
     "price_structure": {
@@ -86,11 +86,11 @@
         180.4,
         178.58
       ],
-      "high_20d": 190.35,
+      "high_20d": 191.26,
       "high_30d": 192.69,
       "high_52w": 212.76,
-      "distance_to_resistance_pct": 0.93,
-      "distance_to_support_pct": 2.23,
+      "distance_to_resistance_pct": 0.21,
+      "distance_to_support_pct": 2.93,
       "nearest_resistance": 191.48,
       "nearest_support": 185.47
     }
@@ -107,20 +107,20 @@
     "cash": 5327000064,
     "total_debt": 45427998720,
     "net_cash": -40100998656,
-    "forward_pe": 15.13,
+    "forward_pe": 15.32,
     "peg_ratio": 0.77,
-    "ev_ebitda": 11.1,
-    "price_to_sales": 2.03
+    "ev_ebitda": 11.18,
+    "price_to_sales": 2.05
   },
   "options": {
-    "implied_volatility": 0.0798,
-    "put_call_ratio": 0.42,
-    "call_volume": 6806,
-    "put_volume": 2875,
-    "call_open_interest": 29752,
-    "put_open_interest": 8332,
-    "expected_move": 4.34,
-    "expected_move_pct": 2.29,
+    "implied_volatility": 0.0857,
+    "put_call_ratio": 0.47,
+    "call_volume": 5624,
+    "put_volume": 2634,
+    "call_open_interest": 30279,
+    "put_open_interest": 9677,
+    "expected_move": 4.69,
+    "expected_move_pct": 2.46,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 742.09,
-    "sp500_change_pct": -0.16,
+    "sp500_trend": "bullish",
+    "sp500_price": 748.28,
+    "sp500_change_pct": 0.83,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 696.06,
-    "nasdaq_change_pct": 0.1,
-    "vix": 17.74,
+    "nasdaq_price": 708.97,
+    "nasdaq_change_pct": 1.85,
+    "vix": 17.38,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 50,
+    "macro_score": 65,
     "regime_assessment": {
-      "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
       "nasdaq_trend": "bearish",
-      "vix": 17.74,
+      "vix": 17.38,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
   "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-07-31",
-  "days_until_earnings": 10,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }
