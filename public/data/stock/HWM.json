@@ -1,0 +1,181 @@
+{
+  "ticker": "HWM",
+  "company": "Howmet Aerospace Inc.",
+  "sector": "Industrials",
+  "price": {
+    "current": 280.7,
+    "open": 278.76,
+    "high": 282.04,
+    "low": 277.48,
+    "previous_close": 279.0,
+    "change_pct": 0.61,
+    "market_cap": 112310173696
+  },
+  "trade_parameters": {
+    "buy_above": 289.12,
+    "stop_loss": 269.22,
+    "take_profit": 288.62,
+    "expected_move": "\u00b12.82%",
+    "expected_move_dollars": "\u00b1$7.92",
+    "risk_reward": -0.03,
+    "support_levels": [
+      269.22,
+      265.75,
+      265.01
+    ],
+    "resistance_levels": [
+      263.48,
+      276.67,
+      277.52
+    ],
+    "expected_return_pct": -0.17,
+    "max_drawdown_pct": -6.88
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 85,
+    "options": 44,
+    "sentiment": 70,
+    "historical": 50,
+    "macro": 65,
+    "overall": 73.5
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 273.23,
+      "sma_50": 266.86,
+      "sma_100": 256.32,
+      "sma_200": 232.87,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 63.62,
+      "macd": 3.0109,
+      "macd_signal": 2.9682,
+      "macd_histogram": 0.0427,
+      "stochastic_rsi": 100.0,
+      "adx": 16.01,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 22.37,
+      "historical_volatility_60": 33.77
+    },
+    "price_structure": {
+      "resistance": [
+        263.48,
+        276.67,
+        277.52
+      ],
+      "support": [
+        269.22,
+        265.75,
+        265.01
+      ],
+      "high_20d": 282.04,
+      "high_30d": 290.63,
+      "high_52w": 290.63,
+      "distance_to_resistance_pct": 3.54,
+      "distance_to_support_pct": 4.09,
+      "nearest_resistance": 290.63,
+      "nearest_support": 269.22
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 11.06,
+    "eps_growth_yoy": 32.03,
+    "gross_margin": 35.05,
+    "operating_margin": 28.19,
+    "net_margin": 20.23,
+    "roe": 33.82,
+    "debt_to_equity": 87.79,
+    "current_ratio": 2.44,
+    "cash": 2435000064,
+    "total_debt": 4848000000,
+    "net_cash": -2412999936,
+    "forward_pe": 46.38,
+    "peg_ratio": 0.8,
+    "ev_ebitda": 44.8,
+    "price_to_sales": 13.02
+  },
+  "options": {
+    "implied_volatility": 0.0984,
+    "put_call_ratio": 2.75,
+    "call_volume": 144,
+    "put_volume": 396,
+    "call_open_interest": 1103,
+    "put_open_interest": 655,
+    "expected_move": 7.92,
+    "expected_move_pct": 2.82,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 20,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 311.68,
+    "target_high": 346.0,
+    "target_low": 256.56,
+    "target_median": 310.5,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 20
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 747.41,
+    "sp500_change_pct": -0.12,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 705.35,
+    "nasdaq_change_pct": -0.51,
+    "vix": 17.75,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 65,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "bearish",
+      "vix": 17.75,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, solid fundamentals",
+  "earnings_date": "2026-08-06",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}

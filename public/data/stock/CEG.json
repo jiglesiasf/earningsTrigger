@@ -1,0 +1,181 @@
+{
+  "ticker": "CEG",
+  "company": "Constellation Energy Corporatio",
+  "sector": "Utilities",
+  "price": {
+    "current": 274.9,
+    "open": 263.26,
+    "high": 275.54,
+    "low": 261.84,
+    "previous_close": 262.22,
+    "change_pct": 4.84,
+    "market_cap": 98167341056
+  },
+  "trade_parameters": {
+    "buy_above": 275.81,
+    "stop_loss": 260.3,
+    "take_profit": 286.64,
+    "expected_move": "\u00b14.27%",
+    "expected_move_dollars": "\u00b1$11.74",
+    "risk_reward": 0.7,
+    "support_levels": [
+      293.8,
+      260.3,
+      256.1
+    ],
+    "resistance_levels": [
+      266.0,
+      275.81,
+      282.77
+    ],
+    "expected_return_pct": 3.93,
+    "max_drawdown_pct": -5.62
+  },
+  "scores": {
+    "technical": 80,
+    "fundamental": 38,
+    "options": 54,
+    "sentiment": 70,
+    "historical": 50,
+    "macro": 65,
+    "overall": 60.2
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 257.46,
+      "sma_50": 264.55,
+      "sma_100": 282.99,
+      "sma_200": 310.93,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 79.23,
+      "macd": -0.9026,
+      "macd_signal": -3.9062,
+      "macd_histogram": 3.0036,
+      "stochastic_rsi": 100.0,
+      "adx": 32.5,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 40.13,
+      "historical_volatility_60": 46.36
+    },
+    "price_structure": {
+      "resistance": [
+        266.0,
+        275.81,
+        282.77
+      ],
+      "support": [
+        293.8,
+        260.3,
+        256.1
+      ],
+      "high_20d": 275.81,
+      "high_30d": 282.77,
+      "high_52w": 411.04,
+      "distance_to_resistance_pct": 0.33,
+      "distance_to_support_pct": 5.31,
+      "nearest_resistance": 275.81,
+      "nearest_support": 260.3
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 8.34,
+    "eps_growth_yoy": -37.76,
+    "gross_margin": 23.26,
+    "operating_margin": 21.86,
+    "net_margin": 12.69,
+    "roe": 16.1,
+    "debt_to_equity": 66.43,
+    "current_ratio": 1.36,
+    "cash": 864000000,
+    "total_debt": 22466000896,
+    "net_cash": -21602000896,
+    "forward_pe": 20.24,
+    "peg_ratio": 3.74,
+    "ev_ebitda": 15.24,
+    "price_to_sales": 3.29
+  },
+  "options": {
+    "implied_volatility": 0.1488,
+    "put_call_ratio": 1.12,
+    "call_volume": 1551,
+    "put_volume": 1735,
+    "call_open_interest": 9352,
+    "put_open_interest": 5753,
+    "expected_move": 11.72,
+    "expected_move_pct": 4.27,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 21,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 357.91,
+    "target_high": 441.0,
+    "target_low": 296.0,
+    "target_median": 366.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 21
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 747.41,
+    "sp500_change_pct": -0.12,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 705.35,
+    "nasdaq_change_pct": -0.51,
+    "vix": 17.75,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 65,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "bearish",
+      "vix": 17.75,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-08-06",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}

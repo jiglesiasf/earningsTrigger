@@ -3,21 +3,21 @@
   "company": "Sherwin-Williams Company (The)",
   "sector": "Basic Materials",
   "price": {
-    "current": 318.46,
-    "open": 324.35,
-    "high": 324.35,
-    "low": 317.5,
-    "previous_close": 323.6,
-    "change_pct": -1.59,
-    "market_cap": 78543577088
+    "current": 319.91,
+    "open": 321.05,
+    "high": 322.79,
+    "low": 318.32,
+    "previous_close": 318.46,
+    "change_pct": 0.46,
+    "market_cap": 78901198848
   },
   "trade_parameters": {
     "buy_above": 324.07,
     "stop_loss": 312.59,
-    "take_profit": 328.84,
-    "expected_move": "\u00b13.26%",
-    "expected_move_dollars": "\u00b1$10.38",
-    "risk_reward": 0.42,
+    "take_profit": 330.18,
+    "expected_move": "\u00b13.21%",
+    "expected_move_dollars": "\u00b1$10.27",
+    "risk_reward": 0.53,
     "support_levels": [
       327.86,
       327.38,
@@ -28,17 +28,17 @@
       324.07,
       327.33
     ],
-    "expected_return_pct": 1.47,
+    "expected_return_pct": 1.89,
     "max_drawdown_pct": -3.54
   },
   "scores": {
-    "technical": 53,
+    "technical": 63,
     "fundamental": 47,
     "options": 49,
     "sentiment": 47,
     "historical": 50,
     "macro": 65,
-    "overall": 50.5
+    "overall": 53.5
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 330.01,
-      "sma_50": 319.09,
-      "sma_100": 322.97,
-      "sma_200": 331.6,
+      "ema_20": 329.05,
+      "sma_50": 319.17,
+      "sma_100": 322.58,
+      "sma_200": 331.49,
       "price_above_20_ema": "False",
-      "price_above_50_sma": "False",
+      "price_above_50_sma": "True",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 31.07,
-      "macd": 1.2907,
-      "macd_signal": 4.1087,
-      "macd_histogram": -2.818,
+      "rsi_14": 30.79,
+      "macd": 0.3737,
+      "macd_signal": 3.3617,
+      "macd_histogram": -2.988,
       "stochastic_rsi": 0.0,
-      "adx": 30.56,
+      "adx": 28.43,
       "momentum_score": "weak"
     },
     "volume": {
       "obv_trend": "down",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 27.82,
-      "historical_volatility_60": 28.97
+      "historical_volatility_20": 27.01,
+      "historical_volatility_60": 28.99
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 353.67,
       "high_30d": 353.67,
       "high_52w": 376.95,
-      "distance_to_resistance_pct": 1.76,
-      "distance_to_support_pct": 1.84,
+      "distance_to_resistance_pct": 1.3,
+      "distance_to_support_pct": 2.29,
       "nearest_resistance": 324.07,
       "nearest_support": 312.59
     }
@@ -107,20 +107,20 @@
     "cash": 216900000,
     "total_debt": 14601400320,
     "net_cash": -14384500320,
-    "forward_pe": 23.94,
-    "peg_ratio": 2.56,
-    "ev_ebitda": 20.29,
-    "price_to_sales": 3.28
+    "forward_pe": 24.05,
+    "peg_ratio": 2.46,
+    "ev_ebitda": 20.37,
+    "price_to_sales": 3.3
   },
   "options": {
-    "implied_volatility": 0.1137,
-    "put_call_ratio": 3.55,
-    "call_volume": 118,
-    "put_volume": 419,
-    "call_open_interest": 2235,
-    "put_open_interest": 6250,
-    "expected_move": 10.38,
-    "expected_move_pct": 3.26,
+    "implied_volatility": 0.112,
+    "put_call_ratio": 2.31,
+    "call_volume": 144,
+    "put_volume": 333,
+    "call_open_interest": 2211,
+    "put_open_interest": 6292,
+    "expected_move": 10.27,
+    "expected_move_pct": 3.21,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 748.28,
-    "sp500_change_pct": 0.83,
+    "sp500_price": 747.41,
+    "sp500_change_pct": -0.12,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 708.97,
-    "nasdaq_change_pct": 1.85,
-    "vix": 17.38,
+    "nasdaq_price": 705.35,
+    "nasdaq_change_pct": -0.51,
+    "vix": 17.75,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bearish",
-      "vix": 17.38,
+      "vix": 17.75,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
   "decision_rationale": "mixed signals across analysis categories",
   "earnings_date": "2026-07-28",
-  "days_until_earnings": 6,
+  "days_until_earnings": 5,
   "earnings_time": "unknown"
 }
