@@ -1,0 +1,181 @@
+{
+  "ticker": "AMD",
+  "company": "Advanced Micro Devices, Inc.",
+  "sector": "Technology",
+  "price": {
+    "current": 539.69,
+    "open": 544.74,
+    "high": 556.49,
+    "low": 525.0,
+    "previous_close": 552.33,
+    "change_pct": -2.29,
+    "market_cap": 880018849792
+  },
+  "trade_parameters": {
+    "buy_above": 555.88,
+    "stop_loss": 498.15,
+    "take_profit": 573.64,
+    "expected_move": "\u00b16.29%",
+    "expected_move_dollars": "\u00b1$33.95",
+    "risk_reward": 0.31,
+    "support_levels": [
+      498.15,
+      495.35,
+      486.8
+    ],
+    "resistance_levels": [
+      362.79,
+      469.22,
+      527.2
+    ],
+    "expected_return_pct": 3.19,
+    "max_drawdown_pct": -10.39
+  },
+  "scores": {
+    "technical": 94,
+    "fundamental": 84,
+    "options": 90,
+    "sentiment": 70,
+    "historical": 50,
+    "macro": 50,
+    "overall": 80.0
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 527.77,
+      "sma_50": 507.01,
+      "sma_100": 383.35,
+      "sma_200": 304.09,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 54.04,
+      "macd": 8.3777,
+      "macd_signal": 10.6054,
+      "macd_histogram": -2.2277,
+      "stochastic_rsi": 82.78,
+      "adx": 14.19,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 73.65,
+      "historical_volatility_60": 83.25
+    },
+    "price_structure": {
+      "resistance": [
+        362.79,
+        469.22,
+        527.2
+      ],
+      "support": [
+        498.15,
+        495.35,
+        486.8
+      ],
+      "high_20d": 584.73,
+      "high_30d": 584.73,
+      "high_52w": 584.73,
+      "distance_to_resistance_pct": 8.35,
+      "distance_to_support_pct": 7.7,
+      "nearest_resistance": 584.73,
+      "nearest_support": 498.15
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 34.34,
+    "eps_growth_yoy": 165.0,
+    "gross_margin": 53.06,
+    "operating_margin": 14.4,
+    "net_margin": 13.37,
+    "roe": 8.06,
+    "debt_to_equity": 6.0,
+    "current_ratio": 2.73,
+    "cash": 12346999808,
+    "total_debt": 3871000064,
+    "net_cash": 8475999744,
+    "forward_pe": 39.81,
+    "peg_ratio": 1.28,
+    "ev_ebitda": 117.3,
+    "price_to_sales": 23.5
+  },
+  "options": {
+    "implied_volatility": 0.2193,
+    "put_call_ratio": 0.67,
+    "call_volume": 115616,
+    "put_volume": 77611,
+    "call_open_interest": 125987,
+    "put_open_interest": 128921,
+    "expected_move": 33.93,
+    "expected_move_pct": 6.29,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 47,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 541.66,
+    "target_high": 725.0,
+    "target_low": 320.0,
+    "target_median": 540.0,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 47
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "neutral",
+    "sp500_price": 738.18,
+    "sp500_change_pct": -1.23,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 691.96,
+    "nasdaq_change_pct": -1.9,
+    "vix": 18.78,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 50,
+    "regime_assessment": {
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
+      "nasdaq_trend": "bearish",
+      "vix": 18.78,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "BUY",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, positive options flow",
+  "earnings_date": "2026-08-04",
+  "days_until_earnings": 11,
+  "earnings_time": "unknown"
+}

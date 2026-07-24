@@ -3,55 +3,55 @@
   "company": "United Parcel Service, Inc.",
   "sector": "Industrials",
   "price": {
-    "current": 117.72,
-    "open": 116.9,
-    "high": 118.42,
-    "low": 116.31,
-    "previous_close": 117.18,
-    "change_pct": 0.46,
-    "market_cap": 100062740480
+    "current": 114.1,
+    "open": 116.53,
+    "high": 116.81,
+    "low": 113.85,
+    "previous_close": 115.84,
+    "change_pct": -1.5,
+    "market_cap": 96985710592
   },
   "trade_parameters": {
-    "buy_above": 121.25,
-    "stop_loss": 108.51,
-    "take_profit": 119.44,
-    "expected_move": "\u00b11.46%",
-    "expected_move_dollars": "\u00b1$1.72",
-    "risk_reward": -0.14,
+    "buy_above": 114.1,
+    "stop_loss": 112.66,
+    "take_profit": 118.65,
+    "expected_move": "\u00b13.99%",
+    "expected_move_dollars": "\u00b1$4.55",
+    "risk_reward": 3.16,
     "support_levels": [
+      112.66,
       108.51,
-      106.04,
-      104.82
+      106.04
     ],
     "resistance_levels": [
       99.43,
-      106.72,
-      108.02
+      108.02,
+      109.4
     ],
-    "expected_return_pct": -1.5,
-    "max_drawdown_pct": -10.51
+    "expected_return_pct": 3.99,
+    "max_drawdown_pct": -1.26
   },
   "scores": {
-    "technical": 85,
+    "technical": 100,
     "fundamental": 40,
-    "options": 77,
+    "options": 82,
     "sentiment": 47,
-    "historical": 0,
-    "macro": 60,
-    "overall": 56.6
+    "historical": 50,
+    "macro": 50,
+    "overall": 69.1
   },
   "historical_score_breakdown": {
-    "simple": 0,
+    "simple": 50,
     "deep": 50,
-    "merged": 0,
+    "merged": 50,
     "has_deep": false
   },
   "technical": {
     "trend": {
-      "ema_20": 111.32,
-      "sma_50": 106.08,
-      "sma_100": 103.64,
-      "sma_200": 99.83,
+      "ema_20": 112.49,
+      "sma_50": 107.38,
+      "sma_100": 103.69,
+      "sma_200": 100.51,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,40 +59,40 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 77.15,
-      "macd": 2.5808,
-      "macd_signal": 1.9714,
-      "macd_histogram": 0.6094,
-      "stochastic_rsi": 100.0,
-      "adx": 24.32,
-      "momentum_score": "overbought"
+      "rsi_14": 57.21,
+      "macd": 2.3319,
+      "macd_signal": 2.2393,
+      "macd_histogram": 0.0926,
+      "stochastic_rsi": 27.06,
+      "adx": 27.01,
+      "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "up",
-      "volume_trend": "above_avg"
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 23.13,
-      "historical_volatility_60": 36.16
+      "historical_volatility_20": 28.8,
+      "historical_volatility_60": 37.28
     },
     "price_structure": {
       "resistance": [
         99.43,
-        106.72,
-        108.02
+        108.02,
+        109.4
       ],
       "support": [
+        112.66,
         108.51,
-        106.04,
-        104.82
+        106.04
       ],
       "high_20d": 118.42,
       "high_30d": 118.42,
       "high_52w": 118.73,
-      "distance_to_resistance_pct": 0.85,
-      "distance_to_support_pct": 7.82,
+      "distance_to_resistance_pct": 4.05,
+      "distance_to_support_pct": 1.26,
       "nearest_resistance": 118.73,
-      "nearest_support": 108.51
+      "nearest_support": 112.66
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 5801999872,
     "total_debt": 28661999616,
     "net_cash": -22859999744,
-    "forward_pe": 14.69,
-    "peg_ratio": 1.86,
-    "ev_ebitda": 10.39,
-    "price_to_sales": 1.13
+    "forward_pe": 14.22,
+    "peg_ratio": 1.84,
+    "ev_ebitda": 10.13,
+    "price_to_sales": 1.1
   },
   "options": {
-    "implied_volatility": 0.0511,
-    "put_call_ratio": 0.46,
-    "call_volume": 1951,
-    "put_volume": 895,
-    "call_open_interest": 7430,
-    "put_open_interest": 4201,
-    "expected_move": 1.72,
-    "expected_move_pct": 1.46,
+    "implied_volatility": 0.1391,
+    "put_call_ratio": 0.45,
+    "call_volume": 2743,
+    "put_volume": 1239,
+    "call_open_interest": 12734,
+    "put_open_interest": 5741,
+    "expected_move": 4.55,
+    "expected_move_pct": 3.99,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -130,10 +130,10 @@
     "buy_ratings": 0,
     "hold_ratings": 26,
     "sell_ratings": 0,
-    "avg_price_target": 114.69,
+    "avg_price_target": 115.04,
     "target_high": 135.0,
     "target_low": 76.0,
-    "target_median": 116.5,
+    "target_median": 117.5,
     "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
@@ -151,31 +151,31 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 743.29,
-    "sp500_change_pct": -0.99,
-    "nasdaq_trend": "neutral",
-    "nasdaq_price": 695.33,
-    "nasdaq_change_pct": -1.5,
-    "vix": 17.87,
+    "sp500_price": 738.18,
+    "sp500_change_pct": -1.23,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 691.96,
+    "nasdaq_change_pct": -1.9,
+    "vix": 18.78,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 60,
+    "macro_score": 50,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
       "sp500_trend": "neutral",
-      "nasdaq_trend": "neutral",
-      "vix": 17.87,
+      "nasdaq_trend": "bearish",
+      "vix": 18.78,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, positive options flow",
+  "decision_rationale": "strong technical uptrend, positive options flow, favorable risk/reward ratio of 3.16:1",
   "earnings_date": "2026-07-28",
-  "days_until_earnings": 8,
+  "days_until_earnings": 4,
   "earnings_time": "unknown"
 }

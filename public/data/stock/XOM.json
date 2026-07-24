@@ -1,0 +1,181 @@
+{
+  "ticker": "XOM",
+  "company": "ExxonMobil Holdings Corporation",
+  "sector": "Energy",
+  "price": {
+    "current": 156.89,
+    "open": 156.6,
+    "high": 158.57,
+    "low": 156.06,
+    "previous_close": 154.45,
+    "change_pct": 1.58,
+    "market_cap": 650300751872
+  },
+  "trade_parameters": {
+    "buy_above": 156.89,
+    "stop_loss": 144.71,
+    "take_profit": 163.35,
+    "expected_move": "\u00b14.12%",
+    "expected_move_dollars": "\u00b1$6.46",
+    "risk_reward": 0.53,
+    "support_levels": [
+      144.71,
+      142.95,
+      137.72
+    ],
+    "resistance_levels": [
+      140.39,
+      142.34,
+      143.99
+    ],
+    "expected_return_pct": 4.12,
+    "max_drawdown_pct": -7.76
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 30,
+    "options": 82,
+    "sentiment": 47,
+    "historical": 50,
+    "macro": 50,
+    "overall": 67.1
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 145.96,
+      "sma_50": 146.37,
+      "sma_100": 150.08,
+      "sma_200": 136.68,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 82.23,
+      "macd": 2.4834,
+      "macd_signal": 0.3839,
+      "macd_histogram": 2.0995,
+      "stochastic_rsi": 100.0,
+      "adx": 40.53,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 24.41,
+      "historical_volatility_60": 29.61
+    },
+    "price_structure": {
+      "resistance": [
+        140.39,
+        142.34,
+        143.99
+      ],
+      "support": [
+        144.71,
+        142.95,
+        137.72
+      ],
+      "high_20d": 158.57,
+      "high_30d": 158.57,
+      "high_52w": 175.22,
+      "distance_to_resistance_pct": 11.68,
+      "distance_to_support_pct": 7.76,
+      "nearest_resistance": 175.22,
+      "nearest_support": 144.71
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": -4.52,
+    "eps_growth_yoy": -14.54,
+    "gross_margin": 29.77,
+    "operating_margin": 6.35,
+    "net_margin": 7.76,
+    "roe": 9.87,
+    "debt_to_equity": 18.26,
+    "current_ratio": 1.04,
+    "cash": 8434999808,
+    "total_debt": 47660998656,
+    "net_cash": -39225998848,
+    "forward_pe": 14.63,
+    "peg_ratio": 1.29,
+    "ev_ebitda": 12.43,
+    "price_to_sales": 1.99
+  },
+  "options": {
+    "implied_volatility": 0.1439,
+    "put_call_ratio": 0.13,
+    "call_volume": 39228,
+    "put_volume": 5118,
+    "call_open_interest": 40249,
+    "put_open_interest": 15414,
+    "expected_move": 6.47,
+    "expected_move_pct": 4.12,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 21,
+    "sell_ratings": 0,
+    "avg_price_target": 167.14,
+    "target_high": 185.0,
+    "target_low": 130.0,
+    "target_median": 168.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 21
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "neutral",
+    "sp500_price": 738.18,
+    "sp500_change_pct": -1.23,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 691.96,
+    "nasdaq_change_pct": -1.9,
+    "vix": 18.78,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 50,
+    "regime_assessment": {
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
+      "nasdaq_trend": "bearish",
+      "vix": 18.78,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-07-31",
+  "days_until_earnings": 7,
+  "earnings_time": "unknown"
+}
