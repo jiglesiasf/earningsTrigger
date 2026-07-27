@@ -3,21 +3,21 @@
   "company": "Chipotle Mexican Grill, Inc.",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 32.01,
-    "open": 31.74,
-    "high": 32.24,
-    "low": 31.47,
-    "previous_close": 32.2,
-    "change_pct": -0.59,
-    "market_cap": 41060311040
+    "current": 31.79,
+    "open": 32.45,
+    "high": 32.45,
+    "low": 31.58,
+    "previous_close": 32.01,
+    "change_pct": -0.69,
+    "market_cap": 40778113024
   },
   "trade_parameters": {
-    "buy_above": 32.01,
-    "stop_loss": 31.97,
-    "take_profit": 34.18,
-    "expected_move": "\u00b16.78%",
-    "expected_move_dollars": "\u00b1$2.17",
-    "risk_reward": 54.26,
+    "buy_above": 31.79,
+    "stop_loss": 31.72,
+    "take_profit": 33.82,
+    "expected_move": "\u00b16.4%",
+    "expected_move_dollars": "\u00b1$2.03",
+    "risk_reward": 29.07,
     "support_levels": [
       33.0,
       31.97,
@@ -28,17 +28,17 @@
       33.32,
       33.45
     ],
-    "expected_return_pct": 6.78,
-    "max_drawdown_pct": -0.12
+    "expected_return_pct": 6.4,
+    "max_drawdown_pct": -0.22
   },
   "scores": {
     "technical": 50,
     "fundamental": 59,
-    "options": 57,
+    "options": 67,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 55.2
+    "overall": 57.2
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 33.56,
-      "sma_50": 32.56,
-      "sma_100": 33.18,
-      "sma_200": 35.12,
+      "ema_20": 33.39,
+      "sma_50": 32.54,
+      "sma_100": 33.13,
+      "sma_200": 35.07,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 35.15,
-      "macd": 0.1403,
-      "macd_signal": 0.5331,
-      "macd_histogram": -0.3928,
-      "stochastic_rsi": 0.0,
-      "adx": 23.89,
+      "rsi_14": 39.25,
+      "macd": -0.0127,
+      "macd_signal": 0.4239,
+      "macd_histogram": -0.4366,
+      "stochastic_rsi": 9.93,
+      "adx": 23.79,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 43.63,
-      "historical_volatility_60": 39.47
+      "historical_volatility_20": 43.19,
+      "historical_volatility_60": 39.22
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 37.09,
       "high_30d": 37.09,
       "high_52w": 47.18,
-      "distance_to_resistance_pct": 4.09,
-      "distance_to_support_pct": 0.12,
+      "distance_to_resistance_pct": 4.81,
+      "distance_to_support_pct": 0.22,
       "nearest_resistance": 33.32,
-      "nearest_support": 31.97
+      "nearest_support": 31.72
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 871422016,
     "total_debt": 5245879808,
     "net_cash": -4374457792,
-    "forward_pe": 23.64,
-    "peg_ratio": 1.79,
-    "ev_ebitda": 19.72,
-    "price_to_sales": 3.38
+    "forward_pe": 23.48,
+    "peg_ratio": 1.71,
+    "ev_ebitda": 19.6,
+    "price_to_sales": null
   },
   "options": {
-    "implied_volatility": 0.2365,
-    "put_call_ratio": 2.41,
-    "call_volume": 1300,
-    "put_volume": 3130,
-    "call_open_interest": 28339,
-    "put_open_interest": 20623,
-    "expected_move": 2.17,
-    "expected_move_pct": 6.78,
+    "implied_volatility": 0.2232,
+    "put_call_ratio": 1.09,
+    "call_volume": 3550,
+    "put_volume": 3878,
+    "call_open_interest": 22818,
+    "put_open_interest": 8956,
+    "expected_move": 2.03,
+    "expected_move_pct": 6.4,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 738.18,
-    "sp500_change_pct": -1.23,
+    "sp500_price": 738.93,
+    "sp500_change_pct": 0.1,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 691.96,
-    "nasdaq_change_pct": -1.9,
-    "vix": 18.78,
+    "nasdaq_price": 684.23,
+    "nasdaq_change_pct": -1.12,
+    "vix": 17.82,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.78,
+      "vix": 17.82,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 54.26:1",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 29.07:1",
   "earnings_date": "2026-07-29",
-  "days_until_earnings": 5,
+  "days_until_earnings": 2,
   "earnings_time": "unknown"
 }

@@ -3,21 +3,21 @@
   "company": "Booking Holdings Inc. Common St",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 172.83,
-    "open": 174.07,
-    "high": 175.8,
-    "low": 171.02,
-    "previous_close": 177.86,
-    "change_pct": -2.83,
-    "market_cap": 133922242560
+    "current": 177.46,
+    "open": 174.6,
+    "high": 180.3,
+    "low": 174.5,
+    "previous_close": 172.83,
+    "change_pct": 2.68,
+    "market_cap": 137509945344
   },
   "trade_parameters": {
-    "buy_above": 178.01,
-    "stop_loss": 171.17,
-    "take_profit": 184.25,
-    "expected_move": "\u00b16.61%",
-    "expected_move_dollars": "\u00b1$11.42",
-    "risk_reward": 0.91,
+    "buy_above": 177.46,
+    "stop_loss": 176.7,
+    "take_profit": 196.29,
+    "expected_move": "\u00b110.61%",
+    "expected_move_dollars": "\u00b1$18.83",
+    "risk_reward": 24.77,
     "support_levels": [
       176.7,
       171.17,
@@ -28,17 +28,17 @@
       170.08,
       170.82
     ],
-    "expected_return_pct": 3.5,
-    "max_drawdown_pct": -3.85
+    "expected_return_pct": 10.61,
+    "max_drawdown_pct": -0.43
   },
   "scores": {
-    "technical": 58,
+    "technical": 63,
     "fundamental": 79,
-    "options": 90,
+    "options": 81,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 68.2
+    "overall": 67.9
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -49,9 +49,9 @@
   "technical": {
     "trend": {
       "ema_20": 177.46,
-      "sma_50": 170.44,
-      "sma_100": 171.98,
-      "sma_200": 185.25,
+      "sma_50": 170.79,
+      "sma_100": 172.09,
+      "sma_200": 185.06,
       "price_above_20_ema": "False",
       "price_above_50_sma": "True",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 35.8,
-      "macd": 1.52,
-      "macd_signal": 2.4454,
-      "macd_histogram": -0.9254,
-      "stochastic_rsi": 0.0,
-      "adx": 11.52,
+      "rsi_14": 45.79,
+      "macd": 1.3504,
+      "macd_signal": 2.2264,
+      "macd_histogram": -0.876,
+      "stochastic_rsi": 44.34,
+      "adx": 10.03,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 33.57,
-      "historical_volatility_60": 36.04
+      "historical_volatility_20": 34.1,
+      "historical_volatility_60": 36.13
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 188.31,
       "high_30d": 188.31,
       "high_52w": 229.86,
-      "distance_to_resistance_pct": 33.0,
-      "distance_to_support_pct": 0.96,
+      "distance_to_resistance_pct": 29.53,
+      "distance_to_support_pct": 0.43,
       "nearest_resistance": 229.86,
-      "nearest_support": 171.17
+      "nearest_support": 176.7
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 16024000512,
     "total_debt": 19175999488,
     "net_cash": -3151998976,
-    "forward_pe": 14.05,
+    "forward_pe": 14.43,
     "peg_ratio": 0.77,
-    "ev_ebitda": 13.21,
-    "price_to_sales": 4.84
+    "ev_ebitda": 13.55,
+    "price_to_sales": 4.97
   },
   "options": {
-    "implied_volatility": 0.2307,
-    "put_call_ratio": 0.66,
-    "call_volume": 634,
-    "put_volume": 421,
-    "call_open_interest": 6115,
-    "put_open_interest": 4033,
-    "expected_move": 11.43,
-    "expected_move_pct": 6.61,
+    "implied_volatility": 0.3703,
+    "put_call_ratio": 0.74,
+    "call_volume": 1316,
+    "put_volume": 971,
+    "call_open_interest": 4830,
+    "put_open_interest": 3441,
+    "expected_move": 18.84,
+    "expected_move_pct": 10.61,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 738.18,
-    "sp500_change_pct": -1.23,
+    "sp500_price": 738.93,
+    "sp500_change_pct": 0.1,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 691.96,
-    "nasdaq_change_pct": -1.9,
-    "vix": 18.78,
+    "nasdaq_price": 684.23,
+    "nasdaq_change_pct": -1.12,
+    "vix": 17.82,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.78,
+      "vix": 17.82,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "solid fundamentals, positive options flow",
+  "decision_rationale": "solid fundamentals, positive options flow, favorable risk/reward ratio of 24.77:1",
   "earnings_date": "2026-08-04",
-  "days_until_earnings": 11,
+  "days_until_earnings": 8,
   "earnings_time": "unknown"
 }

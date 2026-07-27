@@ -4,20 +4,20 @@
   "sector": "Communication Services",
   "price": {
     "current": 47.55,
-    "open": 48.7,
-    "high": 49.0,
-    "low": 47.13,
-    "previous_close": 49.64,
-    "change_pct": -4.21,
+    "open": 48.16,
+    "high": 48.66,
+    "low": 47.14,
+    "previous_close": 47.55,
+    "change_pct": 0.0,
     "market_cap": 34044788736
   },
   "trade_parameters": {
     "buy_above": 47.6,
     "stop_loss": 44.7,
-    "take_profit": 50.97,
-    "expected_move": "\u00b17.2%",
-    "expected_move_dollars": "\u00b1$3.42",
-    "risk_reward": 1.16,
+    "take_profit": 53.63,
+    "expected_move": "\u00b112.79%",
+    "expected_move_dollars": "\u00b1$6.08",
+    "risk_reward": 2.08,
     "support_levels": [
       53.56,
       53.3,
@@ -28,17 +28,17 @@
       47.6,
       48.0
     ],
-    "expected_return_pct": 7.09,
+    "expected_return_pct": 12.67,
     "max_drawdown_pct": -6.09
   },
   "scores": {
-    "technical": 48,
+    "technical": 35,
     "fundamental": 47,
-    "options": 57,
+    "options": 60,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 52.2
+    "overall": 48.9
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 52.14,
-      "sma_50": 48.61,
-      "sma_100": 52.52,
-      "sma_200": 72.27,
+      "ema_20": 51.7,
+      "sma_50": 48.73,
+      "sma_100": 52.32,
+      "sma_200": 71.88,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 32.18,
-      "macd": 0.4439,
-      "macd_signal": 1.4635,
-      "macd_histogram": -1.0196,
-      "stochastic_rsi": 1.65,
-      "adx": 31.72,
-      "momentum_score": "weak"
+      "rsi_14": 26.81,
+      "macd": 0.0372,
+      "macd_signal": 1.1783,
+      "macd_histogram": -1.1411,
+      "stochastic_rsi": 0.0,
+      "adx": 29.96,
+      "momentum_score": "oversold"
     },
     "volume": {
       "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 76.26,
-      "historical_volatility_60": 77.95
+      "historical_volatility_20": 75.26,
+      "historical_volatility_60": 77.8
     },
     "price_structure": {
       "resistance": [
@@ -107,20 +107,20 @@
     "cash": 3199000064,
     "total_debt": 1788000000,
     "net_cash": 1411000064,
-    "forward_pe": -37.13,
+    "forward_pe": -37.07,
     "peg_ratio": 8.18,
     "ev_ebitda": -33.23,
     "price_to_sales": 6.43
   },
   "options": {
-    "implied_volatility": 0.2512,
-    "put_call_ratio": 1.65,
-    "call_volume": 3129,
-    "put_volume": 5155,
-    "call_open_interest": 16947,
-    "put_open_interest": 6990,
-    "expected_move": 3.42,
-    "expected_move_pct": 7.2,
+    "implied_volatility": 0.4462,
+    "put_call_ratio": 1.27,
+    "call_volume": 1333,
+    "put_volume": 1695,
+    "call_open_interest": 17513,
+    "put_open_interest": 6518,
+    "expected_move": 6.08,
+    "expected_move_pct": 12.79,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 738.18,
-    "sp500_change_pct": -1.23,
+    "sp500_price": 738.93,
+    "sp500_change_pct": 0.1,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 691.96,
-    "nasdaq_change_pct": -1.9,
-    "vix": 18.78,
+    "nasdaq_price": 684.23,
+    "nasdaq_change_pct": -1.12,
+    "vix": 17.82,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.78,
+      "vix": 17.82,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 2.08:1",
   "earnings_date": "2026-07-30",
-  "days_until_earnings": 6,
+  "days_until_earnings": 3,
   "earnings_time": "unknown"
 }

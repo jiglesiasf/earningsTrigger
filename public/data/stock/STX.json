@@ -3,21 +3,21 @@
   "company": "Seagate Technology Holdings PLC",
   "sector": "Technology",
   "price": {
-    "current": 913.36,
-    "open": 905.0,
-    "high": 936.49,
-    "low": 905.0,
-    "previous_close": 908.1,
-    "change_pct": 0.58,
-    "market_cap": 204801785856
+    "current": 851.69,
+    "open": 879.21,
+    "high": 906.0,
+    "low": 835.5,
+    "previous_close": 913.36,
+    "change_pct": -6.75,
+    "market_cap": 192696664064
   },
   "trade_parameters": {
-    "buy_above": 913.36,
-    "stop_loss": 880.01,
-    "take_profit": 987.71,
-    "expected_move": "\u00b18.14%",
-    "expected_move_dollars": "\u00b1$74.35",
-    "risk_reward": 2.23,
+    "buy_above": 851.69,
+    "stop_loss": 801.32,
+    "take_profit": 926.89,
+    "expected_move": "\u00b18.83%",
+    "expected_move_dollars": "\u00b1$75.2",
+    "risk_reward": 1.49,
     "support_levels": [
       880.01,
       801.32,
@@ -28,17 +28,17 @@
       838.0,
       840.71
     ],
-    "expected_return_pct": 8.14,
-    "max_drawdown_pct": -3.65
+    "expected_return_pct": 8.83,
+    "max_drawdown_pct": -5.91
   },
   "scores": {
     "technical": 100,
     "fundamental": 76,
-    "options": 62,
+    "options": 65,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 74.6
+    "overall": 75.2
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 876.58,
-      "sma_50": 886.25,
-      "sma_100": 695.17,
-      "sma_200": 499.82,
-      "price_above_20_ema": "True",
-      "price_above_50_sma": "True",
+      "ema_20": 874.21,
+      "sma_50": 887.12,
+      "sma_100": 699.9,
+      "sma_200": 502.87,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
       "price_above_200_sma": "True",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 58.64,
-      "macd": -9.208,
-      "macd_signal": -10.8046,
-      "macd_histogram": 1.5966,
-      "stochastic_rsi": 100.0,
-      "adx": 35.1,
-      "momentum_score": "strong"
+      "rsi_14": 48.5,
+      "macd": -9.8716,
+      "macd_signal": -10.618,
+      "macd_histogram": 0.7463,
+      "stochastic_rsi": 64.1,
+      "adx": 35.2,
+      "momentum_score": "weak"
     },
     "volume": {
       "obv_trend": "up",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 101.09,
-      "historical_volatility_60": 81.68
+      "historical_volatility_20": 102.77,
+      "historical_volatility_60": 82.82
     },
     "price_structure": {
       "resistance": [
@@ -86,13 +86,13 @@
         801.32,
         786.01
       ],
-      "high_20d": 1111.0,
+      "high_20d": 998.49,
       "high_30d": 1144.18,
       "high_52w": 1144.18,
-      "distance_to_resistance_pct": 25.27,
-      "distance_to_support_pct": 3.65,
+      "distance_to_resistance_pct": 34.34,
+      "distance_to_support_pct": 5.91,
       "nearest_resistance": 1144.18,
-      "nearest_support": 880.01
+      "nearest_support": 801.32
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 1146000000,
     "total_debt": 4177999872,
     "net_cash": -3031999872,
-    "forward_pe": 32.07,
-    "peg_ratio": 0.62,
-    "ev_ebitda": 59.15,
-    "price_to_sales": 18.6
+    "forward_pe": 29.91,
+    "peg_ratio": 0.59,
+    "ev_ebitda": 55.21,
+    "price_to_sales": null
   },
   "options": {
-    "implied_volatility": 0.2838,
-    "put_call_ratio": 1.27,
-    "call_volume": 4478,
-    "put_volume": 5692,
-    "call_open_interest": 19001,
-    "put_open_interest": 18504,
-    "expected_move": 74.32,
-    "expected_move_pct": 8.14,
+    "implied_volatility": 0.308,
+    "put_call_ratio": 1.81,
+    "call_volume": 2577,
+    "put_volume": 4666,
+    "call_open_interest": 15436,
+    "put_open_interest": 9532,
+    "expected_move": 75.21,
+    "expected_move_pct": 8.83,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 738.18,
-    "sp500_change_pct": -1.23,
+    "sp500_price": 738.93,
+    "sp500_change_pct": 0.1,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 691.96,
-    "nasdaq_change_pct": -1.9,
-    "vix": 18.78,
+    "nasdaq_price": 684.23,
+    "nasdaq_change_pct": -1.12,
+    "vix": 17.82,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 18.78,
+      "vix": 17.82,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable risk/reward ratio of 2.23:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals",
   "earnings_date": "2026-07-28",
-  "days_until_earnings": 4,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }
