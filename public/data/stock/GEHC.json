@@ -3,21 +3,21 @@
   "company": "GE HealthCare Technologies Inc.",
   "sector": "Healthcare",
   "price": {
-    "current": 60.58,
-    "open": 62.47,
-    "high": 62.75,
-    "low": 60.2,
-    "previous_close": 61.96,
-    "change_pct": -2.22,
-    "market_cap": 27557345280
+    "current": 61.12,
+    "open": 62.04,
+    "high": 62.7,
+    "low": 60.93,
+    "previous_close": 60.58,
+    "change_pct": 0.89,
+    "market_cap": 27802984448
   },
   "trade_parameters": {
-    "buy_above": 60.58,
+    "buy_above": 61.12,
     "stop_loss": 60.2,
-    "take_profit": 64.37,
-    "expected_move": "\u00b16.25%",
-    "expected_move_dollars": "\u00b1$3.79",
-    "risk_reward": 9.96,
+    "take_profit": 65.12,
+    "expected_move": "\u00b16.55%",
+    "expected_move_dollars": "\u00b1$4.0",
+    "risk_reward": 4.35,
     "support_levels": [
       63.42,
       63.02,
@@ -28,17 +28,17 @@
       64.31,
       65.59
     ],
-    "expected_return_pct": 6.25,
-    "max_drawdown_pct": -0.63
+    "expected_return_pct": 6.55,
+    "max_drawdown_pct": -1.51
   },
   "scores": {
-    "technical": 55,
+    "technical": 60,
     "fundamental": 55,
-    "options": 67,
+    "options": 90,
     "sentiment": 70,
     "historical": 50,
     "macro": 50,
-    "overall": 57.9
+    "overall": 64.0
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 63.15,
-      "sma_50": 63.48,
-      "sma_100": 66.74,
-      "sma_200": 73.17,
+      "ema_20": 62.95,
+      "sma_50": 63.46,
+      "sma_100": 66.57,
+      "sma_200": 73.1,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 35.75,
-      "macd": -0.6725,
-      "macd_signal": -0.2931,
-      "macd_histogram": -0.3794,
-      "stochastic_rsi": 0.0,
-      "adx": 23.75,
+      "rsi_14": 37.81,
+      "macd": -0.7471,
+      "macd_signal": -0.3839,
+      "macd_histogram": -0.3632,
+      "stochastic_rsi": 5.48,
+      "adx": 26.31,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 33.8,
-      "historical_volatility_60": 41.41
+      "historical_volatility_20": 33.59,
+      "historical_volatility_60": 31.38
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 66.41,
       "high_30d": 66.41,
       "high_52w": 89.64,
-      "distance_to_resistance_pct": 4.36,
-      "distance_to_support_pct": 0.63,
+      "distance_to_resistance_pct": 3.44,
+      "distance_to_support_pct": 1.51,
       "nearest_resistance": 63.22,
       "nearest_support": 60.2
     }
@@ -107,23 +107,23 @@
     "cash": 2260999936,
     "total_debt": 10577000448,
     "net_cash": -8316000512,
-    "forward_pe": 11.3,
+    "forward_pe": 11.4,
     "peg_ratio": 1.71,
-    "ev_ebitda": 10.25,
-    "price_to_sales": 1.31
+    "ev_ebitda": 10.32,
+    "price_to_sales": 1.33
   },
   "options": {
-    "implied_volatility": 0.2179,
-    "put_call_ratio": 1.02,
-    "call_volume": 411,
-    "put_volume": 420,
-    "call_open_interest": 2473,
-    "put_open_interest": 1312,
-    "expected_move": 3.79,
-    "expected_move_pct": 6.25,
+    "implied_volatility": 0.2286,
+    "put_call_ratio": 0.29,
+    "call_volume": 664,
+    "put_volume": 195,
+    "call_open_interest": 2999,
+    "put_open_interest": 1436,
+    "expected_move": 4.01,
+    "expected_move_pct": 6.55,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 738.93,
-    "sp500_change_pct": 0.1,
+    "sp500_price": 739.09,
+    "sp500_change_pct": 0.02,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 684.23,
-    "nasdaq_change_pct": -1.12,
-    "vix": 17.82,
+    "nasdaq_price": 682.12,
+    "nasdaq_change_pct": -0.31,
+    "vix": 18.9,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 17.82,
+      "vix": 18.9,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 9.96:1",
+  "decision_rationale": "positive options flow, favorable risk/reward ratio of 4.35:1",
   "earnings_date": "2026-07-29",
-  "days_until_earnings": 2,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }

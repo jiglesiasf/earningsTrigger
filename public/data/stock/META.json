@@ -3,21 +3,21 @@
   "company": "Meta Platforms, Inc.",
   "sector": "Communication Services",
   "price": {
-    "current": 595.19,
-    "open": 605.3,
-    "high": 609.98,
-    "low": 594.45,
-    "previous_close": 606.1,
-    "change_pct": -1.8,
-    "market_cap": 1510844137472
+    "current": 593.87,
+    "open": 607.22,
+    "high": 611.26,
+    "low": 593.13,
+    "previous_close": 595.19,
+    "change_pct": -0.22,
+    "market_cap": 1507493412864
   },
   "trade_parameters": {
     "buy_above": 605.81,
-    "stop_loss": 540.4,
-    "take_profit": 645.54,
-    "expected_move": "\u00b18.46%",
-    "expected_move_dollars": "\u00b1$50.35",
-    "risk_reward": 0.61,
+    "stop_loss": 551.43,
+    "take_profit": 641.62,
+    "expected_move": "\u00b18.04%",
+    "expected_move_dollars": "\u00b1$47.75",
+    "risk_reward": 0.66,
     "support_levels": [
       649.05,
       626.0,
@@ -28,17 +28,17 @@
       623.15,
       624.4
     ],
-    "expected_return_pct": 6.56,
-    "max_drawdown_pct": -10.8
+    "expected_return_pct": 5.91,
+    "max_drawdown_pct": -8.98
   },
   "scores": {
-    "technical": 53,
+    "technical": 58,
     "fundamental": 81,
     "options": 90,
     "sentiment": 70,
     "historical": 77.3,
     "macro": 50,
-    "overall": 71.2
+    "overall": 72.7
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 622.24,
-      "sma_50": 605.83,
-      "sma_100": 614.85,
-      "sma_200": 637.12,
+      "ema_20": 619.53,
+      "sma_50": 605.38,
+      "sma_100": 614.25,
+      "sma_200": 636.53,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 48.82,
-      "macd": 7.8927,
-      "macd_signal": 12.4072,
-      "macd_histogram": -4.5146,
+      "rsi_14": 44.65,
+      "macd": 4.6774,
+      "macd_signal": 10.8613,
+      "macd_histogram": -6.1839,
       "stochastic_rsi": 0.0,
-      "adx": 24.24,
+      "adx": 25.03,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,7 +72,7 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 55.1,
+      "historical_volatility_20": 55.06,
       "historical_volatility_60": 45.68
     },
     "price_structure": {
@@ -89,10 +89,10 @@
       "high_20d": 686.08,
       "high_30d": 686.08,
       "high_52w": 793.65,
-      "distance_to_resistance_pct": 1.78,
-      "distance_to_support_pct": 9.21,
+      "distance_to_resistance_pct": 2.01,
+      "distance_to_support_pct": 7.15,
       "nearest_resistance": 605.81,
-      "nearest_support": 540.4
+      "nearest_support": 551.43
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 81180000256,
     "total_debt": 86769000448,
     "net_cash": -5589000192,
-    "forward_pe": 16.08,
+    "forward_pe": 16.05,
     "peg_ratio": 0.87,
-    "ev_ebitda": 13.87,
-    "price_to_sales": 7.03
+    "ev_ebitda": 13.84,
+    "price_to_sales": 7.01
   },
   "options": {
-    "implied_volatility": 0.2951,
-    "put_call_ratio": 0.25,
-    "call_volume": 67422,
-    "put_volume": 16920,
-    "call_open_interest": 37167,
-    "put_open_interest": 20760,
-    "expected_move": 50.36,
-    "expected_move_pct": 8.46,
+    "implied_volatility": 0.2805,
+    "put_call_ratio": 0.27,
+    "call_volume": 73849,
+    "put_volume": 19748,
+    "call_open_interest": 133637,
+    "put_open_interest": 54767,
+    "expected_move": 47.76,
+    "expected_move_pct": 8.04,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -1246,12 +1246,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 738.93,
-    "sp500_change_pct": 0.1,
+    "sp500_price": 739.09,
+    "sp500_change_pct": 0.02,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 684.23,
-    "nasdaq_change_pct": -1.12,
-    "vix": 17.82,
+    "nasdaq_price": 682.12,
+    "nasdaq_change_pct": -0.31,
+    "vix": 18.9,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1264,13 +1264,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 17.82,
+      "vix": 18.9,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
   "decision_rationale": "solid fundamentals, positive options flow, favorable historical earnings pattern",
   "earnings_date": "2026-07-29",
-  "days_until_earnings": 2,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }
