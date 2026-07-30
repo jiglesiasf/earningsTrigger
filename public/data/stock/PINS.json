@@ -3,21 +3,21 @@
   "company": "Pinterest, Inc.",
   "sector": "Communication Services",
   "price": {
-    "current": NaN,
-    "open": NaN,
-    "high": NaN,
-    "low": NaN,
-    "previous_close": 23.5,
-    "change_pct": NaN,
-    "market_cap": 13645432832
+    "current": 24.44,
+    "open": 24.04,
+    "high": 24.63,
+    "low": 23.96,
+    "previous_close": 24.36,
+    "change_pct": 0.33,
+    "market_cap": 13690245120
   },
   "trade_parameters": {
-    "buy_above": NaN,
-    "stop_loss": 20.84,
-    "take_profit": NaN,
-    "expected_move": "\u00b12.05%",
-    "expected_move_dollars": "\u00b1$nan",
-    "risk_reward": 0,
+    "buy_above": 24.44,
+    "stop_loss": 22.18,
+    "take_profit": 25.01,
+    "expected_move": "\u00b12.33%",
+    "expected_move_dollars": "\u00b1$0.57",
+    "risk_reward": 0.25,
     "support_levels": [
       22.18,
       21.97,
@@ -28,17 +28,17 @@
       21.54,
       22.36
     ],
-    "expected_return_pct": NaN,
-    "max_drawdown_pct": NaN
+    "expected_return_pct": 2.33,
+    "max_drawdown_pct": -9.25
   },
   "scores": {
-    "technical": 59,
+    "technical": 100,
     "fundamental": 53,
     "options": 77,
     "sentiment": 47,
     "historical": 50,
-    "macro": 60,
-    "overall": 58.9
+    "macro": 25,
+    "overall": 69.5
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,23 +48,23 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 22.35,
-      "sma_50": NaN,
-      "sma_100": NaN,
-      "sma_200": NaN,
-      "price_above_20_ema": "False",
-      "price_above_50_sma": "False",
-      "price_above_200_sma": "False",
+      "ema_20": 22.72,
+      "sma_50": 21.41,
+      "sma_100": 20.38,
+      "sma_200": 22.97,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 59.38,
-      "macd": 0.4603,
-      "macd_signal": 0.5051,
-      "macd_histogram": -0.0448,
-      "stochastic_rsi": 37.48,
-      "adx": 25.0,
+      "rsi_14": 64.65,
+      "macd": 0.6484,
+      "macd_signal": 0.5506,
+      "macd_histogram": 0.0978,
+      "stochastic_rsi": 54.46,
+      "adx": 32.36,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 39.83,
-      "historical_volatility_60": 50.18
+      "historical_volatility_20": 36.9,
+      "historical_volatility_60": 49.96
     },
     "price_structure": {
       "resistance": [
@@ -86,13 +86,13 @@
         21.97,
         21.91
       ],
-      "high_20d": 23.92,
-      "high_30d": 23.92,
+      "high_20d": 24.63,
+      "high_30d": 24.63,
       "high_52w": 39.93,
-      "distance_to_resistance_pct": NaN,
-      "distance_to_support_pct": NaN,
+      "distance_to_resistance_pct": 63.38,
+      "distance_to_support_pct": 9.25,
       "nearest_resistance": 39.93,
-      "nearest_support": 20.84
+      "nearest_support": 22.18
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 1298563968,
     "total_debt": 1205030016,
     "net_cash": 93533952,
-    "forward_pe": 10.91,
+    "forward_pe": 10.95,
     "peg_ratio": 0.39,
-    "ev_ebitda": 38.84,
-    "price_to_sales": 3.12
+    "ev_ebitda": 38.97,
+    "price_to_sales": 3.13
   },
   "options": {
-    "implied_volatility": 0.0716,
-    "put_call_ratio": 0.2,
-    "call_volume": 5973,
-    "put_volume": 1205,
-    "call_open_interest": 13651,
-    "put_open_interest": 3688,
-    "expected_move": 0.5,
-    "expected_move_pct": 2.05,
+    "implied_volatility": 0.0812,
+    "put_call_ratio": 0.28,
+    "call_volume": 1963,
+    "put_volume": 548,
+    "call_open_interest": 14219,
+    "put_open_interest": 3822,
+    "expected_move": 0.57,
+    "expected_move_pct": 2.33,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": NaN,
-    "sp500_change_pct": NaN,
-    "nasdaq_trend": "neutral",
-    "nasdaq_price": NaN,
-    "nasdaq_change_pct": NaN,
-    "vix": 18.27,
+    "sp500_trend": "bearish",
+    "sp500_price": 729.46,
+    "sp500_change_pct": -1.54,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 661.73,
+    "nasdaq_change_pct": -2.04,
+    "vix": 19.4,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "healthy",
-    "macro_score": 60,
+    "breadth": "weak",
+    "macro_score": 25,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
-      "sp500_trend": "neutral",
-      "nasdaq_trend": "neutral",
-      "vix": 18.27,
+      "sp500_trend": "bearish",
+      "nasdaq_trend": "bearish",
+      "vix": 19.4,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "positive options flow",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-08-04",
-  "days_until_earnings": 6,
+  "days_until_earnings": 5,
   "earnings_time": "unknown"
 }

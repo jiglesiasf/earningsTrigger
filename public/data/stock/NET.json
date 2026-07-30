@@ -1,44 +1,44 @@
 {
-  "ticker": "DDOG",
-  "company": "Datadog, Inc.",
+  "ticker": "NET",
+  "company": "Cloudflare, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 264.2,
-    "open": 252.88,
-    "high": 273.73,
-    "low": 252.5,
-    "previous_close": 250.88,
-    "change_pct": 5.31,
-    "market_cap": 94044684288
+    "current": 270.38,
+    "open": 264.56,
+    "high": 279.92,
+    "low": 262.95,
+    "previous_close": 264.1,
+    "change_pct": 2.38,
+    "market_cap": 95968559104
   },
   "trade_parameters": {
-    "buy_above": 268.83,
-    "stop_loss": 250.14,
-    "take_profit": 277.01,
-    "expected_move": "\u00b14.85%",
-    "expected_move_dollars": "\u00b1$12.81",
-    "risk_reward": 0.44,
+    "buy_above": 270.38,
+    "stop_loss": 263.37,
+    "take_profit": 282.33,
+    "expected_move": "\u00b14.42%",
+    "expected_move_dollars": "\u00b1$11.95",
+    "risk_reward": 1.7,
     "support_levels": [
-      250.14,
-      248.61,
-      248.01
+      263.37,
+      261.73,
+      238.9
     ],
     "resistance_levels": [
-      238.67,
-      268.83,
-      271.26
+      230.11,
+      239.0,
+      252.35
     ],
-    "expected_return_pct": 3.04,
-    "max_drawdown_pct": -6.95
+    "expected_return_pct": 4.42,
+    "max_drawdown_pct": -2.59
   },
   "scores": {
-    "technical": 87,
-    "fundamental": 62,
+    "technical": 97,
+    "fundamental": 50,
     "options": 82,
     "sentiment": 70,
     "historical": 50,
     "macro": 25,
-    "overall": 70.7
+    "overall": 71.2
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 252.85,
-      "sma_50": 242.62,
-      "sma_100": 189.35,
-      "sma_200": 166.19,
+      "ema_20": 263.11,
+      "sma_50": 246.08,
+      "sma_100": 226.88,
+      "sma_200": 212.66,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 47.07,
-      "macd": 4.4341,
-      "macd_signal": 6.3371,
-      "macd_histogram": -1.9031,
-      "stochastic_rsi": 22.55,
-      "adx": 22.15,
+      "rsi_14": 45.63,
+      "macd": 6.742,
+      "macd_signal": 8.6011,
+      "macd_histogram": -1.8591,
+      "stochastic_rsi": 8.54,
+      "adx": 38.29,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,72 +72,72 @@
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 40.5,
-      "historical_volatility_60": 82.29
+      "historical_volatility_20": 42.99,
+      "historical_volatility_60": 75.49
     },
     "price_structure": {
       "resistance": [
-        238.67,
-        268.83,
-        271.26
+        230.11,
+        239.0,
+        252.35
       ],
       "support": [
-        250.14,
-        248.61,
-        248.01
+        263.37,
+        261.73,
+        238.9
       ],
-      "high_20d": 276.7,
-      "high_30d": 276.7,
-      "high_52w": 278.7,
-      "distance_to_resistance_pct": 1.75,
-      "distance_to_support_pct": 5.32,
-      "nearest_resistance": 268.83,
-      "nearest_support": 250.14
+      "high_20d": 291.0,
+      "high_30d": 291.0,
+      "high_52w": 291.0,
+      "distance_to_resistance_pct": 7.63,
+      "distance_to_support_pct": 2.59,
+      "nearest_resistance": 291.0,
+      "nearest_support": 263.37
     }
   },
   "fundamentals": {
-    "revenue_growth_yoy": 27.68,
-    "eps_growth_yoy": -40.38,
-    "gross_margin": 79.91,
-    "operating_margin": 0.8,
-    "net_margin": 3.69,
-    "roe": 3.93,
-    "debt_to_equity": 32.22,
-    "current_ratio": 3.4,
-    "cash": 4758617088,
-    "total_debt": 1285052032,
-    "net_cash": 3473565056,
-    "forward_pe": 91.53,
-    "peg_ratio": 1.57,
-    "ev_ebitda": 2614.72,
-    "price_to_sales": 25.61
+    "revenue_growth_yoy": 29.85,
+    "eps_growth_yoy": -26.09,
+    "gross_margin": 73.33,
+    "operating_margin": -9.69,
+    "net_margin": -3.72,
+    "roe": -5.88,
+    "debt_to_equity": 230.86,
+    "current_ratio": 1.96,
+    "cash": 4163877888,
+    "total_debt": 3524536064,
+    "net_cash": 639341824,
+    "forward_pe": 170.91,
+    "peg_ratio": 2.38,
+    "ev_ebitda": -2616.4,
+    "price_to_sales": 41.21
   },
   "options": {
-    "implied_volatility": 0.1692,
-    "put_call_ratio": 0.6,
-    "call_volume": 5773,
-    "put_volume": 3464,
-    "call_open_interest": 10471,
-    "put_open_interest": 8489,
-    "expected_move": 12.82,
-    "expected_move_pct": 4.85,
+    "implied_volatility": 0.1543,
+    "put_call_ratio": 0.41,
+    "call_volume": 4462,
+    "put_volume": 1829,
+    "call_open_interest": 11616,
+    "put_open_interest": 18706,
+    "expected_move": 11.96,
+    "expected_move_pct": 4.42,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
-    "buy_ratings": 46,
+    "buy_ratings": 31,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 268.55,
+    "avg_price_target": 262.26,
     "target_high": 330.0,
-    "target_low": 139.0,
+    "target_low": 136.0,
     "target_median": 280.0,
-    "consensus_trend": "strong_buy",
+    "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
-    "number_of_analysts": 46
+    "number_of_analysts": 31
   },
   "historical_earnings": {},
   "historical_analysis": null,

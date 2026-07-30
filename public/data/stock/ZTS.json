@@ -1,0 +1,181 @@
+{
+  "ticker": "ZTS",
+  "company": "Zoetis Inc.",
+  "sector": "Healthcare",
+  "price": {
+    "current": 77.93,
+    "open": 77.3,
+    "high": 79.08,
+    "low": 77.25,
+    "previous_close": 77.51,
+    "change_pct": 0.54,
+    "market_cap": null
+  },
+  "trade_parameters": {
+    "buy_above": 77.93,
+    "stop_loss": 77.16,
+    "take_profit": 80.31,
+    "expected_move": "\u00b13.05%",
+    "expected_move_dollars": "\u00b1$2.38",
+    "risk_reward": 3.09,
+    "support_levels": [
+      77.16,
+      75.68,
+      75.12
+    ],
+    "resistance_levels": [
+      76.46,
+      77.45,
+      77.51
+    ],
+    "expected_return_pct": 3.05,
+    "max_drawdown_pct": -0.99
+  },
+  "scores": {
+    "technical": 99,
+    "fundamental": 70,
+    "options": 54,
+    "sentiment": 47,
+    "historical": 50,
+    "macro": 25,
+    "overall": 68.0
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 75.98,
+      "sma_50": 76.8,
+      "sma_100": 93.87,
+      "sma_200": 109.8,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 65.26,
+      "macd": -0.343,
+      "macd_signal": -0.9993,
+      "macd_histogram": 0.6563,
+      "stochastic_rsi": 94.2,
+      "adx": 17.84,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 21.9,
+      "historical_volatility_60": 54.93
+    },
+    "price_structure": {
+      "resistance": [
+        76.46,
+        77.45,
+        77.51
+      ],
+      "support": [
+        77.16,
+        75.68,
+        75.12
+      ],
+      "high_20d": 79.43,
+      "high_30d": 80.02,
+      "high_52w": 157.46,
+      "distance_to_resistance_pct": 102.05,
+      "distance_to_support_pct": 0.99,
+      "nearest_resistance": 157.46,
+      "nearest_support": 77.16
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 2.28,
+    "eps_growth_yoy": 10.05,
+    "gross_margin": 71.84,
+    "operating_margin": 36.56,
+    "net_margin": 28.04,
+    "roe": 67.75,
+    "debt_to_equity": 286.24,
+    "current_ratio": 3.15,
+    "cash": 1940999936,
+    "total_debt": 9253999616,
+    "net_cash": -7312999680,
+    "forward_pe": 10.54,
+    "peg_ratio": 1.84,
+    "ev_ebitda": 9.81,
+    "price_to_sales": null
+  },
+  "options": {
+    "implied_volatility": 0.1063,
+    "put_call_ratio": 1.19,
+    "call_volume": 320,
+    "put_volume": 381,
+    "call_open_interest": 7008,
+    "put_open_interest": 11677,
+    "expected_move": 2.37,
+    "expected_move_pct": 3.05,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 17,
+    "sell_ratings": 0,
+    "avg_price_target": 111.94,
+    "target_high": 160.0,
+    "target_low": 80.0,
+    "target_median": 104.0,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 17
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bearish",
+    "sp500_price": 729.46,
+    "sp500_change_pct": -1.54,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 661.73,
+    "nasdaq_change_pct": -2.04,
+    "vix": 19.4,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "weak",
+    "macro_score": 25,
+    "regime_assessment": {
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "bearish",
+      "nasdaq_trend": "bearish",
+      "vix": 19.4,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 3.09:1",
+  "earnings_date": "2026-08-06",
+  "days_until_earnings": 7,
+  "earnings_time": "unknown"
+}

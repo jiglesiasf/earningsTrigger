@@ -3,21 +3,21 @@
   "company": "Bristol-Myers Squibb Company",
   "sector": "Healthcare",
   "price": {
-    "current": NaN,
-    "open": NaN,
-    "high": NaN,
-    "low": NaN,
-    "previous_close": 62.56,
-    "change_pct": NaN,
-    "market_cap": 129875730432
+    "current": 63.1,
+    "open": 63.87,
+    "high": 63.91,
+    "low": 63.1,
+    "previous_close": 63.6,
+    "change_pct": -0.79,
+    "market_cap": 128854695936
   },
   "trade_parameters": {
-    "buy_above": NaN,
-    "stop_loss": 55.67,
-    "take_profit": NaN,
-    "expected_move": "\u00b11.43%",
-    "expected_move_dollars": "\u00b1$nan",
-    "risk_reward": 0,
+    "buy_above": 63.1,
+    "stop_loss": 59.8,
+    "take_profit": 64.41,
+    "expected_move": "\u00b12.07%",
+    "expected_move_dollars": "\u00b1$1.31",
+    "risk_reward": 0.4,
     "support_levels": [
       59.8,
       56.78,
@@ -28,17 +28,17 @@
       57.17,
       58.22
     ],
-    "expected_return_pct": NaN,
-    "max_drawdown_pct": NaN
+    "expected_return_pct": 2.07,
+    "max_drawdown_pct": -5.23
   },
   "scores": {
-    "technical": 53,
+    "technical": 100,
     "fundamental": 62,
-    "options": 44,
+    "options": 70,
     "sentiment": 47,
     "historical": 50,
-    "macro": 60,
-    "overall": 52.3
+    "macro": 25,
+    "overall": 69.8
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 59.41,
-      "sma_50": NaN,
-      "sma_100": NaN,
-      "sma_200": NaN,
-      "price_above_20_ema": "False",
-      "price_above_50_sma": "False",
-      "price_above_200_sma": "False",
+      "ema_20": 60.12,
+      "sma_50": 57.44,
+      "sma_100": 57.55,
+      "sma_200": 54.32,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 70.88,
-      "macd": 1.4897,
-      "macd_signal": 1.1943,
-      "macd_histogram": 0.2954,
-      "stochastic_rsi": 100.0,
-      "adx": 25.0,
-      "momentum_score": "overbought"
+      "rsi_14": 69.6,
+      "macd": 1.6899,
+      "macd_signal": 1.3166,
+      "macd_histogram": 0.3732,
+      "stochastic_rsi": 78.87,
+      "adx": 53.68,
+      "momentum_score": "strong"
     },
     "volume": {
       "obv_trend": "up",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 34.15,
-      "historical_volatility_60": 29.82
+      "historical_volatility_20": 32.97,
+      "historical_volatility_60": 28.6
     },
     "price_structure": {
       "resistance": [
@@ -86,13 +86,13 @@
         56.78,
         55.67
       ],
-      "high_20d": 63.44,
-      "high_30d": 63.44,
-      "high_52w": 63.44,
-      "distance_to_resistance_pct": NaN,
-      "distance_to_support_pct": NaN,
-      "nearest_resistance": 63.44,
-      "nearest_support": 55.67
+      "high_20d": 64.97,
+      "high_30d": 64.97,
+      "high_52w": 64.97,
+      "distance_to_resistance_pct": 2.96,
+      "distance_to_support_pct": 5.23,
+      "nearest_resistance": 64.97,
+      "nearest_support": 59.8
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 10485999616,
     "total_debt": 46428999680,
     "net_cash": -35943000064,
-    "forward_pe": 10.28,
+    "forward_pe": 10.2,
     "peg_ratio": 1.63,
-    "ev_ebitda": 8.74,
-    "price_to_sales": 2.68
+    "ev_ebitda": 8.69,
+    "price_to_sales": 2.66
   },
   "options": {
-    "implied_volatility": 0.0498,
-    "put_call_ratio": 2.01,
-    "call_volume": 1874,
-    "put_volume": 3764,
-    "call_open_interest": 10736,
-    "put_open_interest": 11448,
-    "expected_move": 0.91,
-    "expected_move_pct": 1.43,
+    "implied_volatility": 0.0723,
+    "put_call_ratio": 0.76,
+    "call_volume": 8848,
+    "put_volume": 6714,
+    "call_open_interest": 14959,
+    "put_open_interest": 14618,
+    "expected_move": 1.31,
+    "expected_move_pct": 2.07,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": NaN,
-    "sp500_change_pct": NaN,
-    "nasdaq_trend": "neutral",
-    "nasdaq_price": NaN,
-    "nasdaq_change_pct": NaN,
-    "vix": 18.27,
+    "sp500_trend": "bearish",
+    "sp500_price": 729.46,
+    "sp500_change_pct": -1.54,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 661.73,
+    "nasdaq_change_pct": -2.04,
+    "vix": 19.4,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "healthy",
-    "macro_score": 60,
+    "breadth": "weak",
+    "macro_score": 25,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
-      "sp500_trend": "neutral",
-      "nasdaq_trend": "neutral",
-      "vix": 18.27,
+      "sp500_trend": "bearish",
+      "nasdaq_trend": "bearish",
+      "vix": 19.4,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories",
+  "decision_rationale": "strong technical uptrend",
   "earnings_date": "2026-07-30",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }

@@ -1,0 +1,181 @@
+{
+  "ticker": "TTD",
+  "company": "The Trade Desk, Inc.",
+  "sector": "Communication Services",
+  "price": {
+    "current": 19.09,
+    "open": 18.67,
+    "high": 19.51,
+    "low": 18.54,
+    "previous_close": 18.91,
+    "change_pct": 0.95,
+    "market_cap": 8974368768
+  },
+  "trade_parameters": {
+    "buy_above": 19.64,
+    "stop_loss": 16.7,
+    "take_profit": 20.48,
+    "expected_move": "\u00b17.29%",
+    "expected_move_dollars": "\u00b1$1.39",
+    "risk_reward": 0.29,
+    "support_levels": [
+      20.8,
+      20.73,
+      20.22
+    ],
+    "resistance_levels": [
+      19.64,
+      19.94,
+      19.99
+    ],
+    "expected_return_pct": 4.29,
+    "max_drawdown_pct": -14.97
+  },
+  "scores": {
+    "technical": 87,
+    "fundamental": 79,
+    "options": 90,
+    "sentiment": 47,
+    "historical": 50,
+    "macro": 25,
+    "overall": 73.4
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 18.59,
+      "sma_50": 19.49,
+      "sma_100": 21.38,
+      "sma_200": 29.62,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 45.1,
+      "macd": -0.3344,
+      "macd_signal": -0.4001,
+      "macd_histogram": 0.0657,
+      "stochastic_rsi": 42.35,
+      "adx": 16.11,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 48.38,
+      "historical_volatility_60": 53.48
+    },
+    "price_structure": {
+      "resistance": [
+        19.64,
+        19.94,
+        19.99
+      ],
+      "support": [
+        20.8,
+        20.73,
+        20.22
+      ],
+      "high_20d": 20.53,
+      "high_30d": 20.53,
+      "high_52w": 91.45,
+      "distance_to_resistance_pct": 2.88,
+      "distance_to_support_pct": 12.52,
+      "nearest_resistance": 19.64,
+      "nearest_support": 16.7
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 18.47,
+    "eps_growth_yoy": 15.38,
+    "gross_margin": 77.83,
+    "operating_margin": 9.68,
+    "net_margin": 14.57,
+    "roe": 16.74,
+    "debt_to_equity": 17.26,
+    "current_ratio": 1.68,
+    "cash": 1405915008,
+    "total_debt": 423575008,
+    "net_cash": 982340000,
+    "forward_pe": 8.89,
+    "peg_ratio": 0.85,
+    "ev_ebitda": 11.26,
+    "price_to_sales": 3.02
+  },
+  "options": {
+    "implied_volatility": 0.2543,
+    "put_call_ratio": 0.06,
+    "call_volume": 13429,
+    "put_volume": 867,
+    "call_open_interest": 26268,
+    "put_open_interest": 29851,
+    "expected_move": 1.39,
+    "expected_move_pct": 7.29,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 30,
+    "sell_ratings": 0,
+    "avg_price_target": 24.32,
+    "target_high": 38.0,
+    "target_low": 11.0,
+    "target_median": 24.5,
+    "consensus_trend": "hold",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 30
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bearish",
+    "sp500_price": 729.46,
+    "sp500_change_pct": -1.54,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 661.73,
+    "nasdaq_change_pct": -2.04,
+    "vix": 19.4,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "weak",
+    "macro_score": 25,
+    "regime_assessment": {
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "bearish",
+      "nasdaq_trend": "bearish",
+      "vix": 19.4,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, positive options flow",
+  "earnings_date": "2026-08-06",
+  "days_until_earnings": 7,
+  "earnings_time": "unknown"
+}

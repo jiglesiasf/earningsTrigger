@@ -1,0 +1,181 @@
+{
+  "ticker": "MCHP",
+  "company": "Microchip Technology Incorporat",
+  "sector": "Technology",
+  "price": {
+    "current": 71.37,
+    "open": 75.15,
+    "high": 75.83,
+    "low": 71.24,
+    "previous_close": 75.71,
+    "change_pct": -5.73,
+    "market_cap": 38754508800
+  },
+  "trade_parameters": {
+    "buy_above": 71.37,
+    "stop_loss": 71.24,
+    "take_profit": 84.44,
+    "expected_move": "\u00b118.32%",
+    "expected_move_dollars": "\u00b1$13.07",
+    "risk_reward": 100.58,
+    "support_levels": [
+      93.95,
+      93.92,
+      90.23
+    ],
+    "resistance_levels": [
+      85.66,
+      90.85,
+      92.02
+    ],
+    "expected_return_pct": 18.32,
+    "max_drawdown_pct": -0.18
+  },
+  "scores": {
+    "technical": 53,
+    "fundamental": 80,
+    "options": 42,
+    "sentiment": 70,
+    "historical": 50,
+    "macro": 25,
+    "overall": 56.0
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 82.56,
+      "sma_50": 89.56,
+      "sma_100": 83.21,
+      "sma_200": 74.79,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 23.88,
+      "macd": -3.9282,
+      "macd_signal": -2.933,
+      "macd_histogram": -0.9952,
+      "stochastic_rsi": 0.0,
+      "adx": 35.59,
+      "momentum_score": "oversold"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 50.83,
+      "historical_volatility_60": 56.28
+    },
+    "price_structure": {
+      "resistance": [
+        85.66,
+        90.85,
+        92.02
+      ],
+      "support": [
+        93.95,
+        93.92,
+        90.23
+      ],
+      "high_20d": 91.4,
+      "high_30d": 104.03,
+      "high_52w": 105.38,
+      "distance_to_resistance_pct": 20.02,
+      "distance_to_support_pct": 0.18,
+      "nearest_resistance": 85.66,
+      "nearest_support": 71.24
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 7.08,
+    "eps_growth_yoy": 2300.0,
+    "gross_margin": 57.73,
+    "operating_margin": 17.07,
+    "net_margin": 4.88,
+    "roe": 3.4,
+    "debt_to_equity": 87.72,
+    "current_ratio": 2.09,
+    "cash": 240300000,
+    "total_debt": 5642200064,
+    "net_cash": -5401900064,
+    "forward_pe": 16.99,
+    "peg_ratio": 0.28,
+    "ev_ebitda": 36.17,
+    "price_to_sales": 8.22
+  },
+  "options": {
+    "implied_volatility": 0.6389,
+    "put_call_ratio": 1.74,
+    "call_volume": 2352,
+    "put_volume": 4082,
+    "call_open_interest": 14319,
+    "put_open_interest": 8339,
+    "expected_move": 13.07,
+    "expected_move_pct": 18.32,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 24,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 113.08,
+    "target_high": 135.0,
+    "target_low": 80.0,
+    "target_median": 118.5,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 24
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bearish",
+    "sp500_price": 729.46,
+    "sp500_change_pct": -1.54,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 661.73,
+    "nasdaq_change_pct": -2.04,
+    "vix": 19.4,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "weak",
+    "macro_score": 25,
+    "regime_assessment": {
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "bearish",
+      "nasdaq_trend": "bearish",
+      "vix": 19.4,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, favorable risk/reward ratio of 100.58:1",
+  "earnings_date": "2026-08-06",
+  "days_until_earnings": 7,
+  "earnings_time": "unknown"
+}
