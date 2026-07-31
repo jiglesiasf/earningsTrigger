@@ -3,42 +3,42 @@
   "company": "Eli Lilly and Company",
   "sector": "Healthcare",
   "price": {
-    "current": 1210.02,
-    "open": 1215.18,
-    "high": 1229.19,
-    "low": 1204.8,
-    "previous_close": 1220.66,
-    "change_pct": -0.87,
-    "market_cap": 1079024943104
+    "current": 1154.97,
+    "open": 1174.03,
+    "high": 1186.65,
+    "low": 1153.14,
+    "previous_close": 1210.02,
+    "change_pct": -4.55,
+    "market_cap": 1029934481408
   },
   "trade_parameters": {
-    "buy_above": 1210.02,
-    "stop_loss": 1173.93,
-    "take_profit": 1232.89,
-    "expected_move": "\u00b11.89%",
-    "expected_move_dollars": "\u00b1$22.87",
-    "risk_reward": 0.63,
+    "buy_above": 1182.73,
+    "stop_loss": 1139.0,
+    "take_profit": 1198.05,
+    "expected_move": "\u00b13.73%",
+    "expected_move_dollars": "\u00b1$43.08",
+    "risk_reward": 0.35,
     "support_levels": [
       1173.93,
       1139.0,
       1134.4
     ],
     "resistance_levels": [
-      994.78,
       1021.06,
-      1149.1
+      1149.1,
+      1182.73
     ],
-    "expected_return_pct": 1.89,
-    "max_drawdown_pct": -2.98
+    "expected_return_pct": 1.3,
+    "max_drawdown_pct": -3.7
   },
   "scores": {
-    "technical": 84,
+    "technical": 71,
     "fundamental": 87,
-    "options": 44,
+    "options": 49,
     "sentiment": 70,
     "historical": 50,
     "macro": 25,
-    "overall": 67.2
+    "overall": 64.2
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,38 +48,38 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 1181.77,
-      "sma_50": 1141.44,
-      "sma_100": 1040.01,
-      "sma_200": 1019.41,
-      "price_above_20_ema": "True",
+      "ema_20": 1179.22,
+      "sma_50": 1144.77,
+      "sma_100": 1041.68,
+      "sma_200": 1021.04,
+      "price_above_20_ema": "False",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 48.51,
-      "macd": 16.7643,
-      "macd_signal": 16.9977,
-      "macd_histogram": -0.2334,
-      "stochastic_rsi": 46.67,
-      "adx": 15.33,
+      "rsi_14": 43.51,
+      "macd": 12.6949,
+      "macd_signal": 16.1371,
+      "macd_histogram": -3.4422,
+      "stochastic_rsi": 32.96,
+      "adx": 14.0,
       "momentum_score": "weak"
     },
     "volume": {
-      "obv_trend": "up",
-      "volume_trend": "below_avg"
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 26.81,
-      "historical_volatility_60": 31.3
+      "historical_volatility_20": 31.37,
+      "historical_volatility_60": 32.9
     },
     "price_structure": {
       "resistance": [
-        994.78,
         1021.06,
-        1149.1
+        1149.1,
+        1182.73
       ],
       "support": [
         1173.93,
@@ -89,10 +89,10 @@
       "high_20d": 1249.45,
       "high_30d": 1249.45,
       "high_52w": 1249.45,
-      "distance_to_resistance_pct": 3.26,
-      "distance_to_support_pct": 2.98,
-      "nearest_resistance": 1249.45,
-      "nearest_support": 1173.93
+      "distance_to_resistance_pct": 2.4,
+      "distance_to_support_pct": 1.38,
+      "nearest_resistance": 1182.73,
+      "nearest_support": 1139.0
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 5281999872,
     "total_debt": 43370000384,
     "net_cash": -38088000512,
-    "forward_pe": 26.85,
-    "peg_ratio": 1.67,
-    "ev_ebitda": 30.85,
-    "price_to_sales": null
+    "forward_pe": 25.63,
+    "peg_ratio": 1.69,
+    "ev_ebitda": 29.49,
+    "price_to_sales": 14.26
   },
   "options": {
-    "implied_volatility": 0.0659,
-    "put_call_ratio": 3.62,
-    "call_volume": 3970,
-    "put_volume": 14365,
-    "call_open_interest": 13665,
-    "put_open_interest": 37718,
-    "expected_move": 22.86,
-    "expected_move_pct": 1.89,
+    "implied_volatility": 0.13,
+    "put_call_ratio": 2.1,
+    "call_volume": 5167,
+    "put_volume": 10833,
+    "call_open_interest": 14741,
+    "put_open_interest": 39815,
+    "expected_move": 43.03,
+    "expected_move_pct": 3.73,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "bearish",
-    "sp500_price": 729.46,
-    "sp500_change_pct": -1.54,
+    "sp500_price": 741.69,
+    "sp500_change_pct": 1.68,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 661.73,
-    "nasdaq_change_pct": -2.04,
-    "vix": 19.4,
+    "nasdaq_price": 683.55,
+    "nasdaq_change_pct": 3.3,
+    "vix": 16.88,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 19.4,
+      "vix": 16.88,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, solid fundamentals",
+  "decision_rationale": "solid fundamentals",
   "earnings_date": "2026-08-05",
-  "days_until_earnings": 6,
+  "days_until_earnings": 5,
   "earnings_time": "unknown"
 }

@@ -3,21 +3,21 @@
   "company": "Electronic Arts Inc.",
   "sector": "Communication Services",
   "price": {
-    "current": 208.91,
-    "open": 209.14,
-    "high": 209.16,
-    "low": 208.52,
-    "previous_close": 208.87,
-    "change_pct": 0.02,
-    "market_cap": 52725510144
+    "current": 209.59,
+    "open": 208.9,
+    "high": 209.8,
+    "low": 208.7,
+    "previous_close": 208.91,
+    "change_pct": 0.33,
+    "market_cap": 52555001856
   },
   "trade_parameters": {
-    "buy_above": 208.91,
+    "buy_above": 209.59,
     "stop_loss": 208.4,
-    "take_profit": 210.6,
+    "take_profit": 211.29,
     "expected_move": "\u00b10.81%",
-    "expected_move_dollars": "\u00b1$1.69",
-    "risk_reward": 3.32,
+    "expected_move_dollars": "\u00b1$1.7",
+    "risk_reward": 1.43,
     "support_levels": [
       208.4,
       205.96,
@@ -29,7 +29,7 @@
       203.8
     ],
     "expected_return_pct": 0.81,
-    "max_drawdown_pct": -0.24
+    "max_drawdown_pct": -0.57
   },
   "scores": {
     "technical": 74,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 207.55,
-      "sma_50": 204.59,
-      "sma_100": 203.08,
-      "sma_200": 202.39,
+      "ema_20": 207.74,
+      "sma_50": 204.77,
+      "sma_100": 203.2,
+      "sma_200": 202.44,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 80.52,
-      "macd": 1.3582,
-      "macd_signal": 1.3648,
-      "macd_histogram": -0.0066,
-      "stochastic_rsi": 40.38,
-      "adx": 58.6,
+      "rsi_14": 86.3,
+      "macd": 1.356,
+      "macd_signal": 1.363,
+      "macd_histogram": -0.0071,
+      "stochastic_rsi": 99.87,
+      "adx": 57.19,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 3.89,
-      "historical_volatility_60": 3.76
+      "historical_volatility_20": 3.96,
+      "historical_volatility_60": 3.78
     },
     "price_structure": {
       "resistance": [
@@ -86,12 +86,12 @@
         205.96,
         204.83
       ],
-      "high_20d": 209.41,
-      "high_30d": 209.41,
-      "high_52w": 209.41,
-      "distance_to_resistance_pct": 0.24,
-      "distance_to_support_pct": 0.24,
-      "nearest_resistance": 209.41,
+      "high_20d": 209.8,
+      "high_30d": 209.8,
+      "high_52w": 209.8,
+      "distance_to_resistance_pct": 0.1,
+      "distance_to_support_pct": 0.57,
+      "nearest_resistance": 209.8,
       "nearest_support": 208.4
     }
   },
@@ -107,18 +107,18 @@
     "cash": 2980000000,
     "total_debt": 1854000000,
     "net_cash": 1126000000,
-    "forward_pe": 21.7,
+    "forward_pe": 21.77,
     "peg_ratio": 1.3,
-    "ev_ebitda": 34.52,
-    "price_to_sales": 7.0
+    "ev_ebitda": 34.63,
+    "price_to_sales": 6.98
   },
   "options": {
     "implied_volatility": 0.0281,
-    "put_call_ratio": 0.26,
-    "call_volume": 449,
-    "put_volume": 115,
-    "call_open_interest": 7276,
-    "put_open_interest": 502,
+    "put_call_ratio": 0.18,
+    "call_volume": 587,
+    "put_volume": 106,
+    "call_open_interest": 7767,
+    "put_open_interest": 544,
     "expected_move": 1.69,
     "expected_move_pct": 0.81,
     "atm_straddle_price": null,
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "bearish",
-    "sp500_price": 729.46,
-    "sp500_change_pct": -1.54,
+    "sp500_price": 741.69,
+    "sp500_change_pct": 1.68,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 661.73,
-    "nasdaq_change_pct": -2.04,
-    "vix": 19.4,
+    "nasdaq_price": 683.55,
+    "nasdaq_change_pct": 3.3,
+    "vix": 16.88,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 25.0,
       "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 19.4,
+      "vix": 16.88,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "positive options flow, favorable risk/reward ratio of 3.32:1",
+  "decision_rationale": "positive options flow",
   "earnings_date": "2026-08-04",
-  "days_until_earnings": 5,
+  "days_until_earnings": 4,
   "earnings_time": "unknown"
 }
