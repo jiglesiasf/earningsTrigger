@@ -3,21 +3,21 @@
   "company": "Applovin Corporation",
   "sector": "Communication Services",
   "price": {
-    "current": 403.87,
-    "open": 393.02,
-    "high": 406.38,
-    "low": 390.05,
-    "previous_close": 399.46,
-    "change_pct": 1.1,
-    "market_cap": 135675895808
+    "current": 395.9,
+    "open": 397.9,
+    "high": 398.16,
+    "low": 377.71,
+    "previous_close": 403.87,
+    "change_pct": -1.97,
+    "market_cap": 132998455296
   },
   "trade_parameters": {
-    "buy_above": 403.87,
-    "stop_loss": 386.97,
-    "take_profit": 449.06,
-    "expected_move": "\u00b111.19%",
-    "expected_move_dollars": "\u00b1$45.19",
-    "risk_reward": 2.67,
+    "buy_above": 395.9,
+    "stop_loss": 377.71,
+    "take_profit": 430.82,
+    "expected_move": "\u00b18.82%",
+    "expected_move_dollars": "\u00b1$34.92",
+    "risk_reward": 1.92,
     "support_levels": [
       472.0,
       461.0,
@@ -25,20 +25,20 @@
     ],
     "resistance_levels": [
       420.95,
-      512.69,
-      515.39
+      515.39,
+      530.55
     ],
-    "expected_return_pct": 11.19,
-    "max_drawdown_pct": -4.18
+    "expected_return_pct": 8.82,
+    "max_drawdown_pct": -4.59
   },
   "scores": {
-    "technical": 61,
+    "technical": 66,
     "fundamental": 89,
-    "options": 65,
+    "options": 98,
     "sentiment": 70,
     "historical": 50,
-    "macro": 25,
-    "overall": 64.8
+    "macro": 50,
+    "overall": 74.2
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 439.17,
-      "sma_50": 492.24,
-      "sma_100": 470.05,
-      "sma_200": 521.25,
+      "ema_20": 435.05,
+      "sma_50": 490.62,
+      "sma_100": 468.84,
+      "sma_200": 520.28,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,40 +59,40 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 23.21,
-      "macd": -26.5753,
-      "macd_signal": -23.2668,
-      "macd_histogram": -3.3084,
-      "stochastic_rsi": 38.24,
-      "adx": 42.06,
-      "momentum_score": "oversold"
+      "rsi_14": 32.78,
+      "macd": -26.6935,
+      "macd_signal": -23.9522,
+      "macd_histogram": -2.7414,
+      "stochastic_rsi": 61.97,
+      "adx": 45.9,
+      "momentum_score": "weak"
     },
     "volume": {
-      "obv_trend": "up",
+      "obv_trend": "down",
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 61.45,
-      "historical_volatility_60": 70.57
+      "historical_volatility_20": 58.51,
+      "historical_volatility_60": 70.64
     },
     "price_structure": {
       "resistance": [
         420.95,
-        512.69,
-        515.39
+        515.39,
+        530.55
       ],
       "support": [
         472.0,
         461.0,
         447.35
       ],
-      "high_20d": 576.46,
+      "high_20d": 548.44,
       "high_30d": 576.46,
       "high_52w": 745.61,
-      "distance_to_resistance_pct": 4.23,
-      "distance_to_support_pct": 4.18,
+      "distance_to_resistance_pct": 6.33,
+      "distance_to_support_pct": 4.59,
       "nearest_resistance": 420.95,
-      "nearest_support": 386.97
+      "nearest_support": 377.71
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 2758671104,
     "total_debt": 3849840128,
     "net_cash": -1091169024,
-    "forward_pe": 18.63,
-    "peg_ratio": 1.1,
-    "ev_ebitda": 28.07,
-    "price_to_sales": 22.01
+    "forward_pe": 18.34,
+    "peg_ratio": 1.09,
+    "ev_ebitda": 27.52,
+    "price_to_sales": 21.58
   },
   "options": {
-    "implied_volatility": 0.3904,
-    "put_call_ratio": 0.98,
-    "call_volume": 5104,
-    "put_volume": 5001,
-    "call_open_interest": 16041,
-    "put_open_interest": 7788,
-    "expected_move": 45.2,
-    "expected_move_pct": 11.19,
+    "implied_volatility": 0.3076,
+    "put_call_ratio": 0.58,
+    "call_volume": 4931,
+    "put_volume": 2876,
+    "call_open_interest": 8653,
+    "put_open_interest": 7568,
+    "expected_move": 34.91,
+    "expected_move_pct": 8.82,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bearish",
-    "sp500_price": 741.69,
-    "sp500_change_pct": 1.68,
+    "sp500_trend": "neutral",
+    "sp500_price": 747.03,
+    "sp500_change_pct": 0.72,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 683.55,
-    "nasdaq_change_pct": 3.3,
-    "vix": 16.88,
+    "nasdaq_price": 687.99,
+    "nasdaq_change_pct": 0.65,
+    "vix": 16.08,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "weak",
-    "macro_score": 25,
+    "breadth": "healthy",
+    "macro_score": 50,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
-      "sp500_trend": "bearish",
+      "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 16.88,
+      "vix": 16.08,
       "market_regime": "neutral"
     }
   },
-  "decision": "AVOID",
-  "decision_rationale": "solid fundamentals, favorable risk/reward ratio of 2.67:1",
+  "decision": "WATCH",
+  "decision_rationale": "solid fundamentals, positive options flow",
   "earnings_date": "2026-08-05",
-  "days_until_earnings": 5,
+  "days_until_earnings": 2,
   "earnings_time": "unknown"
 }

@@ -3,42 +3,42 @@
   "company": "Electronic Arts Inc.",
   "sector": "Communication Services",
   "price": {
-    "current": 209.59,
-    "open": 208.9,
-    "high": 209.8,
-    "low": 208.7,
-    "previous_close": 208.91,
-    "change_pct": 0.33,
-    "market_cap": 52555001856
+    "current": 209.86,
+    "open": 209.85,
+    "high": 209.93,
+    "low": 209.76,
+    "previous_close": 209.59,
+    "change_pct": 0.13,
+    "market_cap": 52965273600
   },
   "trade_parameters": {
-    "buy_above": 209.59,
-    "stop_loss": 208.4,
-    "take_profit": 211.29,
-    "expected_move": "\u00b10.81%",
-    "expected_move_dollars": "\u00b1$1.7",
-    "risk_reward": 1.43,
+    "buy_above": 209.86,
+    "stop_loss": 208.52,
+    "take_profit": 210.36,
+    "expected_move": "\u00b10.24%",
+    "expected_move_dollars": "\u00b1$0.5",
+    "risk_reward": 0.38,
     "support_levels": [
+      208.52,
       208.4,
-      205.96,
-      204.83
+      205.96
     ],
     "resistance_levels": [
       200.73,
       201.76,
       203.8
     ],
-    "expected_return_pct": 0.81,
-    "max_drawdown_pct": -0.57
+    "expected_return_pct": 0.24,
+    "max_drawdown_pct": -0.64
   },
   "scores": {
     "technical": 74,
     "fundamental": 47,
     "options": 77,
-    "sentiment": 55,
+    "sentiment": 47,
     "historical": 50,
-    "macro": 25,
-    "overall": 61.2
+    "macro": 50,
+    "overall": 61.7
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 207.74,
-      "sma_50": 204.77,
-      "sma_100": 203.2,
-      "sma_200": 202.44,
+      "ema_20": 207.94,
+      "sma_50": 204.94,
+      "sma_100": 203.3,
+      "sma_200": 202.5,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 86.3,
-      "macd": 1.356,
-      "macd_signal": 1.363,
-      "macd_histogram": -0.0071,
-      "stochastic_rsi": 99.87,
-      "adx": 57.19,
+      "rsi_14": 88.24,
+      "macd": 1.3603,
+      "macd_signal": 1.3625,
+      "macd_histogram": -0.0022,
+      "stochastic_rsi": 100.0,
+      "adx": 55.66,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 3.96,
-      "historical_volatility_60": 3.78
+      "historical_volatility_20": 3.88,
+      "historical_volatility_60": 3.76
     },
     "price_structure": {
       "resistance": [
@@ -82,17 +82,17 @@
         203.8
       ],
       "support": [
+        208.52,
         208.4,
-        205.96,
-        204.83
+        205.96
       ],
-      "high_20d": 209.8,
-      "high_30d": 209.8,
-      "high_52w": 209.8,
-      "distance_to_resistance_pct": 0.1,
-      "distance_to_support_pct": 0.57,
-      "nearest_resistance": 209.8,
-      "nearest_support": 208.4
+      "high_20d": 209.93,
+      "high_30d": 209.93,
+      "high_52w": 209.93,
+      "distance_to_resistance_pct": 0.03,
+      "distance_to_support_pct": 0.64,
+      "nearest_resistance": 209.93,
+      "nearest_support": 208.52
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 2980000000,
     "total_debt": 1854000000,
     "net_cash": 1126000000,
-    "forward_pe": 21.77,
+    "forward_pe": 21.79,
     "peg_ratio": 1.3,
-    "ev_ebitda": 34.63,
-    "price_to_sales": 6.98
+    "ev_ebitda": 34.68,
+    "price_to_sales": 7.03
   },
   "options": {
-    "implied_volatility": 0.0281,
-    "put_call_ratio": 0.18,
-    "call_volume": 587,
-    "put_volume": 106,
-    "call_open_interest": 7767,
-    "put_open_interest": 544,
-    "expected_move": 1.69,
-    "expected_move_pct": 0.81,
+    "implied_volatility": 0.0083,
+    "put_call_ratio": 0.24,
+    "call_volume": 85,
+    "put_volume": 20,
+    "call_open_interest": 791,
+    "put_open_interest": 251,
+    "expected_move": 0.5,
+    "expected_move_pct": 0.24,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -128,13 +128,13 @@
   },
   "analyst": {
     "buy_ratings": 0,
-    "hold_ratings": 0,
+    "hold_ratings": 14,
     "sell_ratings": 0,
     "avg_price_target": 205.79,
     "target_high": 210.0,
     "target_low": 168.0,
     "target_median": 210.0,
-    "consensus_trend": "none",
+    "consensus_trend": "hold",
     "recent_upgrades": [],
     "recent_downgrades": [],
     "number_of_analysts": 14
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bearish",
-    "sp500_price": 741.69,
-    "sp500_change_pct": 1.68,
+    "sp500_trend": "neutral",
+    "sp500_price": 747.03,
+    "sp500_change_pct": 0.72,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 683.55,
-    "nasdaq_change_pct": 3.3,
-    "vix": 16.88,
+    "nasdaq_price": 687.99,
+    "nasdaq_change_pct": 0.65,
+    "vix": 16.08,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "weak",
-    "macro_score": 25,
+    "breadth": "healthy",
+    "macro_score": 50,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
-      "sp500_trend": "bearish",
+      "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 16.88,
+      "vix": 16.08,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
   "decision_rationale": "positive options flow",
   "earnings_date": "2026-08-04",
-  "days_until_earnings": 4,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }
