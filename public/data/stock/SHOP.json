@@ -3,21 +3,21 @@
   "company": "Shopify Inc.",
   "sector": "Technology",
   "price": {
-    "current": 117.15,
-    "open": 120.93,
-    "high": 122.25,
-    "low": 115.27,
-    "previous_close": 122.4,
-    "change_pct": -4.29,
-    "market_cap": 152020238336
+    "current": NaN,
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "previous_close": 117.15,
+    "change_pct": NaN,
+    "market_cap": 151838572544
   },
   "trade_parameters": {
-    "buy_above": 117.15,
-    "stop_loss": 115.17,
-    "take_profit": 124.14,
-    "expected_move": "\u00b15.97%",
-    "expected_move_dollars": "\u00b1$6.99",
-    "risk_reward": 3.53,
+    "buy_above": NaN,
+    "stop_loss": 111.06,
+    "take_profit": NaN,
+    "expected_move": "\u00b16.5%",
+    "expected_move_dollars": "\u00b1$nan",
+    "risk_reward": 0,
     "support_levels": [
       120.0,
       115.17,
@@ -28,17 +28,17 @@
       116.96,
       123.7
     ],
-    "expected_return_pct": 5.97,
-    "max_drawdown_pct": -1.69
+    "expected_return_pct": NaN,
+    "max_drawdown_pct": NaN
   },
   "scores": {
-    "technical": 68,
+    "technical": 47,
     "fundamental": 62,
-    "options": 83,
+    "options": 90,
     "sentiment": 70,
     "historical": 50,
-    "macro": 50,
-    "overall": 66.4
+    "macro": 60,
+    "overall": 62.0
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -49,22 +49,22 @@
   "technical": {
     "trend": {
       "ema_20": 121.15,
-      "sma_50": 116.07,
-      "sma_100": 117.02,
-      "sma_200": 133.16,
+      "sma_50": NaN,
+      "sma_100": NaN,
+      "sma_200": NaN,
       "price_above_20_ema": "False",
-      "price_above_50_sma": "True",
+      "price_above_50_sma": "False",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 42.54,
+      "rsi_14": 41.46,
       "macd": 1.7111,
-      "macd_signal": 2.1557,
-      "macd_histogram": -0.4446,
-      "stochastic_rsi": 12.79,
-      "adx": 23.02,
+      "macd_signal": 2.0668,
+      "macd_histogram": -0.3557,
+      "stochastic_rsi": 10.62,
+      "adx": 25.0,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 59.04,
-      "historical_volatility_60": 57.22
+      "historical_volatility_20": 60.61,
+      "historical_volatility_60": 57.52
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 133.99,
       "high_30d": 133.99,
       "high_52w": 182.19,
-      "distance_to_resistance_pct": 5.59,
-      "distance_to_support_pct": 1.69,
-      "nearest_resistance": 123.7,
-      "nearest_support": 115.17
+      "distance_to_resistance_pct": NaN,
+      "distance_to_support_pct": NaN,
+      "nearest_resistance": 182.19,
+      "nearest_support": 111.06
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 5743000064,
     "total_debt": 179000000,
     "net_cash": 5564000064,
-    "forward_pe": 50.24,
+    "forward_pe": 50.18,
     "peg_ratio": 2.57,
-    "ev_ebitda": 68.18,
-    "price_to_sales": 12.29
+    "ev_ebitda": 68.1,
+    "price_to_sales": 12.28
   },
   "options": {
-    "implied_volatility": 0.2081,
-    "put_call_ratio": 0.78,
-    "call_volume": 4406,
-    "put_volume": 3423,
-    "call_open_interest": 16924,
-    "put_open_interest": 12985,
-    "expected_move": 6.99,
-    "expected_move_pct": 5.97,
+    "implied_volatility": 0.2266,
+    "put_call_ratio": 0.46,
+    "call_volume": 9202,
+    "put_volume": 4258,
+    "call_open_interest": 21922,
+    "put_open_interest": 15541,
+    "expected_move": 7.6,
+    "expected_move_pct": 6.5,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -151,31 +151,31 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 747.03,
-    "sp500_change_pct": 0.72,
-    "nasdaq_trend": "bearish",
-    "nasdaq_price": 687.99,
-    "nasdaq_change_pct": 0.65,
-    "vix": 16.08,
+    "sp500_price": NaN,
+    "sp500_change_pct": NaN,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": NaN,
+    "nasdaq_change_pct": NaN,
+    "vix": 15.63,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 50,
+    "macro_score": 60,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
       "sp500_trend": "neutral",
-      "nasdaq_trend": "bearish",
-      "vix": 16.08,
+      "nasdaq_trend": "neutral",
+      "vix": 15.63,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "positive options flow, favorable risk/reward ratio of 3.53:1",
+  "decision_rationale": "positive options flow",
   "earnings_date": "2026-08-05",
-  "days_until_earnings": 2,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }
