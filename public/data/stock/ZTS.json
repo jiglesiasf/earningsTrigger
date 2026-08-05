@@ -3,21 +3,21 @@
   "company": "Zoetis Inc.",
   "sector": "Healthcare",
   "price": {
-    "current": NaN,
-    "open": NaN,
-    "high": NaN,
-    "low": NaN,
-    "previous_close": 77.29,
-    "change_pct": NaN,
+    "current": 76.04,
+    "open": 76.05,
+    "high": 76.42,
+    "low": 74.99,
+    "previous_close": 77.1,
+    "change_pct": -1.37,
     "market_cap": null
   },
   "trade_parameters": {
-    "buy_above": NaN,
-    "stop_loss": 72.87,
-    "take_profit": NaN,
-    "expected_move": "\u00b13.19%",
-    "expected_move_dollars": "\u00b1$nan",
-    "risk_reward": 0,
+    "buy_above": 76.46,
+    "stop_loss": 75.68,
+    "take_profit": 78.85,
+    "expected_move": "\u00b13.7%",
+    "expected_move_dollars": "\u00b1$2.81",
+    "risk_reward": 3.07,
     "support_levels": [
       77.16,
       75.68,
@@ -28,17 +28,17 @@
       77.45,
       77.51
     ],
-    "expected_return_pct": NaN,
-    "max_drawdown_pct": NaN
+    "expected_return_pct": 3.13,
+    "max_drawdown_pct": -1.02
   },
   "scores": {
     "technical": 70,
     "fundamental": 70,
-    "options": 49,
-    "sentiment": 47,
+    "options": 59,
+    "sentiment": 70,
     "historical": 50,
-    "macro": 60,
-    "overall": 60.0
+    "macro": 75,
+    "overall": 65.0
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 76.11,
-      "sma_50": NaN,
-      "sma_100": NaN,
-      "sma_200": NaN,
+      "ema_20": 76.19,
+      "sma_50": 76.64,
+      "sma_100": 92.15,
+      "sma_200": 108.54,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 65.24,
-      "macd": -0.1946,
-      "macd_signal": -0.6224,
-      "macd_histogram": 0.4278,
-      "stochastic_rsi": 94.14,
-      "adx": 25.0,
+      "rsi_14": 57.77,
+      "macd": -0.1283,
+      "macd_signal": -0.5102,
+      "macd_histogram": 0.3819,
+      "stochastic_rsi": 53.38,
+      "adx": 21.86,
       "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "up",
-      "volume_trend": "below_avg"
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 22.58,
-      "historical_volatility_60": 55.69
+      "historical_volatility_20": 22.34,
+      "historical_volatility_60": 33.84
     },
     "price_structure": {
       "resistance": [
@@ -86,13 +86,13 @@
         75.68,
         75.12
       ],
-      "high_20d": 79.43,
-      "high_30d": 79.43,
+      "high_20d": 80.17,
+      "high_30d": 80.17,
       "high_52w": 157.46,
-      "distance_to_resistance_pct": NaN,
-      "distance_to_support_pct": NaN,
-      "nearest_resistance": 157.46,
-      "nearest_support": 72.87
+      "distance_to_resistance_pct": 0.55,
+      "distance_to_support_pct": 0.47,
+      "nearest_resistance": 76.46,
+      "nearest_support": 75.68
     }
   },
   "fundamentals": {
@@ -107,37 +107,37 @@
     "cash": 1940999936,
     "total_debt": 9253999616,
     "net_cash": -7312999680,
-    "forward_pe": 10.43,
+    "forward_pe": 10.29,
     "peg_ratio": 1.85,
     "ev_ebitda": 9.73,
     "price_to_sales": null
   },
   "options": {
-    "implied_volatility": 0.1113,
-    "put_call_ratio": 1.54,
-    "call_volume": 3127,
-    "put_volume": 4816,
-    "call_open_interest": 12354,
-    "put_open_interest": 13753,
-    "expected_move": 2.46,
-    "expected_move_pct": 3.19,
+    "implied_volatility": 0.1289,
+    "put_call_ratio": 1.09,
+    "call_volume": 1233,
+    "put_volume": 1340,
+    "call_open_interest": 12731,
+    "put_open_interest": 14255,
+    "expected_move": 2.81,
+    "expected_move_pct": 3.7,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
-    "buy_ratings": 0,
-    "hold_ratings": 17,
+    "buy_ratings": 16,
+    "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 111.94,
+    "avg_price_target": 110.81,
     "target_high": 160.0,
     "target_low": 80.0,
-    "target_median": 104.0,
+    "target_median": 101.5,
     "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
-    "number_of_analysts": 17
+    "number_of_analysts": 16
   },
   "historical_earnings": {},
   "historical_analysis": null,
@@ -150,32 +150,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": NaN,
-    "sp500_change_pct": NaN,
+    "sp500_trend": "bullish",
+    "sp500_price": 771.33,
+    "sp500_change_pct": 1.8,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": NaN,
-    "nasdaq_change_pct": NaN,
-    "vix": 15.63,
+    "nasdaq_price": 723.85,
+    "nasdaq_change_pct": 3.4,
+    "vix": 16.65,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 60,
+    "macro_score": 75,
     "regime_assessment": {
-      "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 15.63,
+      "vix": 16.65,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 3.07:1",
   "earnings_date": "2026-08-06",
-  "days_until_earnings": 2,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }
