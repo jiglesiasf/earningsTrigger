@@ -3,21 +3,21 @@
   "company": "Cisco Systems, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 121.74,
-    "open": 119.39,
-    "high": 121.9,
-    "low": 118.73,
-    "previous_close": 115.86,
-    "change_pct": 5.08,
-    "market_cap": 479830245376
+    "current": 121.5,
+    "open": 124.0,
+    "high": 124.21,
+    "low": 114.88,
+    "previous_close": 121.74,
+    "change_pct": -0.2,
+    "market_cap": 478884298752
   },
   "trade_parameters": {
-    "buy_above": 121.74,
+    "buy_above": 121.5,
     "stop_loss": 116.5,
-    "take_profit": 125.06,
-    "expected_move": "\u00b12.73%",
-    "expected_move_dollars": "\u00b1$3.32",
-    "risk_reward": 0.63,
+    "take_profit": 125.29,
+    "expected_move": "\u00b13.12%",
+    "expected_move_dollars": "\u00b1$3.79",
+    "risk_reward": 0.76,
     "support_levels": [
       116.5,
       116.33,
@@ -28,17 +28,17 @@
       118.66,
       118.95
     ],
-    "expected_return_pct": 2.73,
-    "max_drawdown_pct": -4.3
+    "expected_return_pct": 3.12,
+    "max_drawdown_pct": -4.12
   },
   "scores": {
-    "technical": 98,
+    "technical": 93,
     "fundamental": 64,
-    "options": 77,
+    "options": 82,
     "sentiment": 70,
     "historical": 50,
     "macro": 75,
-    "overall": 75.8
+    "overall": 75.4
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 115.23,
-      "sma_50": 117.52,
-      "sma_100": 103.05,
-      "sma_200": 89.38,
+      "ema_20": 115.82,
+      "sma_50": 117.55,
+      "sma_100": 103.5,
+      "sma_200": 89.64,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 71.55,
-      "macd": 0.3747,
-      "macd_signal": -0.3374,
-      "macd_histogram": 0.7121,
+      "rsi_14": 77.85,
+      "macd": 0.8257,
+      "macd_signal": -0.1048,
+      "macd_histogram": 0.9305,
       "stochastic_rsi": 100.0,
-      "adx": 17.51,
+      "adx": 18.68,
       "momentum_score": "overbought"
     },
     "volume": {
       "obv_trend": "up",
-      "volume_trend": "above_avg"
+      "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 36.43,
-      "historical_volatility_60": 46.54
+      "historical_volatility_20": 36.13,
+      "historical_volatility_60": 45.7
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         116.33,
         116.07
       ],
-      "high_20d": 121.9,
-      "high_30d": 122.43,
+      "high_20d": 124.21,
+      "high_30d": 124.21,
       "high_52w": 129.88,
-      "distance_to_resistance_pct": 6.69,
-      "distance_to_support_pct": 4.3,
+      "distance_to_resistance_pct": 6.9,
+      "distance_to_support_pct": 4.12,
       "nearest_resistance": 129.88,
       "nearest_support": 116.5
     }
@@ -107,20 +107,20 @@
     "cash": 16640000000,
     "total_debt": 33001000960,
     "net_cash": -16361000960,
-    "forward_pe": 25.41,
+    "forward_pe": 25.36,
     "peg_ratio": 1.61,
-    "ev_ebitda": 29.18,
-    "price_to_sales": 7.9
+    "ev_ebitda": 29.12,
+    "price_to_sales": 7.88
   },
   "options": {
-    "implied_volatility": 0.0953,
-    "put_call_ratio": 0.39,
-    "call_volume": 17452,
-    "put_volume": 6892,
-    "call_open_interest": 23796,
-    "put_open_interest": 14060,
-    "expected_move": 3.33,
-    "expected_move_pct": 2.73,
+    "implied_volatility": 0.1087,
+    "put_call_ratio": 0.56,
+    "call_volume": 11003,
+    "put_volume": 6175,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 3.79,
+    "expected_move_pct": 3.12,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 771.33,
-    "sp500_change_pct": 1.8,
+    "sp500_price": 769.79,
+    "sp500_change_pct": -0.2,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 723.85,
-    "nasdaq_change_pct": 3.4,
-    "vix": 16.65,
+    "nasdaq_price": 717.3,
+    "nasdaq_change_pct": -0.9,
+    "vix": 15.85,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 16.65,
+      "vix": 15.85,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
   "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-08-12",
-  "days_until_earnings": 7,
+  "days_until_earnings": 6,
   "earnings_time": "unknown"
 }

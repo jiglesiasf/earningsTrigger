@@ -1,0 +1,181 @@
+{
+  "ticker": "BILI",
+  "company": "Bilibili Inc.",
+  "sector": "Communication Services",
+  "price": {
+    "current": 18.58,
+    "open": 19.01,
+    "high": 19.08,
+    "low": 18.46,
+    "previous_close": 18.99,
+    "change_pct": -2.16,
+    "market_cap": 7775837184
+  },
+  "trade_parameters": {
+    "buy_above": 18.64,
+    "stop_loss": 17.77,
+    "take_profit": 20.03,
+    "expected_move": "\u00b17.8%",
+    "expected_move_dollars": "\u00b1$1.45",
+    "risk_reward": 1.6,
+    "support_levels": [
+      17.77,
+      17.32,
+      17.25
+    ],
+    "resistance_levels": [
+      18.06,
+      18.33,
+      18.64
+    ],
+    "expected_return_pct": 7.45,
+    "max_drawdown_pct": -4.67
+  },
+  "scores": {
+    "technical": 77,
+    "fundamental": 78,
+    "options": 57,
+    "sentiment": 70,
+    "historical": 50,
+    "macro": 75,
+    "overall": 68.3
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 18.27,
+      "sma_50": 17.75,
+      "sma_100": 20.21,
+      "sma_200": 24.27,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "False",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 46.05,
+      "macd": 0.2698,
+      "macd_signal": 0.1508,
+      "macd_histogram": 0.119,
+      "stochastic_rsi": 13.87,
+      "adx": 16.89,
+      "momentum_score": "weak"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 39.84,
+      "historical_volatility_60": 49.92
+    },
+    "price_structure": {
+      "resistance": [
+        18.06,
+        18.33,
+        18.64
+      ],
+      "support": [
+        17.77,
+        17.32,
+        17.25
+      ],
+      "high_20d": 19.47,
+      "high_30d": 19.47,
+      "high_52w": 36.4,
+      "distance_to_resistance_pct": 0.32,
+      "distance_to_support_pct": 4.36,
+      "nearest_resistance": 18.64,
+      "nearest_support": 17.77
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 13.1,
+    "eps_growth_yoy": 184.83,
+    "gross_margin": 36.83,
+    "operating_margin": 2.23,
+    "net_margin": 4.58,
+    "roe": 9.36,
+    "debt_to_equity": 61.29,
+    "current_ratio": 1.35,
+    "cash": 24194072576,
+    "total_debt": 9566476288,
+    "net_cash": 14627596288,
+    "forward_pe": 13.77,
+    "peg_ratio": 0.43,
+    "ev_ebitda": -2.07,
+    "price_to_sales": 0.25
+  },
+  "options": {
+    "implied_volatility": 0.2721,
+    "put_call_ratio": 1.63,
+    "call_volume": 190,
+    "put_volume": 309,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 1.45,
+    "expected_move_pct": 7.8,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 30,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 29.65,
+    "target_high": 36.09,
+    "target_low": 21.2,
+    "target_median": 30.13,
+    "consensus_trend": "strong_buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 30
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 769.79,
+    "sp500_change_pct": -0.2,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 717.3,
+    "nasdaq_change_pct": -0.9,
+    "vix": 15.85,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.85,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, solid fundamentals",
+  "earnings_date": "2026-08-20",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}
