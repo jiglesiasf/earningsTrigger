@@ -3,21 +3,21 @@
   "company": "Ross Stores, Inc.",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 254.31,
-    "open": 253.75,
-    "high": 254.85,
-    "low": 250.86,
-    "previous_close": 253.22,
-    "change_pct": 0.43,
-    "market_cap": 81577836544
+    "current": 255.23,
+    "open": 253.36,
+    "high": 255.98,
+    "low": 251.0,
+    "previous_close": 254.31,
+    "change_pct": 0.36,
+    "market_cap": 81872953344
   },
   "trade_parameters": {
-    "buy_above": 254.31,
+    "buy_above": 262.89,
     "stop_loss": 250.34,
-    "take_profit": 258.25,
-    "expected_move": "\u00b11.55%",
-    "expected_move_dollars": "\u00b1$3.94",
-    "risk_reward": 0.99,
+    "take_profit": 257.14,
+    "expected_move": "\u00b10.75%",
+    "expected_move_dollars": "\u00b1$1.91",
+    "risk_reward": -0.46,
     "support_levels": [
       250.34,
       231.9,
@@ -28,17 +28,17 @@
       236.95,
       240.94
     ],
-    "expected_return_pct": 1.55,
-    "max_drawdown_pct": -1.56
+    "expected_return_pct": -2.18,
+    "max_drawdown_pct": -4.77
   },
   "scores": {
-    "technical": 93,
-    "fundamental": 58,
+    "technical": 85,
+    "fundamental": 53,
     "options": 44,
     "sentiment": 70,
     "historical": 50,
     "macro": 75,
-    "overall": 66.5
+    "overall": 63.2
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 242.3,
-      "sma_50": 231.4,
-      "sma_100": 225.55,
-      "sma_200": 203.82,
+      "ema_20": 243.53,
+      "sma_50": 231.84,
+      "sma_100": 226.02,
+      "sma_200": 204.31,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 76.6,
-      "macd": 7.8044,
-      "macd_signal": 6.4792,
-      "macd_histogram": 1.3252,
-      "stochastic_rsi": 30.47,
-      "adx": 63.17,
+      "rsi_14": 75.73,
+      "macd": 7.8522,
+      "macd_signal": 6.7538,
+      "macd_histogram": 1.0984,
+      "stochastic_rsi": 23.52,
+      "adx": 61.34,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -73,7 +73,7 @@
     },
     "volatility": {
       "historical_volatility_20": 22.91,
-      "historical_volatility_60": 32.63
+      "historical_volatility_60": 32.54
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 257.0,
       "high_30d": 257.0,
       "high_52w": 257.0,
-      "distance_to_resistance_pct": 1.06,
-      "distance_to_support_pct": 1.56,
+      "distance_to_resistance_pct": 0.69,
+      "distance_to_support_pct": 1.92,
       "nearest_resistance": 257.0,
       "nearest_support": 250.34
     }
@@ -107,20 +107,20 @@
     "cash": 4130980096,
     "total_debt": 4723149824,
     "net_cash": -592169728,
-    "forward_pe": 29.7,
-    "peg_ratio": 3.0,
-    "ev_ebitda": 23.95,
-    "price_to_sales": 3.43
+    "forward_pe": 29.81,
+    "peg_ratio": 3.02,
+    "ev_ebitda": 24.04,
+    "price_to_sales": 3.44
   },
   "options": {
-    "implied_volatility": 0.0539,
-    "put_call_ratio": 28.29,
-    "call_volume": 98,
-    "put_volume": 2772,
-    "call_open_interest": 0,
-    "put_open_interest": 0,
-    "expected_move": 3.93,
-    "expected_move_pct": 1.55,
+    "implied_volatility": 0.0261,
+    "put_call_ratio": 1.49,
+    "call_volume": 125,
+    "put_volume": 186,
+    "call_open_interest": 122,
+    "put_open_interest": 1679,
+    "expected_move": 1.91,
+    "expected_move_pct": 0.75,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -151,12 +151,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 768.56,
-    "sp500_change_pct": -0.16,
+    "sp500_price": 773.26,
+    "sp500_change_pct": 0.61,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 714.65,
-    "nasdaq_change_pct": -0.37,
-    "vix": 15.28,
+    "nasdaq_price": 723.03,
+    "nasdaq_change_pct": 1.17,
+    "vix": 15.45,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -169,13 +169,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 15.28,
+      "vix": 15.45,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
   "decision_rationale": "strong technical uptrend",
   "earnings_date": "2026-08-20",
-  "days_until_earnings": 13,
+  "days_until_earnings": 10,
   "earnings_time": "unknown"
 }
