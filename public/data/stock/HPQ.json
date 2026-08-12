@@ -1,0 +1,181 @@
+{
+  "ticker": "HPQ",
+  "company": "HP Inc.",
+  "sector": "Technology",
+  "price": {
+    "current": 29.07,
+    "open": 29.7,
+    "high": 29.7,
+    "low": 28.79,
+    "previous_close": 29.8,
+    "change_pct": -2.45,
+    "market_cap": null
+  },
+  "trade_parameters": {
+    "buy_above": 29.94,
+    "stop_loss": 26.05,
+    "take_profit": 29.76,
+    "expected_move": "\u00b12.37%",
+    "expected_move_dollars": "\u00b1$0.69",
+    "risk_reward": -0.05,
+    "support_levels": [
+      26.05,
+      24.25,
+      23.78
+    ],
+    "resistance_levels": [
+      25.14,
+      25.57,
+      25.76
+    ],
+    "expected_return_pct": -0.61,
+    "max_drawdown_pct": -13.0
+  },
+  "scores": {
+    "technical": 100,
+    "fundamental": 40,
+    "options": 77,
+    "sentiment": 47,
+    "historical": 50,
+    "macro": 75,
+    "overall": 69.3
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 27.23,
+      "sma_50": 25.22,
+      "sma_100": 22.75,
+      "sma_200": 22.08,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 66.84,
+      "macd": 1.4041,
+      "macd_signal": 1.1788,
+      "macd_histogram": 0.2253,
+      "stochastic_rsi": 35.01,
+      "adx": 45.54,
+      "momentum_score": "strong"
+    },
+    "volume": {
+      "obv_trend": "down",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 55.28,
+      "historical_volatility_60": 58.73
+    },
+    "price_structure": {
+      "resistance": [
+        25.14,
+        25.57,
+        25.76
+      ],
+      "support": [
+        26.05,
+        24.25,
+        23.78
+      ],
+      "high_20d": 30.87,
+      "high_30d": 30.87,
+      "high_52w": 30.87,
+      "distance_to_resistance_pct": 6.19,
+      "distance_to_support_pct": 10.39,
+      "nearest_resistance": 30.87,
+      "nearest_support": 26.05
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 3.24,
+    "eps_growth_yoy": -5.69,
+    "gross_margin": 20.32,
+    "operating_margin": 7.11,
+    "net_margin": 4.45,
+    "roe": null,
+    "debt_to_equity": null,
+    "current_ratio": 0.79,
+    "cash": 3703000064,
+    "total_debt": 10864000000,
+    "net_cash": -7160999936,
+    "forward_pe": 9.66,
+    "peg_ratio": 24.51,
+    "ev_ebitda": 7.16,
+    "price_to_sales": null
+  },
+  "options": {
+    "implied_volatility": 0.0828,
+    "put_call_ratio": 0.68,
+    "call_volume": 1077,
+    "put_volume": 729,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 0.69,
+    "expected_move_pct": 2.37,
+    "atm_straddle_price": null,
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 0,
+    "hold_ratings": 0,
+    "sell_ratings": 16,
+    "avg_price_target": 22.98,
+    "target_high": 29.6,
+    "target_low": 18.0,
+    "target_median": 24.5,
+    "consensus_trend": "hold",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 16
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 770.56,
+    "sp500_change_pct": -0.32,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 718.45,
+    "nasdaq_change_pct": -0.34,
+    "vix": 15.39,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.39,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, positive options flow",
+  "earnings_date": "2026-08-26",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}

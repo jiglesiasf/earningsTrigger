@@ -1,0 +1,181 @@
+{
+  "ticker": "CRWD",
+  "company": "CrowdStrike Holdings, Inc.",
+  "sector": "Technology",
+  "price": {
+    "current": 221.9,
+    "open": 224.0,
+    "high": 225.52,
+    "low": 219.24,
+    "previous_close": 225.16,
+    "change_pct": -1.45,
+    "market_cap": 225951727616
+  },
+  "trade_parameters": {
+    "buy_above": 221.9,
+    "stop_loss": 201.75,
+    "take_profit": 227.87,
+    "expected_move": "\u00b12.69%",
+    "expected_move_dollars": "\u00b1$5.97",
+    "risk_reward": 0.3,
+    "support_levels": [
+      201.75,
+      185.3,
+      181.0
+    ],
+    "resistance_levels": [
+      169.38,
+      175.54,
+      178.04
+    ],
+    "expected_return_pct": 2.69,
+    "max_drawdown_pct": -9.08
+  },
+  "scores": {
+    "technical": 88,
+    "fundamental": 45,
+    "options": 54,
+    "sentiment": 70,
+    "historical": 50,
+    "macro": 75,
+    "overall": 64.5
+  },
+  "historical_score_breakdown": {
+    "simple": 50,
+    "deep": 50,
+    "merged": 50,
+    "has_deep": false
+  },
+  "technical": {
+    "trend": {
+      "ema_20": 201.09,
+      "sma_50": 187.84,
+      "sma_100": 154.24,
+      "sma_200": 135.8,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
+      "price_above_200_sma": "True",
+      "golden_cross": false,
+      "death_cross": false
+    },
+    "momentum": {
+      "rsi_14": 74.22,
+      "macd": 8.8721,
+      "macd_signal": 5.9969,
+      "macd_histogram": 2.8752,
+      "stochastic_rsi": 98.51,
+      "adx": 15.07,
+      "momentum_score": "overbought"
+    },
+    "volume": {
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
+    },
+    "volatility": {
+      "historical_volatility_20": 45.15,
+      "historical_volatility_60": 56.28
+    },
+    "price_structure": {
+      "resistance": [
+        169.38,
+        175.54,
+        178.04
+      ],
+      "support": [
+        201.75,
+        185.3,
+        181.0
+      ],
+      "high_20d": 226.9,
+      "high_30d": 226.9,
+      "high_52w": 226.9,
+      "distance_to_resistance_pct": 2.25,
+      "distance_to_support_pct": 9.08,
+      "nearest_resistance": 226.9,
+      "nearest_support": 201.75
+    }
+  },
+  "fundamentals": {
+    "revenue_growth_yoy": 21.71,
+    "eps_growth_yoy": -712.5,
+    "gross_margin": 75.14,
+    "operating_margin": -2.21,
+    "net_margin": -0.6,
+    "roe": -0.25,
+    "debt_to_equity": 17.57,
+    "current_ratio": 1.53,
+    "cash": 4552800768,
+    "total_debt": 821342976,
+    "net_cash": 3731457792,
+    "forward_pe": 141.86,
+    "peg_ratio": 7.32,
+    "ev_ebitda": 3746.89,
+    "price_to_sales": 44.35
+  },
+  "options": {
+    "implied_volatility": 0.0939,
+    "put_call_ratio": 1.1,
+    "call_volume": 6360,
+    "put_volume": 6977,
+    "call_open_interest": 0,
+    "put_open_interest": 0,
+    "expected_move": 5.97,
+    "expected_move_pct": 2.69,
+    "atm_straddle_price": null,
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
+    "unusual_activity": "True"
+  },
+  "analyst": {
+    "buy_ratings": 49,
+    "hold_ratings": 0,
+    "sell_ratings": 0,
+    "avg_price_target": 194.67,
+    "target_high": 250.0,
+    "target_low": 103.25,
+    "target_median": 191.25,
+    "consensus_trend": "buy",
+    "recent_upgrades": [],
+    "recent_downgrades": [],
+    "number_of_analysts": 49
+  },
+  "historical_earnings": {},
+  "historical_analysis": null,
+  "news": {
+    "sentiment_score": 0.5,
+    "headline_count": 10,
+    "key_themes": [],
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
+  },
+  "market_regime": {
+    "sp500_trend": "bullish",
+    "sp500_price": 770.56,
+    "sp500_change_pct": -0.32,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": 718.45,
+    "nasdaq_change_pct": -0.34,
+    "vix": 15.39,
+    "vix_trend": "rising",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
+    "sector_leadership": [],
+    "macro_events": [],
+    "breadth": "healthy",
+    "macro_score": 75,
+    "regime_assessment": {
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
+      "nasdaq_trend": "neutral",
+      "vix": 15.39,
+      "market_regime": "neutral"
+    }
+  },
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend",
+  "earnings_date": "2026-08-26",
+  "days_until_earnings": 14,
+  "earnings_time": "unknown"
+}
