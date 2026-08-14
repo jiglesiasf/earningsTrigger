@@ -1,0 +1,801 @@
+{
+  "overall": {
+    "avg_surprise_pct": 4.62,
+    "median_surprise_pct": 2.68,
+    "beat_rate_pct": 81.2,
+    "avg_day_return_pct": 1.68,
+    "median_day_return_pct": 1.48,
+    "avg_abs_day_return_pct": 2.5,
+    "avg_gap_pct": 1.33,
+    "positive_day_rate_pct": 56.2,
+    "best_day_pct": 7.81,
+    "worst_day_pct": -1.64,
+    "total_quarters": 16
+  },
+  "beat_analysis": {
+    "beat_count": 13,
+    "miss_count": 3,
+    "avg_day_return_when_beat": 2.22,
+    "avg_day_return_when_miss": -0.64,
+    "beat_positive_rate": 69.2,
+    "miss_positive_rate": 0.0
+  },
+  "surprise_magnitude": {
+    "large_beat_gt10": {
+      "count": 4,
+      "avg_day_return": -0.75
+    },
+    "small_beat_0_10": {
+      "count": 10,
+      "avg_day_return": 3.11
+    },
+    "small_miss_neg10_0": {
+      "count": 1,
+      "avg_day_return": -0.22
+    },
+    "large_miss_lt_neg10": {
+      "count": 1,
+      "avg_day_return": -0.98
+    }
+  },
+  "rsi_analysis": {
+    "overbought_gt70": {
+      "count": 5,
+      "avg_day_return": 1.98,
+      "positive_rate": 60.0
+    },
+    "neutral_30_70": {
+      "count": 8,
+      "avg_day_return": 1.62,
+      "positive_rate": 62.5
+    },
+    "oversold_lt30": {
+      "count": 3,
+      "avg_day_return": 1.35,
+      "positive_rate": 33.3
+    }
+  },
+  "trend_analysis": {
+    "uptrend_both_above": {
+      "count": 8,
+      "avg_day_return": 2.09,
+      "positive_rate": 75.0
+    },
+    "downtrend_both_below": {
+      "count": 8,
+      "avg_day_return": 1.27,
+      "positive_rate": 37.5
+    },
+    "mixed_trend": {
+      "count": 0,
+      "avg_day_return": null,
+      "positive_rate": null
+    }
+  },
+  "momentum_analysis": {
+    "strong_up_gt10pct": {
+      "count": 2,
+      "avg_day_return": 0.71
+    },
+    "neutral_-10_to_10": {
+      "count": 11,
+      "avg_day_return": 1.96
+    },
+    "strong_down_lt_neg10pct": {
+      "count": 3,
+      "avg_day_return": 1.3
+    }
+  },
+  "gap_analysis": {
+    "avg_gap_pct": 1.33,
+    "gap_up_count": 12,
+    "gap_down_count": 4,
+    "avg_gap_when_beat": 1.62,
+    "avg_gap_when_miss": 0.06
+  },
+  "drift_2d": {
+    "avg_return_all": 1.97,
+    "avg_return_beat": 2.35,
+    "avg_return_miss": 0.35,
+    "positive_rate_all": 75.0
+  },
+  "drift_5d": {
+    "avg_return_all": 2.42,
+    "avg_return_beat": 2.88,
+    "avg_return_miss": 0.43,
+    "positive_rate_all": 81.2
+  },
+  "drift_10d": {
+    "avg_return_all": 1.61,
+    "avg_return_beat": 2.41,
+    "avg_return_miss": -1.61,
+    "positive_rate_all": 53.3
+  },
+  "best_quarters": [
+    {
+      "date": "2024-11-05",
+      "surprise_pct": 0.69,
+      "day_return_pct": 7.81,
+      "rsi": 76.2,
+      "trend": "\u2191SMA20 \u2191SMA50",
+      "momentum_20d": 6.12
+    },
+    {
+      "date": "2026-05-05",
+      "surprise_pct": 0.44,
+      "day_return_pct": 6.94,
+      "rsi": 46.5,
+      "trend": "\u2193SMA20 \u2193SMA50",
+      "momentum_20d": -3.0
+    },
+    {
+      "date": "2024-08-07",
+      "surprise_pct": 1.12,
+      "day_return_pct": 5.09,
+      "rsi": 25.2,
+      "trend": "\u2193SMA20 \u2193SMA50",
+      "momentum_20d": -12.8
+    },
+    {
+      "date": "2026-02-03",
+      "surprise_pct": 3.39,
+      "day_return_pct": 3.43,
+      "rsi": 59.6,
+      "trend": "\u2191SMA20 \u2191SMA50",
+      "momentum_20d": 4.45
+    },
+    {
+      "date": "2024-05-08",
+      "surprise_pct": 8.47,
+      "day_return_pct": 2.61,
+      "rsi": 63.1,
+      "trend": "\u2191SMA20 \u2191SMA50",
+      "momentum_20d": -0.77
+    }
+  ],
+  "worst_quarters": [
+    {
+      "date": "2025-08-06",
+      "surprise_pct": 0.69,
+      "day_return_pct": -0.82,
+      "rsi": 29.6,
+      "trend": "\u2193SMA20 \u2193SMA50",
+      "momentum_20d": -4.79
+    },
+    {
+      "date": "2022-10-31",
+      "surprise_pct": 10.01,
+      "day_return_pct": -0.87,
+      "rsi": 72.3,
+      "trend": "\u2191SMA20 \u2191SMA50",
+      "momentum_20d": 10.67
+    },
+    {
+      "date": "2023-02-08",
+      "surprise_pct": -10.61,
+      "day_return_pct": -0.98,
+      "rsi": 47.0,
+      "trend": "\u2193SMA20 \u2193SMA50",
+      "momentum_20d": -12.43
+    },
+    {
+      "date": "2023-05-03",
+      "surprise_pct": 12.18,
+      "day_return_pct": -1.29,
+      "rsi": 42.2,
+      "trend": "\u2193SMA20 \u2193SMA50",
+      "momentum_20d": 0.88
+    },
+    {
+      "date": "2024-02-07",
+      "surprise_pct": 17.09,
+      "day_return_pct": -1.64,
+      "rsi": 71.6,
+      "trend": "\u2191SMA20 \u2191SMA50",
+      "momentum_20d": 9.83
+    }
+  ],
+  "key_insights": [
+    "Very high beat rate (81.2%) - consistently beats estimates",
+    "Beats lead to strong positive reactions (avg +2.22%)",
+    "Uptrend (above both SMAs) has positive avg return (2.09%)",
+    "Strong 5-day post-earnings drift: avg +2.4% (up)"
+  ],
+  "ticker": "EMR",
+  "total_quarters": 16,
+  "date_range": "2022-10-31 to 2026-08-04",
+  "quarters_detail": [
+    {
+      "quarter": 1,
+      "date": "2022-10-31",
+      "eps_estimate": 1.39,
+      "eps_actual": 1.53,
+      "surprise_pct": 10.01,
+      "beat": "True",
+      "pre_state": {
+        "price": 80.51,
+        "rsi_14": 72.3,
+        "sma_20": 75.68,
+        "sma_50": 75.18,
+        "sma_200": 80.71,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "False",
+        "relative_volume": 2.0,
+        "pct_from_52w_high": -12.3,
+        "pct_from_52w_low": 19.6,
+        "momentum_5d_pct": 2.42,
+        "momentum_20d_pct": 10.67,
+        "atr_pct": 2.56,
+        "volume": 6653600,
+        "avg_volume_20d": 3333220
+      },
+      "post_moves": {
+        "gap_pct": -0.23,
+        "day_return_pct": -0.87,
+        "pre_close": 80.51,
+        "earnings_open": 80.33,
+        "earnings_close": 79.82,
+        "2d_return_pct": 0.47,
+        "3d_return_pct": 2.88,
+        "5d_return_pct": 5.38,
+        "10d_return_pct": 11.7
+      }
+    },
+    {
+      "quarter": 2,
+      "date": "2023-02-08",
+      "eps_estimate": 0.87,
+      "eps_actual": 0.78,
+      "surprise_pct": -10.61,
+      "beat": "False",
+      "pre_state": {
+        "price": 80.4,
+        "rsi_14": 47.0,
+        "sma_20": 85.02,
+        "sma_50": 87.74,
+        "sma_200": 80.89,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "False",
+        "relative_volume": 1.6,
+        "pct_from_52w_high": -13.7,
+        "pct_from_52w_low": 19.4,
+        "momentum_5d_pct": -6.0,
+        "momentum_20d_pct": -12.43,
+        "atr_pct": 2.42,
+        "volume": 6672100,
+        "avg_volume_20d": 4181010
+      },
+      "post_moves": {
+        "gap_pct": 0.26,
+        "day_return_pct": -0.98,
+        "pre_close": 80.4,
+        "earnings_open": 80.61,
+        "earnings_close": 79.62,
+        "2d_return_pct": 1.07,
+        "3d_return_pct": 0.0,
+        "5d_return_pct": 0.26,
+        "10d_return_pct": -3.86
+      }
+    },
+    {
+      "quarter": 3,
+      "date": "2023-05-03",
+      "eps_estimate": 0.97,
+      "eps_actual": 1.09,
+      "surprise_pct": 12.18,
+      "beat": "True",
+      "pre_state": {
+        "price": 78.85,
+        "rsi_14": 42.2,
+        "sma_20": 79.51,
+        "sma_50": 79.0,
+        "sma_200": 81.18,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "False",
+        "relative_volume": 1.57,
+        "pct_from_52w_high": -15.4,
+        "pct_from_52w_low": 17.1,
+        "momentum_5d_pct": 1.2,
+        "momentum_20d_pct": 0.88,
+        "atr_pct": 2.18,
+        "volume": 6211900,
+        "avg_volume_20d": 3946665
+      },
+      "post_moves": {
+        "gap_pct": -0.1,
+        "day_return_pct": -1.29,
+        "pre_close": 78.85,
+        "earnings_open": 78.77,
+        "earnings_close": 77.83,
+        "2d_return_pct": -0.01,
+        "3d_return_pct": -0.2,
+        "5d_return_pct": -1.57,
+        "10d_return_pct": -1.19
+      }
+    },
+    {
+      "quarter": 4,
+      "date": "2023-08-02",
+      "eps_estimate": 1.1,
+      "eps_actual": 1.29,
+      "surprise_pct": 16.92,
+      "beat": "True",
+      "pre_state": {
+        "price": 90.06,
+        "rsi_14": 64.6,
+        "sma_20": 86.67,
+        "sma_50": 82.81,
+        "sma_200": 82.69,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "True",
+        "relative_volume": 2.85,
+        "pct_from_52w_high": -3.5,
+        "pct_from_52w_low": 33.8,
+        "momentum_5d_pct": 3.59,
+        "momentum_20d_pct": 7.82,
+        "atr_pct": 1.7,
+        "volume": 7346300,
+        "avg_volume_20d": 2576995
+      },
+      "post_moves": {
+        "gap_pct": 1.02,
+        "day_return_pct": 0.79,
+        "pre_close": 90.06,
+        "earnings_open": 90.98,
+        "earnings_close": 90.77,
+        "2d_return_pct": 2.19,
+        "3d_return_pct": 1.43,
+        "5d_return_pct": 0.94,
+        "10d_return_pct": 1.17
+      }
+    },
+    {
+      "quarter": 5,
+      "date": "2023-11-07",
+      "eps_estimate": 1.31,
+      "eps_actual": 1.29,
+      "surprise_pct": -1.37,
+      "beat": "False",
+      "pre_state": {
+        "price": 80.85,
+        "rsi_14": 25.4,
+        "sma_20": 87.17,
+        "sma_50": 90.54,
+        "sma_200": 84.25,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "False",
+        "relative_volume": 2.89,
+        "pct_from_52w_high": -15.6,
+        "pct_from_52w_low": 11.0,
+        "momentum_5d_pct": -5.21,
+        "momentum_20d_pct": -12.51,
+        "atr_pct": 2.44,
+        "volume": 9919900,
+        "avg_volume_20d": 3433230
+      },
+      "post_moves": {
+        "gap_pct": 0.65,
+        "day_return_pct": -0.22,
+        "pre_close": 80.85,
+        "earnings_open": 81.37,
+        "earnings_close": 80.66,
+        "2d_return_pct": 1.84,
+        "3d_return_pct": 1.95,
+        "5d_return_pct": 4.04,
+        "10d_return_pct": 5.22
+      }
+    },
+    {
+      "quarter": 6,
+      "date": "2024-02-07",
+      "eps_estimate": 1.04,
+      "eps_actual": 1.22,
+      "surprise_pct": 17.09,
+      "beat": "True",
+      "pre_state": {
+        "price": 99.66,
+        "rsi_14": 71.6,
+        "sma_20": 90.83,
+        "sma_50": 89.77,
+        "sma_200": 86.85,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "True",
+        "relative_volume": 3.07,
+        "pct_from_52w_high": -1.5,
+        "pct_from_52w_low": 36.8,
+        "momentum_5d_pct": 11.02,
+        "momentum_20d_pct": 9.83,
+        "atr_pct": 2.42,
+        "volume": 9072200,
+        "avg_volume_20d": 2954375
+      },
+      "post_moves": {
+        "gap_pct": 0.52,
+        "day_return_pct": -1.64,
+        "pre_close": 99.66,
+        "earnings_open": 100.18,
+        "earnings_close": 98.03,
+        "2d_return_pct": 0.18,
+        "3d_return_pct": 0.57,
+        "5d_return_pct": 2.06,
+        "10d_return_pct": 2.25
+      }
+    },
+    {
+      "quarter": 7,
+      "date": "2024-05-08",
+      "eps_estimate": 1.25,
+      "eps_actual": 1.36,
+      "surprise_pct": 8.47,
+      "beat": "True",
+      "pre_state": {
+        "price": 108.4,
+        "rsi_14": 63.1,
+        "sma_20": 105.26,
+        "sma_50": 106.42,
+        "sma_200": 94.54,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "True",
+        "relative_volume": 1.95,
+        "pct_from_52w_high": -2.3,
+        "pct_from_52w_low": 48.8,
+        "momentum_5d_pct": 5.86,
+        "momentum_20d_pct": -0.77,
+        "atr_pct": 2.18,
+        "volume": 6172800,
+        "avg_volume_20d": 3157640
+      },
+      "post_moves": {
+        "gap_pct": 1.54,
+        "day_return_pct": 2.61,
+        "pre_close": 108.4,
+        "earnings_open": 110.07,
+        "earnings_close": 111.23,
+        "2d_return_pct": 1.93,
+        "3d_return_pct": 1.51,
+        "5d_return_pct": 0.61,
+        "10d_return_pct": 0.32
+      }
+    },
+    {
+      "quarter": 8,
+      "date": "2024-08-07",
+      "eps_estimate": 1.41,
+      "eps_actual": 1.43,
+      "surprise_pct": 1.12,
+      "beat": "True",
+      "pre_state": {
+        "price": 96.22,
+        "rsi_14": 25.2,
+        "sma_20": 110.33,
+        "sma_50": 107.27,
+        "sma_200": 99.59,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "False",
+        "relative_volume": 2.87,
+        "pct_from_52w_high": -16.7,
+        "pct_from_52w_low": 21.7,
+        "momentum_5d_pct": -11.98,
+        "momentum_20d_pct": -12.8,
+        "atr_pct": 3.61,
+        "volume": 8060500,
+        "avg_volume_20d": 2806795
+      },
+      "post_moves": {
+        "gap_pct": 1.32,
+        "day_return_pct": 5.09,
+        "pre_close": 96.22,
+        "earnings_open": 97.49,
+        "earnings_close": 101.12,
+        "2d_return_pct": 3.55,
+        "3d_return_pct": 4.58,
+        "5d_return_pct": 4.77,
+        "10d_return_pct": 5.37
+      }
+    },
+    {
+      "quarter": 9,
+      "date": "2024-11-05",
+      "eps_estimate": 1.47,
+      "eps_actual": 1.48,
+      "surprise_pct": 0.69,
+      "beat": "True",
+      "pre_state": {
+        "price": 114.32,
+        "rsi_14": 76.2,
+        "sma_20": 107.01,
+        "sma_50": 103.96,
+        "sma_200": 104.59,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "True",
+        "relative_volume": 3.0,
+        "pct_from_52w_high": -1.6,
+        "pct_from_52w_low": 44.5,
+        "momentum_5d_pct": 7.93,
+        "momentum_20d_pct": 6.12,
+        "atr_pct": 1.84,
+        "volume": 7193800,
+        "avg_volume_20d": 2400550
+      },
+      "post_moves": {
+        "gap_pct": 7.48,
+        "day_return_pct": 7.81,
+        "pre_close": 114.32,
+        "earnings_open": 122.87,
+        "earnings_close": 123.25,
+        "2d_return_pct": 8.15,
+        "3d_return_pct": 9.8,
+        "5d_return_pct": 10.61,
+        "10d_return_pct": 10.16
+      }
+    },
+    {
+      "quarter": 10,
+      "date": "2025-02-05",
+      "eps_estimate": 1.28,
+      "eps_actual": 1.38,
+      "surprise_pct": 8.03,
+      "beat": "True",
+      "pre_state": {
+        "price": 121.71,
+        "rsi_14": 59.1,
+        "sma_20": 122.7,
+        "sma_50": 124.23,
+        "sma_200": 111.2,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "True",
+        "relative_volume": 1.46,
+        "pct_from_52w_high": -7.5,
+        "pct_from_52w_low": 37.9,
+        "momentum_5d_pct": -4.35,
+        "momentum_20d_pct": 3.38,
+        "atr_pct": 2.42,
+        "volume": 4814900,
+        "avg_volume_20d": 3299955
+      },
+      "post_moves": {
+        "gap_pct": 1.06,
+        "day_return_pct": 2.18,
+        "pre_close": 121.71,
+        "earnings_open": 123.0,
+        "earnings_close": 124.36,
+        "2d_return_pct": 1.6,
+        "3d_return_pct": 1.72,
+        "5d_return_pct": 0.43,
+        "10d_return_pct": -1.92
+      }
+    },
+    {
+      "quarter": 11,
+      "date": "2025-05-07",
+      "eps_estimate": 1.41,
+      "eps_actual": 1.48,
+      "surprise_pct": 4.6,
+      "beat": "True",
+      "pre_state": {
+        "price": 107.63,
+        "rsi_14": 76.3,
+        "sma_20": 101.22,
+        "sma_50": 106.02,
+        "sma_200": 111.96,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "False",
+        "relative_volume": 1.58,
+        "pct_from_52w_high": -18.2,
+        "pct_from_52w_low": 22.0,
+        "momentum_5d_pct": 3.83,
+        "momentum_20d_pct": 5.2,
+        "atr_pct": 3.16,
+        "volume": 5066000,
+        "avg_volume_20d": 3203725
+      },
+      "post_moves": {
+        "gap_pct": 0.6,
+        "day_return_pct": 2.29,
+        "pre_close": 107.63,
+        "earnings_open": 108.27,
+        "earnings_close": 110.1,
+        "2d_return_pct": 8.69,
+        "3d_return_pct": 10.59,
+        "5d_return_pct": 9.46,
+        "10d_return_pct": 7.29
+      }
+    },
+    {
+      "quarter": 12,
+      "date": "2025-08-06",
+      "eps_estimate": 1.51,
+      "eps_actual": 1.52,
+      "surprise_pct": 0.69,
+      "beat": "True",
+      "pre_state": {
+        "price": 131.79,
+        "rsi_14": 29.6,
+        "sma_20": 141.08,
+        "sma_50": 132.2,
+        "sma_200": 119.8,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "True",
+        "relative_volume": 3.61,
+        "pct_from_52w_high": -10.9,
+        "pct_from_52w_low": 49.4,
+        "momentum_5d_pct": -7.96,
+        "momentum_20d_pct": -4.79,
+        "atr_pct": 2.77,
+        "volume": 12875800,
+        "avg_volume_20d": 3569395
+      },
+      "post_moves": {
+        "gap_pct": 1.36,
+        "day_return_pct": -0.82,
+        "pre_close": 131.79,
+        "earnings_open": 133.58,
+        "earnings_close": 130.7,
+        "2d_return_pct": -1.47,
+        "3d_return_pct": -0.73,
+        "5d_return_pct": 0.33,
+        "10d_return_pct": -2.48
+      }
+    },
+    {
+      "quarter": 13,
+      "date": "2025-11-05",
+      "eps_estimate": 1.62,
+      "eps_actual": 1.62,
+      "surprise_pct": 0.28,
+      "beat": "False",
+      "pre_state": {
+        "price": 130.84,
+        "rsi_14": 57.5,
+        "sma_20": 131.11,
+        "sma_50": 130.9,
+        "sma_200": 123.21,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "True",
+        "relative_volume": 1.83,
+        "pct_from_52w_high": -11.5,
+        "pct_from_52w_low": 48.3,
+        "momentum_5d_pct": -3.19,
+        "momentum_20d_pct": 0.7,
+        "atr_pct": 2.6,
+        "volume": 4780300,
+        "avg_volume_20d": 2609760
+      },
+      "post_moves": {
+        "gap_pct": -0.74,
+        "day_return_pct": -0.72,
+        "pre_close": 130.84,
+        "earnings_open": 129.88,
+        "earnings_close": 129.9,
+        "2d_return_pct": -1.86,
+        "3d_return_pct": -2.2,
+        "5d_return_pct": -3.01,
+        "10d_return_pct": -6.19
+      }
+    },
+    {
+      "quarter": 14,
+      "date": "2026-02-03",
+      "eps_estimate": 1.41,
+      "eps_actual": 1.46,
+      "surprise_pct": 3.39,
+      "beat": "True",
+      "pre_state": {
+        "price": 150.91,
+        "rsi_14": 59.6,
+        "sma_20": 146.32,
+        "sma_50": 138.4,
+        "sma_200": 130.03,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "True",
+        "relative_volume": 1.55,
+        "pct_from_52w_high": -1.3,
+        "pct_from_52w_low": 71.0,
+        "momentum_5d_pct": 2.48,
+        "momentum_20d_pct": 4.45,
+        "atr_pct": 2.33,
+        "volume": 4908500,
+        "avg_volume_20d": 3163365
+      },
+      "post_moves": {
+        "gap_pct": 4.85,
+        "day_return_pct": 3.43,
+        "pre_close": 150.91,
+        "earnings_open": 158.22,
+        "earnings_close": 156.09,
+        "2d_return_pct": 3.47,
+        "3d_return_pct": 5.2,
+        "5d_return_pct": 1.69,
+        "10d_return_pct": -0.14
+      }
+    },
+    {
+      "quarter": 15,
+      "date": "2026-05-05",
+      "eps_estimate": 1.53,
+      "eps_actual": 1.54,
+      "surprise_pct": 0.44,
+      "beat": "True",
+      "pre_state": {
+        "price": 137.82,
+        "rsi_14": 46.5,
+        "sma_20": 141.11,
+        "sma_50": 138.0,
+        "sma_200": 136.45,
+        "above_sma20": "False",
+        "above_sma50": "False",
+        "above_sma200": "True",
+        "relative_volume": 1.5,
+        "pct_from_52w_high": -15.9,
+        "pct_from_52w_low": 32.1,
+        "momentum_5d_pct": 1.33,
+        "momentum_20d_pct": -3.0,
+        "atr_pct": 2.72,
+        "volume": 4138800,
+        "avg_volume_20d": 2750385
+      },
+      "post_moves": {
+        "gap_pct": 2.62,
+        "day_return_pct": 6.94,
+        "pre_close": 137.82,
+        "earnings_open": 141.43,
+        "earnings_close": 147.39,
+        "2d_return_pct": 2.12,
+        "3d_return_pct": 0.76,
+        "5d_return_pct": -0.45,
+        "10d_return_pct": -3.6
+      }
+    },
+    {
+      "quarter": 16,
+      "date": "2026-08-04",
+      "eps_estimate": 1.68,
+      "eps_actual": 1.71,
+      "surprise_pct": 1.96,
+      "beat": "True",
+      "pre_state": {
+        "price": 158.84,
+        "rsi_14": 78.2,
+        "sma_20": 143.37,
+        "sma_50": 142.59,
+        "sma_200": 139.06,
+        "above_sma20": "True",
+        "above_sma50": "True",
+        "above_sma200": "True",
+        "relative_volume": 1.86,
+        "pct_from_52w_high": -3.1,
+        "pct_from_52w_low": 30.5,
+        "momentum_5d_pct": 9.0,
+        "momentum_20d_pct": 12.21,
+        "atr_pct": 3.14,
+        "volume": 5333600,
+        "avg_volume_20d": 2861180
+      },
+      "post_moves": {
+        "gap_pct": -0.99,
+        "day_return_pct": 2.29,
+        "pre_close": 158.84,
+        "earnings_open": 157.27,
+        "earnings_close": 162.47,
+        "2d_return_pct": -0.37,
+        "3d_return_pct": -0.08,
+        "5d_return_pct": 3.12,
+        "10d_return_pct": null
+      }
+    }
+  ]
+}
