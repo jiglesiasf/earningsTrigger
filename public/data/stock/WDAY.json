@@ -3,42 +3,42 @@
   "company": "Workday, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 198.68,
-    "open": 207.85,
-    "high": 208.0,
-    "low": 195.01,
-    "previous_close": 206.45,
-    "change_pct": -3.76,
-    "market_cap": 49068687360
+    "current": NaN,
+    "open": NaN,
+    "high": NaN,
+    "low": NaN,
+    "previous_close": 198.68,
+    "change_pct": NaN,
+    "market_cap": 47216386048
   },
   "trade_parameters": {
-    "buy_above": 204.64,
-    "stop_loss": 173.17,
-    "take_profit": 202.53,
-    "expected_move": "\u00b11.94%",
-    "expected_move_dollars": "\u00b1$3.85",
-    "risk_reward": -0.07,
+    "buy_above": NaN,
+    "stop_loss": 127.11,
+    "take_profit": NaN,
+    "expected_move": "\u00b12.8%",
+    "expected_move_dollars": "\u00b1$nan",
+    "risk_reward": 0,
     "support_levels": [
       173.17,
       149.54,
       143.04
     ],
     "resistance_levels": [
-      133.71,
       145.81,
-      149.88
+      149.88,
+      153.48
     ],
-    "expected_return_pct": -1.03,
-    "max_drawdown_pct": -15.38
+    "expected_return_pct": NaN,
+    "max_drawdown_pct": NaN
   },
   "scores": {
-    "technical": 100,
+    "technical": 53,
     "fundamental": 81,
-    "options": 77,
+    "options": 44,
     "sentiment": 47,
     "historical": 85.1,
-    "macro": 100,
-    "overall": 84.1
+    "macro": 60,
+    "overall": 61.4
   },
   "historical_score_breakdown": {
     "simple": 55,
@@ -49,37 +49,37 @@
   "technical": {
     "trend": {
       "ema_20": 169.36,
-      "sma_50": 145.2,
-      "sma_100": 135.81,
-      "sma_200": 162.65,
-      "price_above_20_ema": "True",
-      "price_above_50_sma": "True",
-      "price_above_200_sma": "True",
+      "sma_50": NaN,
+      "sma_100": NaN,
+      "sma_200": NaN,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 74.04,
+      "rsi_14": 70.69,
       "macd": 14.3929,
-      "macd_signal": 11.1506,
-      "macd_histogram": 3.2423,
-      "stochastic_rsi": 65.05,
-      "adx": 36.18,
+      "macd_signal": 11.799,
+      "macd_histogram": 2.5938,
+      "stochastic_rsi": 50.51,
+      "adx": 25.0,
       "momentum_score": "overbought"
     },
     "volume": {
       "obv_trend": "up",
-      "volume_trend": "above_avg"
+      "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 93.5,
-      "historical_volatility_60": 75.33
+      "historical_volatility_20": 96.06,
+      "historical_volatility_60": 75.72
     },
     "price_structure": {
       "resistance": [
-        133.71,
         145.81,
-        149.88
+        149.88,
+        153.48
       ],
       "support": [
         173.17,
@@ -89,10 +89,10 @@
       "high_20d": 227.49,
       "high_30d": 227.49,
       "high_52w": 249.85,
-      "distance_to_resistance_pct": 25.75,
-      "distance_to_support_pct": 12.84,
+      "distance_to_resistance_pct": NaN,
+      "distance_to_support_pct": NaN,
       "nearest_resistance": 249.85,
-      "nearest_support": 173.17
+      "nearest_support": 127.11
     }
   },
   "fundamentals": {
@@ -107,37 +107,37 @@
     "cash": 4352999936,
     "total_debt": 3804999936,
     "net_cash": 548000000,
-    "forward_pe": 15.71,
+    "forward_pe": 15.12,
     "peg_ratio": 0.78,
-    "ev_ebitda": 32.09,
-    "price_to_sales": 4.98
+    "ev_ebitda": 30.87,
+    "price_to_sales": 4.79
   },
   "options": {
-    "implied_volatility": 0.0675,
-    "put_call_ratio": 0.31,
-    "call_volume": 12830,
-    "put_volume": 3921,
+    "implied_volatility": 0.0977,
+    "put_call_ratio": 1.76,
+    "call_volume": 3139,
+    "put_volume": 5523,
     "call_open_interest": 0,
     "put_open_interest": 0,
-    "expected_move": 3.85,
-    "expected_move_pct": 1.94,
+    "expected_move": 5.36,
+    "expected_move_pct": 2.8,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
     "buy_ratings": 0,
-    "hold_ratings": 39,
+    "hold_ratings": 38,
     "sell_ratings": 0,
-    "avg_price_target": 176.12,
+    "avg_price_target": 177.21,
     "target_high": 275.0,
     "target_low": 92.0,
-    "target_median": 170.0,
+    "target_median": 167.5,
     "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
-    "number_of_analysts": 39
+    "number_of_analysts": 38
   },
   "historical_earnings": {
     "avg_move_pct": 1.84,
@@ -999,32 +999,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 776.34,
-    "sp500_change_pct": -0.2,
-    "nasdaq_trend": "bullish",
-    "nasdaq_price": 731.07,
-    "nasdaq_change_pct": -0.14,
-    "vix": 14.97,
+    "sp500_trend": "neutral",
+    "sp500_price": NaN,
+    "sp500_change_pct": NaN,
+    "nasdaq_trend": "neutral",
+    "nasdaq_price": NaN,
+    "nasdaq_change_pct": NaN,
+    "vix": 16.01,
     "vix_trend": "rising",
-    "market_regime": "risk_on",
-    "risk_level": "low",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 100,
+    "macro_score": 60,
     "regime_assessment": {
-      "regime": "favorable",
-      "confidence": 100.0,
-      "sp500_trend": "bullish",
-      "nasdaq_trend": "bullish",
-      "vix": 14.97,
-      "market_regime": "risk_on"
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
+      "nasdaq_trend": "neutral",
+      "vix": 16.01,
+      "market_regime": "neutral"
     }
   },
-  "decision": "BUY",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, positive options flow, favorable historical earnings pattern",
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, favorable historical earnings pattern",
   "earnings_date": "2026-08-27",
-  "days_until_earnings": 10,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }
