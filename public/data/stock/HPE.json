@@ -3,42 +3,42 @@
   "company": "Hewlett Packard Enterprise Comp",
   "sector": "Technology",
   "price": {
-    "current": 52.89,
-    "open": 53.35,
-    "high": 54.13,
-    "low": 52.51,
-    "previous_close": 53.13,
-    "change_pct": -0.45,
-    "market_cap": 70037127168
+    "current": 53.45,
+    "open": 53.3,
+    "high": 54.1,
+    "low": 52.75,
+    "previous_close": 52.89,
+    "change_pct": 1.06,
+    "market_cap": 70778675200
   },
   "trade_parameters": {
-    "buy_above": 52.89,
-    "stop_loss": 49.12,
-    "take_profit": 55.03,
-    "expected_move": "\u00b14.04%",
-    "expected_move_dollars": "\u00b1$2.14",
-    "risk_reward": 0.57,
+    "buy_above": 53.45,
+    "stop_loss": 51.59,
+    "take_profit": 55.23,
+    "expected_move": "\u00b13.33%",
+    "expected_move_dollars": "\u00b1$1.78",
+    "risk_reward": 0.96,
     "support_levels": [
+      51.59,
       49.12,
-      45.83,
-      44.61
+      45.83
     ],
     "resistance_levels": [
       49.68,
       50.2,
       50.31
     ],
-    "expected_return_pct": 4.04,
-    "max_drawdown_pct": -7.13
+    "expected_return_pct": 3.33,
+    "max_drawdown_pct": -3.48
   },
   "scores": {
-    "technical": 86,
+    "technical": 97,
     "fundamental": 56,
-    "options": 82,
+    "options": 75,
     "sentiment": 70,
     "historical": 81.2,
-    "macro": 60,
-    "overall": 75.6
+    "macro": 75,
+    "overall": 78.2
   },
   "historical_score_breakdown": {
     "simple": 42,
@@ -48,23 +48,23 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 53.05,
-      "sma_50": 48.87,
-      "sma_100": 40.65,
-      "sma_200": 31.47,
-      "price_above_20_ema": "False",
+      "ema_20": 53.09,
+      "sma_50": 49.03,
+      "sma_100": 40.95,
+      "sma_200": 31.62,
+      "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 61.86,
-      "macd": 2.3347,
-      "macd_signal": 2.5362,
-      "macd_histogram": -0.2014,
-      "stochastic_rsi": 37.71,
-      "adx": 29.92,
+      "rsi_14": 58.34,
+      "macd": 2.0839,
+      "macd_signal": 2.4457,
+      "macd_histogram": -0.3618,
+      "stochastic_rsi": 0.0,
+      "adx": 30.19,
       "momentum_score": "strong"
     },
     "volume": {
@@ -73,7 +73,7 @@
     },
     "volatility": {
       "historical_volatility_20": 55.77,
-      "historical_volatility_60": 76.25
+      "historical_volatility_60": 76.01
     },
     "price_structure": {
       "resistance": [
@@ -82,17 +82,17 @@
         50.31
       ],
       "support": [
+        51.59,
         49.12,
-        45.83,
-        44.61
+        45.83
       ],
       "high_20d": 63.44,
       "high_30d": 63.44,
       "high_52w": 64.06,
-      "distance_to_resistance_pct": 21.12,
-      "distance_to_support_pct": 7.13,
+      "distance_to_resistance_pct": 19.86,
+      "distance_to_support_pct": 3.48,
       "nearest_resistance": 64.06,
-      "nearest_support": 49.12
+      "nearest_support": 51.59
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 5292000256,
     "total_debt": 21304000512,
     "net_cash": -16012000256,
-    "forward_pe": 13.1,
+    "forward_pe": 13.14,
     "peg_ratio": 0.85,
-    "ev_ebitda": 15.29,
-    "price_to_sales": 1.81
+    "ev_ebitda": 15.42,
+    "price_to_sales": 1.82
   },
   "options": {
-    "implied_volatility": 0.1408,
-    "put_call_ratio": 0.36,
-    "call_volume": 6136,
-    "put_volume": 2180,
+    "implied_volatility": 0.1161,
+    "put_call_ratio": 0.72,
+    "call_volume": 3035,
+    "put_volume": 2179,
     "call_open_interest": 0,
-    "put_open_interest": 194,
-    "expected_move": 2.14,
-    "expected_move_pct": 4.04,
+    "put_open_interest": 0,
+    "expected_move": 1.78,
+    "expected_move_pct": 3.33,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -174,7 +174,7 @@
       },
       {
         "date": "2025-09-03",
-        "gap_pct": -0.0,
+        "gap_pct": 0.0,
         "day_return_pct": 1.55,
         "pre_close": 22.69,
         "post_open": 22.69,
@@ -1001,32 +1001,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 762.6,
-    "sp500_change_pct": -0.84,
+    "sp500_trend": "bullish",
+    "sp500_price": 765.72,
+    "sp500_change_pct": 0.41,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 710.93,
-    "nasdaq_change_pct": -0.72,
-    "vix": 15.69,
+    "nasdaq_price": 713.44,
+    "nasdaq_change_pct": 0.35,
+    "vix": 15.88,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 60,
+    "macro_score": 75,
     "regime_assessment": {
-      "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 15.69,
+      "vix": 15.88,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, positive options flow, favorable historical earnings pattern",
+  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern",
   "earnings_date": "2026-09-02",
-  "days_until_earnings": 12,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }
