@@ -3,21 +3,21 @@
   "company": "Hewlett Packard Enterprise Comp",
   "sector": "Technology",
   "price": {
-    "current": 53.45,
-    "open": 53.3,
-    "high": 54.1,
-    "low": 52.75,
-    "previous_close": 52.89,
-    "change_pct": 1.06,
-    "market_cap": 70778675200
+    "current": 52.43,
+    "open": 53.0,
+    "high": 54.62,
+    "low": 51.3,
+    "previous_close": 53.45,
+    "change_pct": -1.91,
+    "market_cap": 69427994624
   },
   "trade_parameters": {
-    "buy_above": 53.45,
+    "buy_above": 52.43,
     "stop_loss": 51.59,
-    "take_profit": 55.23,
-    "expected_move": "\u00b13.33%",
-    "expected_move_dollars": "\u00b1$1.78",
-    "risk_reward": 0.96,
+    "take_profit": 54.44,
+    "expected_move": "\u00b13.84%",
+    "expected_move_dollars": "\u00b1$2.01",
+    "risk_reward": 2.4,
     "support_levels": [
       51.59,
       49.12,
@@ -28,17 +28,17 @@
       50.2,
       50.31
     ],
-    "expected_return_pct": 3.33,
-    "max_drawdown_pct": -3.48
+    "expected_return_pct": 3.84,
+    "max_drawdown_pct": -1.6
   },
   "scores": {
-    "technical": 97,
+    "technical": 83,
     "fundamental": 56,
     "options": 75,
     "sentiment": 70,
     "historical": 81.2,
-    "macro": 75,
-    "overall": 78.2
+    "macro": 60,
+    "overall": 73.3
   },
   "historical_score_breakdown": {
     "simple": 42,
@@ -48,23 +48,23 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 53.09,
-      "sma_50": 49.03,
-      "sma_100": 40.95,
-      "sma_200": 31.62,
-      "price_above_20_ema": "True",
+      "ema_20": 53.03,
+      "sma_50": 49.15,
+      "sma_100": 41.24,
+      "sma_200": 31.77,
+      "price_above_20_ema": "False",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 58.34,
-      "macd": 2.0839,
-      "macd_signal": 2.4457,
-      "macd_histogram": -0.3618,
+      "rsi_14": 50.11,
+      "macd": 1.7823,
+      "macd_signal": 2.313,
+      "macd_histogram": -0.5307,
       "stochastic_rsi": 0.0,
-      "adx": 30.19,
+      "adx": 28.4,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 55.77,
-      "historical_volatility_60": 76.01
+      "historical_volatility_20": 56.46,
+      "historical_volatility_60": 76.08
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 63.44,
       "high_30d": 63.44,
       "high_52w": 64.06,
-      "distance_to_resistance_pct": 19.86,
-      "distance_to_support_pct": 3.48,
+      "distance_to_resistance_pct": 22.19,
+      "distance_to_support_pct": 1.6,
       "nearest_resistance": 64.06,
       "nearest_support": 51.59
     }
@@ -107,20 +107,20 @@
     "cash": 5292000256,
     "total_debt": 21304000512,
     "net_cash": -16012000256,
-    "forward_pe": 13.14,
+    "forward_pe": 12.89,
     "peg_ratio": 0.85,
-    "ev_ebitda": 15.42,
-    "price_to_sales": 1.82
+    "ev_ebitda": 15.18,
+    "price_to_sales": 1.79
   },
   "options": {
-    "implied_volatility": 0.1161,
-    "put_call_ratio": 0.72,
-    "call_volume": 3035,
-    "put_volume": 2179,
+    "implied_volatility": 0.134,
+    "put_call_ratio": 0.79,
+    "call_volume": 3386,
+    "put_volume": 2681,
     "call_open_interest": 0,
     "put_open_interest": 0,
-    "expected_move": 1.78,
-    "expected_move_pct": 3.33,
+    "expected_move": 2.01,
+    "expected_move_pct": 3.84,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -1001,32 +1001,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 765.72,
-    "sp500_change_pct": 0.41,
+    "sp500_trend": "neutral",
+    "sp500_price": 763.47,
+    "sp500_change_pct": -0.29,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 713.44,
-    "nasdaq_change_pct": 0.35,
-    "vix": 15.88,
+    "nasdaq_price": 706.32,
+    "nasdaq_change_pct": -1.0,
+    "vix": 15.84,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 75,
+    "macro_score": 60,
     "regime_assessment": {
-      "regime": "neutral",
-      "confidence": 50.0,
-      "sp500_trend": "bullish",
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "neutral",
-      "vix": 15.88,
+      "vix": 15.84,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern",
+  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 2.4:1",
   "earnings_date": "2026-09-02",
-  "days_until_earnings": 9,
+  "days_until_earnings": 8,
   "earnings_time": "unknown"
 }
