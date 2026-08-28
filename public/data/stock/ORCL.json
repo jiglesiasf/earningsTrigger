@@ -3,21 +3,21 @@
   "company": "Oracle Corporation",
   "sector": "Technology",
   "price": {
-    "current": 151.67,
-    "open": 152.11,
-    "high": 153.83,
-    "low": 147.52,
-    "previous_close": 148.87,
-    "change_pct": 1.88,
-    "market_cap": 436881031168
+    "current": 150.85,
+    "open": 153.6,
+    "high": 153.99,
+    "low": 149.71,
+    "previous_close": 151.94,
+    "change_pct": -0.72,
+    "market_cap": 434519080960
   },
   "trade_parameters": {
-    "buy_above": 151.67,
+    "buy_above": 155.38,
     "stop_loss": 138.72,
-    "take_profit": 222.8,
-    "expected_move": "\u00b146.9%",
-    "expected_move_dollars": "\u00b1$71.13",
-    "risk_reward": 5.49,
+    "take_profit": 232.35,
+    "expected_move": "\u00b154.03%",
+    "expected_move_dollars": "\u00b1$81.5",
+    "risk_reward": 4.62,
     "support_levels": [
       174.67,
       138.72,
@@ -28,8 +28,8 @@
       148.35,
       148.55
     ],
-    "expected_return_pct": 46.9,
-    "max_drawdown_pct": -8.54
+    "expected_return_pct": 49.54,
+    "max_drawdown_pct": -10.72
   },
   "scores": {
     "technical": 100,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 144.58,
-      "sma_50": 142.04,
-      "sma_100": 164.07,
-      "sma_200": 170.17,
+      "ema_20": 145.2,
+      "sma_50": 141.4,
+      "sma_100": 164.16,
+      "sma_200": 169.74,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "False",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 54.29,
-      "macd": 1.6845,
-      "macd_signal": 0.938,
-      "macd_histogram": 0.7465,
-      "stochastic_rsi": 20.44,
-      "adx": 29.74,
-      "momentum_score": "strong"
+      "rsi_14": 49.81,
+      "macd": 1.9557,
+      "macd_signal": 1.145,
+      "macd_histogram": 0.8107,
+      "stochastic_rsi": 8.27,
+      "adx": 27.28,
+      "momentum_score": "weak"
     },
     "volume": {
       "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 51.52,
-      "historical_volatility_60": 59.84
+      "historical_volatility_20": 51.77,
+      "historical_volatility_60": 58.92
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 159.26,
       "high_30d": 159.26,
       "high_52w": 341.82,
-      "distance_to_resistance_pct": 125.37,
-      "distance_to_support_pct": 8.54,
+      "distance_to_resistance_pct": 126.6,
+      "distance_to_support_pct": 8.04,
       "nearest_resistance": 341.82,
       "nearest_support": 138.72
     }
@@ -107,20 +107,20 @@
     "cash": 31893999616,
     "total_debt": 167431995392,
     "net_cash": -135537995776,
-    "forward_pe": 13.88,
+    "forward_pe": 13.81,
     "peg_ratio": 0.82,
-    "ev_ebitda": 18.69,
-    "price_to_sales": 6.49
+    "ev_ebitda": 18.98,
+    "price_to_sales": 6.45
   },
   "options": {
-    "implied_volatility": 1.6358,
-    "put_call_ratio": 0.51,
-    "call_volume": 55645,
-    "put_volume": 28498,
-    "call_open_interest": 98650,
-    "put_open_interest": 69300,
-    "expected_move": 71.13,
-    "expected_move_pct": 46.9,
+    "implied_volatility": 1.8847,
+    "put_call_ratio": 0.29,
+    "call_volume": 58657,
+    "put_volume": 16986,
+    "call_open_interest": 99823,
+    "put_open_interest": 69691,
+    "expected_move": 81.51,
+    "expected_move_pct": 54.03,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -1000,12 +1000,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 770.96,
-    "sp500_change_pct": 0.64,
+    "sp500_price": 769.35,
+    "sp500_change_pct": -0.23,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 720.64,
-    "nasdaq_change_pct": 1.3,
-    "vix": 14.49,
+    "nasdaq_price": 716.43,
+    "nasdaq_change_pct": -0.65,
+    "vix": 14.43,
     "vix_trend": "rising",
     "market_regime": "risk_on",
     "risk_level": "low",
@@ -1018,13 +1018,13 @@
       "confidence": 100.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 14.49,
+      "vix": 14.43,
       "market_regime": "risk_on"
     }
   },
   "decision": "BUY",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable risk/reward ratio of 5.49:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable risk/reward ratio of 4.62:1",
   "earnings_date": "2026-09-10",
-  "days_until_earnings": 14,
+  "days_until_earnings": 13,
   "earnings_time": "unknown"
 }

@@ -3,21 +3,21 @@
   "company": "lululemon athletica inc.",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 115.05,
-    "open": 116.43,
-    "high": 118.5,
-    "low": 115.03,
-    "previous_close": 116.35,
-    "change_pct": -1.12,
-    "market_cap": 13064378368
+    "current": 120.81,
+    "open": 116.64,
+    "high": 121.18,
+    "low": 116.35,
+    "previous_close": 115.0,
+    "change_pct": 5.05,
+    "market_cap": 13718449152
   },
   "trade_parameters": {
-    "buy_above": 117.8,
-    "stop_loss": 114.91,
-    "take_profit": 149.77,
-    "expected_move": "\u00b130.18%",
-    "expected_move_dollars": "\u00b1$34.72",
-    "risk_reward": 11.06,
+    "buy_above": 121.88,
+    "stop_loss": 115.11,
+    "take_profit": 171.34,
+    "expected_move": "\u00b141.83%",
+    "expected_move_dollars": "\u00b1$50.53",
+    "risk_reward": 7.31,
     "support_levels": [
       115.11,
       114.91,
@@ -28,17 +28,17 @@
       119.83,
       121.88
     ],
-    "expected_return_pct": 27.14,
-    "max_drawdown_pct": -2.45
+    "expected_return_pct": 40.58,
+    "max_drawdown_pct": -5.55
   },
   "scores": {
-    "technical": 45,
+    "technical": 66,
     "fundamental": 61,
-    "options": 47,
+    "options": 70,
     "sentiment": 47,
     "historical": 61.6,
     "macro": 100,
-    "overall": 54.0
+    "overall": 64.9
   },
   "historical_score_breakdown": {
     "simple": 42,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 119.26,
-      "sma_50": 117.63,
-      "sma_100": 126.84,
-      "sma_200": 154.34,
-      "price_above_20_ema": "False",
-      "price_above_50_sma": "False",
+      "ema_20": 119.41,
+      "sma_50": 117.81,
+      "sma_100": 126.51,
+      "sma_200": 154.09,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 30.74,
-      "macd": -0.5583,
-      "macd_signal": 0.1359,
-      "macd_histogram": -0.6942,
-      "stochastic_rsi": 0.0,
-      "adx": 22.02,
+      "rsi_14": 41.31,
+      "macd": -0.3601,
+      "macd_signal": 0.0361,
+      "macd_histogram": -0.3961,
+      "stochastic_rsi": 26.13,
+      "adx": 21.02,
       "momentum_score": "weak"
     },
     "volume": {
       "obv_trend": "down",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 39.0,
-      "historical_volatility_60": 41.78
+      "historical_volatility_20": 43.14,
+      "historical_volatility_60": 43.1
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 128.86,
       "high_30d": 128.86,
       "high_52w": 225.98,
-      "distance_to_resistance_pct": 2.39,
-      "distance_to_support_pct": 0.12,
-      "nearest_resistance": 117.8,
-      "nearest_support": 114.91
+      "distance_to_resistance_pct": 0.89,
+      "distance_to_support_pct": 4.72,
+      "nearest_resistance": 121.88,
+      "nearest_support": 115.11
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 1514728960,
     "total_debt": 2136007936,
     "net_cash": -621278976,
-    "forward_pe": 10.27,
+    "forward_pe": 10.78,
     "peg_ratio": 0.91,
-    "ev_ebitda": 5.39,
-    "price_to_sales": 1.17
+    "ev_ebitda": 5.33,
+    "price_to_sales": 1.22
   },
   "options": {
-    "implied_volatility": 1.0527,
-    "put_call_ratio": 0.91,
-    "call_volume": 3885,
-    "put_volume": 3542,
-    "call_open_interest": 19890,
-    "put_open_interest": 12227,
-    "expected_move": 34.72,
-    "expected_move_pct": 30.18,
+    "implied_volatility": 1.4589,
+    "put_call_ratio": 0.39,
+    "call_volume": 6171,
+    "put_volume": 2403,
+    "call_open_interest": 20207,
+    "put_open_interest": 11685,
+    "expected_move": 50.53,
+    "expected_move_pct": 41.83,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -1002,12 +1002,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 770.96,
-    "sp500_change_pct": 0.64,
+    "sp500_price": 769.35,
+    "sp500_change_pct": -0.23,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 720.64,
-    "nasdaq_change_pct": 1.3,
-    "vix": 14.49,
+    "nasdaq_price": 716.43,
+    "nasdaq_change_pct": -0.65,
+    "vix": 14.43,
     "vix_trend": "rising",
     "market_regime": "risk_on",
     "risk_level": "low",
@@ -1020,13 +1020,13 @@
       "confidence": 100.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 14.49,
+      "vix": 14.43,
       "market_regime": "risk_on"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 11.06:1",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 7.31:1",
   "earnings_date": "2026-09-03",
-  "days_until_earnings": 7,
+  "days_until_earnings": 6,
   "earnings_time": "unknown"
 }
