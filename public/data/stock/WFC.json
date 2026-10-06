@@ -3,21 +3,21 @@
   "company": "Wells Fargo & Company",
   "sector": "Financial Services",
   "price": {
-    "current": 81.63,
-    "open": 82.16,
-    "high": 82.22,
-    "low": 80.94,
-    "previous_close": 80.45,
-    "change_pct": 1.47,
-    "market_cap": 246849044480
+    "current": 81.51,
+    "open": 81.85,
+    "high": 81.97,
+    "low": 81.33,
+    "previous_close": 81.44,
+    "change_pct": 0.09,
+    "market_cap": 246486188032
   },
   "trade_parameters": {
-    "buy_above": 81.63,
+    "buy_above": 81.51,
     "stop_loss": 78.0,
-    "take_profit": 97.08,
-    "expected_move": "\u00b118.93%",
-    "expected_move_dollars": "\u00b1$15.45",
-    "risk_reward": 4.26,
+    "take_profit": 98.36,
+    "expected_move": "\u00b120.67%",
+    "expected_move_dollars": "\u00b1$16.85",
+    "risk_reward": 4.8,
     "support_levels": [
       87.2,
       86.04,
@@ -28,17 +28,17 @@
       87.72,
       89.28
     ],
-    "expected_return_pct": 18.93,
-    "max_drawdown_pct": -4.45
+    "expected_return_pct": 20.67,
+    "max_drawdown_pct": -4.31
   },
   "scores": {
     "technical": 56,
     "fundamental": 67,
-    "options": 75,
+    "options": 52,
     "sentiment": 70,
     "historical": 90.4,
     "macro": 85,
-    "overall": 70.0
+    "overall": 65.4
   },
   "historical_score_breakdown": {
     "simple": 68,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 83.55,
-      "sma_50": 85.99,
-      "sma_100": 83.88,
-      "sma_200": 84.0,
+      "ema_20": 83.34,
+      "sma_50": 85.88,
+      "sma_100": 83.96,
+      "sma_200": 83.95,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 21.57,
-      "macd": -1.7792,
-      "macd_signal": -1.3077,
-      "macd_histogram": -0.4716,
-      "stochastic_rsi": 10.61,
-      "adx": 39.79,
+      "rsi_14": 25.79,
+      "macd": -1.7246,
+      "macd_signal": -1.3935,
+      "macd_histogram": -0.3312,
+      "stochastic_rsi": 21.54,
+      "adx": 42.71,
       "momentum_score": "oversold"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 25.14,
-      "historical_volatility_60": 23.46
+      "historical_volatility_20": 24.1,
+      "historical_volatility_60": 23.36
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 91.99,
       "high_30d": 91.99,
       "high_52w": 96.18,
-      "distance_to_resistance_pct": 4.96,
-      "distance_to_support_pct": 4.45,
+      "distance_to_resistance_pct": 5.12,
+      "distance_to_support_pct": 4.31,
       "nearest_resistance": 85.68,
       "nearest_support": 78.0
     }
@@ -107,30 +107,30 @@
     "cash": 496412000256,
     "total_debt": 478470012928,
     "net_cash": 17941987328,
-    "forward_pe": 10.25,
+    "forward_pe": 10.21,
     "peg_ratio": 1.26,
     "ev_ebitda": null,
     "price_to_sales": 2.97
   },
   "options": {
-    "implied_volatility": 0.6604,
-    "put_call_ratio": 0.44,
-    "call_volume": 3295,
-    "put_volume": 1464,
-    "call_open_interest": 13133,
-    "put_open_interest": 11938,
-    "expected_move": 15.46,
-    "expected_move_pct": 18.93,
+    "implied_volatility": 0.721,
+    "put_call_ratio": 1.04,
+    "call_volume": 1499,
+    "put_volume": 1560,
+    "call_open_interest": 14269,
+    "put_open_interest": 13204,
+    "expected_move": 16.85,
+    "expected_move_pct": 20.67,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
     "buy_ratings": 23,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 99.37,
+    "avg_price_target": 99.2,
     "target_high": 115.0,
     "target_low": 90.0,
     "target_median": 100.0,
@@ -999,12 +999,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 775.1,
-    "sp500_change_pct": 0.71,
+    "sp500_price": 780.87,
+    "sp500_change_pct": 0.78,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 755.55,
-    "nasdaq_change_pct": 0.8,
-    "vix": 15.62,
+    "nasdaq_price": 761.26,
+    "nasdaq_change_pct": 0.67,
+    "vix": 15.2,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1017,13 +1017,13 @@
       "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 15.62,
+      "vix": 15.2,
       "market_regime": "neutral"
     }
   },
-  "decision": "WATCH",
-  "decision_rationale": "favorable historical earnings pattern, favorable risk/reward ratio of 4.26:1",
+  "decision": "AVOID",
+  "decision_rationale": "favorable historical earnings pattern, favorable risk/reward ratio of 4.8:1",
   "earnings_date": "2026-10-13",
-  "days_until_earnings": 8,
+  "days_until_earnings": 7,
   "earnings_time": "unknown"
 }
