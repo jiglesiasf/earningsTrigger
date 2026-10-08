@@ -3,42 +3,42 @@
   "company": "Abbott Laboratories",
   "sector": "Healthcare",
   "price": {
-    "current": 98.67,
-    "open": 98.89,
-    "high": 99.37,
-    "low": 97.62,
-    "previous_close": 98.16,
-    "change_pct": 0.51,
-    "market_cap": 170728275968
+    "current": 97.84,
+    "open": 98.56,
+    "high": 99.2,
+    "low": 97.2,
+    "previous_close": 98.73,
+    "change_pct": -0.9,
+    "market_cap": 170418995200
   },
   "trade_parameters": {
-    "buy_above": 98.67,
+    "buy_above": 97.84,
     "stop_loss": 95.06,
-    "take_profit": 125.04,
-    "expected_move": "\u00b126.73%",
-    "expected_move_dollars": "\u00b1$26.37",
-    "risk_reward": 7.31,
+    "take_profit": 125.97,
+    "expected_move": "\u00b128.75%",
+    "expected_move_dollars": "\u00b1$28.13",
+    "risk_reward": 10.12,
     "support_levels": [
       109.35,
       104.2,
       102.89
     ],
     "resistance_levels": [
+      100.95,
       102.46,
-      104.54,
-      109.33
+      104.54
     ],
-    "expected_return_pct": 26.73,
-    "max_drawdown_pct": -3.66
+    "expected_return_pct": 28.75,
+    "max_drawdown_pct": -2.84
   },
   "scores": {
-    "technical": 66,
+    "technical": 63,
     "fundamental": 50,
     "options": 70,
     "sentiment": 70,
     "historical": 72.2,
     "macro": 85,
-    "overall": 65.9
+    "overall": 65.0
   },
   "historical_score_breakdown": {
     "simple": 68,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 101.4,
-      "sma_50": 106.48,
-      "sma_100": 99.06,
-      "sma_200": 102.77,
+      "ema_20": 101.06,
+      "sma_50": 106.28,
+      "sma_100": 99.2,
+      "sma_200": 102.64,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 37.92,
-      "macd": -2.2145,
-      "macd_signal": -2.0243,
-      "macd_histogram": -0.1902,
-      "stochastic_rsi": 79.5,
-      "adx": 56.18,
+      "rsi_14": 34.44,
+      "macd": -2.2154,
+      "macd_signal": -2.0617,
+      "macd_histogram": -0.1537,
+      "stochastic_rsi": 61.66,
+      "adx": 54.13,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,26 +72,26 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 20.86,
-      "historical_volatility_60": 31.07
+      "historical_volatility_20": 20.3,
+      "historical_volatility_60": 31.11
     },
     "price_structure": {
       "resistance": [
+        100.95,
         102.46,
-        104.54,
-        109.33
+        104.54
       ],
       "support": [
         109.35,
         104.2,
         102.89
       ],
-      "high_20d": 105.19,
-      "high_30d": 116.72,
+      "high_20d": 104.54,
+      "high_30d": 113.91,
       "high_52w": 132.08,
-      "distance_to_resistance_pct": 3.84,
-      "distance_to_support_pct": 3.66,
-      "nearest_resistance": 102.46,
+      "distance_to_resistance_pct": 3.18,
+      "distance_to_support_pct": 2.84,
+      "nearest_resistance": 100.95,
       "nearest_support": 95.06
     }
   },
@@ -107,20 +107,20 @@
     "cash": 5602999808,
     "total_debt": 32719998976,
     "net_cash": -27116999168,
-    "forward_pe": 16.27,
+    "forward_pe": 16.13,
     "peg_ratio": 1.8,
     "ev_ebitda": 16.92,
     "price_to_sales": 3.66
   },
   "options": {
-    "implied_volatility": 0.9324,
-    "put_call_ratio": 0.6,
-    "call_volume": 301,
-    "put_volume": 181,
-    "call_open_interest": 2199,
-    "put_open_interest": 3146,
-    "expected_move": 26.37,
-    "expected_move_pct": 26.73,
+    "implied_volatility": 1.003,
+    "put_call_ratio": 0.63,
+    "call_volume": 345,
+    "put_volume": 219,
+    "call_open_interest": 2217,
+    "put_open_interest": 3083,
+    "expected_move": 28.13,
+    "expected_move_pct": 28.75,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -998,12 +998,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 776.5,
-    "sp500_change_pct": -0.33,
+    "sp500_price": 773.44,
+    "sp500_change_pct": -0.49,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 756.49,
-    "nasdaq_change_pct": -0.42,
-    "vix": 15.4,
+    "nasdaq_price": 750.32,
+    "nasdaq_change_pct": -0.98,
+    "vix": 15.31,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1016,13 +1016,13 @@
       "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 15.4,
+      "vix": 15.31,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 7.31:1",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 10.12:1",
   "earnings_date": "2026-10-21",
-  "days_until_earnings": 14,
+  "days_until_earnings": 13,
   "earnings_time": "unknown"
 }

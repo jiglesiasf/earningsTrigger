@@ -3,21 +3,21 @@
   "company": "Tesla, Inc.",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 375.99,
-    "open": 378.35,
-    "high": 382.35,
-    "low": 374.43,
-    "previous_close": 380.68,
-    "change_pct": -1.23,
-    "market_cap": 1485010108416
+    "current": 371.54,
+    "open": 374.12,
+    "high": 375.96,
+    "low": 371.44,
+    "previous_close": 377.81,
+    "change_pct": -1.66,
+    "market_cap": 1467592605696
   },
   "trade_parameters": {
-    "buy_above": 387.27,
+    "buy_above": 371.54,
     "stop_loss": 369.43,
-    "take_profit": 469.95,
-    "expected_move": "\u00b124.99%",
-    "expected_move_dollars": "\u00b1$93.96",
-    "risk_reward": 4.63,
+    "take_profit": 563.11,
+    "expected_move": "\u00b151.56%",
+    "expected_move_dollars": "\u00b1$191.57",
+    "risk_reward": 90.79,
     "support_levels": [
       369.43,
       354.05,
@@ -28,8 +28,8 @@
       351.26,
       366.5
     ],
-    "expected_return_pct": 21.35,
-    "max_drawdown_pct": -4.61
+    "expected_return_pct": 51.56,
+    "max_drawdown_pct": -0.57
   },
   "scores": {
     "technical": 99,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 366.86,
-      "sma_50": 351.7,
-      "sma_100": 374.41,
-      "sma_200": 391.66,
+      "ema_20": 367.46,
+      "sma_50": 353.2,
+      "sma_100": 373.92,
+      "sma_200": 391.12,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 56.2,
-      "macd": 4.1848,
-      "macd_signal": 3.5303,
-      "macd_histogram": 0.6544,
-      "stochastic_rsi": 68.74,
-      "adx": 17.22,
+      "rsi_14": 54.46,
+      "macd": 4.1531,
+      "macd_signal": 3.6781,
+      "macd_histogram": 0.475,
+      "stochastic_rsi": 61.68,
+      "adx": 16.1,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 30.29,
-      "historical_volatility_60": 49.48
+      "historical_volatility_20": 30.39,
+      "historical_volatility_60": 49.55
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 386.83,
       "high_30d": 386.83,
       "high_52w": 498.83,
-      "distance_to_resistance_pct": 32.67,
-      "distance_to_support_pct": 1.74,
+      "distance_to_resistance_pct": 34.26,
+      "distance_to_support_pct": 0.57,
       "nearest_resistance": 498.83,
       "nearest_support": 369.43
     }
@@ -107,20 +107,20 @@
     "cash": 43524001792,
     "total_debt": 16080000000,
     "net_cash": 27444001792,
-    "forward_pe": 175.31,
+    "forward_pe": 173.18,
     "peg_ratio": 4.55,
     "ev_ebitda": 137.31,
-    "price_to_sales": 14.33
+    "price_to_sales": 14.16
   },
   "options": {
-    "implied_volatility": 0.8717,
-    "put_call_ratio": 0.97,
-    "call_volume": 466016,
-    "put_volume": 451322,
-    "call_open_interest": 107960,
-    "put_open_interest": 71922,
-    "expected_move": 93.97,
-    "expected_move_pct": 24.99,
+    "implied_volatility": 1.7986,
+    "put_call_ratio": 0.93,
+    "call_volume": 293103,
+    "put_volume": 271281,
+    "call_open_interest": 214828,
+    "put_open_interest": 225342,
+    "expected_move": 191.58,
+    "expected_move_pct": 51.56,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -995,12 +995,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 776.5,
-    "sp500_change_pct": -0.33,
+    "sp500_price": 773.44,
+    "sp500_change_pct": -0.49,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 756.49,
-    "nasdaq_change_pct": -0.42,
-    "vix": 15.4,
+    "nasdaq_price": 750.32,
+    "nasdaq_change_pct": -0.98,
+    "vix": 15.31,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1013,13 +1013,13 @@
       "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 15.4,
+      "vix": 15.31,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 4.63:1",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 90.79:1",
   "earnings_date": "2026-10-21",
-  "days_until_earnings": 14,
+  "days_until_earnings": 13,
   "earnings_time": "unknown"
 }
