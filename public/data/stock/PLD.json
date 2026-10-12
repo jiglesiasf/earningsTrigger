@@ -3,21 +3,21 @@
   "company": "Prologis, Inc.",
   "sector": "Real Estate",
   "price": {
-    "current": 129.21,
-    "open": 129.29,
-    "high": 129.46,
-    "low": 128.41,
-    "previous_close": 129.29,
-    "change_pct": -0.07,
-    "market_cap": 125599162368
+    "current": 131.83,
+    "open": 129.55,
+    "high": 131.9,
+    "low": 129.26,
+    "previous_close": 129.49,
+    "change_pct": 1.81,
+    "market_cap": 128150806528
   },
   "trade_parameters": {
-    "buy_above": 129.21,
+    "buy_above": 131.83,
     "stop_loss": 126.62,
-    "take_profit": 156.0,
-    "expected_move": "\u00b120.73%",
-    "expected_move_dollars": "\u00b1$26.79",
-    "risk_reward": 10.34,
+    "take_profit": 162.64,
+    "expected_move": "\u00b123.37%",
+    "expected_move_dollars": "\u00b1$30.81",
+    "risk_reward": 5.91,
     "support_levels": [
       142.21,
       141.2,
@@ -28,17 +28,17 @@
       136.49,
       137.89
     ],
-    "expected_return_pct": 20.73,
-    "max_drawdown_pct": -2.0
+    "expected_return_pct": 23.37,
+    "max_drawdown_pct": -3.95
   },
   "scores": {
-    "technical": 53,
+    "technical": 90,
     "fundamental": 40,
-    "options": 42,
+    "options": 63,
     "sentiment": 70,
     "historical": 61.9,
-    "macro": 100,
-    "overall": 53.6
+    "macro": 85,
+    "overall": 68.1
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 131.57,
-      "sma_50": 136.16,
-      "sma_100": 139.27,
-      "sma_200": 136.07,
-      "price_above_20_ema": "False",
+      "ema_20": 131.62,
+      "sma_50": 135.94,
+      "sma_100": 139.18,
+      "sma_200": 136.11,
+      "price_above_20_ema": "True",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 25.88,
-      "macd": -2.3852,
-      "macd_signal": -2.2476,
-      "macd_histogram": -0.1376,
-      "stochastic_rsi": 24.54,
-      "adx": 45.3,
-      "momentum_score": "oversold"
+      "rsi_14": 37.43,
+      "macd": -2.0549,
+      "macd_signal": -2.2054,
+      "macd_histogram": 0.1505,
+      "stochastic_rsi": 69.63,
+      "adx": 44.58,
+      "momentum_score": "weak"
     },
     "volume": {
       "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 14.12,
-      "historical_volatility_60": 17.6
+      "historical_volatility_20": 15.81,
+      "historical_volatility_60": 18.1
     },
     "price_structure": {
       "resistance": [
@@ -87,10 +87,10 @@
         138.25
       ],
       "high_20d": 136.49,
-      "high_30d": 141.32,
+      "high_30d": 139.25,
       "high_52w": 152.14,
-      "distance_to_resistance_pct": 5.23,
-      "distance_to_support_pct": 2.0,
+      "distance_to_resistance_pct": 3.14,
+      "distance_to_support_pct": 3.95,
       "nearest_resistance": 135.97,
       "nearest_support": 126.62
     }
@@ -107,23 +107,23 @@
     "cash": 1766716032,
     "total_debt": 37093756928,
     "net_cash": -35327040896,
-    "forward_pe": 38.76,
-    "peg_ratio": 112.55,
-    "ev_ebitda": 23.81,
-    "price_to_sales": 13.01
+    "forward_pe": 39.55,
+    "peg_ratio": 112.72,
+    "ev_ebitda": 23.84,
+    "price_to_sales": 13.27
   },
   "options": {
-    "implied_volatility": 0.7232,
-    "put_call_ratio": 5.04,
-    "call_volume": 56,
-    "put_volume": 282,
-    "call_open_interest": 7820,
-    "put_open_interest": 4054,
-    "expected_move": 26.79,
-    "expected_move_pct": 20.73,
+    "implied_volatility": 0.815,
+    "put_call_ratio": 0.75,
+    "call_volume": 515,
+    "put_volume": 386,
+    "call_open_interest": 7835,
+    "put_open_interest": 4058,
+    "expected_move": 30.8,
+    "expected_move_pct": 23.37,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -999,31 +999,31 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 777.97,
-    "sp500_change_pct": 0.52,
+    "sp500_price": 777.31,
+    "sp500_change_pct": -0.16,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 750.68,
-    "nasdaq_change_pct": 0.42,
-    "vix": 14.85,
+    "nasdaq_price": 745.15,
+    "nasdaq_change_pct": -0.81,
+    "vix": 15.32,
     "vix_trend": "rising",
-    "market_regime": "risk_on",
-    "risk_level": "low",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 100,
+    "macro_score": 85,
     "regime_assessment": {
       "regime": "favorable",
-      "confidence": 100.0,
+      "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 14.85,
-      "market_regime": "risk_on"
+      "vix": 15.32,
+      "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 10.34:1",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 5.91:1",
   "earnings_date": "2026-10-15",
-  "days_until_earnings": 6,
+  "days_until_earnings": 3,
   "earnings_time": "unknown"
 }

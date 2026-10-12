@@ -3,21 +3,21 @@
   "company": "Philip Morris International Inc",
   "sector": "Consumer Defensive",
   "price": {
-    "current": 200.48,
-    "open": 199.31,
-    "high": 201.17,
-    "low": 198.85,
-    "previous_close": 200.5,
-    "change_pct": -0.01,
-    "market_cap": 312470798336
+    "current": 202.21,
+    "open": 201.52,
+    "high": 202.77,
+    "low": 200.5,
+    "previous_close": 201.19,
+    "change_pct": 0.51,
+    "market_cap": 315167211520
   },
   "trade_parameters": {
-    "buy_above": 206.49,
+    "buy_above": 202.21,
     "stop_loss": 185.72,
-    "take_profit": 258.78,
-    "expected_move": "\u00b129.08%",
-    "expected_move_dollars": "\u00b1$58.3",
-    "risk_reward": 2.52,
+    "take_profit": 241.36,
+    "expected_move": "\u00b119.36%",
+    "expected_move_dollars": "\u00b1$39.15",
+    "risk_reward": 2.37,
     "support_levels": [
       185.72,
       184.26,
@@ -28,17 +28,17 @@
       189.91,
       192.61
     ],
-    "expected_return_pct": 25.32,
-    "max_drawdown_pct": -10.06
+    "expected_return_pct": 19.36,
+    "max_drawdown_pct": -8.15
   },
   "scores": {
     "technical": 88,
     "fundamental": 77,
-    "options": 55,
+    "options": 75,
     "sentiment": 70,
     "historical": 73.4,
-    "macro": 100,
-    "overall": 75.8
+    "macro": 85,
+    "overall": 79.1
   },
   "historical_score_breakdown": {
     "simple": 58,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 191.29,
-      "sma_50": 188.45,
-      "sma_100": 184.89,
-      "sma_200": 176.01,
+      "ema_20": 192.39,
+      "sma_50": 188.73,
+      "sma_100": 185.03,
+      "sma_200": 176.25,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 76.06,
-      "macd": 2.1614,
-      "macd_signal": 1.0505,
-      "macd_histogram": 1.1108,
-      "stochastic_rsi": 100.0,
-      "adx": 17.92,
+      "rsi_14": 75.22,
+      "macd": 2.7982,
+      "macd_signal": 1.4091,
+      "macd_histogram": 1.3891,
+      "stochastic_rsi": 96.27,
+      "adx": 20.52,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 21.62,
-      "historical_volatility_60": 23.9
+      "historical_volatility_20": 20.69,
+      "historical_volatility_60": 23.7
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         184.26,
         184.11
       ],
-      "high_20d": 202.7,
-      "high_30d": 202.7,
+      "high_20d": 202.77,
+      "high_30d": 202.77,
       "high_52w": 205.99,
-      "distance_to_resistance_pct": 2.75,
-      "distance_to_support_pct": 7.36,
+      "distance_to_resistance_pct": 1.87,
+      "distance_to_support_pct": 8.15,
       "nearest_resistance": 205.99,
       "nearest_support": 185.72
     }
@@ -107,23 +107,23 @@
     "cash": 6002999808,
     "total_debt": 49138999296,
     "net_cash": -43135999488,
-    "forward_pe": 21.83,
-    "peg_ratio": 2.41,
-    "ev_ebitda": 19.85,
-    "price_to_sales": 7.34
+    "forward_pe": 22.02,
+    "peg_ratio": 2.42,
+    "ev_ebitda": 19.91,
+    "price_to_sales": 7.41
   },
   "options": {
-    "implied_volatility": 1.0145,
-    "put_call_ratio": 0.87,
-    "call_volume": 299,
-    "put_volume": 261,
-    "call_open_interest": 2918,
-    "put_open_interest": 3106,
-    "expected_move": 58.31,
-    "expected_move_pct": 29.08,
+    "implied_volatility": 0.6752,
+    "put_call_ratio": 0.42,
+    "call_volume": 2505,
+    "put_volume": 1059,
+    "call_open_interest": 7908,
+    "put_open_interest": 9445,
+    "expected_move": 39.14,
+    "expected_move_pct": 19.36,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -998,31 +998,31 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 777.97,
-    "sp500_change_pct": 0.52,
+    "sp500_price": 777.31,
+    "sp500_change_pct": -0.16,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 750.68,
-    "nasdaq_change_pct": 0.42,
-    "vix": 14.85,
+    "nasdaq_price": 745.15,
+    "nasdaq_change_pct": -0.81,
+    "vix": 15.32,
     "vix_trend": "rising",
-    "market_regime": "risk_on",
-    "risk_level": "low",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 100,
+    "macro_score": 85,
     "regime_assessment": {
       "regime": "favorable",
-      "confidence": 100.0,
+      "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 14.85,
-      "market_regime": "risk_on"
+      "vix": 15.32,
+      "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable risk/reward ratio of 2.52:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable risk/reward ratio of 2.37:1",
   "earnings_date": "2026-10-21",
-  "days_until_earnings": 12,
+  "days_until_earnings": 9,
   "earnings_time": "unknown"
 }
