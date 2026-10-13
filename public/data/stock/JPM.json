@@ -3,21 +3,21 @@
   "company": "JP Morgan Chase & Co.",
   "sector": "Financial Services",
   "price": {
-    "current": 334.39,
-    "open": 334.3,
-    "high": 336.34,
-    "low": 333.55,
-    "previous_close": 332.99,
-    "change_pct": 0.42,
-    "market_cap": 888884166656
+    "current": 335.1,
+    "open": 339.97,
+    "high": 344.36,
+    "low": 331.19,
+    "previous_close": 334.3,
+    "change_pct": 0.24,
+    "market_cap": 890758234112
   },
   "trade_parameters": {
     "buy_above": 341.61,
     "stop_loss": 324.25,
-    "take_profit": 415.71,
-    "expected_move": "\u00b124.32%",
-    "expected_move_dollars": "\u00b1$81.32",
-    "risk_reward": 4.27,
+    "take_profit": 420.79,
+    "expected_move": "\u00b125.57%",
+    "expected_move_dollars": "\u00b1$85.69",
+    "risk_reward": 4.56,
     "support_levels": [
       352.03,
       351.58,
@@ -28,17 +28,17 @@
       341.61,
       352.74
     ],
-    "expected_return_pct": 21.69,
+    "expected_return_pct": 23.18,
     "max_drawdown_pct": -5.08
   },
   "scores": {
     "technical": 90,
     "fundamental": 67,
-    "options": 70,
+    "options": 63,
     "sentiment": 47,
     "historical": 81.0,
     "macro": 85,
-    "overall": 75.5
+    "overall": 74.1
   },
   "historical_score_breakdown": {
     "simple": 60,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 336.99,
-      "sma_50": 348.22,
-      "sma_100": 336.72,
-      "sma_200": 319.15,
+      "ema_20": 336.8,
+      "sma_50": 347.91,
+      "sma_100": 337.08,
+      "sma_200": 319.21,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 43.54,
-      "macd": -4.7942,
-      "macd_signal": -4.9502,
-      "macd_histogram": 0.156,
+      "rsi_14": 48.68,
+      "macd": -4.3581,
+      "macd_signal": -4.833,
+      "macd_histogram": 0.4749,
       "stochastic_rsi": 100.0,
-      "adx": 42.56,
+      "adx": 39.65,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 17.14,
-      "historical_volatility_60": 17.17
+      "historical_volatility_20": 16.9,
+      "historical_volatility_60": 17.12
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 353.83,
       "high_30d": 361.06,
       "high_52w": 364.68,
-      "distance_to_resistance_pct": 2.16,
-      "distance_to_support_pct": 3.03,
+      "distance_to_resistance_pct": 1.94,
+      "distance_to_support_pct": 3.24,
       "nearest_resistance": 341.61,
       "nearest_support": 324.25
     }
@@ -107,20 +107,20 @@
     "cash": 1526419030016,
     "total_debt": 1343306989568,
     "net_cash": 183112040448,
-    "forward_pe": 13.31,
+    "forward_pe": 13.34,
     "peg_ratio": 1.54,
     "ev_ebitda": null,
-    "price_to_sales": 4.77
+    "price_to_sales": 4.78
   },
   "options": {
-    "implied_volatility": 0.8482,
-    "put_call_ratio": 0.68,
-    "call_volume": 20133,
-    "put_volume": 13744,
-    "call_open_interest": 75452,
-    "put_open_interest": 41244,
-    "expected_move": 81.32,
-    "expected_move_pct": 24.32,
+    "implied_volatility": 0.8919,
+    "put_call_ratio": 0.77,
+    "call_volume": 26748,
+    "put_volume": 20558,
+    "call_open_interest": 84646,
+    "put_open_interest": 50348,
+    "expected_move": 85.68,
+    "expected_move_pct": 25.57,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -998,12 +998,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 777.31,
-    "sp500_change_pct": -0.16,
+    "sp500_price": 777.18,
+    "sp500_change_pct": -0.12,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 745.15,
-    "nasdaq_change_pct": -0.81,
-    "vix": 15.32,
+    "nasdaq_price": 742.2,
+    "nasdaq_change_pct": -0.51,
+    "vix": 15.42,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1016,13 +1016,13 @@
       "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 15.32,
+      "vix": 15.42,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 4.27:1",
+  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 4.56:1",
   "earnings_date": "2026-10-13",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }

@@ -3,21 +3,21 @@
   "company": "Intuitive Surgical, Inc.",
   "sector": "Healthcare",
   "price": {
-    "current": 427.28,
-    "open": 423.02,
-    "high": 429.27,
-    "low": 421.03,
-    "previous_close": 423.96,
-    "change_pct": 0.78,
-    "market_cap": 150948642816
+    "current": 422.18,
+    "open": 428.98,
+    "high": 430.0,
+    "low": 416.37,
+    "previous_close": 427.64,
+    "change_pct": -1.28,
+    "market_cap": 149148696576
   },
   "trade_parameters": {
-    "buy_above": 440.1,
+    "buy_above": 422.18,
     "stop_loss": 391.92,
-    "take_profit": 560.8,
-    "expected_move": "\u00b131.25%",
-    "expected_move_dollars": "\u00b1$133.52",
-    "risk_reward": 2.51,
+    "take_profit": 574.42,
+    "expected_move": "\u00b136.06%",
+    "expected_move_dollars": "\u00b1$152.24",
+    "risk_reward": 5.03,
     "support_levels": [
       391.92,
       389.67,
@@ -28,17 +28,17 @@
       382.41,
       404.98
     ],
-    "expected_return_pct": 27.43,
-    "max_drawdown_pct": -10.95
+    "expected_return_pct": 36.06,
+    "max_drawdown_pct": -7.17
   },
   "scores": {
     "technical": 100,
     "fundamental": 82,
-    "options": 63,
+    "options": 70,
     "sentiment": 70,
     "historical": 78.3,
     "macro": 85,
-    "overall": 82.0
+    "overall": 83.4
   },
   "historical_score_breakdown": {
     "simple": 58,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 403.7,
-      "sma_50": 387.58,
-      "sma_100": 393.48,
-      "sma_200": 442.66,
+      "ema_20": 405.49,
+      "sma_50": 388.52,
+      "sma_100": 393.22,
+      "sma_200": 441.89,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "False",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 65.38,
-      "macd": 10.3384,
-      "macd_signal": 8.3316,
-      "macd_histogram": 2.0069,
-      "stochastic_rsi": 15.47,
-      "adx": 26.45,
+      "rsi_14": 64.23,
+      "macd": 10.5342,
+      "macd_signal": 8.7767,
+      "macd_histogram": 1.7575,
+      "stochastic_rsi": 12.06,
+      "adx": 26.01,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 25.15,
-      "historical_volatility_60": 33.84
+      "historical_volatility_20": 25.91,
+      "historical_volatility_60": 33.78
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         389.67,
         389.11
       ],
-      "high_20d": 429.27,
-      "high_30d": 429.27,
+      "high_20d": 430.0,
+      "high_30d": 430.0,
       "high_52w": 603.88,
-      "distance_to_resistance_pct": 41.33,
-      "distance_to_support_pct": 8.28,
+      "distance_to_resistance_pct": 43.04,
+      "distance_to_support_pct": 7.17,
       "nearest_resistance": 603.88,
       "nearest_support": 391.92
     }
@@ -107,20 +107,20 @@
     "cash": 5216200192,
     "total_debt": 0,
     "net_cash": null,
-    "forward_pe": 35.29,
+    "forward_pe": 34.87,
     "peg_ratio": 1.97,
-    "ev_ebitda": 34.61,
-    "price_to_sales": 13.68
+    "ev_ebitda": 34.92,
+    "price_to_sales": 13.52
   },
   "options": {
-    "implied_volatility": 1.0902,
-    "put_call_ratio": 0.75,
-    "call_volume": 1319,
-    "put_volume": 990,
-    "call_open_interest": 11099,
-    "put_open_interest": 10743,
-    "expected_move": 133.54,
-    "expected_move_pct": 31.25,
+    "implied_volatility": 1.2576,
+    "put_call_ratio": 0.67,
+    "call_volume": 1069,
+    "put_volume": 721,
+    "call_open_interest": 11279,
+    "put_open_interest": 10850,
+    "expected_move": 152.22,
+    "expected_move_pct": 36.06,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -1000,12 +1000,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 777.31,
-    "sp500_change_pct": -0.16,
+    "sp500_price": 777.18,
+    "sp500_change_pct": -0.12,
     "nasdaq_trend": "bullish",
-    "nasdaq_price": 745.15,
-    "nasdaq_change_pct": -0.81,
-    "vix": 15.32,
+    "nasdaq_price": 742.2,
+    "nasdaq_change_pct": -0.51,
+    "vix": 15.42,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1018,13 +1018,13 @@
       "confidence": 75.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bullish",
-      "vix": 15.32,
+      "vix": 15.42,
       "market_regime": "neutral"
     }
   },
   "decision": "BUY",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 2.51:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 5.03:1",
   "earnings_date": "2026-10-20",
-  "days_until_earnings": 8,
+  "days_until_earnings": 7,
   "earnings_time": "unknown"
 }
