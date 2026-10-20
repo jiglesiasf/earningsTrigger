@@ -3,21 +3,21 @@
   "company": "Freeport-McMoRan, Inc.",
   "sector": "Basic Materials",
   "price": {
-    "current": 69.3,
-    "open": 69.87,
-    "high": 70.07,
-    "low": 68.56,
-    "previous_close": 69.54,
-    "change_pct": -0.35,
-    "market_cap": 99516022784
+    "current": 69.43,
+    "open": 68.05,
+    "high": 69.44,
+    "low": 67.24,
+    "previous_close": 69.75,
+    "change_pct": -0.46,
+    "market_cap": 99702693888
   },
   "trade_parameters": {
     "buy_above": 70.41,
-    "stop_loss": 66.13,
-    "take_profit": 88.55,
-    "expected_move": "\u00b127.78%",
-    "expected_move_dollars": "\u00b1$19.25",
-    "risk_reward": 4.24,
+    "stop_loss": 69.31,
+    "take_profit": 84.48,
+    "expected_move": "\u00b121.67%",
+    "expected_move_dollars": "\u00b1$15.05",
+    "risk_reward": 12.79,
     "support_levels": [
       71.3,
       69.98,
@@ -26,19 +26,19 @@
     "resistance_levels": [
       70.41,
       71.07,
-      73.36
+      71.79
     ],
-    "expected_return_pct": 25.77,
-    "max_drawdown_pct": -6.08
+    "expected_return_pct": 19.98,
+    "max_drawdown_pct": -1.56
   },
   "scores": {
-    "technical": 61,
+    "technical": 63,
     "fundamental": 58,
-    "options": 63,
+    "options": 42,
     "sentiment": 70,
     "historical": 63.3,
-    "macro": 60,
-    "overall": 62.0
+    "macro": 75,
+    "overall": 59.1
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 71.15,
-      "sma_50": 71.89,
-      "sma_100": 67.87,
-      "sma_200": 64.49,
+      "ema_20": 71.03,
+      "sma_50": 71.88,
+      "sma_100": 67.91,
+      "sma_200": 64.58,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,40 +59,40 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 45.3,
-      "macd": -0.3519,
-      "macd_signal": -0.0347,
-      "macd_histogram": -0.3172,
-      "stochastic_rsi": 18.23,
-      "adx": 16.53,
+      "rsi_14": 48.47,
+      "macd": -0.411,
+      "macd_signal": -0.1042,
+      "macd_histogram": -0.3068,
+      "stochastic_rsi": 33.9,
+      "adx": 18.0,
       "momentum_score": "weak"
     },
     "volume": {
-      "obv_trend": "down",
+      "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 30.32,
+      "historical_volatility_20": 27.95,
       "historical_volatility_60": 42.21
     },
     "price_structure": {
       "resistance": [
         70.41,
         71.07,
-        73.36
+        71.79
       ],
       "support": [
         71.3,
         69.98,
         69.31
       ],
-      "high_20d": 74.74,
-      "high_30d": 78.47,
+      "high_20d": 74.29,
+      "high_30d": 77.96,
       "high_52w": 80.07,
-      "distance_to_resistance_pct": 1.6,
-      "distance_to_support_pct": 4.57,
+      "distance_to_resistance_pct": 1.41,
+      "distance_to_support_pct": 0.17,
       "nearest_resistance": 70.41,
-      "nearest_support": 66.13
+      "nearest_support": 69.31
     }
   },
   "fundamentals": {
@@ -107,30 +107,30 @@
     "cash": 4080000000,
     "total_debt": 10359000064,
     "net_cash": -6279000064,
-    "forward_pe": 16.02,
+    "forward_pe": 16.07,
     "peg_ratio": 4.14,
-    "ev_ebitda": 12.38,
+    "ev_ebitda": 12.41,
     "price_to_sales": 3.85
   },
   "options": {
-    "implied_volatility": 0.969,
-    "put_call_ratio": 0.7,
-    "call_volume": 1869,
-    "put_volume": 1304,
-    "call_open_interest": 10672,
-    "put_open_interest": 13831,
-    "expected_move": 19.25,
-    "expected_move_pct": 27.78,
+    "implied_volatility": 0.7558,
+    "put_call_ratio": 3.16,
+    "call_volume": 618,
+    "put_volume": 1951,
+    "call_open_interest": 11888,
+    "put_open_interest": 14858,
+    "expected_move": 15.04,
+    "expected_move_pct": 21.67,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
     "buy_ratings": 22,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 79.07,
+    "avg_price_target": 79.11,
     "target_high": 92.0,
     "target_low": 32.0,
     "target_median": 82.0,
@@ -997,32 +997,32 @@
     "major_events": []
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 768.15,
-    "sp500_change_pct": 0.64,
+    "sp500_trend": "bullish",
+    "sp500_price": 770.65,
+    "sp500_change_pct": 0.54,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 721.5,
-    "nasdaq_change_pct": 1.65,
-    "vix": 17.87,
+    "nasdaq_price": 720.17,
+    "nasdaq_change_pct": 0.25,
+    "vix": 18.03,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 60,
+    "macro_score": 75,
     "regime_assessment": {
-      "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "regime": "neutral",
+      "confidence": 50.0,
+      "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 17.87,
+      "vix": 18.03,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 4.24:1",
+  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 12.79:1",
   "earnings_date": "2026-10-27",
-  "days_until_earnings": 8,
+  "days_until_earnings": 7,
   "earnings_time": "unknown"
 }
