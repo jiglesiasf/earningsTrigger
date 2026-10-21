@@ -3,21 +3,21 @@
   "company": "O'Reilly Automotive, Inc.",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 89.94,
-    "open": 89.96,
-    "high": 90.73,
-    "low": 89.45,
-    "previous_close": 89.07,
-    "change_pct": 0.98,
-    "market_cap": 72757936128
+    "current": 89.15,
+    "open": 89.56,
+    "high": 89.76,
+    "low": 89.0,
+    "previous_close": 90.02,
+    "change_pct": -0.96,
+    "market_cap": 72122892288
   },
   "trade_parameters": {
-    "buy_above": 89.94,
-    "stop_loss": 89.37,
-    "take_profit": 105.57,
-    "expected_move": "\u00b117.38%",
-    "expected_move_dollars": "\u00b1$15.63",
-    "risk_reward": 27.42,
+    "buy_above": 89.34,
+    "stop_loss": 87.19,
+    "take_profit": 106.06,
+    "expected_move": "\u00b118.97%",
+    "expected_move_dollars": "\u00b1$16.91",
+    "risk_reward": 7.78,
     "support_levels": [
       91.51,
       89.37,
@@ -28,17 +28,17 @@
       87.46,
       89.34
     ],
-    "expected_return_pct": 17.38,
-    "max_drawdown_pct": -0.63
+    "expected_return_pct": 18.72,
+    "max_drawdown_pct": -2.41
   },
   "scores": {
-    "technical": 82,
+    "technical": 79,
     "fundamental": 60,
-    "options": 75,
+    "options": 60,
     "sentiment": 70,
     "historical": 61.9,
     "macro": 75,
-    "overall": 71.6
+    "overall": 67.7
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,9 +48,9 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 87.02,
-      "sma_50": 87.41,
-      "sma_100": 87.96,
+      "ema_20": 87.23,
+      "sma_50": 87.35,
+      "sma_100": 87.99,
       "sma_200": 90.65,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 72.1,
-      "macd": 0.6054,
-      "macd_signal": 0.0033,
-      "macd_histogram": 0.6021,
-      "stochastic_rsi": 100.0,
-      "adx": 22.48,
-      "momentum_score": "overbought"
+      "rsi_14": 69.07,
+      "macd": 0.6948,
+      "macd_signal": 0.1426,
+      "macd_histogram": 0.5522,
+      "stochastic_rsi": 89.8,
+      "adx": 25.92,
+      "momentum_score": "strong"
     },
     "volume": {
       "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 13.89,
-      "historical_volatility_60": 20.98
+      "historical_volatility_20": 14.6,
+      "historical_volatility_60": 21.05
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 90.73,
       "high_30d": 90.73,
       "high_52w": 102.46,
-      "distance_to_resistance_pct": 13.92,
-      "distance_to_support_pct": 0.63,
-      "nearest_resistance": 102.46,
-      "nearest_support": 89.37
+      "distance_to_resistance_pct": 0.21,
+      "distance_to_support_pct": 2.2,
+      "nearest_resistance": 89.34,
+      "nearest_support": 87.19
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 262180992,
     "total_debt": 9587433472,
     "net_cash": -9325252480,
-    "forward_pe": 24.61,
+    "forward_pe": 24.39,
     "peg_ratio": 2.19,
-    "ev_ebitda": 19.52,
-    "price_to_sales": 3.92
+    "ev_ebitda": 19.7,
+    "price_to_sales": 3.88
   },
   "options": {
-    "implied_volatility": 0.6063,
-    "put_call_ratio": 0.45,
-    "call_volume": 404,
-    "put_volume": 180,
-    "call_open_interest": 10538,
-    "put_open_interest": 4314,
-    "expected_move": 15.63,
-    "expected_move_pct": 17.38,
+    "implied_volatility": 0.6618,
+    "put_call_ratio": 0.87,
+    "call_volume": 163,
+    "put_volume": 141,
+    "call_open_interest": 10645,
+    "put_open_interest": 4323,
+    "expected_move": 16.92,
+    "expected_move_pct": 18.97,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -995,12 +995,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 770.65,
-    "sp500_change_pct": 0.54,
+    "sp500_price": 769.97,
+    "sp500_change_pct": 0.12,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 720.17,
-    "nasdaq_change_pct": 0.25,
-    "vix": 18.03,
+    "nasdaq_price": 722.58,
+    "nasdaq_change_pct": 0.69,
+    "vix": 17.4,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1013,13 +1013,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 18.03,
+      "vix": 17.4,
       "market_regime": "neutral"
     }
   },
-  "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 27.42:1",
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 7.78:1",
   "earnings_date": "2026-10-28",
-  "days_until_earnings": 8,
+  "days_until_earnings": 7,
   "earnings_time": "unknown"
 }

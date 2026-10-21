@@ -3,21 +3,21 @@
   "company": "Danaher Corporation",
   "sector": "Healthcare",
   "price": {
-    "current": 225.05,
-    "open": 225.75,
-    "high": 227.78,
-    "low": 223.56,
-    "previous_close": 224.43,
-    "change_pct": 0.28,
-    "market_cap": 158210523136
+    "current": 229.6,
+    "open": 217.56,
+    "high": 232.26,
+    "low": 219.0,
+    "previous_close": 224.24,
+    "change_pct": 2.39,
+    "market_cap": 161405599744
   },
   "trade_parameters": {
-    "buy_above": 231.8,
+    "buy_above": 229.6,
     "stop_loss": 211.86,
-    "take_profit": 279.26,
-    "expected_move": "\u00b124.09%",
-    "expected_move_dollars": "\u00b1$54.21",
-    "risk_reward": 2.38,
+    "take_profit": 272.7,
+    "expected_move": "\u00b118.77%",
+    "expected_move_dollars": "\u00b1$43.1",
+    "risk_reward": 2.43,
     "support_levels": [
       211.86,
       211.72,
@@ -28,17 +28,17 @@
       218.18,
       220.28
     ],
-    "expected_return_pct": 20.48,
-    "max_drawdown_pct": -8.6
+    "expected_return_pct": 18.77,
+    "max_drawdown_pct": -7.73
   },
   "scores": {
     "technical": 100,
     "fundamental": 59,
-    "options": 70,
+    "options": 75,
     "sentiment": 70,
     "historical": 66.8,
     "macro": 75,
-    "overall": 76.6
+    "overall": 77.6
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 221.24,
-      "sma_50": 214.34,
-      "sma_100": 202.4,
-      "sma_200": 200.57,
+      "ema_20": 221.96,
+      "sma_50": 214.78,
+      "sma_100": 202.87,
+      "sma_200": 200.55,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 53.47,
-      "macd": 3.7183,
-      "macd_signal": 3.4832,
-      "macd_histogram": 0.2352,
-      "stochastic_rsi": 32.14,
-      "adx": 29.51,
+      "rsi_14": 69.55,
+      "macd": 3.8843,
+      "macd_signal": 3.553,
+      "macd_histogram": 0.3313,
+      "stochastic_rsi": 100.0,
+      "adx": 30.48,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 29.07,
-      "historical_volatility_60": 27.88
+      "historical_volatility_20": 30.19,
+      "historical_volatility_60": 28.16
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 233.02,
       "high_30d": 233.02,
       "high_52w": 241.35,
-      "distance_to_resistance_pct": 7.24,
-      "distance_to_support_pct": 5.86,
+      "distance_to_resistance_pct": 5.12,
+      "distance_to_support_pct": 7.73,
       "nearest_resistance": 241.35,
       "nearest_support": 211.86
     }
@@ -107,20 +107,20 @@
     "cash": 4348000256,
     "total_debt": 27857999872,
     "net_cash": -23509999616,
-    "forward_pe": 24.21,
-    "peg_ratio": 1.37,
-    "ev_ebitda": 22.58,
-    "price_to_sales": 6.3
+    "forward_pe": 24.7,
+    "peg_ratio": 1.34,
+    "ev_ebitda": 22.57,
+    "price_to_sales": 6.43
   },
   "options": {
-    "implied_volatility": 0.8401,
-    "put_call_ratio": 0.62,
-    "call_volume": 474,
-    "put_volume": 292,
-    "call_open_interest": 3154,
-    "put_open_interest": 3227,
-    "expected_move": 54.21,
-    "expected_move_pct": 24.09,
+    "implied_volatility": 0.6548,
+    "put_call_ratio": 0.44,
+    "call_volume": 2182,
+    "put_volume": 954,
+    "call_open_interest": 7112,
+    "put_open_interest": 6688,
+    "expected_move": 43.1,
+    "expected_move_pct": 18.77,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -998,12 +998,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 770.65,
-    "sp500_change_pct": 0.54,
+    "sp500_price": 769.97,
+    "sp500_change_pct": 0.12,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 720.17,
-    "nasdaq_change_pct": 0.25,
-    "vix": 18.03,
+    "nasdaq_price": 722.58,
+    "nasdaq_change_pct": 0.69,
+    "vix": 17.4,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1016,13 +1016,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "neutral",
-      "vix": 18.03,
+      "vix": 17.4,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 2.38:1",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 2.43:1",
   "earnings_date": "2026-10-21",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }
