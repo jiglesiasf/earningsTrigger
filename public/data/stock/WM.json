@@ -3,21 +3,21 @@
   "company": "Waste Management, Inc.",
   "sector": "Industrials",
   "price": {
-    "current": 230.13,
-    "open": 230.26,
-    "high": 230.94,
-    "low": 229.59,
-    "previous_close": 231.73,
-    "change_pct": -0.69,
-    "market_cap": 91986976768
+    "current": 237.24,
+    "open": 231.38,
+    "high": 237.8,
+    "low": 231.36,
+    "previous_close": 229.58,
+    "change_pct": 3.34,
+    "market_cap": 94830034944
   },
   "trade_parameters": {
-    "buy_above": 237.03,
+    "buy_above": 244.36,
     "stop_loss": 222.48,
-    "take_profit": 258.57,
-    "expected_move": "\u00b112.36%",
-    "expected_move_dollars": "\u00b1$28.44",
-    "risk_reward": 1.48,
+    "take_profit": 266.44,
+    "expected_move": "\u00b112.31%",
+    "expected_move_dollars": "\u00b1$29.2",
+    "risk_reward": 1.01,
     "support_levels": [
       222.48,
       221.27,
@@ -28,17 +28,17 @@
       219.64,
       221.24
     ],
-    "expected_return_pct": 9.09,
-    "max_drawdown_pct": -6.14
+    "expected_return_pct": 9.04,
+    "max_drawdown_pct": -8.95
   },
   "scores": {
-    "technical": 100,
+    "technical": 96,
     "fundamental": 59,
-    "options": 60,
+    "options": 88,
     "sentiment": 70,
     "historical": 57.4,
-    "macro": 75,
-    "overall": 73.2
+    "macro": 60,
+    "overall": 76.8
   },
   "historical_score_breakdown": {
     "simple": 42,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 217.4,
-      "sma_50": 216.0,
-      "sma_100": 220.87,
-      "sma_200": 223.08,
+      "ema_20": 219.24,
+      "sma_50": 216.22,
+      "sma_100": 221.13,
+      "sma_200": 223.19,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 90.48,
-      "macd": 3.8665,
-      "macd_signal": 0.8557,
-      "macd_histogram": 3.0108,
+      "rsi_14": 90.45,
+      "macd": 4.8849,
+      "macd_signal": 1.6545,
+      "macd_histogram": 3.2304,
       "stochastic_rsi": 100.0,
-      "adx": 40.94,
+      "adx": 41.99,
       "momentum_score": "overbought"
     },
     "volume": {
-      "obv_trend": "up",
+      "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 19.94,
-      "historical_volatility_60": 19.32
+      "historical_volatility_20": 22.41,
+      "historical_volatility_60": 20.43
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         221.27,
         221.18
       ],
-      "high_20d": 232.16,
-      "high_30d": 232.16,
+      "high_20d": 237.8,
+      "high_30d": 237.8,
       "high_52w": 246.06,
-      "distance_to_resistance_pct": 6.92,
-      "distance_to_support_pct": 3.32,
+      "distance_to_resistance_pct": 3.72,
+      "distance_to_support_pct": 6.22,
       "nearest_resistance": 246.06,
       "nearest_support": 222.48
     }
@@ -107,23 +107,23 @@
     "cash": 557000000,
     "total_debt": 23356000256,
     "net_cash": -22799000256,
-    "forward_pe": 25.33,
-    "peg_ratio": 2.09,
-    "ev_ebitda": 14.85,
-    "price_to_sales": 3.58
+    "forward_pe": 26.11,
+    "peg_ratio": 2.11,
+    "ev_ebitda": 14.74,
+    "price_to_sales": 3.69
   },
   "options": {
-    "implied_volatility": 0.4311,
-    "put_call_ratio": 1.18,
-    "call_volume": 101,
-    "put_volume": 119,
-    "call_open_interest": 2962,
-    "put_open_interest": 3071,
-    "expected_move": 28.44,
-    "expected_move_pct": 12.36,
+    "implied_volatility": 0.4294,
+    "put_call_ratio": 0.23,
+    "call_volume": 155,
+    "put_volume": 36,
+    "call_open_interest": 3025,
+    "put_open_interest": 3080,
+    "expected_move": 29.21,
+    "expected_move_pct": 12.31,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -996,32 +996,32 @@
     "major_events": []
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 769.97,
-    "sp500_change_pct": 0.12,
+    "sp500_trend": "neutral",
+    "sp500_price": 762.26,
+    "sp500_change_pct": -1.4,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 722.58,
-    "nasdaq_change_pct": 0.69,
-    "vix": 17.4,
+    "nasdaq_price": 708.18,
+    "nasdaq_change_pct": -2.35,
+    "vix": 18.39,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 75,
+    "macro_score": 60,
     "regime_assessment": {
-      "regime": "neutral",
-      "confidence": 50.0,
-      "sp500_trend": "bullish",
+      "regime": "unfavorable",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "neutral",
-      "vix": 17.4,
+      "vix": 18.39,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-10-27",
-  "days_until_earnings": 6,
+  "days_until_earnings": 5,
   "earnings_time": "unknown"
 }
