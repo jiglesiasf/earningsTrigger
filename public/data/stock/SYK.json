@@ -3,21 +3,21 @@
   "company": "Stryker Corporation",
   "sector": "Healthcare",
   "price": {
-    "current": 304.85,
-    "open": 299.8,
-    "high": 306.2,
-    "low": 299.36,
-    "previous_close": 297.6,
-    "change_pct": 2.43,
-    "market_cap": 116930330624
+    "current": 305.81,
+    "open": 305.01,
+    "high": 308.36,
+    "low": 305.0,
+    "previous_close": 307.08,
+    "change_pct": -0.41,
+    "market_cap": 117300477952
   },
   "trade_parameters": {
-    "buy_above": 304.85,
+    "buy_above": 305.81,
     "stop_loss": 271.67,
-    "take_profit": 346.07,
-    "expected_move": "\u00b113.52%",
-    "expected_move_dollars": "\u00b1$41.22",
-    "risk_reward": 1.24,
+    "take_profit": 351.74,
+    "expected_move": "\u00b115.02%",
+    "expected_move_dollars": "\u00b1$45.93",
+    "risk_reward": 1.35,
     "support_levels": [
       329.12,
       320.58,
@@ -28,17 +28,17 @@
       286.09,
       289.59
     ],
-    "expected_return_pct": 13.52,
-    "max_drawdown_pct": -10.88
+    "expected_return_pct": 15.02,
+    "max_drawdown_pct": -11.16
   },
   "scores": {
-    "technical": 93,
+    "technical": 100,
     "fundamental": 75,
-    "options": 55,
+    "options": 83,
     "sentiment": 70,
     "historical": 61.5,
     "macro": 60,
-    "overall": 73.1
+    "overall": 80.8
   },
   "historical_score_breakdown": {
     "simple": 58,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 289.3,
-      "sma_50": 295.81,
-      "sma_100": 308.33,
-      "sma_200": 323.83,
+      "ema_20": 291.07,
+      "sma_50": 295.17,
+      "sma_100": 308.49,
+      "sma_200": 323.55,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "False",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 72.76,
-      "macd": 2.9254,
-      "macd_signal": -1.0589,
-      "macd_histogram": 3.9843,
-      "stochastic_rsi": 89.35,
-      "adx": 32.6,
-      "momentum_score": "overbought"
+      "rsi_14": 67.65,
+      "macd": 3.9276,
+      "macd_signal": -0.0331,
+      "macd_histogram": 3.9607,
+      "stochastic_rsi": 73.28,
+      "adx": 34.29,
+      "momentum_score": "strong"
     },
     "volume": {
       "obv_trend": "up",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 27.18,
-      "historical_volatility_60": 35.28
+      "historical_volatility_20": 28.19,
+      "historical_volatility_60": 35.5
     },
     "price_structure": {
       "resistance": [
@@ -86,12 +86,12 @@
         320.58,
         271.67
       ],
-      "high_20d": 306.2,
-      "high_30d": 306.2,
-      "high_52w": 388.25,
-      "distance_to_resistance_pct": 27.36,
-      "distance_to_support_pct": 10.88,
-      "nearest_resistance": 388.25,
+      "high_20d": 309.68,
+      "high_30d": 309.68,
+      "high_52w": 386.02,
+      "distance_to_resistance_pct": 26.23,
+      "distance_to_support_pct": 11.16,
+      "nearest_resistance": 386.02,
       "nearest_support": 271.67
     }
   },
@@ -107,23 +107,23 @@
     "cash": 3476000000,
     "total_debt": 15445999616,
     "net_cash": -11969999616,
-    "forward_pe": 18.3,
+    "forward_pe": 18.35,
     "peg_ratio": 1.39,
-    "ev_ebitda": 17.1,
-    "price_to_sales": 4.53
+    "ev_ebitda": 17.59,
+    "price_to_sales": 4.54
   },
   "options": {
-    "implied_volatility": 0.4717,
-    "put_call_ratio": 1.98,
-    "call_volume": 65,
-    "put_volume": 129,
-    "call_open_interest": 8152,
+    "implied_volatility": 0.5239,
+    "put_call_ratio": 0.67,
+    "call_volume": 186,
+    "put_volume": 124,
+    "call_open_interest": 8216,
     "put_open_interest": 2375,
-    "expected_move": 41.23,
-    "expected_move_pct": 13.52,
+    "expected_move": 45.94,
+    "expected_move_pct": 15.02,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -997,12 +997,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 762.26,
-    "sp500_change_pct": -1.4,
+    "sp500_price": 759.41,
+    "sp500_change_pct": -0.6,
     "nasdaq_trend": "neutral",
-    "nasdaq_price": 708.18,
-    "nasdaq_change_pct": -2.35,
-    "vix": 18.39,
+    "nasdaq_price": 704.9,
+    "nasdaq_change_pct": 0.06,
+    "vix": 19.96,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1015,13 +1015,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "neutral",
-      "vix": 18.39,
+      "vix": 19.96,
       "market_regime": "neutral"
     }
   },
-  "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend",
+  "decision": "BUY",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-10-29",
-  "days_until_earnings": 7,
+  "days_until_earnings": 6,
   "earnings_time": "unknown"
 }
