@@ -3,21 +3,21 @@
   "company": "United Parcel Service, Inc.",
   "sector": "Industrials",
   "price": {
-    "current": 99.37,
-    "open": 100.9,
-    "high": 101.39,
-    "low": 99.33,
-    "previous_close": 101.52,
-    "change_pct": -2.12,
-    "market_cap": 84542169088
+    "current": 100.06,
+    "open": 101.65,
+    "high": 102.14,
+    "low": 99.93,
+    "previous_close": 101.06,
+    "change_pct": -0.99,
+    "market_cap": 85129199616
   },
   "trade_parameters": {
-    "buy_above": 99.37,
+    "buy_above": 100.06,
     "stop_loss": 91.56,
-    "take_profit": 139.69,
-    "expected_move": "\u00b140.58%",
-    "expected_move_dollars": "\u00b1$40.32",
-    "risk_reward": 5.16,
+    "take_profit": 124.22,
+    "expected_move": "\u00b124.15%",
+    "expected_move_dollars": "\u00b1$24.16",
+    "risk_reward": 2.84,
     "support_levels": [
       101.92,
       101.34,
@@ -28,17 +28,17 @@
       94.76,
       103.08
     ],
-    "expected_return_pct": 40.58,
-    "max_drawdown_pct": -7.86
+    "expected_return_pct": 24.15,
+    "max_drawdown_pct": -8.49
   },
   "scores": {
     "technical": 93,
     "fundamental": 40,
-    "options": 47,
+    "options": 70,
     "sentiment": 47,
     "historical": 59.1,
-    "macro": 60,
-    "overall": 61.9
+    "macro": 50,
+    "overall": 66.0
   },
   "historical_score_breakdown": {
     "simple": 50,
@@ -48,9 +48,9 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 97.26,
-      "sma_50": 98.86,
-      "sma_100": 103.08,
+      "ema_20": 97.67,
+      "sma_50": 98.84,
+      "sma_100": 103.03,
       "sma_200": 102.4,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 72.14,
-      "macd": 0.4151,
-      "macd_signal": -0.5271,
-      "macd_histogram": 0.9422,
-      "stochastic_rsi": 78.23,
-      "adx": 56.58,
+      "rsi_14": 76.03,
+      "macd": 0.6707,
+      "macd_signal": -0.266,
+      "macd_histogram": 0.9366,
+      "stochastic_rsi": 84.67,
+      "adx": 57.72,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 17.22,
-      "historical_volatility_60": 24.38
+      "historical_volatility_20": 15.77,
+      "historical_volatility_60": 24.02
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         101.34,
         101.24
       ],
-      "high_20d": 101.97,
+      "high_20d": 102.14,
       "high_30d": 103.08,
       "high_52w": 116.86,
-      "distance_to_resistance_pct": 3.73,
-      "distance_to_support_pct": 7.86,
+      "distance_to_resistance_pct": 3.02,
+      "distance_to_support_pct": 8.49,
       "nearest_resistance": 103.08,
       "nearest_support": 91.56
     }
@@ -107,23 +107,23 @@
     "cash": 4653000192,
     "total_debt": 28672999424,
     "net_cash": -24019999232,
-    "forward_pe": 12.33,
-    "peg_ratio": 1.42,
-    "ev_ebitda": 9.14,
-    "price_to_sales": 0.94
+    "forward_pe": 12.42,
+    "peg_ratio": 1.44,
+    "ev_ebitda": 9.11,
+    "price_to_sales": 0.95
   },
   "options": {
-    "implied_volatility": 1.4155,
-    "put_call_ratio": 1.08,
-    "call_volume": 457,
-    "put_volume": 493,
-    "call_open_interest": 12268,
-    "put_open_interest": 7356,
-    "expected_move": 40.32,
-    "expected_move_pct": 40.58,
+    "implied_volatility": 0.8424,
+    "put_call_ratio": 0.65,
+    "call_volume": 4327,
+    "put_volume": 2814,
+    "call_open_interest": 11705,
+    "put_open_interest": 7887,
+    "expected_move": 24.17,
+    "expected_move_pct": 24.15,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -140,11 +140,11 @@
     "number_of_analysts": 26
   },
   "historical_earnings": {
-    "avg_move_pct": 1.82,
+    "avg_move_pct": 1.84,
     "median_move_pct": 1.28,
     "largest_upside_pct": 2.57,
     "largest_downside_pct": -4.03,
-    "avg_1d_return": -0.91,
+    "avg_1d_return": -0.92,
     "gap_up_pct": 50.0,
     "gap_down_pct": 50.0,
     "recent_moves": [
@@ -998,31 +998,31 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 759.41,
-    "sp500_change_pct": -0.6,
-    "nasdaq_trend": "neutral",
-    "nasdaq_price": 704.9,
-    "nasdaq_change_pct": 0.06,
-    "vix": 19.96,
+    "sp500_price": 765.32,
+    "sp500_change_pct": 0.7,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 712.67,
+    "nasdaq_change_pct": 1.17,
+    "vix": 18.3,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "healthy",
-    "macro_score": 60,
+    "macro_score": 50,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 25.0,
       "sp500_trend": "neutral",
-      "nasdaq_trend": "neutral",
-      "vix": 19.96,
+      "nasdaq_trend": "bearish",
+      "vix": 18.3,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 5.16:1",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 2.84:1",
   "earnings_date": "2026-10-27",
-  "days_until_earnings": 4,
+  "days_until_earnings": 1,
   "earnings_time": "unknown"
 }
