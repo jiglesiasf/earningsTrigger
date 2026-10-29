@@ -3,21 +3,21 @@
   "company": "Duke Energy Corporation (Holdin",
   "sector": "Utilities",
   "price": {
-    "current": 124.81,
-    "open": 124.71,
-    "high": 125.03,
-    "low": 123.71,
-    "previous_close": 124.8,
-    "change_pct": 0.0,
-    "market_cap": 97310736384
+    "current": 125.49,
+    "open": 125.12,
+    "high": 126.07,
+    "low": 124.58,
+    "previous_close": 123.57,
+    "change_pct": 1.55,
+    "market_cap": 97844830208
   },
   "trade_parameters": {
-    "buy_above": 124.81,
+    "buy_above": 129.25,
     "stop_loss": 119.74,
-    "take_profit": 141.11,
-    "expected_move": "\u00b113.06%",
-    "expected_move_dollars": "\u00b1$16.3",
-    "risk_reward": 3.22,
+    "take_profit": 141.31,
+    "expected_move": "\u00b112.61%",
+    "expected_move_dollars": "\u00b1$15.82",
+    "risk_reward": 1.27,
     "support_levels": [
       119.74,
       119.68,
@@ -28,8 +28,8 @@
       121.98,
       122.57
     ],
-    "expected_return_pct": 13.06,
-    "max_drawdown_pct": -4.06
+    "expected_return_pct": 9.33,
+    "max_drawdown_pct": -7.36
   },
   "scores": {
     "technical": 96,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 120.81,
-      "sma_50": 118.99,
-      "sma_100": 121.81,
-      "sma_200": 122.91,
+      "ema_20": 121.15,
+      "sma_50": 119.0,
+      "sma_100": 121.84,
+      "sma_200": 122.95,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 72.75,
-      "macd": 1.959,
-      "macd_signal": 1.1305,
-      "macd_histogram": 0.8285,
-      "stochastic_rsi": 61.77,
-      "adx": 68.44,
+      "rsi_14": 71.6,
+      "macd": 1.9973,
+      "macd_signal": 1.2881,
+      "macd_histogram": 0.7092,
+      "stochastic_rsi": 48.33,
+      "adx": 73.88,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 19.91,
-      "historical_volatility_60": 17.2
+      "historical_volatility_20": 20.74,
+      "historical_volatility_60": 17.54
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         119.68,
         119.04
       ],
-      "high_20d": 125.87,
-      "high_30d": 125.87,
+      "high_20d": 126.07,
+      "high_30d": 126.07,
       "high_52w": 132.18,
-      "distance_to_resistance_pct": 5.9,
-      "distance_to_support_pct": 4.06,
+      "distance_to_resistance_pct": 5.33,
+      "distance_to_support_pct": 4.58,
       "nearest_resistance": 132.18,
       "nearest_support": 119.74
     }
@@ -107,20 +107,20 @@
     "cash": 673000000,
     "total_debt": 92205998080,
     "net_cash": -91532998080,
-    "forward_pe": 17.41,
+    "forward_pe": 17.5,
     "peg_ratio": 2.32,
-    "ev_ebitda": 11.55,
-    "price_to_sales": 2.97
+    "ev_ebitda": 11.49,
+    "price_to_sales": 2.98
   },
   "options": {
-    "implied_volatility": 0.4556,
-    "put_call_ratio": 0.5,
-    "call_volume": 550,
-    "put_volume": 277,
-    "call_open_interest": 8078,
-    "put_open_interest": 2967,
-    "expected_move": 16.3,
-    "expected_move_pct": 13.06,
+    "implied_volatility": 0.4398,
+    "put_call_ratio": 0.32,
+    "call_volume": 570,
+    "put_volume": 185,
+    "call_open_interest": 8185,
+    "put_open_interest": 2938,
+    "expected_move": 15.82,
+    "expected_move_pct": 12.61,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -997,12 +997,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 771.56,
-    "sp500_change_pct": 0.25,
+    "sp500_price": 769.17,
+    "sp500_change_pct": -0.41,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 722.28,
-    "nasdaq_change_pct": 0.14,
-    "vix": 17.31,
+    "nasdaq_price": 715.35,
+    "nasdaq_change_pct": -1.41,
+    "vix": 16.29,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1015,13 +1015,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bearish",
-      "vix": 17.31,
+      "vix": 16.29,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, positive options flow, favorable risk/reward ratio of 3.22:1",
+  "decision_rationale": "strong technical uptrend, positive options flow",
   "earnings_date": "2026-11-05",
-  "days_until_earnings": 8,
+  "days_until_earnings": 7,
   "earnings_time": "unknown"
 }

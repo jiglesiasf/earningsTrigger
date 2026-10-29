@@ -3,21 +3,21 @@
   "company": "Amazon.com, Inc.",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 252.68,
-    "open": 252.96,
-    "high": 255.36,
-    "low": 251.98,
-    "previous_close": 253.1,
-    "change_pct": -0.17,
-    "market_cap": 2725485477888
+    "current": 246.55,
+    "open": 246.91,
+    "high": 249.14,
+    "low": 241.24,
+    "previous_close": 254.6,
+    "change_pct": -3.16,
+    "market_cap": 2659365683200
   },
   "trade_parameters": {
-    "buy_above": 257.59,
-    "stop_loss": 246.12,
-    "take_profit": 313.9,
-    "expected_move": "\u00b124.23%",
-    "expected_move_dollars": "\u00b1$61.22",
-    "risk_reward": 4.91,
+    "buy_above": 246.55,
+    "stop_loss": 241.24,
+    "take_profit": 369.73,
+    "expected_move": "\u00b149.96%",
+    "expected_move_dollars": "\u00b1$123.18",
+    "risk_reward": 23.2,
     "support_levels": [
       257.73,
       257.04,
@@ -28,17 +28,17 @@
       259.49,
       261.12
     ],
-    "expected_return_pct": 21.86,
-    "max_drawdown_pct": -4.45
+    "expected_return_pct": 49.96,
+    "max_drawdown_pct": -2.15
   },
   "scores": {
     "technical": 63,
     "fundamental": 77,
-    "options": 70,
+    "options": 55,
     "sentiment": 70,
     "historical": 82.6,
     "macro": 65,
-    "overall": 70.9
+    "overall": 67.9
   },
   "historical_score_breakdown": {
     "simple": 63,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 254.23,
-      "sma_50": 255.08,
-      "sma_100": 251.83,
-      "sma_200": 243.37,
+      "ema_20": 253.67,
+      "sma_50": 254.73,
+      "sma_100": 251.86,
+      "sma_200": 243.4,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 48.74,
-      "macd": -0.4691,
-      "macd_signal": 0.1199,
-      "macd_histogram": -0.5889,
-      "stochastic_rsi": 23.56,
-      "adx": 23.47,
+      "rsi_14": 35.75,
+      "macd": -0.9008,
+      "macd_signal": -0.0598,
+      "macd_histogram": -0.8411,
+      "stochastic_rsi": 0.0,
+      "adx": 24.64,
       "momentum_score": "weak"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 32.74,
-      "historical_volatility_60": 27.05
+      "historical_volatility_20": 34.77,
+      "historical_volatility_60": 27.61
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 265.34,
       "high_30d": 265.34,
       "high_52w": 287.2,
-      "distance_to_resistance_pct": 1.94,
-      "distance_to_support_pct": 2.6,
+      "distance_to_resistance_pct": 4.48,
+      "distance_to_support_pct": 2.15,
       "nearest_resistance": 257.59,
-      "nearest_support": 246.12
+      "nearest_support": 241.24
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 122988003328,
     "total_debt": 251635007488,
     "net_cash": -128647004160,
-    "forward_pe": 24.22,
-    "peg_ratio": 1.44,
-    "ev_ebitda": 16.92,
-    "price_to_sales": 3.51
+    "forward_pe": 23.59,
+    "peg_ratio": 1.47,
+    "ev_ebitda": 17.02,
+    "price_to_sales": 3.43
   },
   "options": {
-    "implied_volatility": 0.8451,
-    "put_call_ratio": 0.44,
-    "call_volume": 99698,
-    "put_volume": 44097,
-    "call_open_interest": 72027,
-    "put_open_interest": 37854,
-    "expected_move": 61.22,
-    "expected_move_pct": 24.23,
+    "implied_volatility": 1.7427,
+    "put_call_ratio": 0.87,
+    "call_volume": 90791,
+    "put_volume": 78881,
+    "call_open_interest": 304453,
+    "put_open_interest": 119607,
+    "expected_move": 123.17,
+    "expected_move_pct": 49.96,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -998,12 +998,12 @@
   },
   "market_regime": {
     "sp500_trend": "bullish",
-    "sp500_price": 771.56,
-    "sp500_change_pct": 0.25,
+    "sp500_price": 769.17,
+    "sp500_change_pct": -0.41,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 722.28,
-    "nasdaq_change_pct": 0.14,
-    "vix": 17.31,
+    "nasdaq_price": 715.35,
+    "nasdaq_change_pct": -1.41,
+    "vix": 16.29,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1016,13 +1016,13 @@
       "confidence": 50.0,
       "sp500_trend": "bullish",
       "nasdaq_trend": "bearish",
-      "vix": 17.31,
+      "vix": 16.29,
       "market_regime": "neutral"
     }
   },
-  "decision": "WATCH",
-  "decision_rationale": "solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 4.91:1",
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 23.2:1",
   "earnings_date": "2026-10-29",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }
