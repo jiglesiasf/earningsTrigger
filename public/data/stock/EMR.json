@@ -3,21 +3,21 @@
   "company": "Emerson Electric Company",
   "sector": "Industrials",
   "price": {
-    "current": 166.54,
-    "open": 168.68,
-    "high": 170.59,
-    "low": 165.96,
-    "previous_close": 170.74,
-    "change_pct": -2.46,
-    "market_cap": 93281845248
+    "current": 166.38,
+    "open": 167.1,
+    "high": 169.99,
+    "low": 166.24,
+    "previous_close": 164.94,
+    "change_pct": 0.87,
+    "market_cap": 93189439488
   },
   "trade_parameters": {
-    "buy_above": 166.54,
+    "buy_above": 171.37,
     "stop_loss": 156.71,
-    "take_profit": 215.72,
+    "take_profit": 215.51,
     "expected_move": "\u00b129.53%",
-    "expected_move_dollars": "\u00b1$49.18",
-    "risk_reward": 5.0,
+    "expected_move_dollars": "\u00b1$49.13",
+    "risk_reward": 3.01,
     "support_levels": [
       156.71,
       156.25,
@@ -28,8 +28,8 @@
       159.82,
       160.29
     ],
-    "expected_return_pct": 29.53,
-    "max_drawdown_pct": -5.9
+    "expected_return_pct": 25.76,
+    "max_drawdown_pct": -8.56
   },
   "scores": {
     "technical": 100,
@@ -37,8 +37,8 @@
     "options": 37,
     "sentiment": 70,
     "historical": 76.5,
-    "macro": 50,
-    "overall": 71.8
+    "macro": 20,
+    "overall": 70.3
   },
   "historical_score_breakdown": {
     "simple": 59,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 162.67,
-      "sma_50": 157.1,
-      "sma_100": 152.08,
-      "sma_200": 146.39,
+      "ema_20": 162.89,
+      "sma_50": 157.25,
+      "sma_100": 152.36,
+      "sma_200": 146.49,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 57.76,
-      "macd": 2.7783,
-      "macd_signal": 2.3115,
-      "macd_histogram": 0.4667,
-      "stochastic_rsi": 48.71,
-      "adx": 11.99,
+      "rsi_14": 55.08,
+      "macd": 2.6322,
+      "macd_signal": 2.3552,
+      "macd_histogram": 0.277,
+      "stochastic_rsi": 37.09,
+      "adx": 11.8,
       "momentum_score": "strong"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 20.92,
-      "historical_volatility_60": 23.52
+      "historical_volatility_20": 22.81,
+      "historical_volatility_60": 24.04
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 171.25,
       "high_30d": 171.25,
       "high_52w": 171.25,
-      "distance_to_resistance_pct": 2.83,
-      "distance_to_support_pct": 5.9,
+      "distance_to_resistance_pct": 2.93,
+      "distance_to_support_pct": 5.81,
       "nearest_resistance": 171.25,
       "nearest_support": 156.71
     }
@@ -107,19 +107,19 @@
     "cash": 2180000000,
     "total_debt": 13802000384,
     "net_cash": -11622000384,
-    "forward_pe": 22.92,
-    "peg_ratio": 1.97,
-    "ev_ebitda": 17.64,
-    "price_to_sales": 5.01
+    "forward_pe": 22.91,
+    "peg_ratio": 1.91,
+    "ev_ebitda": 17.11,
+    "price_to_sales": 5.0
   },
   "options": {
-    "implied_volatility": 1.03,
-    "put_call_ratio": 2.22,
-    "call_volume": 60,
-    "put_volume": 133,
-    "call_open_interest": 2100,
-    "put_open_interest": 1227,
-    "expected_move": 49.18,
+    "implied_volatility": 1.0299,
+    "put_call_ratio": 5.68,
+    "call_volume": 231,
+    "put_volume": 1311,
+    "call_open_interest": 1508,
+    "put_open_interest": 105,
+    "expected_move": 49.12,
     "expected_move_pct": 29.53,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
@@ -999,32 +999,32 @@
     "major_events": []
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 757.02,
-    "sp500_change_pct": -1.6,
+    "sp500_trend": "bearish",
+    "sp500_price": 754.11,
+    "sp500_change_pct": -0.21,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 692.44,
-    "nasdaq_change_pct": -3.2,
-    "vix": 19.84,
+    "nasdaq_price": 684.13,
+    "nasdaq_change_pct": -0.92,
+    "vix": 21.13,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "healthy",
-    "macro_score": 50,
+    "breadth": "weak",
+    "macro_score": 20,
     "regime_assessment": {
       "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "confidence": 0.0,
+      "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 19.84,
+      "vix": 21.13,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 5.0:1",
+  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 3.01:1",
   "earnings_date": "2026-11-04",
-  "days_until_earnings": 5,
+  "days_until_earnings": 2,
   "earnings_time": "unknown"
 }
