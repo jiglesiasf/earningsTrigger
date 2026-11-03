@@ -3,21 +3,21 @@
   "company": "Amgen Inc.",
   "sector": "Healthcare",
   "price": {
-    "current": 466.71,
-    "open": 463.13,
-    "high": 469.0,
-    "low": 461.06,
-    "previous_close": 466.01,
-    "change_pct": 0.15,
-    "market_cap": 252321054720
+    "current": 463.62,
+    "open": 462.45,
+    "high": 467.02,
+    "low": 461.4,
+    "previous_close": 465.45,
+    "change_pct": -0.39,
+    "market_cap": 250648182784
   },
   "trade_parameters": {
-    "buy_above": 466.71,
+    "buy_above": 463.62,
     "stop_loss": 426.0,
-    "take_profit": 558.33,
-    "expected_move": "\u00b119.63%",
-    "expected_move_dollars": "\u00b1$91.62",
-    "risk_reward": 2.25,
+    "take_profit": 568.86,
+    "expected_move": "\u00b122.7%",
+    "expected_move_dollars": "\u00b1$105.24",
+    "risk_reward": 2.8,
     "support_levels": [
       426.0,
       424.74,
@@ -28,8 +28,8 @@
       426.59,
       440.62
     ],
-    "expected_return_pct": 19.63,
-    "max_drawdown_pct": -8.72
+    "expected_return_pct": 22.7,
+    "max_drawdown_pct": -8.11
   },
   "scores": {
     "technical": 96,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 439.31,
-      "sma_50": 420.51,
-      "sma_100": 398.66,
-      "sma_200": 372.6,
+      "ema_20": 441.51,
+      "sma_50": 420.88,
+      "sma_100": 399.76,
+      "sma_200": 373.29,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 80.17,
-      "macd": 13.6101,
-      "macd_signal": 10.4068,
-      "macd_histogram": 3.2033,
-      "stochastic_rsi": 100.0,
-      "adx": 51.56,
+      "rsi_14": 74.14,
+      "macd": 13.7555,
+      "macd_signal": 11.0604,
+      "macd_histogram": 2.6952,
+      "stochastic_rsi": 81.3,
+      "adx": 54.21,
       "momentum_score": "overbought"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 24.62,
-      "historical_volatility_60": 32.86
+      "historical_volatility_20": 24.88,
+      "historical_volatility_60": 32.79
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 475.65,
       "high_30d": 475.65,
       "high_52w": 475.65,
-      "distance_to_resistance_pct": 1.92,
-      "distance_to_support_pct": 8.72,
+      "distance_to_resistance_pct": 2.59,
+      "distance_to_support_pct": 8.11,
       "nearest_resistance": 475.65,
       "nearest_support": 426.0
     }
@@ -107,20 +107,20 @@
     "cash": 13989000192,
     "total_debt": 57303998464,
     "net_cash": -43314998272,
-    "forward_pe": 19.05,
+    "forward_pe": 18.93,
     "peg_ratio": 2.78,
-    "ev_ebitda": 17.1,
-    "price_to_sales": 6.62
+    "ev_ebitda": 17.08,
+    "price_to_sales": 6.58
   },
   "options": {
-    "implied_volatility": 0.6845,
-    "put_call_ratio": 1.37,
-    "call_volume": 305,
-    "put_volume": 417,
-    "call_open_interest": 1603,
-    "put_open_interest": 918,
-    "expected_move": 91.59,
-    "expected_move_pct": 19.63,
+    "implied_volatility": 0.7917,
+    "put_call_ratio": 1.98,
+    "call_volume": 422,
+    "put_volume": 835,
+    "call_open_interest": 1800,
+    "put_open_interest": 1058,
+    "expected_move": 105.23,
+    "expected_move_pct": 22.7,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -170,7 +170,7 @@
         "day_return_pct": 0.44,
         "pre_close": 358.86,
         "post_open": 358.4,
-        "post_close": 360.43
+        "post_close": 360.42
       },
       {
         "date": "2025-11-04",
@@ -1000,12 +1000,12 @@
   },
   "market_regime": {
     "sp500_trend": "bearish",
-    "sp500_price": 754.11,
-    "sp500_change_pct": -0.21,
+    "sp500_price": 755.27,
+    "sp500_change_pct": 0.42,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 684.13,
-    "nasdaq_change_pct": -0.92,
-    "vix": 21.13,
+    "nasdaq_price": 687.09,
+    "nasdaq_change_pct": 0.88,
+    "vix": 20.72,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1018,13 +1018,13 @@
       "confidence": 0.0,
       "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 21.13,
+      "vix": 20.72,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 2.25:1",
+  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 2.8:1",
   "earnings_date": "2026-11-03",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }
