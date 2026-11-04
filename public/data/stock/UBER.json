@@ -3,42 +3,42 @@
   "company": "Uber Technologies, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 66.71,
-    "open": 66.75,
-    "high": 66.96,
-    "low": 65.99,
-    "previous_close": 66.71,
-    "change_pct": 0.0,
-    "market_cap": 136259182592
+    "current": 71.51,
+    "open": 68.28,
+    "high": 72.5,
+    "low": 67.36,
+    "previous_close": 66.6,
+    "change_pct": 7.38,
+    "market_cap": 146073681920
   },
   "trade_parameters": {
-    "buy_above": 66.71,
-    "stop_loss": 64.04,
-    "take_profit": 84.8,
-    "expected_move": "\u00b127.12%",
-    "expected_move_dollars": "\u00b1$18.09",
-    "risk_reward": 6.78,
+    "buy_above": 71.86,
+    "stop_loss": 69.24,
+    "take_profit": 90.11,
+    "expected_move": "\u00b126.01%",
+    "expected_move_dollars": "\u00b1$18.6",
+    "risk_reward": 6.97,
     "support_levels": [
       74.62,
-      74.53,
-      73.97
+      73.97,
+      69.24
     ],
     "resistance_levels": [
       69.97,
       70.01,
       71.86
     ],
-    "expected_return_pct": 27.12,
-    "max_drawdown_pct": -4.0
+    "expected_return_pct": 25.4,
+    "max_drawdown_pct": -3.65
   },
   "scores": {
-    "technical": 71,
+    "technical": 97,
     "fundamental": 55,
-    "options": 47,
+    "options": 70,
     "sentiment": 70,
     "historical": 84.6,
-    "macro": 20,
-    "overall": 62.4
+    "macro": 50,
+    "overall": 76.3
   },
   "historical_score_breakdown": {
     "simple": 72,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 67.79,
-      "sma_50": 70.72,
-      "sma_100": 71.91,
-      "sma_200": 73.16,
-      "price_above_20_ema": "False",
-      "price_above_50_sma": "False",
+      "ema_20": 68.14,
+      "sma_50": 70.54,
+      "sma_100": 71.94,
+      "sma_200": 73.1,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 40.3,
-      "macd": -1.3048,
-      "macd_signal": -1.1959,
-      "macd_histogram": -0.1089,
-      "stochastic_rsi": 41.31,
-      "adx": 31.2,
-      "momentum_score": "weak"
+      "rsi_14": 50.75,
+      "macd": -0.8547,
+      "macd_signal": -1.1291,
+      "macd_histogram": 0.2743,
+      "stochastic_rsi": 75.73,
+      "adx": 32.19,
+      "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "up",
-      "volume_trend": "below_avg"
+      "obv_trend": "down",
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 27.88,
-      "historical_volatility_60": 27.78
+      "historical_volatility_20": 38.46,
+      "historical_volatility_60": 31.83
     },
     "price_structure": {
       "resistance": [
@@ -83,16 +83,16 @@
       ],
       "support": [
         74.62,
-        74.53,
-        73.97
+        73.97,
+        69.24
       ],
-      "high_20d": 72.08,
-      "high_30d": 72.08,
-      "high_52w": 100.35,
-      "distance_to_resistance_pct": 4.89,
-      "distance_to_support_pct": 4.0,
-      "nearest_resistance": 69.97,
-      "nearest_support": 64.04
+      "high_20d": 72.5,
+      "high_30d": 72.5,
+      "high_52w": 95.44,
+      "distance_to_resistance_pct": 0.49,
+      "distance_to_support_pct": 3.17,
+      "nearest_resistance": 71.86,
+      "nearest_support": 69.24
     }
   },
   "fundamentals": {
@@ -107,23 +107,23 @@
     "cash": 5391000064,
     "total_debt": 14730999808,
     "net_cash": -9339999744,
-    "forward_pe": 15.14,
-    "peg_ratio": 5.8,
-    "ev_ebitda": 19.63,
-    "price_to_sales": 2.47
+    "forward_pe": 16.23,
+    "peg_ratio": 5.79,
+    "ev_ebitda": 19.6,
+    "price_to_sales": 2.64
   },
   "options": {
-    "implied_volatility": 0.9458,
-    "put_call_ratio": 1.09,
-    "call_volume": 6561,
-    "put_volume": 7169,
-    "call_open_interest": 38553,
-    "put_open_interest": 48064,
-    "expected_move": 18.09,
-    "expected_move_pct": 27.12,
+    "implied_volatility": 0.9072,
+    "put_call_ratio": 0.6,
+    "call_volume": 27565,
+    "put_volume": 16521,
+    "call_open_interest": 47005,
+    "put_open_interest": 62142,
+    "expected_move": 18.6,
+    "expected_move_pct": 26.01,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -992,37 +992,39 @@
   },
   "news": {
     "sentiment_score": 0.5,
-    "headline_count": 0,
+    "headline_count": 10,
     "key_themes": [],
-    "major_events": []
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bearish",
-    "sp500_price": 755.27,
-    "sp500_change_pct": 0.42,
+    "sp500_trend": "neutral",
+    "sp500_price": 768.14,
+    "sp500_change_pct": 1.83,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 687.09,
-    "nasdaq_change_pct": 0.88,
-    "vix": 20.72,
+    "nasdaq_price": 695.65,
+    "nasdaq_change_pct": 1.51,
+    "vix": 17.21,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "weak",
-    "macro_score": 20,
+    "breadth": "healthy",
+    "macro_score": 50,
     "regime_assessment": {
       "regime": "unfavorable",
-      "confidence": 0.0,
-      "sp500_trend": "bearish",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 20.72,
+      "vix": 17.21,
       "market_regime": "neutral"
     }
   },
-  "decision": "AVOID",
-  "decision_rationale": "favorable historical earnings pattern, favorable risk/reward ratio of 6.78:1",
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, favorable historical earnings pattern, favorable risk/reward ratio of 6.97:1",
   "earnings_date": "2026-11-04",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }
