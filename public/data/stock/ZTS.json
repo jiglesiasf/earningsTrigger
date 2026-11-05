@@ -3,21 +3,21 @@
   "company": "Zoetis Inc.",
   "sector": "Healthcare",
   "price": {
-    "current": 87.39,
-    "open": 85.37,
-    "high": 87.95,
-    "low": 84.83,
-    "previous_close": 82.99,
-    "change_pct": 5.3,
-    "market_cap": 36111609856
+    "current": 82.68,
+    "open": 84.87,
+    "high": 88.74,
+    "low": 82.31,
+    "previous_close": 89.2,
+    "change_pct": -7.31,
+    "market_cap": 34165327872
   },
   "trade_parameters": {
-    "buy_above": 87.39,
+    "buy_above": 82.68,
     "stop_loss": 76.51,
-    "take_profit": 109.18,
-    "expected_move": "\u00b124.93%",
-    "expected_move_dollars": "\u00b1$21.79",
-    "risk_reward": 2.0,
+    "take_profit": 103.37,
+    "expected_move": "\u00b125.03%",
+    "expected_move_dollars": "\u00b1$20.69",
+    "risk_reward": 3.35,
     "support_levels": [
       76.51,
       74.43,
@@ -28,30 +28,30 @@
       73.06,
       74.32
     ],
-    "expected_return_pct": 24.93,
-    "max_drawdown_pct": -12.45
+    "expected_return_pct": 25.03,
+    "max_drawdown_pct": -7.46
   },
   "scores": {
-    "technical": 93,
+    "technical": 100,
     "fundamental": 61,
     "options": 70,
     "sentiment": 47,
-    "historical": 61.3,
-    "macro": 50,
-    "overall": 70.5
+    "historical": 61.0,
+    "macro": 20,
+    "overall": 71.1
   },
   "historical_score_breakdown": {
-    "simple": 55,
+    "simple": 54,
     "deep": 64,
-    "merged": 61.3,
+    "merged": 61.0,
     "has_deep": true
   },
   "technical": {
     "trend": {
-      "ema_20": 79.06,
-      "sma_50": 75.01,
-      "sma_100": 75.03,
-      "sma_200": 91.72,
+      "ema_20": 79.56,
+      "sma_50": 75.16,
+      "sma_100": 75.09,
+      "sma_200": 91.52,
       "price_above_20_ema": "True",
       "price_above_50_sma": "True",
       "price_above_200_sma": "False",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 74.92,
-      "macd": 2.6179,
-      "macd_signal": 1.9523,
-      "macd_histogram": 0.6656,
-      "stochastic_rsi": 47.83,
-      "adx": 70.03,
-      "momentum_score": "overbought"
+      "rsi_14": 57.25,
+      "macd": 2.6866,
+      "macd_signal": 2.1223,
+      "macd_histogram": 0.5643,
+      "stochastic_rsi": 0.0,
+      "adx": 67.38,
+      "momentum_score": "strong"
     },
     "volume": {
       "obv_trend": "up",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 34.07,
-      "historical_volatility_60": 30.99
+      "historical_volatility_20": 48.46,
+      "historical_volatility_60": 35.9
     },
     "price_structure": {
       "resistance": [
@@ -86,11 +86,11 @@
         74.43,
         71.02
       ],
-      "high_20d": 87.95,
-      "high_30d": 87.95,
+      "high_20d": 89.29,
+      "high_30d": 89.29,
       "high_52w": 130.12,
-      "distance_to_resistance_pct": 48.9,
-      "distance_to_support_pct": 12.45,
+      "distance_to_resistance_pct": 57.38,
+      "distance_to_support_pct": 7.46,
       "nearest_resistance": 130.12,
       "nearest_support": 76.51
     }
@@ -107,20 +107,20 @@
     "cash": 1676000000,
     "total_debt": 9255000064,
     "net_cash": -7579000064,
-    "forward_pe": 13.64,
-    "peg_ratio": 15.45,
-    "ev_ebitda": 10.3,
-    "price_to_sales": 3.79
+    "forward_pe": 12.91,
+    "peg_ratio": 16.6,
+    "ev_ebitda": 10.93,
+    "price_to_sales": 3.59
   },
   "options": {
-    "implied_volatility": 0.8694,
-    "put_call_ratio": 0.28,
-    "call_volume": 1640,
-    "put_volume": 457,
-    "call_open_interest": 10516,
-    "put_open_interest": 12427,
-    "expected_move": 21.78,
-    "expected_move_pct": 24.93,
+    "implied_volatility": 0.873,
+    "put_call_ratio": 0.59,
+    "call_volume": 2773,
+    "put_volume": 1637,
+    "call_open_interest": 13345,
+    "put_open_interest": 13949,
+    "expected_move": 20.69,
+    "expected_move_pct": 25.03,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -140,13 +140,13 @@
     "number_of_analysts": 13
   },
   "historical_earnings": {
-    "avg_move_pct": 3.0,
+    "avg_move_pct": 3.34,
     "median_move_pct": 3.64,
     "largest_upside_pct": 4.08,
     "largest_downside_pct": -5.97,
-    "avg_1d_return": -1.7,
-    "gap_up_pct": 62.5,
-    "gap_down_pct": 37.5,
+    "avg_1d_return": -2.05,
+    "gap_up_pct": 75.0,
+    "gap_down_pct": 25.0,
     "recent_moves": [
       {
         "date": "2026-08-06",
@@ -1000,32 +1000,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 768.14,
-    "sp500_change_pct": 1.83,
+    "sp500_trend": "bearish",
+    "sp500_price": 739.37,
+    "sp500_change_pct": -3.58,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 695.65,
-    "nasdaq_change_pct": 1.51,
-    "vix": 17.21,
+    "nasdaq_price": 654.99,
+    "nasdaq_change_pct": -5.34,
+    "vix": 24.18,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "healthy",
-    "macro_score": 50,
+    "breadth": "weak",
+    "macro_score": 20,
     "regime_assessment": {
       "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "confidence": 0.0,
+      "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 17.21,
+      "vix": 24.18,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 2.0:1",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 3.35:1",
   "earnings_date": "2026-11-05",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }

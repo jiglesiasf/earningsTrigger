@@ -3,21 +3,21 @@
   "company": "Occidental Petroleum Corporatio",
   "sector": "Energy",
   "price": {
-    "current": 56.63,
-    "open": 59.35,
-    "high": 59.34,
-    "low": 56.48,
-    "previous_close": 60.43,
-    "change_pct": -6.29,
-    "market_cap": 56609464320
+    "current": 57.4,
+    "open": 58.12,
+    "high": 58.78,
+    "low": 57.11,
+    "previous_close": 57.33,
+    "change_pct": 0.12,
+    "market_cap": 57379188736
   },
   "trade_parameters": {
-    "buy_above": 56.63,
+    "buy_above": 58.76,
     "stop_loss": 56.48,
-    "take_profit": 74.17,
-    "expected_move": "\u00b130.98%",
-    "expected_move_dollars": "\u00b1$17.54",
-    "risk_reward": 116.96,
+    "take_profit": 76.27,
+    "expected_move": "\u00b132.87%",
+    "expected_move_dollars": "\u00b1$18.87",
+    "risk_reward": 7.68,
     "support_levels": [
       61.28,
       60.28,
@@ -28,17 +28,17 @@
       59.32,
       61.87
     ],
-    "expected_return_pct": 30.98,
-    "max_drawdown_pct": -0.26
+    "expected_return_pct": 29.79,
+    "max_drawdown_pct": -3.88
   },
   "scores": {
-    "technical": 66,
+    "technical": 51,
     "fundamental": 44,
-    "options": 70,
+    "options": 37,
     "sentiment": 47,
     "historical": 86.7,
-    "macro": 50,
-    "overall": 62.8
+    "macro": 20,
+    "overall": 50.2
   },
   "historical_score_breakdown": {
     "simple": 58,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 61.19,
+      "ema_20": 60.89,
       "sma_50": 60.08,
-      "sma_100": 57.38,
-      "sma_200": 55.95,
+      "sma_100": 57.41,
+      "sma_200": 56.03,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,21 +59,21 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 35.99,
-      "macd": 0.2723,
-      "macd_signal": 0.8833,
-      "macd_histogram": -0.611,
+      "rsi_14": 29.39,
+      "macd": -0.0118,
+      "macd_signal": 0.7132,
+      "macd_histogram": -0.725,
       "stochastic_rsi": 0.0,
-      "adx": 46.12,
-      "momentum_score": "weak"
+      "adx": 45.66,
+      "momentum_score": "oversold"
     },
     "volume": {
       "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 37.57,
-      "historical_volatility_60": 31.99
+      "historical_volatility_20": 32.53,
+      "historical_volatility_60": 31.05
     },
     "price_structure": {
       "resistance": [
@@ -89,8 +89,8 @@
       "high_20d": 64.96,
       "high_30d": 64.96,
       "high_52w": 66.83,
-      "distance_to_resistance_pct": 3.76,
-      "distance_to_support_pct": 0.26,
+      "distance_to_resistance_pct": 2.37,
+      "distance_to_support_pct": 1.6,
       "nearest_resistance": 58.76,
       "nearest_support": 56.48
     }
@@ -107,23 +107,23 @@
     "cash": 4150000128,
     "total_debt": 14625999872,
     "net_cash": -10475999744,
-    "forward_pe": 11.29,
+    "forward_pe": 11.45,
     "peg_ratio": 0.91,
-    "ev_ebitda": 5.82,
-    "price_to_sales": 2.37
+    "ev_ebitda": 5.59,
+    "price_to_sales": 2.4
   },
   "options": {
-    "implied_volatility": 1.0804,
-    "put_call_ratio": 0.59,
-    "call_volume": 2417,
-    "put_volume": 1427,
-    "call_open_interest": 28538,
-    "put_open_interest": 11187,
-    "expected_move": 17.54,
-    "expected_move_pct": 30.98,
+    "implied_volatility": 1.1465,
+    "put_call_ratio": 2.45,
+    "call_volume": 2189,
+    "put_volume": 5367,
+    "call_open_interest": 30508,
+    "put_open_interest": 14519,
+    "expected_move": 18.87,
+    "expected_move_pct": 32.87,
     "atm_straddle_price": null,
-    "skew": "mild_call_skew",
-    "gamma_exposure": "positive",
+    "skew": "mild_put_skew",
+    "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
@@ -999,32 +999,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "neutral",
-    "sp500_price": 768.14,
-    "sp500_change_pct": 1.83,
+    "sp500_trend": "bearish",
+    "sp500_price": 739.37,
+    "sp500_change_pct": -3.58,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 695.65,
-    "nasdaq_change_pct": 1.51,
-    "vix": 17.21,
+    "nasdaq_price": 654.99,
+    "nasdaq_change_pct": -5.34,
+    "vix": 24.18,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "healthy",
-    "macro_score": 50,
+    "breadth": "weak",
+    "macro_score": 20,
     "regime_assessment": {
       "regime": "unfavorable",
-      "confidence": 25.0,
-      "sp500_trend": "neutral",
+      "confidence": 0.0,
+      "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 17.21,
+      "vix": 24.18,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "favorable historical earnings pattern, favorable risk/reward ratio of 116.96:1",
+  "decision_rationale": "favorable historical earnings pattern, favorable risk/reward ratio of 7.68:1",
   "earnings_date": "2026-11-09",
-  "days_until_earnings": 5,
+  "days_until_earnings": 4,
   "earnings_time": "unknown"
 }
