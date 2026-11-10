@@ -3,42 +3,42 @@
   "company": "Bilibili Inc.",
   "sector": "Communication Services",
   "price": {
-    "current": 13.6,
-    "open": 13.37,
-    "high": 13.74,
-    "low": 13.34,
-    "previous_close": 12.68,
-    "change_pct": 7.26,
-    "market_cap": 5621413376
+    "current": 14.26,
+    "open": 14.41,
+    "high": 14.52,
+    "low": 14.17,
+    "previous_close": 14.31,
+    "change_pct": -0.38,
+    "market_cap": 5698409472
   },
   "trade_parameters": {
-    "buy_above": 13.6,
+    "buy_above": 14.26,
     "stop_loss": 12.64,
-    "take_profit": 17.34,
-    "expected_move": "\u00b127.48%",
-    "expected_move_dollars": "\u00b1$3.74",
-    "risk_reward": 3.89,
+    "take_profit": 18.94,
+    "expected_move": "\u00b132.85%",
+    "expected_move_dollars": "\u00b1$4.68",
+    "risk_reward": 2.89,
     "support_levels": [
-      16.89,
       16.41,
-      15.97
+      15.97,
+      15.37
     ],
     "resistance_levels": [
+      14.77,
       15.19,
-      15.36,
-      15.52
+      15.36
     ],
-    "expected_return_pct": 27.48,
-    "max_drawdown_pct": -7.06
+    "expected_return_pct": 32.85,
+    "max_drawdown_pct": -11.36
   },
   "scores": {
-    "technical": 66,
+    "technical": 100,
     "fundamental": 78,
     "options": 70,
     "sentiment": 70,
     "historical": 78.1,
     "macro": 20,
-    "overall": 69.1
+    "overall": 79.3
   },
   "historical_score_breakdown": {
     "simple": 55,
@@ -48,50 +48,50 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 13.82,
-      "sma_50": 14.87,
-      "sma_100": 16.29,
-      "sma_200": 20.63,
-      "price_above_20_ema": "False",
+      "ema_20": 13.96,
+      "sma_50": 14.58,
+      "sma_100": 16.07,
+      "sma_200": 20.07,
+      "price_above_20_ema": "True",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 30.62,
-      "macd": -0.5831,
-      "macd_signal": -0.5489,
-      "macd_histogram": -0.0343,
-      "stochastic_rsi": 65.02,
-      "adx": 39.96,
-      "momentum_score": "weak"
+      "rsi_14": 58.26,
+      "macd": -0.1652,
+      "macd_signal": -0.3642,
+      "macd_histogram": 0.199,
+      "stochastic_rsi": 100.0,
+      "adx": 36.89,
+      "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "down",
-      "volume_trend": "above_avg"
+      "obv_trend": "up",
+      "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 40.05,
-      "historical_volatility_60": 39.17
+      "historical_volatility_20": 43.36,
+      "historical_volatility_60": 39.46
     },
     "price_structure": {
       "resistance": [
+        14.77,
         15.19,
-        15.36,
-        15.52
+        15.36
       ],
       "support": [
-        16.89,
         16.41,
-        15.97
+        15.97,
+        15.37
       ],
-      "high_20d": 15.73,
+      "high_20d": 14.77,
       "high_30d": 15.73,
       "high_52w": 36.4,
-      "distance_to_resistance_pct": 11.69,
-      "distance_to_support_pct": 7.06,
-      "nearest_resistance": 15.19,
+      "distance_to_resistance_pct": 3.58,
+      "distance_to_support_pct": 11.36,
+      "nearest_resistance": 14.77,
       "nearest_support": 12.64
     }
   },
@@ -107,37 +107,37 @@
     "cash": 24299706368,
     "total_debt": 9514290176,
     "net_cash": 14785416192,
-    "forward_pe": 10.61,
-    "peg_ratio": 0.27,
-    "ev_ebitda": -2.18,
+    "forward_pe": 11.23,
+    "peg_ratio": 0.31,
+    "ev_ebitda": -2.02,
     "price_to_sales": 0.18
   },
   "options": {
-    "implied_volatility": 0.9584,
-    "put_call_ratio": 0.11,
-    "call_volume": 4934,
-    "put_volume": 562,
-    "call_open_interest": 5706,
-    "put_open_interest": 5884,
-    "expected_move": 3.74,
-    "expected_move_pct": 27.48,
+    "implied_volatility": 1.1458,
+    "put_call_ratio": 0.36,
+    "call_volume": 499,
+    "put_volume": 181,
+    "call_open_interest": 6899,
+    "put_open_interest": 6941,
+    "expected_move": 4.68,
+    "expected_move_pct": 32.85,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
-    "buy_ratings": 30,
+    "buy_ratings": 31,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 25.89,
-    "target_high": 36.35,
-    "target_low": 18.17,
-    "target_median": 24.78,
+    "avg_price_target": 25.42,
+    "target_high": 36.24,
+    "target_low": 18.12,
+    "target_median": 24.22,
     "consensus_trend": "strong_buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
-    "number_of_analysts": 30
+    "number_of_analysts": 31
   },
   "historical_earnings": {
     "avg_move_pct": 2.52,
@@ -992,18 +992,20 @@
   },
   "news": {
     "sentiment_score": 0.5,
-    "headline_count": 0,
+    "headline_count": 10,
     "key_themes": [],
-    "major_events": []
+    "major_events": [],
+    "bullish_signals": 0,
+    "bearish_signals": 0
   },
   "market_regime": {
     "sp500_trend": "bearish",
-    "sp500_price": 754.11,
-    "sp500_change_pct": -0.21,
+    "sp500_price": 747.32,
+    "sp500_change_pct": -0.71,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 684.13,
-    "nasdaq_change_pct": -0.92,
-    "vix": 21.13,
+    "nasdaq_price": 670.9,
+    "nasdaq_change_pct": -1.24,
+    "vix": 20.97,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1016,13 +1018,13 @@
       "confidence": 0.0,
       "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 21.13,
+      "vix": 20.97,
       "market_regime": "neutral"
     }
   },
-  "decision": "AVOID",
-  "decision_rationale": "solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 3.89:1",
-  "earnings_date": "2026-11-12",
-  "days_until_earnings": 10,
+  "decision": "WATCH",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 2.89:1",
+  "earnings_date": "2026-11-24",
+  "days_until_earnings": 14,
   "earnings_time": "unknown"
 }
