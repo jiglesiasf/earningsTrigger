@@ -3,42 +3,42 @@
   "company": "Bilibili Inc.",
   "sector": "Communication Services",
   "price": {
-    "current": 14.26,
-    "open": 14.41,
-    "high": 14.52,
-    "low": 14.17,
-    "previous_close": 14.31,
-    "change_pct": -0.38,
-    "market_cap": 5698409472
+    "current": 13.95,
+    "open": 13.95,
+    "high": 14.01,
+    "low": 13.87,
+    "previous_close": 14.24,
+    "change_pct": -2.0,
+    "market_cap": 5578485248
   },
   "trade_parameters": {
-    "buy_above": 14.26,
+    "buy_above": 13.95,
     "stop_loss": 12.64,
-    "take_profit": 18.94,
-    "expected_move": "\u00b132.85%",
-    "expected_move_dollars": "\u00b1$4.68",
-    "risk_reward": 2.89,
+    "take_profit": 19.33,
+    "expected_move": "\u00b138.55%",
+    "expected_move_dollars": "\u00b1$5.38",
+    "risk_reward": 4.11,
     "support_levels": [
-      16.41,
       15.97,
-      15.37
+      15.37,
+      15.16
     ],
     "resistance_levels": [
       14.77,
       15.19,
       15.36
     ],
-    "expected_return_pct": 32.85,
-    "max_drawdown_pct": -11.36
+    "expected_return_pct": 38.55,
+    "max_drawdown_pct": -9.39
   },
   "scores": {
-    "technical": 100,
+    "technical": 89,
     "fundamental": 78,
     "options": 70,
     "sentiment": 70,
     "historical": 78.1,
-    "macro": 20,
-    "overall": 79.3
+    "macro": 50,
+    "overall": 77.5
   },
   "historical_score_breakdown": {
     "simple": 55,
@@ -49,31 +49,31 @@
   "technical": {
     "trend": {
       "ema_20": 13.96,
-      "sma_50": 14.58,
-      "sma_100": 16.07,
-      "sma_200": 20.07,
-      "price_above_20_ema": "True",
+      "sma_50": 14.55,
+      "sma_100": 16.05,
+      "sma_200": 19.97,
+      "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 58.26,
-      "macd": -0.1652,
-      "macd_signal": -0.3642,
-      "macd_histogram": 0.199,
-      "stochastic_rsi": 100.0,
-      "adx": 36.89,
+      "rsi_14": 55.86,
+      "macd": -0.1504,
+      "macd_signal": -0.3216,
+      "macd_histogram": 0.1712,
+      "stochastic_rsi": 95.57,
+      "adx": 36.32,
       "momentum_score": "strong"
     },
     "volume": {
-      "obv_trend": "up",
+      "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 43.36,
-      "historical_volatility_60": 39.46
+      "historical_volatility_20": 40.58,
+      "historical_volatility_60": 39.55
     },
     "price_structure": {
       "resistance": [
@@ -82,15 +82,15 @@
         15.36
       ],
       "support": [
-        16.41,
         15.97,
-        15.37
+        15.37,
+        15.16
       ],
       "high_20d": 14.77,
       "high_30d": 15.73,
       "high_52w": 36.4,
-      "distance_to_resistance_pct": 3.58,
-      "distance_to_support_pct": 11.36,
+      "distance_to_resistance_pct": 5.88,
+      "distance_to_support_pct": 9.39,
       "nearest_resistance": 14.77,
       "nearest_support": 12.64
     }
@@ -99,7 +99,7 @@
     "revenue_growth_yoy": 13.1,
     "eps_growth_yoy": 184.83,
     "gross_margin": 37.01,
-    "operating_margin": 4.7,
+    "operating_margin": 4.45,
     "net_margin": 4.89,
     "roe": 10.14,
     "debt_to_equity": 59.78,
@@ -107,20 +107,20 @@
     "cash": 24299706368,
     "total_debt": 9514290176,
     "net_cash": 14785416192,
-    "forward_pe": 11.23,
-    "peg_ratio": 0.31,
-    "ev_ebitda": -2.02,
+    "forward_pe": 11.0,
+    "peg_ratio": 0.3,
+    "ev_ebitda": -2.03,
     "price_to_sales": 0.18
   },
   "options": {
-    "implied_volatility": 1.1458,
-    "put_call_ratio": 0.36,
-    "call_volume": 499,
-    "put_volume": 181,
-    "call_open_interest": 6899,
-    "put_open_interest": 6941,
-    "expected_move": 4.68,
-    "expected_move_pct": 32.85,
+    "implied_volatility": 1.3447,
+    "put_call_ratio": 0.2,
+    "call_volume": 590,
+    "put_volume": 117,
+    "call_open_interest": 6885,
+    "put_open_interest": 6946,
+    "expected_move": 5.38,
+    "expected_move_pct": 38.55,
     "atm_straddle_price": null,
     "skew": "mild_call_skew",
     "gamma_exposure": "positive",
@@ -130,10 +130,10 @@
     "buy_ratings": 31,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 25.42,
-    "target_high": 36.24,
-    "target_low": 18.12,
-    "target_median": 24.22,
+    "avg_price_target": 25.38,
+    "target_high": 36.27,
+    "target_low": 18.13,
+    "target_median": 24.24,
     "consensus_trend": "strong_buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
@@ -999,32 +999,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bearish",
-    "sp500_price": 747.32,
-    "sp500_change_pct": -0.71,
+    "sp500_trend": "neutral",
+    "sp500_price": 760.93,
+    "sp500_change_pct": 1.47,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 670.9,
-    "nasdaq_change_pct": -1.24,
-    "vix": 20.97,
+    "nasdaq_price": 694.35,
+    "nasdaq_change_pct": 2.9,
+    "vix": 17.85,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "weak",
-    "macro_score": 20,
+    "breadth": "healthy",
+    "macro_score": 50,
     "regime_assessment": {
       "regime": "unfavorable",
-      "confidence": 0.0,
-      "sp500_trend": "bearish",
+      "confidence": 25.0,
+      "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 20.97,
+      "vix": 17.85,
       "market_regime": "neutral"
     }
   },
   "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 2.89:1",
+  "decision_rationale": "strong technical uptrend, solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 4.11:1",
   "earnings_date": "2026-11-24",
-  "days_until_earnings": 14,
+  "days_until_earnings": 13,
   "earnings_time": "unknown"
 }
