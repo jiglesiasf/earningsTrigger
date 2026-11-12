@@ -3,21 +3,21 @@
   "company": "Workday, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 190.13,
-    "open": 190.49,
-    "high": 191.25,
-    "low": 188.02,
-    "previous_close": 188.89,
-    "change_pct": 0.66,
-    "market_cap": 45821329408
+    "current": 190.74,
+    "open": 191.75,
+    "high": 192.82,
+    "low": 188.25,
+    "previous_close": 191.16,
+    "change_pct": -0.22,
+    "market_cap": 45969543168
   },
   "trade_parameters": {
     "buy_above": 193.6,
-    "stop_loss": 189.75,
-    "take_profit": 245.19,
-    "expected_move": "\u00b128.96%",
-    "expected_move_dollars": "\u00b1$55.06",
-    "risk_reward": 13.4,
+    "stop_loss": 190.72,
+    "take_profit": 264.59,
+    "expected_move": "\u00b138.72%",
+    "expected_move_dollars": "\u00b1$73.85",
+    "risk_reward": 24.65,
     "support_levels": [
       190.72,
       189.75,
@@ -28,8 +28,8 @@
       195.75,
       195.92
     ],
-    "expected_return_pct": 26.65,
-    "max_drawdown_pct": -1.99
+    "expected_return_pct": 36.67,
+    "max_drawdown_pct": -1.49
   },
   "scores": {
     "technical": 51,
@@ -48,10 +48,10 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 195.85,
-      "sma_50": 193.7,
-      "sma_100": 177.18,
-      "sma_200": 155.9,
+      "ema_20": 195.45,
+      "sma_50": 193.52,
+      "sma_100": 177.95,
+      "sma_200": 155.91,
       "price_above_20_ema": "False",
       "price_above_50_sma": "False",
       "price_above_200_sma": "True",
@@ -59,12 +59,12 @@
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 22.01,
-      "macd": -0.2762,
-      "macd_signal": 1.5638,
-      "macd_histogram": -1.8401,
+      "rsi_14": 23.94,
+      "macd": -0.5522,
+      "macd_signal": 1.1538,
+      "macd_histogram": -1.706,
       "stochastic_rsi": 0.0,
-      "adx": 33.92,
+      "adx": 31.55,
       "momentum_score": "oversold"
     },
     "volume": {
@@ -72,8 +72,8 @@
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 37.81,
-      "historical_volatility_60": 38.6
+      "historical_volatility_20": 34.79,
+      "historical_volatility_60": 37.72
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 212.91,
       "high_30d": 212.91,
       "high_52w": 236.8,
-      "distance_to_resistance_pct": 1.83,
-      "distance_to_support_pct": 0.2,
+      "distance_to_resistance_pct": 1.5,
+      "distance_to_support_pct": 0.01,
       "nearest_resistance": 193.6,
-      "nearest_support": 189.75
+      "nearest_support": 190.72
     }
   },
   "fundamentals": {
@@ -107,20 +107,20 @@
     "cash": 3403000064,
     "total_debt": 3772000000,
     "net_cash": -368999936,
-    "forward_pe": 14.36,
-    "peg_ratio": 0.57,
-    "ev_ebitda": 28.93,
-    "price_to_sales": 4.51
+    "forward_pe": 14.4,
+    "peg_ratio": 0.58,
+    "ev_ebitda": 29.28,
+    "price_to_sales": 4.53
   },
   "options": {
-    "implied_volatility": 1.0101,
-    "put_call_ratio": 1.85,
-    "call_volume": 108,
-    "put_volume": 200,
-    "call_open_interest": 997,
-    "put_open_interest": 720,
-    "expected_move": 55.06,
-    "expected_move_pct": 28.96,
+    "implied_volatility": 1.3507,
+    "put_call_ratio": 1.9,
+    "call_volume": 112,
+    "put_volume": 213,
+    "call_open_interest": 999,
+    "put_open_interest": 723,
+    "expected_move": 73.86,
+    "expected_move_pct": 38.72,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
@@ -1000,12 +1000,12 @@
   },
   "market_regime": {
     "sp500_trend": "neutral",
-    "sp500_price": 760.93,
-    "sp500_change_pct": 1.47,
+    "sp500_price": 761.29,
+    "sp500_change_pct": 0.19,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 694.35,
-    "nasdaq_change_pct": 2.9,
-    "vix": 17.85,
+    "nasdaq_price": 691.68,
+    "nasdaq_change_pct": 0.19,
+    "vix": 17.63,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
@@ -1018,13 +1018,13 @@
       "confidence": 25.0,
       "sp500_trend": "neutral",
       "nasdaq_trend": "bearish",
-      "vix": 17.85,
+      "vix": 17.63,
       "market_regime": "neutral"
     }
   },
   "decision": "AVOID",
-  "decision_rationale": "solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 13.4:1",
+  "decision_rationale": "solid fundamentals, favorable historical earnings pattern, favorable risk/reward ratio of 24.65:1",
   "earnings_date": "2026-11-24",
-  "days_until_earnings": 13,
+  "days_until_earnings": 12,
   "earnings_time": "unknown"
 }
