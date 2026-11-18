@@ -3,190 +3,190 @@
   "company": "Salesforce, Inc.",
   "sector": "Technology",
   "price": {
-    "current": 205.69,
-    "open": 205.85,
-    "high": 210.31,
-    "low": 204.76,
-    "previous_close": 209.06,
-    "change_pct": -1.61,
-    "market_cap": null
+    "current": 188.63,
+    "open": 193.07,
+    "high": 193.18,
+    "low": 186.46,
+    "previous_close": 194.52,
+    "change_pct": -3.03,
+    "market_cap": 155242496000
   },
   "trade_parameters": {
-    "buy_above": 205.69,
-    "stop_loss": 189.91,
-    "take_profit": 214.04,
-    "expected_move": "\u00b14.06%",
-    "expected_move_dollars": "\u00b1$8.35",
-    "risk_reward": 0.53,
+    "buy_above": 188.63,
+    "stop_loss": 186.46,
+    "take_profit": 269.82,
+    "expected_move": "\u00b143.04%",
+    "expected_move_dollars": "\u00b1$81.19",
+    "risk_reward": 37.41,
     "support_levels": [
-      189.91,
-      183.0,
-      175.9
+      253.15,
+      241.33,
+      235.6
     ],
     "resistance_levels": [
-      169.95,
-      172.38,
-      175.43
+      220.0,
+      234.36,
+      239.45
     ],
-    "expected_return_pct": 4.06,
-    "max_drawdown_pct": -7.67
+    "expected_return_pct": 43.04,
+    "max_drawdown_pct": -1.15
   },
   "scores": {
-    "technical": 100,
-    "fundamental": 72,
-    "options": 59,
+    "technical": 48,
+    "fundamental": 77,
+    "options": 47,
     "sentiment": 70,
-    "historical": 69.4,
-    "macro": 75,
-    "overall": 77.4
+    "historical": 67.9,
+    "macro": 20,
+    "overall": 57.4
   },
   "historical_score_breakdown": {
-    "simple": 68,
+    "simple": 63,
     "deep": 70,
-    "merged": 69.4,
+    "merged": 67.9,
     "has_deep": true
   },
   "technical": {
     "trend": {
-      "ema_20": 195.32,
-      "sma_50": 176.24,
-      "sma_100": 177.92,
-      "sma_200": 199.62,
-      "price_above_20_ema": "True",
-      "price_above_50_sma": "True",
-      "price_above_200_sma": "True",
+      "ema_20": 218.73,
+      "sma_50": 232.14,
+      "sma_100": 213.49,
+      "sma_200": 197.31,
+      "price_above_20_ema": "False",
+      "price_above_50_sma": "False",
+      "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 60.15,
-      "macd": 8.4629,
-      "macd_signal": 7.7396,
-      "macd_histogram": 0.7233,
-      "stochastic_rsi": 21.28,
-      "adx": 34.39,
-      "momentum_score": "strong"
+      "rsi_14": 17.12,
+      "macd": -8.9996,
+      "macd_signal": -5.5911,
+      "macd_histogram": -3.4085,
+      "stochastic_rsi": 4.35,
+      "adx": 36.15,
+      "momentum_score": "oversold"
     },
     "volume": {
       "obv_trend": "down",
       "volume_trend": "below_avg"
     },
     "volatility": {
-      "historical_volatility_20": 42.52,
-      "historical_volatility_60": 49.35
+      "historical_volatility_20": 44.51,
+      "historical_volatility_60": 60.1
     },
     "price_structure": {
       "resistance": [
-        169.95,
-        172.38,
-        175.43
+        220.0,
+        234.36,
+        239.45
       ],
       "support": [
-        189.91,
-        183.0,
-        175.9
+        253.15,
+        241.33,
+        235.6
       ],
-      "high_20d": 213.17,
-      "high_30d": 213.17,
-      "high_52w": 267.75,
-      "distance_to_resistance_pct": 30.17,
-      "distance_to_support_pct": 7.67,
-      "nearest_resistance": 267.75,
-      "nearest_support": 189.91
+      "high_20d": 252.42,
+      "high_30d": 252.42,
+      "high_52w": 267.8,
+      "distance_to_resistance_pct": 16.63,
+      "distance_to_support_pct": 1.15,
+      "nearest_resistance": 220.0,
+      "nearest_support": 186.46
     }
   },
   "fundamentals": {
     "revenue_growth_yoy": 9.58,
     "eps_growth_yoy": 22.64,
-    "gross_margin": 77.64,
-    "operating_margin": 21.8,
-    "net_margin": 18.73,
-    "roe": 16.91,
-    "debt_to_equity": 124.28,
-    "current_ratio": 0.79,
-    "cash": 11836999680,
-    "total_debt": 42547998720,
-    "net_cash": -30710999040,
-    "forward_pe": 13.26,
-    "peg_ratio": 0.87,
-    "ev_ebitda": 15.45,
-    "price_to_sales": null
+    "gross_margin": 77.28,
+    "operating_margin": 21.52,
+    "net_margin": 21.99,
+    "roe": 19.38,
+    "debt_to_equity": 110.42,
+    "current_ratio": 0.84,
+    "cash": 11402999808,
+    "total_debt": 42375999488,
+    "net_cash": -30972999680,
+    "forward_pe": 11.78,
+    "peg_ratio": 0.69,
+    "ev_ebitda": 14.81,
+    "price_to_sales": 3.53
   },
   "options": {
-    "implied_volatility": 0.1415,
-    "put_call_ratio": 1.03,
-    "call_volume": 10629,
-    "put_volume": 10948,
-    "call_open_interest": 0,
-    "put_open_interest": 2,
-    "expected_move": 8.34,
-    "expected_move_pct": 4.06,
+    "implied_volatility": 1.5013,
+    "put_call_ratio": 1.01,
+    "call_volume": 5928,
+    "put_volume": 6013,
+    "call_open_interest": 54438,
+    "put_open_interest": 42231,
+    "expected_move": 81.19,
+    "expected_move_pct": 43.04,
     "atm_straddle_price": null,
     "skew": "mild_put_skew",
     "gamma_exposure": "neutral",
     "unusual_activity": "True"
   },
   "analyst": {
-    "buy_ratings": 54,
+    "buy_ratings": 53,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 243.98,
+    "avg_price_target": 286.14,
     "target_high": 475.0,
-    "target_low": 160.0,
-    "target_median": 236.03,
+    "target_low": 165.0,
+    "target_median": 285.0,
     "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
-    "number_of_analysts": 54
+    "number_of_analysts": 53
   },
   "historical_earnings": {
     "avg_move_pct": 2.98,
     "median_move_pct": 2.06,
     "largest_upside_pct": 8.47,
     "largest_downside_pct": -2.35,
-    "avg_1d_return": 1.41,
-    "gap_up_pct": 75.0,
-    "gap_down_pct": 25.0,
+    "avg_1d_return": 1.8,
+    "gap_up_pct": 62.5,
+    "gap_down_pct": 37.5,
     "recent_moves": [
+      {
+        "date": "2026-08-26",
+        "gap_pct": -0.63,
+        "day_return_pct": 1.57,
+        "pre_close": 251.61,
+        "post_open": 250.03,
+        "post_close": 255.55
+      },
       {
         "date": "2026-05-27",
         "gap_pct": 2.31,
         "day_return_pct": 8.47,
-        "pre_close": 175.72,
-        "post_open": 179.78,
-        "post_close": 190.61
+        "pre_close": 175.41,
+        "post_open": 179.46,
+        "post_close": 190.27
       },
       {
         "date": "2026-02-25",
         "gap_pct": -3.79,
         "day_return_pct": -2.35,
-        "pre_close": 198.46,
-        "post_open": 190.94,
-        "post_close": 193.8
+        "pre_close": 198.11,
+        "post_open": 190.6,
+        "post_close": 193.46
       },
       {
         "date": "2025-12-03",
         "gap_pct": 1.36,
         "day_return_pct": 5.3,
-        "pre_close": 245.81,
-        "post_open": 249.16,
-        "post_close": 258.83
+        "pre_close": 245.38,
+        "post_open": 248.72,
+        "post_close": 258.38
       },
       {
         "date": "2025-09-03",
         "gap_pct": 0.34,
         "day_return_pct": 2.77,
-        "pre_close": 241.96,
-        "post_open": 242.78,
-        "post_close": 248.66
-      },
-      {
-        "date": "2025-05-28",
-        "gap_pct": 0.43,
-        "day_return_pct": -0.58,
-        "pre_close": 264.26,
-        "post_open": 265.41,
-        "post_close": 262.73
+        "pre_close": 241.54,
+        "post_open": 242.35,
+        "post_close": 248.22
       }
     ],
     "num_periods_analyzed": 8
@@ -1001,32 +1001,32 @@
     "bearish_signals": 0
   },
   "market_regime": {
-    "sp500_trend": "bullish",
-    "sp500_price": 765.91,
-    "sp500_change_pct": 0.32,
-    "nasdaq_trend": "neutral",
-    "nasdaq_price": 710.72,
-    "nasdaq_change_pct": 0.62,
-    "vix": 15.7,
+    "sp500_trend": "bearish",
+    "sp500_price": 731.05,
+    "sp500_change_pct": -0.19,
+    "nasdaq_trend": "bearish",
+    "nasdaq_price": 658.72,
+    "nasdaq_change_pct": 0.27,
+    "vix": 24.17,
     "vix_trend": "rising",
     "market_regime": "neutral",
     "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
-    "breadth": "healthy",
-    "macro_score": 75,
+    "breadth": "weak",
+    "macro_score": 20,
     "regime_assessment": {
-      "regime": "neutral",
-      "confidence": 50.0,
-      "sp500_trend": "bullish",
-      "nasdaq_trend": "neutral",
-      "vix": 15.7,
+      "regime": "unfavorable",
+      "confidence": 0.0,
+      "sp500_trend": "bearish",
+      "nasdaq_trend": "bearish",
+      "vix": 24.17,
       "market_regime": "neutral"
     }
   },
-  "decision": "WATCH",
-  "decision_rationale": "strong technical uptrend",
-  "earnings_date": "2026-08-26",
-  "days_until_earnings": 0,
+  "decision": "AVOID",
+  "decision_rationale": "solid fundamentals, favorable risk/reward ratio of 37.41:1",
+  "earnings_date": "2026-12-02",
+  "days_until_earnings": 14,
   "earnings_time": "unknown"
 }

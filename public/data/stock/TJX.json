@@ -3,21 +3,21 @@
   "company": "TJX Companies, Inc. (The)",
   "sector": "Consumer Cyclical",
   "price": {
-    "current": 130.96,
-    "open": 130.54,
-    "high": 133.07,
-    "low": 130.29,
-    "previous_close": 131.09,
-    "change_pct": -0.1,
-    "market_cap": 144672096256
+    "current": 143.71,
+    "open": 137.01,
+    "high": 144.36,
+    "low": 134.05,
+    "previous_close": 129.85,
+    "change_pct": 10.67,
+    "market_cap": 158757076992
   },
   "trade_parameters": {
-    "buy_above": 132.28,
-    "stop_loss": 130.29,
-    "take_profit": 170.08,
-    "expected_move": "\u00b129.87%",
-    "expected_move_dollars": "\u00b1$39.12",
-    "risk_reward": 18.99,
+    "buy_above": 143.71,
+    "stop_loss": 137.52,
+    "take_profit": 178.69,
+    "expected_move": "\u00b124.34%",
+    "expected_move_dollars": "\u00b1$34.98",
+    "risk_reward": 5.65,
     "support_levels": [
       137.52,
       136.54,
@@ -28,17 +28,17 @@
       132.28,
       134.2
     ],
-    "expected_return_pct": 28.57,
-    "max_drawdown_pct": -1.5
+    "expected_return_pct": 24.34,
+    "max_drawdown_pct": -4.31
   },
   "scores": {
-    "technical": 45,
+    "technical": 86,
     "fundamental": 61,
-    "options": 47,
+    "options": 70,
     "sentiment": 70,
     "historical": 62.0,
-    "macro": 5,
-    "overall": 51.6
+    "macro": 20,
+    "overall": 69.3
   },
   "historical_score_breakdown": {
     "simple": 55,
@@ -48,32 +48,32 @@
   },
   "technical": {
     "trend": {
-      "ema_20": 136.99,
-      "sma_50": 135.69,
-      "sma_100": 142.19,
-      "sma_200": 149.24,
-      "price_above_20_ema": "False",
-      "price_above_50_sma": "False",
+      "ema_20": 137.54,
+      "sma_50": 136.03,
+      "sma_100": 142.11,
+      "sma_200": 149.2,
+      "price_above_20_ema": "True",
+      "price_above_50_sma": "True",
       "price_above_200_sma": "False",
       "golden_cross": false,
       "death_cross": false
     },
     "momentum": {
-      "rsi_14": 39.85,
-      "macd": -1.6706,
-      "macd_signal": -0.5127,
-      "macd_histogram": -1.1579,
-      "stochastic_rsi": 27.92,
-      "adx": 13.91,
-      "momentum_score": "weak"
+      "rsi_14": 53.05,
+      "macd": -0.9772,
+      "macd_signal": -0.6198,
+      "macd_histogram": -0.3574,
+      "stochastic_rsi": 100.0,
+      "adx": 14.02,
+      "momentum_score": "strong"
     },
     "volume": {
       "obv_trend": "down",
-      "volume_trend": "below_avg"
+      "volume_trend": "above_avg"
     },
     "volatility": {
-      "historical_volatility_20": 33.04,
-      "historical_volatility_60": 26.29
+      "historical_volatility_20": 51.75,
+      "historical_volatility_60": 34.34
     },
     "price_structure": {
       "resistance": [
@@ -89,10 +89,10 @@
       "high_20d": 147.17,
       "high_30d": 148.05,
       "high_52w": 168.87,
-      "distance_to_resistance_pct": 1.01,
-      "distance_to_support_pct": 0.51,
-      "nearest_resistance": 132.28,
-      "nearest_support": 130.29
+      "distance_to_resistance_pct": 17.51,
+      "distance_to_support_pct": 4.31,
+      "nearest_resistance": 168.87,
+      "nearest_support": 137.52
     }
   },
   "fundamentals": {
@@ -107,37 +107,37 @@
     "cash": 6003999744,
     "total_debt": 14316999680,
     "net_cash": -8312999936,
-    "forward_pe": 22.82,
-    "peg_ratio": 2.38,
-    "ev_ebitda": 17.13,
-    "price_to_sales": 2.32
+    "forward_pe": 25.05,
+    "peg_ratio": 2.3,
+    "ev_ebitda": 16.98,
+    "price_to_sales": 2.55
   },
   "options": {
-    "implied_volatility": 1.0421,
-    "put_call_ratio": 0.98,
-    "call_volume": 5825,
-    "put_volume": 5697,
-    "call_open_interest": 10927,
-    "put_open_interest": 16319,
-    "expected_move": 39.12,
-    "expected_move_pct": 29.87,
+    "implied_volatility": 0.8489,
+    "put_call_ratio": 0.36,
+    "call_volume": 18181,
+    "put_volume": 6502,
+    "call_open_interest": 19179,
+    "put_open_interest": 21425,
+    "expected_move": 34.98,
+    "expected_move_pct": 24.34,
     "atm_straddle_price": null,
-    "skew": "mild_put_skew",
-    "gamma_exposure": "neutral",
+    "skew": "mild_call_skew",
+    "gamma_exposure": "positive",
     "unusual_activity": "True"
   },
   "analyst": {
-    "buy_ratings": 20,
+    "buy_ratings": 19,
     "hold_ratings": 0,
     "sell_ratings": 0,
-    "avg_price_target": 165.4,
+    "avg_price_target": 164.37,
     "target_high": 190.0,
     "target_low": 130.0,
     "target_median": 170.0,
     "consensus_trend": "buy",
     "recent_upgrades": [],
     "recent_downgrades": [],
-    "number_of_analysts": 20
+    "number_of_analysts": 19
   },
   "historical_earnings": {
     "avg_move_pct": 1.24,
@@ -1001,31 +1001,31 @@
   },
   "market_regime": {
     "sp500_trend": "bearish",
-    "sp500_price": 731.4,
-    "sp500_change_pct": -1.16,
+    "sp500_price": 731.05,
+    "sp500_change_pct": -0.19,
     "nasdaq_trend": "bearish",
-    "nasdaq_price": 654.2,
-    "nasdaq_change_pct": -1.14,
-    "vix": 25.37,
+    "nasdaq_price": 658.72,
+    "nasdaq_change_pct": 0.27,
+    "vix": 24.17,
     "vix_trend": "rising",
-    "market_regime": "risk_off",
-    "risk_level": "high",
+    "market_regime": "neutral",
+    "risk_level": "moderate",
     "sector_leadership": [],
     "macro_events": [],
     "breadth": "weak",
-    "macro_score": 5,
+    "macro_score": 20,
     "regime_assessment": {
       "regime": "unfavorable",
       "confidence": 0.0,
       "sp500_trend": "bearish",
       "nasdaq_trend": "bearish",
-      "vix": 25.37,
-      "market_regime": "risk_off"
+      "vix": 24.17,
+      "market_regime": "neutral"
     }
   },
-  "decision": "WAIT",
-  "decision_rationale": "mixed signals across analysis categories, favorable risk/reward ratio of 18.99:1",
+  "decision": "AVOID",
+  "decision_rationale": "strong technical uptrend, favorable risk/reward ratio of 5.65:1",
   "earnings_date": "2026-11-18",
-  "days_until_earnings": 1,
+  "days_until_earnings": 0,
   "earnings_time": "unknown"
 }
